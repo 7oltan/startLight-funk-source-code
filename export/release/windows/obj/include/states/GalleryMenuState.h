@@ -72,6 +72,7 @@ class HXCPP_CLASS_ATTRIBUTES GalleryMenuState_obj : public  ::backend::MusicBeat
 		 ::flixel::FlxSprite arrowUP;
 		 ::flixel::FlxSprite arrowDOWN;
 		 ::flixel::text::FlxText imagesText;
+		 ::flixel::FlxSprite nastya;
 		void create();
 
 		 ::flixel::text::FlxText errorText;

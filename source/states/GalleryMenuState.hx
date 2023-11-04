@@ -39,6 +39,7 @@ class GalleryMenuState extends MusicBeatState{
     var arrowDOWN:FlxSprite;
 
     var imagesText:FlxText;
+    var nastya:FlxSprite;
     override public function create() {
         super.create();
 
@@ -51,7 +52,15 @@ class GalleryMenuState extends MusicBeatState{
 		bg.screenCenter();
 		add(bg);
 
-        imagesText = new FlxText(0,0,FlxG.width*0.8,"( 4 / 5 )",20);
+		nastya = new FlxSprite(0,0).loadGraphic(Paths.image(FlxG.random.bool(10) ? 'nastya-funky' : 'nastya-gallery'));
+		nastya.antialiasing = ClientPrefs.data.antialiasing;
+		nastya.scrollFactor.set();
+        nastya.setGraphicSize(Std.int(nastya.width*0.4));
+        nastya.updateHitbox();
+        nastya.setPosition((FlxG.width/2)-100,FlxG.height-nastya.height);
+		add(nastya);
+
+        imagesText = new FlxText(0,0,FlxG.width*0.8,"( ? / ? )",20);
         imagesText.screenCenter(X);
 		imagesText.setFormat(Paths.font("vcr.ttf"), 50, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		imagesText.borderSize = 2;
@@ -89,6 +98,7 @@ class GalleryMenuState extends MusicBeatState{
         arrowUP.antialiasing = ClientPrefs.data.antialiasing;
         arrowUP.angle = 90;
         arrowUP.flipY = true;
+        arrowUP.visible = false;
         add(arrowUP);
 
         arrowDOWN = new FlxSprite(950,FlxG.height-100);
@@ -99,6 +109,7 @@ class GalleryMenuState extends MusicBeatState{
         arrowDOWN.antialiasing = ClientPrefs.data.antialiasing;
         arrowDOWN.angle = -90;
         arrowDOWN.flipY = true;
+        arrowDOWN.visible = false;
         add(arrowDOWN);
 
         var black:FlxSprite = new FlxSprite(0,0).loadGraphic(Paths.image('loadingScreen'));
@@ -141,7 +152,6 @@ class GalleryMenuState extends MusicBeatState{
                         ready = true;
                         FlxTween.tween(black,{alpha:0},0.2,{ease : FlxEase.linear,onComplete:function(t)remove(black)});
                         FlxTween.tween(FlxG.sound.music,{volume:1},0.2,{ease : FlxEase.linear});
-                        changeSelection(0);
                         errorText.alpha = 0;
                     }
                 },BINARY);
@@ -186,6 +196,11 @@ class GalleryMenuState extends MusicBeatState{
 
     function changeSelection(num:Int){
         if(!ready) return;
+        nastya.visible = false;
+        
+        arrowUP.visible = true;
+        arrowDOWN.visible = true;
+
         FlxG.sound.play(Paths.sound('scrollMenu'));
         curSelected += num;
 
@@ -229,6 +244,7 @@ class GalleryMenuState extends MusicBeatState{
             if(FlxG.mouse.overlaps(button)){
                 if(FlxG.mouse.justPressed){
                     curSelectedButton = button.ID;
+                    curSelected = 0;
                     changeSelection(0);
                 }
                 button.alpha = 1;

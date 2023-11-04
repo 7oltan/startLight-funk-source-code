@@ -1702,6 +1702,7 @@
    <depend name="include/flixel/input/mouse/FlxMouse.h"/>
    <depend name="include/flixel/input/mouse/FlxMouseButton.h"/>
    <depend name="include/flixel/math/FlxBasePoint.h"/>
+   <depend name="include/flixel/math/FlxRandom.h"/>
    <depend name="include/flixel/sound/FlxSound.h"/>
    <depend name="include/flixel/system/FlxSoundGroup.h"/>
    <depend name="include/flixel/system/frontEnds/SoundFrontEnd.h"/>
