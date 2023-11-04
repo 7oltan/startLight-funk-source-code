@@ -1186,14 +1186,16 @@ class PlayState extends MusicBeatState
 
 		FlxG.sound.music.time = time;
 		FlxG.sound.music.pitch = playbackRate;
-		FlxG.sound.music.play();
+		if(FlxG.sound.music.length>0)
+			FlxG.sound.music.play();
 
 		if (Conductor.songPosition <= vocals.length)
 		{
 			vocals.time = time;
 			vocals.pitch = playbackRate;
 		}
-		vocals.play();
+		if(vocals.length>0)
+			vocals.play();
 		Conductor.songPosition = time;
 	}
 
@@ -1209,13 +1211,16 @@ class PlayState extends MusicBeatState
 	function startSong():Void
 	{
 		startingSong = false;
-
-		@:privateAccess
-		FlxG.sound.playMusic(inst._sound, 1, false);
+		
+		if(inst.length>0){
+			@:privateAccess
+			FlxG.sound.playMusic(inst._sound, 1, false);
+		}
 		FlxG.sound.music.pitch = playbackRate;
 		FlxG.sound.music.onComplete = finishSong.bind();
-		vocals.play();
-
+		if(vocals.length>0)
+			vocals.play();
+		
 		if(startOnTime > 0) setSongTime(startOnTime - 500);
 		startOnTime = 0;
 
@@ -1612,7 +1617,9 @@ class PlayState extends MusicBeatState
 
 		vocals.pause();
 
-		FlxG.sound.music.play();
+		if(FlxG.sound.music.length>0)
+			FlxG.sound.music.play();
+			
 		FlxG.sound.music.pitch = playbackRate;
 		Conductor.songPosition = FlxG.sound.music.time;
 		if (Conductor.songPosition <= vocals.length)
@@ -1620,7 +1627,8 @@ class PlayState extends MusicBeatState
 			vocals.time = Conductor.songPosition;
 			vocals.pitch = playbackRate;
 		}
-		vocals.play();
+		if(vocals.length>0)
+			vocals.play();
 	}
 
 	public var paused:Bool = false;
