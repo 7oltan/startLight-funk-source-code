@@ -1,0 +1,106 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 11,
+			"anim": "deathConfirm",
+			"indices": [],
+			"name": "Deathrestart"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				9,
+				9,
+				9,
+				9,
+				9,
+				9,
+				9,
+				9,
+				9,
+				9,
+				9,
+				9,
+				9,
+				9,
+				9,
+				9,
+				9,
+				9,
+				9,
+				9
+			],
+			"fps": 11,
+			"anim": "firstDeath",
+			"loop": false,
+			"name": "Deathstart"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				5,
+				5,
+				5,
+				5,
+				5,
+				5,
+				5,
+				5,
+				5,
+				5,
+				5
+			],
+			"fps": 11,
+			"anim": "deathLoop",
+			"loop": true,
+			"name": "Deathloop"
+		}
+	],
+	"no_antialiasing": true,
+	"image": "characters/mogosdead",
+	"position": [
+		-190,
+		-240
+	],
+	"health_bar": "sustya",
+	"healthicon": "sustya",
+	"flip_x": true,
+	"healthbar_colors": [
+		195,
+		0,
+		81
+	],
+	"camera_position": [
+		200,
+		-50
+	],
+	"sing_duration": 6.1,
+	"scale": 1.2
+}

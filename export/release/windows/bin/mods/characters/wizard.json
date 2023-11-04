@@ -1,0 +1,79 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				167,
+				-99
+			],
+			"loop": false,
+			"fps": 12,
+			"anim": "idle",
+			"indices": [],
+			"name": "idle"
+		},
+		{
+			"offsets": [
+				141,
+				-82
+			],
+			"loop": false,
+			"fps": 12,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "down"
+		},
+		{
+			"offsets": [
+				161,
+				-94
+			],
+			"loop": false,
+			"fps": 12,
+			"anim": "singUP",
+			"indices": [],
+			"name": "up"
+		},
+		{
+			"offsets": [
+				152,
+				-97
+			],
+			"loop": false,
+			"fps": 12,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "right"
+		},
+		{
+			"offsets": [
+				183,
+				-91
+			],
+			"loop": false,
+			"fps": 12,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "Left"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/wizard",
+	"position": [
+		-60,
+		-390
+	],
+	"health_bar": "money",
+	"healthicon": "wizard",
+	"flip_x": false,
+	"healthbar_colors": [
+		130,
+		84,
+		200
+	],
+	"camera_position": [
+		-100,
+		-200
+	],
+	"sing_duration": 4.00000000000001,
+	"scale": 1.3
+}

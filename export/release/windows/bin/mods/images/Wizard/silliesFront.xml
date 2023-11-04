@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Free texture packer v0.6.7 http://free-tex-packer.com
+-->
+<TextureAtlas imagePath="silliesFront.png" width="1544" height="790">
+  <SubTexture name="Idle0001" x="4" y="4"  width="1536" height="278.40000000000003" frameX="-0" frameY="-585.6" frameWidth="1536" frameHeight="864"/>
+  <SubTexture name="Idle0002" x="4" y="290.40000000000003"  width="1536" height="248" frameX="-0" frameY="-616" frameWidth="1536" frameHeight="864"/>
+  <SubTexture name="Idle0003" x="4" y="546.4"  width="1536" height="239.20000000000002" frameX="-0" frameY="-624.8000000000001" frameWidth="1536" frameHeight="864"/>
+  <SubTexture name="Idle0004" x="4" y="546.4"  width="1536" height="239.20000000000002" frameX="-0" frameY="-624.8000000000001" frameWidth="1536" frameHeight="864"/>
+  <SubTexture name="Idle0005" x="4" y="546.4"  width="1536" height="239.20000000000002" frameX="-0" frameY="-624.8000000000001" frameWidth="1536" frameHeight="864"/>
+</TextureAtlas>

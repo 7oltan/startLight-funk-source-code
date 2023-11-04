@@ -1,0 +1,140 @@
+{
+	"dialogue": [
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "nastya",
+			"boxState": "normal",
+			"expression": "serious",
+			"text": "took you long enough="
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "gf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "hey dont blame me,youre the one who lives miles away,,,"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "gf",
+			"boxState": "normal",
+			"expression": "confused",
+			"text": "who are you anyway?"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "nastya",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "i,,,uhhhh,,,,,,,,,uuuuuhhh"
+		},
+		{
+			"sound": "",
+			"speed": 0.185,
+			"portrait": "nastya",
+			"boxState": "normal",
+			"expression": "wtf",
+			"text": "bob,,"
+		},
+		{
+			"sound": "",
+			"speed": 0.005,
+			"portrait": "gf",
+			"boxState": "normal",
+			"expression": "confused",
+			"text": "what"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "nastya",
+			"boxState": "normal",
+			"expression": "chill",
+			"text": "okok i know,win this rap battle and ill tell you my name,,,deal?"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "coolswag"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "gf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "hmmmmmmmmmmmmmmmmmmmm"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "gf",
+			"boxState": "normal",
+			"expression": "demon",
+			"text": "hhmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "gf",
+			"boxState": "normal",
+			"expression": "confused",
+			"text": "ok but wait why did you bring me here in the first place?"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "nastya",
+			"boxState": "normal",
+			"expression": "chill",
+			"text": "for fun,,"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "gf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "so you send letters (in 2023) to random people to rap battle them?"
+		},
+		{
+			"sound": "",
+			"speed": 0.00500000000000001,
+			"portrait": "nastya",
+			"boxState": "normal",
+			"expression": "wtf",
+			"text": "yes?"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "gf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "you remind me of my boyfriend,alright then,,,"
+		},
+		{
+			"sound": "",
+			"speed": 0.22,
+			"portrait": "gf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "bob,,,"
+		},
+		{
+			"sound": "",
+			"speed": 0.05,
+			"portrait": "nastya",
+			"boxState": "normal",
+			"expression": "happy",
+			"text": ":D"
+		}
+	]
+}

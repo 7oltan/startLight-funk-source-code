@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Free texture packer v0.6.7 http://free-tex-packer.com
+-->
+<TextureAtlas imagePath="mogosdead.png" width="3223" height="422">
+  <SubTexture name="Deathrestart0005" x="4" y="4"  width="800.8000000000001" height="96.80000000000001" frameX="-34.4" frameY="-659.2" frameWidth="864" frameHeight="1536"/>
+  <SubTexture name="Deathrestart0006" x="812.8000000000001" y="4"  width="770.4000000000001" height="93.60000000000001" frameX="-49.6" frameY="-656.8000000000001" frameWidth="864" frameHeight="1536"/>
+  <SubTexture name="Deathrestart0007" x="1591.2" y="4"  width="759.2" height="92" frameX="-55.2" frameY="-656" frameWidth="864" frameHeight="1536"/>
+  <SubTexture name="Deathrestart0004" x="2358.4" y="4"  width="558.4" height="15.200000000000001" frameX="-154.4" frameY="-744" frameWidth="864" frameHeight="1536"/>
+  <SubTexture name="Deathstart0003" x="2924.8" y="4"  width="294.40000000000003" height="413.6" frameX="-358.40000000000003" frameY="-514.4" frameWidth="864" frameHeight="1536"/>
+  <SubTexture name="Deathstart0002" x="2358.4" y="27.200000000000003"  width="230.4" height="331.20000000000005" frameX="-360.8" frameY="-595.2" frameWidth="864" frameHeight="1536"/>
+  <SubTexture name="Deathstart0001" x="2596.8" y="27.200000000000003"  width="209.60000000000002" height="285.6" frameX="-360" frameY="-640.8000000000001" frameWidth="864" frameHeight="1536"/>
+  <SubTexture name="Deathrestart0003" x="2814.4" y="27.200000000000003"  width="56" height="158.4" frameX="-392.8" frameY="-720.8000000000001" frameWidth="864" frameHeight="1536"/>
+  <SubTexture name="Deathstart0005" x="2596.8" y="320.8"  width="202.4" height="59.2" frameX="-325.6" frameY="-887.2" frameWidth="864" frameHeight="1536"/>
+  <SubTexture name="Deathloop0002" x="1591.2" y="104"  width="193.60000000000002" height="65.60000000000001" frameX="-330.40000000000003" frameY="-882.4000000000001" frameWidth="864" frameHeight="1536"/>
+  <SubTexture name="Deathloop0003" x="1792.8000000000002" y="104"  width="185.60000000000002" height="71.2" frameX="-333.6" frameY="-876.8000000000001" frameWidth="864" frameHeight="1536"/>
+  <SubTexture name="Deathloop0001" x="1986.4" y="104"  width="184" height="72" frameX="-335.20000000000005" frameY="-876" frameWidth="864" frameHeight="1536"/>
+  <SubTexture name="Deathstart0004" x="2178.4" y="104"  width="172" height="126.4" frameX="-344" frameY="-804" frameWidth="864" frameHeight="1536"/>
+  <SubTexture name="Deathloop0004" x="812.8000000000001" y="105.60000000000001"  width="183.20000000000002" height="72" frameX="-335.20000000000005" frameY="-876" frameWidth="864" frameHeight="1536"/>
+  <SubTexture name="Deathrestart0002" x="1004" y="105.60000000000001"  width="138.4" height="105.60000000000001" frameX="-356" frameY="-833.6" frameWidth="864" frameHeight="1536"/>
+  <SubTexture name="Deathrestart0001" x="812.8000000000001" y="105.60000000000001"  width="183.20000000000002" height="72" frameX="-335.20000000000005" frameY="-876" frameWidth="864" frameHeight="1536"/>
+  <SubTexture name="Deathstart0006" x="812.8000000000001" y="105.60000000000001"  width="183.20000000000002" height="72" frameX="-335.20000000000005" frameY="-876" frameWidth="864" frameHeight="1536"/>
+  <SubTexture name="Deathrestart0008" x="1591.2" y="4"  width="759.2" height="92" frameX="-55.2" frameY="-656" frameWidth="864" frameHeight="1536"/>
+</TextureAtlas>

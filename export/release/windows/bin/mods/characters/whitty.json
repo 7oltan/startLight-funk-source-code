@@ -1,0 +1,79 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "idle"
+		},
+		{
+			"offsets": [
+				-25,
+				-163
+			],
+			"loop": false,
+			"fps": 20,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "whitty down pose"
+		},
+		{
+			"offsets": [
+				85,
+				57
+			],
+			"loop": false,
+			"fps": 21,
+			"anim": "singUP",
+			"indices": [],
+			"name": "whitty up pose"
+		},
+		{
+			"offsets": [
+				45,
+				-18
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "whitty right pose"
+		},
+		{
+			"offsets": [
+				71,
+				-63
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "whitty left pose"
+		}
+	],
+	"no_antialiasing": true,
+	"image": "characters/galamixWhitty",
+	"position": [
+		0,
+		-20
+	],
+	"health_bar": "whitty",
+	"healthicon": "whitty",
+	"flip_x": false,
+	"healthbar_colors": [
+		71,
+		64,
+		85
+	],
+	"camera_position": [
+		120,
+		-10
+	],
+	"sing_duration": 6.1,
+	"scale": 1
+}

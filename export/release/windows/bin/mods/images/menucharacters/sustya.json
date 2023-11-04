@@ -1,0 +1,11 @@
+{
+	"idle_anim": "idle",
+	"image": "Menu_sustya",
+	"position": [
+		622,
+		-24
+	],
+	"flipX": false,
+	"scale": 1.25,
+	"confirm_anim": "idle"
+}

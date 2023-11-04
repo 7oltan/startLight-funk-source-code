@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="Gallery.png">
+	<!-- Created with Adobe Animate version 22.0.8.217 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="Gallery idle0000" x="0" y="0" width="409" height="209"/>
+	<SubTexture name="Gallery idle0001" x="0" y="0" width="409" height="209"/>
+	<SubTexture name="Gallery idle0002" x="409" y="0" width="409" height="209"/>
+	<SubTexture name="Gallery idle0003" x="409" y="0" width="409" height="209"/>
+	<SubTexture name="Gallery idle0004" x="0" y="0" width="409" height="209"/>
+	<SubTexture name="Gallery idle0005" x="0" y="0" width="409" height="209"/>
+	<SubTexture name="Gallery idle0006" x="0" y="0" width="409" height="209"/>
+	<SubTexture name="Gallery idle0007" x="0" y="0" width="409" height="209"/>
+	<SubTexture name="Gallery selected0000" x="818" y="0" width="519" height="331"/>
+	<SubTexture name="Gallery selected0001" x="1337" y="0" width="519" height="313" frameX="0" frameY="-18" frameWidth="519" frameHeight="331"/>
+	<SubTexture name="Gallery selected0002" x="0" y="331" width="503" height="296" frameX="-8" frameY="-30" frameWidth="519" frameHeight="331"/>
+	<SubTexture name="Gallery selected0003" x="503" y="331" width="503" height="290" frameX="-8" frameY="-36" frameWidth="519" frameHeight="331"/>
+	<SubTexture name="Gallery selected0004" x="1006" y="331" width="503" height="288" frameX="-8" frameY="-38" frameWidth="519" frameHeight="331"/>
+	<SubTexture name="Gallery selected0005" x="1509" y="331" width="503" height="257" frameX="-8" frameY="-69" frameWidth="519" frameHeight="331"/>
+	<SubTexture name="Gallery selected0006" x="0" y="627" width="503" height="257" frameX="-8" frameY="-69" frameWidth="519" frameHeight="331"/>
+	<SubTexture name="Gallery selected0007" x="503" y="627" width="503" height="257" frameX="-8" frameY="-69" frameWidth="519" frameHeight="331"/>
+	<SubTexture name="Gallery selected0008" x="1006" y="627" width="503" height="257" frameX="-8" frameY="-69" frameWidth="519" frameHeight="331"/>
+	<SubTexture name="Gallery selected0009" x="1509" y="627" width="503" height="257" frameX="-8" frameY="-69" frameWidth="519" frameHeight="331"/>
+	<SubTexture name="Gallery selected0010" x="0" y="884" width="503" height="257" frameX="-8" frameY="-69" frameWidth="519" frameHeight="331"/>
+	<SubTexture name="Gallery selected0011" x="0" y="884" width="503" height="257" frameX="-8" frameY="-69" frameWidth="519" frameHeight="331"/>
+	<SubTexture name="Gallery selected0012" x="503" y="884" width="503" height="257" frameX="-8" frameY="-69" frameWidth="519" frameHeight="331"/>
+	<SubTexture name="Gallery selected0013" x="503" y="884" width="503" height="257" frameX="-8" frameY="-69" frameWidth="519" frameHeight="331"/>
+	<SubTexture name="Gallery selected0014" x="1509" y="627" width="503" height="257" frameX="-8" frameY="-69" frameWidth="519" frameHeight="331"/>
+	<SubTexture name="Gallery selected0015" x="1509" y="627" width="503" height="257" frameX="-8" frameY="-69" frameWidth="519" frameHeight="331"/>
+	<SubTexture name="Gallery selected0016" x="0" y="884" width="503" height="257" frameX="-8" frameY="-69" frameWidth="519" frameHeight="331"/>
+	<SubTexture name="Gallery selected0017" x="0" y="884" width="503" height="257" frameX="-8" frameY="-69" frameWidth="519" frameHeight="331"/>
+	<SubTexture name="Gallery selected0018" x="1006" y="884" width="503" height="257" frameX="-8" frameY="-69" frameWidth="519" frameHeight="331"/>
+	<SubTexture name="Gallery selected0019" x="1509" y="884" width="503" height="257" frameX="-8" frameY="-69" frameWidth="519" frameHeight="331"/>
+	<SubTexture name="Gallery selected0020" x="0" y="1141" width="503" height="257" frameX="-8" frameY="-69" frameWidth="519" frameHeight="331"/>
+	<SubTexture name="Gallery selected0021" x="503" y="1141" width="503" height="257" frameX="-8" frameY="-69" frameWidth="519" frameHeight="331"/>
+	<SubTexture name="Gallery selected0022" x="1006" y="1141" width="503" height="257" frameX="-8" frameY="-69" frameWidth="519" frameHeight="331"/>
+	<SubTexture name="Gallery selected0023" x="1509" y="1141" width="503" height="257" frameX="-8" frameY="-69" frameWidth="519" frameHeight="331"/>
+	<SubTexture name="Gallery selected0024" x="0" y="1398" width="503" height="257" frameX="-8" frameY="-69" frameWidth="519" frameHeight="331"/>
+	<SubTexture name="Gallery selected0025" x="0" y="1398" width="503" height="257" frameX="-8" frameY="-69" frameWidth="519" frameHeight="331"/>
+	<SubTexture name="Gallery selected0026" x="503" y="1398" width="503" height="257" frameX="-8" frameY="-69" frameWidth="519" frameHeight="331"/>
+	<SubTexture name="Gallery selected0027" x="503" y="1398" width="503" height="257" frameX="-8" frameY="-69" frameWidth="519" frameHeight="331"/>
+	<SubTexture name="Gallery selected0028" x="1509" y="1141" width="503" height="257" frameX="-8" frameY="-69" frameWidth="519" frameHeight="331"/>
+	<SubTexture name="Gallery selected0029" x="1509" y="1141" width="503" height="257" frameX="-8" frameY="-69" frameWidth="519" frameHeight="331"/>
+</TextureAtlas>

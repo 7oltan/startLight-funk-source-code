@@ -1,0 +1,123 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				-5,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "idle"
+		},
+		{
+			"offsets": [
+				127,
+				-12
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "wizard left"
+		},
+		{
+			"offsets": [
+				-1,
+				-133
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "wizard down"
+		},
+		{
+			"offsets": [
+				24,
+				111
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "wizard up"
+		},
+		{
+			"offsets": [
+				-90,
+				-4
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "wizard right"
+		},
+		{
+			"offsets": [
+				174,
+				-7
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFTmiss",
+			"indices": [],
+			"name": "left miss"
+		},
+		{
+			"offsets": [
+				42,
+				-102
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWNmiss",
+			"indices": [],
+			"name": "down miss"
+		},
+		{
+			"offsets": [
+				58,
+				220
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUPmiss",
+			"indices": [],
+			"name": "up miss"
+		},
+		{
+			"offsets": [
+				-65,
+				-3
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHTmiss",
+			"indices": [],
+			"name": "right miss"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/wizardNastya",
+	"position": [
+		20,
+		290
+	],
+	"health_bar": "nastya",
+	"healthicon": "nastyaSG",
+	"flip_x": true,
+	"healthbar_colors": [
+		195,
+		0,
+		101
+	],
+	"camera_position": [
+		30,
+		10
+	],
+	"sing_duration": 4,
+	"scale": 1.2
+}

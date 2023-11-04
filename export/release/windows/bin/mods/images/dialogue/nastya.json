@@ -1,0 +1,89 @@
+{
+	"dialogue_pos": "left",
+	"position": [
+		-40,
+		-50
+	],
+	"scale": 1.35,
+	"animations": [
+		{
+			"loop_name": "blablastressed",
+			"idle_offsets": [
+				0,
+				0
+			],
+			"idle_name": "BF0",
+			"anim": "stressed",
+			"loop_offsets": [
+				0,
+				0
+			]
+		},
+		{
+			"loop_name": "blablahappy",
+			"idle_offsets": [
+				0,
+				0
+			],
+			"idle_name": "BF EXCITED0",
+			"anim": "happy",
+			"loop_offsets": [
+				0,
+				0
+			]
+		},
+		{
+			"loop_name": "wtf",
+			"idle_offsets": [
+				0,
+				0
+			],
+			"idle_name": "BF PISSED0",
+			"anim": "wtf",
+			"loop_offsets": [
+				0,
+				0
+			]
+		},
+		{
+			"loop_name": "blablachill",
+			"idle_offsets": [
+				0,
+				0
+			],
+			"idle_name": "BF PISSED0",
+			"anim": "chill",
+			"loop_offsets": [
+				0,
+				0
+			]
+		},
+		{
+			"loop_name": "blablaserious",
+			"idle_offsets": [
+				0,
+				0
+			],
+			"idle_name": "BF PISSED0",
+			"anim": "serious",
+			"loop_offsets": [
+				0,
+				0
+			]
+		},
+		{
+			"loop_name": "blabla0",
+			"idle_offsets": [
+				0,
+				0
+			],
+			"idle_name": "BF PISSED0",
+			"anim": "normal",
+			"loop_offsets": [
+				0,
+				0
+			]
+		}
+	],
+	"image": "nastya_dialogue"
+}

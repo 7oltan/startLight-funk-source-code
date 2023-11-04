@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Free texture packer v0.6.7 http://free-tex-packer.com
+-->
+<TextureAtlas imagePath="nastya_dialogue.png" width="3917" height="437">
+  <SubTexture name="blabla0001" x="4" y="4"  width="222.4" height="428.8" frameX="-255.20000000000002" frameY="-134.4" frameWidth="800" frameHeight="800"/>
+  <SubTexture name="blablaserious0007" x="234.4" y="4"  width="222.4" height="428.8" frameX="-255.20000000000002" frameY="-134.4" frameWidth="800" frameHeight="800"/>
+  <SubTexture name="blabla0003" x="464.8" y="4"  width="222.4" height="428" frameX="-254.4" frameY="-128.8" frameWidth="800" frameHeight="800"/>
+  <SubTexture name="blabla0005" x="695.2" y="4"  width="222.4" height="428" frameX="-254.4" frameY="-132" frameWidth="800" frameHeight="800"/>
+  <SubTexture name="blablachill0001" x="925.6" y="4"  width="222.4" height="428" frameX="-255.20000000000002" frameY="-134.4" frameWidth="800" frameHeight="800"/>
+  <SubTexture name="blablachill0003" x="1156" y="4"  width="222.4" height="428" frameX="-255.20000000000002" frameY="-129.6" frameWidth="800" frameHeight="800"/>
+  <SubTexture name="blablachill0005" x="1386.4" y="4"  width="222.4" height="428" frameX="-255.20000000000002" frameY="-133.6" frameWidth="800" frameHeight="800"/>
+  <SubTexture name="blablahappy0001" x="1616.8000000000002" y="4"  width="222.4" height="428" frameX="-255.20000000000002" frameY="-134.4" frameWidth="800" frameHeight="800"/>
+  <SubTexture name="blablahappy0003" x="1847.2" y="4"  width="222.4" height="428" frameX="-255.20000000000002" frameY="-129.6" frameWidth="800" frameHeight="800"/>
+  <SubTexture name="blablahappy0005" x="2077.6" y="4"  width="222.4" height="428" frameX="-255.20000000000002" frameY="-132.8" frameWidth="800" frameHeight="800"/>
+  <SubTexture name="blablaserious0001" x="2308" y="4"  width="222.4" height="428" frameX="-255.20000000000002" frameY="-134.4" frameWidth="800" frameHeight="800"/>
+  <SubTexture name="blablaserious0003" x="2538.4" y="4"  width="222.4" height="428" frameX="-254.4" frameY="-128.8" frameWidth="800" frameHeight="800"/>
+  <SubTexture name="blablaserious0005" x="2768.8" y="4"  width="222.4" height="428" frameX="-255.20000000000002" frameY="-132" frameWidth="800" frameHeight="800"/>
+  <SubTexture name="blablastressed0001" x="2999.2000000000003" y="4"  width="222.4" height="428" frameX="-255.20000000000002" frameY="-134.4" frameWidth="800" frameHeight="800"/>
+  <SubTexture name="blablastressed0003" x="3229.6000000000004" y="4"  width="222.4" height="428" frameX="-256" frameY="-128.8" frameWidth="800" frameHeight="800"/>
+  <SubTexture name="blablastressed0005" x="3460" y="4"  width="222.4" height="428" frameX="-256" frameY="-131.20000000000002" frameWidth="800" frameHeight="800"/>
+  <SubTexture name="wtf0001" x="3690.4" y="4"  width="222.4" height="428" frameX="-255.20000000000002" frameY="-134.4" frameWidth="800" frameHeight="800"/>
+  <SubTexture name="blabla0002" x="4" y="4"  width="222.4" height="428.8" frameX="-255.20000000000002" frameY="-134.4" frameWidth="800" frameHeight="800"/>
+  <SubTexture name="blabla0007" x="4" y="4"  width="222.4" height="428.8" frameX="-255.20000000000002" frameY="-134.4" frameWidth="800" frameHeight="800"/>
+  <SubTexture name="blabla0008" x="4" y="4"  width="222.4" height="428.8" frameX="-255.20000000000002" frameY="-134.4" frameWidth="800" frameHeight="800"/>
+  <SubTexture name="blabla0004" x="464.8" y="4"  width="222.4" height="428" frameX="-254.4" frameY="-128.8" frameWidth="800" frameHeight="800"/>
+  <SubTexture name="blabla0006" x="695.2" y="4"  width="222.4" height="428" frameX="-254.4" frameY="-132" frameWidth="800" frameHeight="800"/>
+  <SubTexture name="blablachill0002" x="925.6" y="4"  width="222.4" height="428" frameX="-255.20000000000002" frameY="-134.4" frameWidth="800" frameHeight="800"/>
+  <SubTexture name="blablachill0007" x="925.6" y="4"  width="222.4" height="428" frameX="-255.20000000000002" frameY="-134.4" frameWidth="800" frameHeight="800"/>
+  <SubTexture name="blablachill0008" x="925.6" y="4"  width="222.4" height="428" frameX="-255.20000000000002" frameY="-134.4" frameWidth="800" frameHeight="800"/>
+  <SubTexture name="blablachill0004" x="1156" y="4"  width="222.4" height="428" frameX="-255.20000000000002" frameY="-129.6" frameWidth="800" frameHeight="800"/>
+  <SubTexture name="blablachill0006" x="1386.4" y="4"  width="222.4" height="428" frameX="-255.20000000000002" frameY="-133.6" frameWidth="800" frameHeight="800"/>
+  <SubTexture name="blablahappy0002" x="1616.8000000000002" y="4"  width="222.4" height="428" frameX="-255.20000000000002" frameY="-134.4" frameWidth="800" frameHeight="800"/>
+  <SubTexture name="blablahappy0007" x="1616.8000000000002" y="4"  width="222.4" height="428" frameX="-255.20000000000002" frameY="-134.4" frameWidth="800" frameHeight="800"/>
+  <SubTexture name="blablahappy0008" x="1616.8000000000002" y="4"  width="222.4" height="428" frameX="-255.20000000000002" frameY="-134.4" frameWidth="800" frameHeight="800"/>
+  <SubTexture name="blablahappy0004" x="1847.2" y="4"  width="222.4" height="428" frameX="-255.20000000000002" frameY="-129.6" frameWidth="800" frameHeight="800"/>
+  <SubTexture name="blablahappy0006" x="2077.6" y="4"  width="222.4" height="428" frameX="-255.20000000000002" frameY="-132.8" frameWidth="800" frameHeight="800"/>
+  <SubTexture name="blablaserious0002" x="2308" y="4"  width="222.4" height="428" frameX="-255.20000000000002" frameY="-134.4" frameWidth="800" frameHeight="800"/>
+  <SubTexture name="blablaserious0004" x="2538.4" y="4"  width="222.4" height="428" frameX="-254.4" frameY="-128.8" frameWidth="800" frameHeight="800"/>
+  <SubTexture name="blablaserious0006" x="2768.8" y="4"  width="222.4" height="428" frameX="-255.20000000000002" frameY="-132" frameWidth="800" frameHeight="800"/>
+  <SubTexture name="blablaserious0008" x="234.4" y="4"  width="222.4" height="428.8" frameX="-255.20000000000002" frameY="-134.4" frameWidth="800" frameHeight="800"/>
+  <SubTexture name="blablastressed0002" x="2999.2000000000003" y="4"  width="222.4" height="428" frameX="-255.20000000000002" frameY="-134.4" frameWidth="800" frameHeight="800"/>
+  <SubTexture name="blablastressed0007" x="2999.2000000000003" y="4"  width="222.4" height="428" frameX="-255.20000000000002" frameY="-134.4" frameWidth="800" frameHeight="800"/>
+  <SubTexture name="blablastressed0008" x="2999.2000000000003" y="4"  width="222.4" height="428" frameX="-255.20000000000002" frameY="-134.4" frameWidth="800" frameHeight="800"/>
+  <SubTexture name="blablastressed0009" x="2999.2000000000003" y="4"  width="222.4" height="428" frameX="-255.20000000000002" frameY="-134.4" frameWidth="800" frameHeight="800"/>
+  <SubTexture name="blablastressed0004" x="3229.6000000000004" y="4"  width="222.4" height="428" frameX="-256" frameY="-128.8" frameWidth="800" frameHeight="800"/>
+  <SubTexture name="blablastressed0006" x="3460" y="4"  width="222.4" height="428" frameX="-256" frameY="-131.20000000000002" frameWidth="800" frameHeight="800"/>
+  <SubTexture name="wtf0002" x="3690.4" y="4"  width="222.4" height="428" frameX="-255.20000000000002" frameY="-134.4" frameWidth="800" frameHeight="800"/>
+</TextureAtlas>

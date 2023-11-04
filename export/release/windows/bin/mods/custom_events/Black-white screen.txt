@@ -1,0 +1,11 @@
+Change the background white
+and the characters black.
+
+For the eases list:
+https://api.haxeflixel.com/flixel/tweens/FlxEase.html
+
+Value 1: Duration (0 = Instant)
+Value 2: The type of ease to use (For example: QuadInOut)
+type "Reverse" to end the effect
+
+Made by Matirax Gun-Trigger

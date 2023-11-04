@@ -1,0 +1,34 @@
+{
+	"songs": [
+		[
+			"Kill-streak",
+			"purple",
+			[
+				146,
+				113,
+				256
+			]
+		]
+	],
+	"hiddenUntilUnlocked": false,
+	"hideFreeplay": false,
+	"galamix":true,
+	"weekCharacter":"sus",
+	"weekBackground": "snow",
+	"difficulties": "hard",
+	"weekCharacters": [
+		"purple",
+		"no-character",
+		"sustya"
+	],
+	"storyName": "Your New Week",
+	"weekName": "sus week",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
+	"hideStoryMode": false,
+	"weekBefore": "BonusWeek",
+	"startUnlocked": true
+}

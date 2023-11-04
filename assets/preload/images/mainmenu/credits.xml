@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="credits.png">
+	<!-- Created with Adobe Animate version 22.0.8.217 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="credits idle0000" x="0" y="0" width="279" height="153"/>
+	<SubTexture name="credits idle0001" x="0" y="0" width="279" height="153"/>
+	<SubTexture name="credits idle0002" x="0" y="0" width="279" height="153"/>
+	<SubTexture name="credits idle0003" x="0" y="0" width="279" height="153"/>
+	<SubTexture name="credits idle0004" x="279" y="0" width="279" height="153"/>
+	<SubTexture name="credits idle0005" x="279" y="0" width="279" height="153"/>
+	<SubTexture name="credits selected0000" x="558" y="0" width="327" height="181"/>
+	<SubTexture name="credits selected0001" x="558" y="0" width="327" height="181"/>
+	<SubTexture name="credits selected0002" x="0" y="181" width="319" height="175" frameX="-4" frameY="-3" frameWidth="327" frameHeight="181"/>
+	<SubTexture name="credits selected0003" x="0" y="181" width="319" height="175" frameX="-4" frameY="-3" frameWidth="327" frameHeight="181"/>
+	<SubTexture name="credits selected0004" x="319" y="181" width="319" height="175" frameX="-4" frameY="-3" frameWidth="327" frameHeight="181"/>
+	<SubTexture name="credits selected0005" x="319" y="181" width="319" height="175" frameX="-4" frameY="-3" frameWidth="327" frameHeight="181"/>
+	<SubTexture name="credits selected0006" x="638" y="181" width="319" height="175" frameX="-4" frameY="-3" frameWidth="327" frameHeight="181"/>
+	<SubTexture name="credits selected0007" x="638" y="181" width="319" height="175" frameX="-4" frameY="-3" frameWidth="327" frameHeight="181"/>
+	<SubTexture name="credits selected0008" x="0" y="181" width="319" height="175" frameX="-4" frameY="-3" frameWidth="327" frameHeight="181"/>
+	<SubTexture name="credits selected0009" x="0" y="181" width="319" height="175" frameX="-4" frameY="-3" frameWidth="327" frameHeight="181"/>
+	<SubTexture name="credits selected0010" x="319" y="181" width="319" height="175" frameX="-4" frameY="-3" frameWidth="327" frameHeight="181"/>
+	<SubTexture name="credits selected0011" x="319" y="181" width="319" height="175" frameX="-4" frameY="-3" frameWidth="327" frameHeight="181"/>
+	<SubTexture name="credits selected0012" x="638" y="181" width="319" height="175" frameX="-4" frameY="-3" frameWidth="327" frameHeight="181"/>
+	<SubTexture name="credits selected0013" x="638" y="181" width="319" height="175" frameX="-4" frameY="-3" frameWidth="327" frameHeight="181"/>
+	<SubTexture name="credits selected0014" x="0" y="181" width="319" height="175" frameX="-4" frameY="-3" frameWidth="327" frameHeight="181"/>
+	<SubTexture name="credits selected0015" x="0" y="181" width="319" height="175" frameX="-4" frameY="-3" frameWidth="327" frameHeight="181"/>
+	<SubTexture name="credits selected0016" x="319" y="181" width="319" height="175" frameX="-4" frameY="-3" frameWidth="327" frameHeight="181"/>
+	<SubTexture name="credits selected0017" x="319" y="181" width="319" height="175" frameX="-4" frameY="-3" frameWidth="327" frameHeight="181"/>
+	<SubTexture name="credits selected0018" x="638" y="181" width="319" height="175" frameX="-4" frameY="-3" frameWidth="327" frameHeight="181"/>
+	<SubTexture name="credits selected0019" x="638" y="181" width="319" height="175" frameX="-4" frameY="-3" frameWidth="327" frameHeight="181"/>
+	<SubTexture name="credits selected0020" x="0" y="181" width="319" height="175" frameX="-4" frameY="-3" frameWidth="327" frameHeight="181"/>
+	<SubTexture name="credits selected0021" x="0" y="181" width="319" height="175" frameX="-4" frameY="-3" frameWidth="327" frameHeight="181"/>
+	<SubTexture name="credits selected0022" x="319" y="181" width="319" height="175" frameX="-4" frameY="-3" frameWidth="327" frameHeight="181"/>
+	<SubTexture name="credits selected0023" x="319" y="181" width="319" height="175" frameX="-4" frameY="-3" frameWidth="327" frameHeight="181"/>
+	<SubTexture name="credits selected0024" x="638" y="181" width="319" height="175" frameX="-4" frameY="-3" frameWidth="327" frameHeight="181"/>
+	<SubTexture name="credits selected0025" x="638" y="181" width="319" height="175" frameX="-4" frameY="-3" frameWidth="327" frameHeight="181"/>
+	<SubTexture name="credits selected0026" x="0" y="181" width="319" height="175" frameX="-4" frameY="-3" frameWidth="327" frameHeight="181"/>
+	<SubTexture name="credits selected0027" x="0" y="181" width="319" height="175" frameX="-4" frameY="-3" frameWidth="327" frameHeight="181"/>
+	<SubTexture name="credits selected0028" x="319" y="181" width="319" height="175" frameX="-4" frameY="-3" frameWidth="327" frameHeight="181"/>
+	<SubTexture name="credits selected0029" x="319" y="181" width="319" height="175" frameX="-4" frameY="-3" frameWidth="327" frameHeight="181"/>
+</TextureAtlas>
