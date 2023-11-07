@@ -148,7 +148,8 @@ class MainMenuState extends MusicBeatState {
                 persistentUpdate = false;
                 WeekData.reloadWeekFiles(false);
                 Mods.currentModDirectory = '';
-                PlayState.storyWeek = 4;
+                //trace(WeekData.weeksList);
+                PlayState.storyWeek = WeekData.weeksList.indexOf("weekspells");
                 Difficulty.loadFromWeek();
                 var songLowercase:String = Paths.formatToSongPath('shadow-government');
                 var poop:String = Highscore.formatSong(songLowercase, 0);

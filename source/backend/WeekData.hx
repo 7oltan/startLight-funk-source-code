@@ -207,7 +207,23 @@ class WeekData {
 
 	//Used on LoadingState, nothing really too relevant
 	public static function getCurrentWeek():WeekData {
-		return weeksLoaded.get(weeksList[PlayState.storyWeek]);
+		var weekInt = PlayState.storyWeek;
+		if(PlayState.storyWeek < weeksList.length){
+			return weeksLoaded.get(weeksList[PlayState.storyWeek]);
+		} else {
+			var fakeWeek:WeekData = null;
+			reloadWeekFiles();
+			//try it again:
+			if(PlayState.storyWeek < weeksList.length){
+				trace("second time's the charm");
+				return weeksLoaded.get(weeksList[PlayState.storyWeek]);
+			}
+			else{
+				trace("bruh here's some fake stuff ig");
+				fakeWeek = new WeekData(createWeekFile(),"fakeWeek");
+			}
+			return fakeWeek!=null?fakeWeek:weeksLoaded.get(weeksList[PlayState.storyWeek]);
+		}
 	}
 
 	public static function setDirectoryFromWeek(?data:WeekData = null) {

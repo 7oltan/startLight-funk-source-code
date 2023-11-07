@@ -481,6 +481,9 @@ class FlxSound extends FlxBasic
 		else if (playing) // Already playing sound
 			return this;
 
+		if(length <= 0)
+			return this;
+
 		if (_paused)
 			resume();
 		else
