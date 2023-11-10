@@ -1,24 +1,35 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--
-Created with Free texture packer v0.6.7 http://free-tex-packer.com
--->
-<TextureAtlas imagePath="logoBumpin.png" width="3670" height="808">
-  <SubTexture name="logo bumpin0007" x="3" y="3"  width="612" height="403.2" frameX="-24" frameY="-380.4" frameWidth="648" frameHeight="1152"/>
-  <SubTexture name="logo bumpin00010" x="621" y="3"  width="605.4" height="399" frameX="-27" frameY="-383.4" frameWidth="648" frameHeight="1152"/>
-  <SubTexture name="logo bumpin0001" x="1232.3999999999999" y="3"  width="604.1999999999999" height="397.8" frameX="-27.599999999999998" frameY="-377.4" frameWidth="648" frameHeight="1152"/>
-  <SubTexture name="logo bumpin00011" x="1842.6" y="3"  width="604.1999999999999" height="397.8" frameX="-27.599999999999998" frameY="-382.2" frameWidth="648" frameHeight="1152"/>
-  <SubTexture name="logo bumpin00013" x="2452.7999999999997" y="3"  width="604.1999999999999" height="397.8" frameX="-27.599999999999998" frameY="-380.4" frameWidth="648" frameHeight="1152"/>
-  <SubTexture name="logo bumpin00015" x="3063" y="3"  width="604.1999999999999" height="397.8" frameX="-27.599999999999998" frameY="-376.8" frameWidth="648" frameHeight="1152"/>
-  <SubTexture name="logo bumpin0003" x="1232.3999999999999" y="406.8"  width="604.1999999999999" height="397.8" frameX="-27.599999999999998" frameY="-378.59999999999997" frameWidth="648" frameHeight="1152"/>
-  <SubTexture name="logo bumpin0005" x="621" y="408"  width="600.6" height="395.4" frameX="-29.4" frameY="-381" frameWidth="648" frameHeight="1152"/>
-  <SubTexture name="logo bumpin00017" x="1232.3999999999999" y="3"  width="604.1999999999999" height="397.8" frameX="-27.599999999999998" frameY="-377.4" frameWidth="648" frameHeight="1152"/>
-  <SubTexture name="logo bumpin00018" x="1232.3999999999999" y="3"  width="604.1999999999999" height="397.8" frameX="-27.599999999999998" frameY="-377.4" frameWidth="648" frameHeight="1152"/>
-  <SubTexture name="logo bumpin0002" x="1232.3999999999999" y="3"  width="604.1999999999999" height="397.8" frameX="-27.599999999999998" frameY="-377.4" frameWidth="648" frameHeight="1152"/>
-  <SubTexture name="logo bumpin0009" x="621" y="3"  width="605.4" height="399" frameX="-27" frameY="-383.4" frameWidth="648" frameHeight="1152"/>
-  <SubTexture name="logo bumpin00012" x="1842.6" y="3"  width="604.1999999999999" height="397.8" frameX="-27.599999999999998" frameY="-382.2" frameWidth="648" frameHeight="1152"/>
-  <SubTexture name="logo bumpin00014" x="2452.7999999999997" y="3"  width="604.1999999999999" height="397.8" frameX="-27.599999999999998" frameY="-380.4" frameWidth="648" frameHeight="1152"/>
-  <SubTexture name="logo bumpin00016" x="3063" y="3"  width="604.1999999999999" height="397.8" frameX="-27.599999999999998" frameY="-376.8" frameWidth="648" frameHeight="1152"/>
-  <SubTexture name="logo bumpin0004" x="1232.3999999999999" y="406.8"  width="604.1999999999999" height="397.8" frameX="-27.599999999999998" frameY="-378.59999999999997" frameWidth="648" frameHeight="1152"/>
-  <SubTexture name="logo bumpin0006" x="621" y="408"  width="600.6" height="395.4" frameX="-29.4" frameY="-381" frameWidth="648" frameHeight="1152"/>
-  <SubTexture name="logo bumpin0008" x="3" y="3"  width="612" height="403.2" frameX="-24" frameY="-380.4" frameWidth="648" frameHeight="1152"/>
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="Start_Screen_Assets.png">
+	<!-- Created with Adobe Animate version 22.0.0.93 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="Start Screen BG art0000" x="0" y="0" width="733" height="704" frameX="-33" frameY="-31" frameWidth="799" frameHeight="766"/>
+	<SubTexture name="Start Screen BG art0001" x="733" y="0" width="799" height="766"/>
+	<SubTexture name="Start Screen BG art0002" x="733" y="0" width="799" height="766"/>
+	<SubTexture name="Start Screen BG art0003" x="0" y="766" width="786" height="754" frameX="-6" frameY="-6" frameWidth="799" frameHeight="766"/>
+	<SubTexture name="Start Screen BG art0004" x="0" y="766" width="786" height="754" frameX="-6" frameY="-6" frameWidth="799" frameHeight="766"/>
+	<SubTexture name="Start Screen BG art0005" x="786" y="766" width="767" height="736" frameX="-16" frameY="-15" frameWidth="799" frameHeight="766"/>
+	<SubTexture name="Start Screen BG art0006" x="786" y="766" width="767" height="736" frameX="-16" frameY="-15" frameWidth="799" frameHeight="766"/>
+	<SubTexture name="Start Screen BG art0007" x="786" y="766" width="767" height="736" frameX="-16" frameY="-15" frameWidth="799" frameHeight="766"/>
+	<SubTexture name="Start Screen BG art0008" x="786" y="766" width="767" height="736" frameX="-16" frameY="-15" frameWidth="799" frameHeight="766"/>
+	<SubTexture name="Start Screen BG art0009" x="786" y="766" width="767" height="736" frameX="-16" frameY="-15" frameWidth="799" frameHeight="766"/>
+	<SubTexture name="Start Screen BG art0010" x="786" y="766" width="767" height="736" frameX="-16" frameY="-15" frameWidth="799" frameHeight="766"/>
+	<SubTexture name="Start Screen BG art0011" x="786" y="766" width="767" height="736" frameX="-16" frameY="-15" frameWidth="799" frameHeight="766"/>
+	<SubTexture name="Start Screen BG art0012" x="786" y="766" width="767" height="736" frameX="-16" frameY="-15" frameWidth="799" frameHeight="766"/>
+	<SubTexture name="Start Screen BG art0013" x="786" y="766" width="767" height="736" frameX="-16" frameY="-15" frameWidth="799" frameHeight="766"/>
+	<SubTexture name="Start Screen BG art0014" x="786" y="766" width="767" height="736" frameX="-16" frameY="-15" frameWidth="799" frameHeight="766"/>
+	<SubTexture name="Start Screen BG art0015" x="786" y="766" width="767" height="736" frameX="-16" frameY="-15" frameWidth="799" frameHeight="766"/>
+	<SubTexture name="Start Screen BG art0016" x="786" y="766" width="767" height="736" frameX="-16" frameY="-15" frameWidth="799" frameHeight="766"/>
+	<SubTexture name="Start Screen BG art0017" x="786" y="766" width="767" height="736" frameX="-16" frameY="-15" frameWidth="799" frameHeight="766"/>
+	<SubTexture name="Start Screen BG art0018" x="786" y="766" width="767" height="736" frameX="-16" frameY="-15" frameWidth="799" frameHeight="766"/>
+	<SubTexture name="Start Screen BG art0019" x="786" y="766" width="767" height="736" frameX="-16" frameY="-15" frameWidth="799" frameHeight="766"/>
+	<SubTexture name="Start Screen BG art0020" x="786" y="766" width="767" height="736" frameX="-16" frameY="-15" frameWidth="799" frameHeight="766"/>
+	<SubTexture name="Start Screen BG art0021" x="786" y="766" width="767" height="736" frameX="-16" frameY="-15" frameWidth="799" frameHeight="766"/>
+	<SubTexture name="Start Screen BG art0022" x="786" y="766" width="767" height="736" frameX="-16" frameY="-15" frameWidth="799" frameHeight="766"/>
+	<SubTexture name="Start Screen BG art0023" x="786" y="766" width="767" height="736" frameX="-16" frameY="-15" frameWidth="799" frameHeight="766"/>
+	<SubTexture name="Start Screen BG art0024" x="786" y="766" width="767" height="736" frameX="-16" frameY="-15" frameWidth="799" frameHeight="766"/>
+	<SubTexture name="Start Screen BG art0025" x="786" y="766" width="767" height="736" frameX="-16" frameY="-15" frameWidth="799" frameHeight="766"/>
+	<SubTexture name="Start Screen BG art0026" x="786" y="766" width="767" height="736" frameX="-16" frameY="-15" frameWidth="799" frameHeight="766"/>
+	<SubTexture name="Start Screen BG art0027" x="786" y="766" width="767" height="736" frameX="-16" frameY="-15" frameWidth="799" frameHeight="766"/>
+	<SubTexture name="Start Screen BG art0028" x="786" y="766" width="767" height="736" frameX="-16" frameY="-15" frameWidth="799" frameHeight="766"/>
+	<SubTexture name="Start Screen BG art0029" x="786" y="766" width="767" height="736" frameX="-16" frameY="-15" frameWidth="799" frameHeight="766"/>
 </TextureAtlas>

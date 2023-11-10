@@ -4,6 +4,7 @@ package states;
 import sys.FileSystem;
 import sys.io.File;
 #end
+import backend.*;
 
 import objects.AttachedSprite;
 
@@ -22,6 +23,10 @@ class CreditsState extends MusicBeatState
 	var widthOFnames:Int = 420;
 
 	var roleText:Alphabet;
+
+	var dog:FlxSprite;
+
+	var oldMouse:Bool;
 	override function create()
 	{
 		#if desktop
@@ -30,15 +35,16 @@ class CreditsState extends MusicBeatState
 		#end
 
 		persistentUpdate = true;
+		oldMouse = FlxG.mouse.visible;
+		FlxG.mouse.visible = true;
 		
 		var bg:FlxSprite = new FlxSprite().loadGraphic(Paths.image('creditsMenu-bg'));
 		bg.antialiasing = ClientPrefs.data.antialiasing;
 		bg.screenCenter();
 		add(bg);
 
-		
 		roleText = new Alphabet(850, 30, 'when is this mod gonna be done im so sick of this', true);
-		roleText.setScale(0.8);
+		roleText.setScale(0.57);
 		add(roleText);
 
 		//add(new FlxSprite(0,0).makeGraphic(widthOFnames,FlxG.height));//testing -7oltan <3
@@ -49,27 +55,29 @@ class CreditsState extends MusicBeatState
 		#if MODS_ALLOWED
 		for (mod in Mods.parseList().enabled) pushModCreditsToList(mod);
 		#end
-
-		var defaultList:Array<Array<String>> = [ //Name - Icon name - Description - Link - BG Color
-			['grimurex',				'Musician',			'Playing with matches is just a rite of passage for every child',		'http://grimurex.com/'],
-			['L-C 380',			'Concept Artist',			'I love Coca Cola',		'https://twitter.com/Lord_380'],
-			['TheWinterReaper',		'Concept Artist',		'Idk why im here.',										'https://twitter.com/ThWinterReaper'],
-			['Nosk-Artist',		'Background Artist',		'speedrunned the bg art',							'https://twitter.com/nosk_artist/'],
-			['spike',		'Charter\nMain Composer\nSprite Artist',	"i wasn't paid enough.",		'https://twitter.com/FunkinTraveller'],
-			['etoile',				'Director',			'this went from heaven to hell',			'https://twitter.com/____etoiles____',],
-			['ch33rymia',		'Artist',	"FUCKINGH BBBNNUUYYY",							'https://twitter.com/cheerymia'],
-			['PhantomArcade',		'phantomarcade',	"Animator of Friday Night Funkin'",								'https://twitter.com/PhantomArcade3K',	'FADC45'],
-			['evilsk8r',			'evilsk8r',			"Artist of Friday Night Funkin'",								'https://twitter.com/evilsk8r',			'5ABD4B'],
-			['kawaisprite',			'kawaisprite',		"Composer of Friday Night Funkin'",								'https://twitter.com/kawaisprite',		'378FC7']
-		];
 		
+		var defaultList:Array<Array<String>> = [ //Name - Icon name - Description - Link - BG Color
+			['etoile',				'Director',			'this went from heaven to hell',			'https://twitter.com/____etoiles____',],
+			['aqua-spike',		'Charter/Main Composer/Artist',	"i wasn't paid enough.",		'https://twitter.com/FunkinTraveller'],
+			['ch33rymia',		'Artist',	"FUCKINGH BBBNNUUYYY",							'https://twitter.com/cheerymia'],
+			['chalice',			'Artist/Composer',		"My brain is The size of a squirrel :wawawa:"],
+			['justCris',			'Charter',			"I am Cris it rhymes with piss",								'https://twitter.com/JustCris404'],
+			['bycach_broy',		'Charter',	"lazy af charter",								'https://www.youtube.com/channel/UC9myx139gYlCuo0rKfq6zBA'],
+			['7oltan',			'Main Coder',			"i made this mod hell <3",								'https://www.youtube.com/channel/UCw7UHX2WaBrNQnEyWENt92w'],
+			['whatify',			'Coder',		"Hi, I'm Saul Goodman. Did you know that you have rights? The Constitution says you do. And so do I.",								'https://youtube.com/@whatify9636'],
+			['grimurex',				'Composer',			'Playing with matches is just a rite of passage for every child',		'http://grimurex.com/'],
+			['Nosk-Artist',		'Background Artist',		'speedrunned the bg art',							'https://twitter.com/nosk_artist/'],
+			['TheWinterReaper',		'Concept Artist',		'Idk why im here.',										'https://twitter.com/ThWinterReaper'],
+			['L-C 380',			'Concept Artist',			'I love Coca Cola',		'https://twitter.com/Lord_380']
+		];
+
 		for(i in defaultList) 
 			creditsStuff.push(i);
 	
 		for (i in 0...creditsStuff.length)
 		{
-			var optionText:Alphabet = new Alphabet(widthOFnames/2, ((i/creditsStuff.length)*(FlxG.height-100))+50, creditsStuff[i][0], true);
-			optionText.setScale(0.6);
+			var optionText:Alphabet = new Alphabet(widthOFnames/2, ((i/creditsStuff.length)*(FlxG.height-60))+30, creditsStuff[i][0], true);
+			optionText.setScale(0.55);
 			optionText.ID = i;
 			optionText.alignment = CENTERED;
 			grpOptions.add(optionText);
@@ -95,6 +103,17 @@ class CreditsState extends MusicBeatState
 		//descText.borderSize = 2.4;
 		add(descText);
 
+		
+		dog = new FlxSprite(880,200).loadGraphic(Paths.image('WOOF'),true,462,225);
+		dog.antialiasing = ClientPrefs.data.antialiasing;
+		dog.animation.add('idle',[0,1],1);
+		dog.animation.play('idle');
+		dog.updateHitbox();
+		dog.x = FlxG.width+dog.width;
+		dog.y = FlxG.height-dog.height;
+		FlxTween.tween(dog,{x:0-dog.width},20);
+		add(dog);
+
 		changeSelection();
 		super.create();
 	}
@@ -104,9 +123,7 @@ class CreditsState extends MusicBeatState
 	override function update(elapsed:Float)
 	{
 		if (FlxG.sound.music.volume < 0.7)
-		{
 			FlxG.sound.music.volume += 0.5 * FlxG.elapsed;
-		}
 
 		if(!quitting)
 		{
@@ -142,15 +159,40 @@ class CreditsState extends MusicBeatState
 				}
 			}
 
-			if(controls.ACCEPT && (creditsStuff[curSelected][3] == null || creditsStuff[curSelected][3].length > 4)) {
-				CoolUtil.browserLoad(creditsStuff[curSelected][3]);
+			if(controls.ACCEPT) {
+				if(creditsStuff[curSelected][3] == null)
+					FlxG.sound.play(Paths.sound('fart-with-reverb'));
+
+				else
+					CoolUtil.browserLoad(creditsStuff[curSelected][3]);
 			}
 			if (controls.BACK)
 			{
 				FlxG.sound.play(Paths.sound('cancelMenu'));
 				MusicBeatState.switchState(new MainMenuState());
+				FlxG.mouse.visible = oldMouse;
 				quitting = true;
 			}
+
+			if(FlxG.mouse.overlaps(dog)){
+				dog.alpha = 1;
+				if(FlxG.mouse.justPressed){
+					PlayState.isStoryMode = false;
+					persistentUpdate = false;
+					WeekData.reloadWeekFiles(false);
+					Mods.currentModDirectory = '';
+					//trace(WeekData.weeksList);
+					PlayState.storyWeek = WeekData.weeksList.indexOf("boner");
+					Difficulty.loadFromWeek();
+					var songLowercase:String = Paths.formatToSongPath('boner');
+					var poop:String = Highscore.formatSong(songLowercase, 0);
+					
+					PlayState.SONG = Song.loadFromJson(poop, songLowercase);
+					PlayState.storyDifficulty = 0;
+					LoadingState.loadAndSwitchState(new PlayState());
+				}
+			}else
+				dog.alpha = 0.6;
 		}
 		
 		super.update(elapsed);
@@ -189,10 +231,10 @@ class CreditsState extends MusicBeatState
 		}
 
 		roleText.text = creditsStuff[curSelected][1];
-		roleText.x = 850-(roleText.width/2);
+		roleText.x = 870-(roleText.width/2);
 
 		descText.text = creditsStuff[curSelected][2];
-		descText.x = 850-(descText.width/2);
+		descText.x = 870-(descText.width/2);
 	}
 
 	#if MODS_ALLOWED

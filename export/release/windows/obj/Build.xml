@@ -1596,6 +1596,7 @@
    <depend name="include/flixel/util/IFlxPooled.h"/>
    <depend name="include/haxe/Exception.h"/>
    <depend name="include/haxe/Log.h"/>
+   <depend name="include/objects/AttachedSprite.h"/>
    <depend name="include/openfl/events/EventDispatcher.h"/>
    <depend name="include/openfl/events/IEventDispatcher.h"/>
    <depend name="include/openfl/media/Sound.h"/>
@@ -1771,7 +1772,6 @@
    <depend name="include/flixel/system/frontEnds/SoundFrontEnd.h"/>
    <depend name="include/flixel/util/IFlxDestroyable.h"/>
    <depend name="include/haxe/IMap.h"/>
-   <depend name="include/haxe/Log.h"/>
    <depend name="include/haxe/ds/StringMap.h"/>
    <depend name="include/openfl/events/EventDispatcher.h"/>
    <depend name="include/openfl/events/IEventDispatcher.h"/>
@@ -1831,7 +1831,6 @@
    <depend name="include/flixel/text/FlxText.h"/>
    <depend name="include/flixel/text/FlxTextBorderStyle.h"/>
    <depend name="include/flixel/tweens/FlxTween.h"/>
-   <depend name="include/flixel/tweens/misc/ColorTween.h"/>
    <depend name="include/flixel/util/IFlxDestroyable.h"/>
    <depend name="include/flixel/util/IFlxPooled.h"/>
    <depend name="include/flixel/util/_FlxColor/FlxColor_Impl_.h"/>
@@ -1840,6 +1839,7 @@
    <depend name="include/haxe/Log.h"/>
    <depend name="include/haxe/ds/StringMap.h"/>
    <depend name="include/objects/Alphabet.h"/>
+   <depend name="include/objects/BGSprite.h"/>
    <depend name="include/objects/HealthIcon.h"/>
    <depend name="include/openfl/events/EventDispatcher.h"/>
    <depend name="include/openfl/events/IEventDispatcher.h"/>
@@ -1894,12 +1894,17 @@
    <depend name="include/StringTools.h"/>
    <depend name="include/backend/ClientPrefs.h"/>
    <depend name="include/backend/Controls.h"/>
+   <depend name="include/backend/Difficulty.h"/>
    <depend name="include/backend/DiscordClient.h"/>
+   <depend name="include/backend/Highscore.h"/>
    <depend name="include/backend/Mods.h"/>
    <depend name="include/backend/MusicBeatState.h"/>
    <depend name="include/backend/Paths.h"/>
    <depend name="include/backend/SaveVariables.h"/>
+   <depend name="include/backend/Song.h"/>
+   <depend name="include/backend/WeekData.h"/>
    <depend name="include/flixel/FlxBasic.h"/>
+   <depend name="include/flixel/FlxCamera.h"/>
    <depend name="include/flixel/FlxG.h"/>
    <depend name="include/flixel/FlxObject.h"/>
    <depend name="include/flixel/FlxSprite.h"/>
@@ -1909,14 +1914,20 @@
    <depend name="include/flixel/addons/ui/FlxUIState.h"/>
    <depend name="include/flixel/addons/ui/interfaces/IEventGetter.h"/>
    <depend name="include/flixel/addons/ui/interfaces/IFlxUIState.h"/>
+   <depend name="include/flixel/animation/FlxAnimationController.h"/>
    <depend name="include/flixel/graphics/FlxGraphic.h"/>
    <depend name="include/flixel/group/FlxTypedGroup.h"/>
    <depend name="include/flixel/group/FlxTypedSpriteGroup.h"/>
    <depend name="include/flixel/input/FlxBaseKeyList.h"/>
+   <depend name="include/flixel/input/FlxInput.h"/>
    <depend name="include/flixel/input/FlxKeyManager.h"/>
+   <depend name="include/flixel/input/FlxPointer.h"/>
+   <depend name="include/flixel/input/IFlxInput.h"/>
    <depend name="include/flixel/input/IFlxInputManager.h"/>
    <depend name="include/flixel/input/keyboard/FlxKeyList.h"/>
    <depend name="include/flixel/input/keyboard/FlxKeyboard.h"/>
+   <depend name="include/flixel/input/mouse/FlxMouse.h"/>
+   <depend name="include/flixel/input/mouse/FlxMouseButton.h"/>
    <depend name="include/flixel/math/FlxBasePoint.h"/>
    <depend name="include/flixel/sound/FlxSound.h"/>
    <depend name="include/flixel/system/FlxSoundGroup.h"/>
@@ -1938,7 +1949,9 @@
    <depend name="include/openfl/media/Sound.h"/>
    <depend name="include/openfl/net/URLRequest.h"/>
    <depend name="include/states/CreditsState.h"/>
+   <depend name="include/states/LoadingState.h"/>
    <depend name="include/states/MainMenuState.h"/>
+   <depend name="include/states/PlayState.h"/>
    <depend name="include/sys/FileSystem.h"/>
    <depend name="include/sys/io/File.h"/>
   </file>
@@ -14741,7 +14754,6 @@
    <depend name="include/flixel/addons/ui/interfaces/IFlxUIState.h"/>
    <depend name="include/flixel/group/FlxTypedGroup.h"/>
    <depend name="include/flixel/util/IFlxDestroyable.h"/>
-   <depend name="include/haxe/Log.h"/>
    <depend name="include/states/PlayState.h"/>
   </file>
   <file name="src/backend/CustomFadeTransition.cpp" >

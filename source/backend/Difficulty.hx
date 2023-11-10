@@ -29,7 +29,6 @@ class Difficulty
 	inline public static function loadFromWeek(week:WeekData = null)
 	{
 		if(week == null) week = WeekData.getCurrentWeek();
-		trace(week.fileName);
 		var diffStr:String = week.difficulties;
 		if(diffStr != null && diffStr.length > 0)
 		{

@@ -580,7 +580,7 @@ HXLINE( 219)			_hx_tmp4 = ::backend::Paths_obj::getPath(((HX_("images/",77,50,74
             		}
 HXDLIN( 219)		_hx_tmp2->set_frames(::flixel::graphics::frames::FlxAtlasFrames_obj::fromSparrow(_hx_tmp3,_hx_tmp4));
 HXLINE( 220)		this->logoBl->set_antialiasing(::backend::ClientPrefs_obj::data->antialiasing);
-HXLINE( 222)		this->logoBl->animation->addByPrefix(HX_("bump",f6,0f,20,41),HX_("logo bumpin",70,a1,0b,72),24,false,null(),null());
+HXLINE( 222)		this->logoBl->animation->addByPrefix(HX_("bump",f6,0f,20,41),HX_("",00,00,00,00),24,false,null(),null());
 HXLINE( 223)		this->logoBl->animation->play(HX_("bump",f6,0f,20,41),null(),null(),null());
 HXLINE( 224)		this->logoBl->updateHitbox();
 HXLINE( 228)		if (::backend::ClientPrefs_obj::data->shaders) {

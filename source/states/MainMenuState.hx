@@ -136,9 +136,11 @@ class MainMenuState extends MusicBeatState {
 		if (controls.ACCEPT)
             startSwitchin(items[curSelected].state);
 
+        var isSelecting:Bool = false;
         itemGroup.forEach(function(button:FlxSprite){
             if(items[button.ID].isMouse){
                 if(FlxG.mouse.overlaps(button)){
+                    isSelecting = true;
                     button.offset.set(items[button.ID].offsetSelected[0],items[button.ID].offsetSelected[1]);
                     button.animation.play('selected');
 
@@ -160,6 +162,13 @@ class MainMenuState extends MusicBeatState {
                 
             }
         });
+
+        if(!isSelecting){
+            var button = itemGroup.members[curSelected];
+            hand.setPosition(button.x+(button.width/2)-(hand.width/2),button.y-25-150);
+            hand.angle = 0;
+            hand.scrollFactor.set(button.scrollFactor.x,button.scrollFactor.y);
+        }
 
         //shadow wizard money gang shit
     

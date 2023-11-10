@@ -171,19 +171,27 @@ null
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_citybg_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_controllertype_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_credits_7oltan_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_credits_aqua_spike_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_credits_bycach_broy_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_credits_ch33rymia_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_credits_chalice_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_credits_etoile_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_credits_grimurex_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_credits_justcris_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_credits_l_c_380_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_credits_lavenderflamess_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_credits_missing_icon_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_credits_nosk_artist_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_credits_spike_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_credits_thewinterreaper_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_creditsmenu_bg_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_dialogue_bf_json extends null { }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_dialogue_gf_json extends null { }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_freeplay_bg_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_freeplay_freeplayelements_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_freeplay_freeplayelements_xml extends null { }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_freeplay_freeplayratings_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_freeplay_freeplayratings_xml extends null { }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_freeplay_song_bar_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_galamixmenu_sus_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_galamixmenu_whitty_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_gallery_bg_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
@@ -208,6 +216,8 @@ null
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_mainmenu_gallery_xml extends null { }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_mainmenu_handselector_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_mainmenu_lock_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_mainmenu_oldoptions_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_mainmenu_oldoptions_xml extends null { }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_mainmenu_options_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_mainmenu_options_xml extends null { }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_mainmenu_sin_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
@@ -241,16 +251,17 @@ null
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_titleenter_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_titleenter_xml extends null { }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_unknownmod_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_woof_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_music_freakymenu_ogg extends null { }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_music_offsetsong_ogg extends null { }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_sounds_cancelmenu_ogg extends null { }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_sounds_confirmmenu_ogg extends null { }
+@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_sounds_fart_with_reverb_ogg extends null { }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_sounds_intro1_pixel_ogg extends null { }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_sounds_intro2_pixel_ogg extends null { }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_sounds_intro3_pixel_ogg extends null { }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_sounds_introgo_pixel_ogg extends null { }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_sounds_scrollmenu_ogg extends null { }
-@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_weeks_tutorial_json extends null { }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_weeks_weeklist_txt extends null { }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_videos_put_your_videos_here_txt extends null { }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_songs_tutorial_inst_ogg extends null { }

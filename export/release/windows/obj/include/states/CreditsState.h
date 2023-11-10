@@ -69,6 +69,8 @@ class HXCPP_CLASS_ATTRIBUTES CreditsState_obj : public  ::backend::MusicBeatStat
 		Float offsetThing;
 		int widthOFnames;
 		 ::objects::Alphabet roleText;
+		 ::flixel::FlxSprite dog;
+		bool oldMouse;
 		void create();
 
 		bool quitting;

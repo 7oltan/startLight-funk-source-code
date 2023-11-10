@@ -20,6 +20,7 @@ HX_DECLARE_CLASS4(flixel,addons,ui,interfaces,IEventGetter)
 HX_DECLARE_CLASS4(flixel,addons,ui,interfaces,IFlxUIState)
 HX_DECLARE_CLASS2(flixel,group,FlxTypedGroup)
 HX_DECLARE_CLASS2(flixel,util,IFlxDestroyable)
+HX_DECLARE_CLASS1(objects,AttachedSprite)
 HX_DECLARE_CLASS1(states,MainMenuState)
 HX_DECLARE_CLASS1(states,MenuItem)
 
@@ -66,6 +67,7 @@ class HXCPP_CLASS_ATTRIBUTES MainMenuState_obj : public  ::backend::MusicBeatSta
 		 ::flixel::FlxSprite hand;
 		::Array< ::Dynamic> items;
 		 ::flixel::group::FlxTypedGroup itemGroup;
+		 ::objects::AttachedSprite fakeOptionsButton;
 		int curSelected;
 		 ::flixel::FlxObject camFollow;
 		bool selected;

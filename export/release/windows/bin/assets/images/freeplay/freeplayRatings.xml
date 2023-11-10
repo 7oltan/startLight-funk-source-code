@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Funkin Packer v0.1.2 https://neeeoo.github.io/funkin-packer/
+-->
+<TextureAtlas imagePath="freeplayRatings.png" width="543" height="369">
+	<SubTexture name="SICK" x="7" y="7" width="305" height="168" frameX="-1094" frameY="-3" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="OK" x="7" y="189" width="219" height="173" frameX="-1145" frameY="-0" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="FC" x="326" y="7" width="210" height="133" frameX="-1192" frameY="-36" frameWidth="1920" frameHeight="1080"/>
+</TextureAtlas>
