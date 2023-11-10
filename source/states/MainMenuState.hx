@@ -15,6 +15,7 @@ class MainMenuState extends MusicBeatState {
     var hand:FlxSprite;
     var items:Array<MenuItem>=[];
     var itemGroup:FlxTypedGroup<FlxSprite>;
+    var fakeOptionsButton:objects.AttachedSprite;
     var curSelected:Int = 0;
 	var camFollow:FlxObject;
     var selected:Bool = false;
@@ -51,13 +52,17 @@ class MainMenuState extends MusicBeatState {
         addItem('Gallery',-100, 100,[54,90],new GalleryMenuState());
         addItem('storymode',500, 0,[64,69],new StoryMenuState());
         addItem('freeplay',1100, 0,[64,64],new FreeplayState());
-        addItem('options',-300,660,[5,3],new OptionsState(),true);
+        addItem('options',-300,660+62,[5,3],new OptionsState(),true);
         addItem('credits',-260,550,[22,12],new CreditsState(),true);
         addItem('G',1200,600,[22,224],new GalamixMenuState(),true);
 
+        fakeOptionsButton = new objects.AttachedSprite('mainmenu/OLDoptions', 'options idle');
+        add(fakeOptionsButton);
+        
         itemGroup = new FlxTypedGroup<FlxSprite>();
         add(itemGroup);
-
+        
+                
         for(i in 0...items.length){      
             var button:FlxSprite = new FlxSprite(items[i].x,items[i].y);
             button.frames = Paths.getSparrowAtlas('mainmenu/'+items[i].name);
@@ -70,6 +75,18 @@ class MainMenuState extends MusicBeatState {
                 button.scrollFactor.set();
             button.ID = i;
             itemGroup.add(button);
+            if(items[i].name == 'options'){
+                button.alpha = 0.0001;
+                fakeOptionsButton.animation.addByPrefix('idle',items[i].name+' idle',24);
+                fakeOptionsButton.animation.addByPrefix('selected',items[i].name+' selected',24);
+                fakeOptionsButton.animation.play('idle'); 
+                fakeOptionsButton.updateHitbox();
+                fakeOptionsButton.scrollFactor.set();
+                fakeOptionsButton.antialiasing = ClientPrefs.data.antialiasing;
+                fakeOptionsButton.sprTracker = button;
+                fakeOptionsButton.yAdd = button.height - fakeOptionsButton.height;
+                fakeOptionsButton.copyAlpha =false;
+            }
         }
 
 		hand = new FlxSprite(200,200).loadGraphic(Paths.image('mainmenu/handSelector'));
@@ -125,6 +142,8 @@ class MainMenuState extends MusicBeatState {
                     button.offset.set(items[button.ID].offsetSelected[0],items[button.ID].offsetSelected[1]);
                     button.animation.play('selected');
 
+                    if(items[button.ID].name == "options")
+                        fakeOptionsButton.animation.play('selected');
                     hand.setPosition(button.x+((items[button.ID].x > FlxG.width/2) ? 0-hand.height : button.width+(hand.height/2)),button.y-25+(button.height/2)-(hand.height/2));
                     hand.angle = items[button.ID].x > FlxG.width/2 ? -90 : 90;
                     hand.scrollFactor.set();
@@ -134,6 +153,9 @@ class MainMenuState extends MusicBeatState {
                 }else{
                     button.offset.set();
                     button.animation.play('idle');
+                
+                    if(items[button.ID].name == "options")
+                        fakeOptionsButton.animation.play('idle');
                 }
                 
             }
