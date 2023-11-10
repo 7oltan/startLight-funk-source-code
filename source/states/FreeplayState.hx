@@ -87,8 +87,9 @@ class FreeplayState extends MusicBeatState
 		}
 		Mods.loadTopMod();
 
-		bg = new FlxSprite().loadGraphic(Paths.image('menuDesat'));
+		bg = new FlxSprite().loadGraphic(Paths.image('freeplay/bg'));
 		bg.antialiasing = ClientPrefs.data.antialiasing;
+		bg.setGraphicSize(FlxG.width, FlxG.height);
 		add(bg);
 		bg.screenCenter();
 
@@ -123,6 +124,11 @@ class FreeplayState extends MusicBeatState
 		}
 		WeekData.setDirectoryFromWeek();
 
+		var credits_box:BGSprite = new BGSprite('freeplay/freeplayElements', 0, 0, 1, 1, ["Credits_box"], true);
+		credits_box.setGraphicSize(FlxG.width,FlxG.height);
+		credits_box.updateHitbox();
+		add(credits_box);
+		
 		scoreText = new FlxText(FlxG.width * 0.7, 5, 0, "", 32);
 		scoreText.setFormat(Paths.font("vcr.ttf"), 32, FlxColor.WHITE, RIGHT);
 
@@ -148,13 +154,15 @@ class FreeplayState extends MusicBeatState
 		add(missingText);
 
 		if(curSelected >= songs.length) curSelected = 0;
-		bg.color = songs[curSelected].color;
-		intendedColor = bg.color;
+		//bg.color = songs[curSelected].color;
+		//intendedColor = bg.color;
 		lerpSelected = curSelected;
 
 		curDifficulty = Math.round(Math.max(0, Difficulty.defaultList.indexOf(lastDifficultyName)));
 		
 		changeSelection();
+		
+
 
 		var swag:Alphabet = new Alphabet(1, 0, "swag");
 
@@ -174,6 +182,21 @@ class FreeplayState extends MusicBeatState
 		text.scrollFactor.set();
 		add(text);
 		
+		var ratings:BGSprite = new BGSprite('freeplay/freeplayRatings', 0, 0, 1, 1, ["FC","SICK","OK"], true);
+		ratings.setGraphicSize(FlxG.width,FlxG.height);
+		ratings.updateHitbox();
+		add(ratings);
+
+		var song_list:BGSprite = new BGSprite('freeplay/freeplayElements', 0, 0, 1, 1, ["Song_list"], true);
+		song_list.setGraphicSize(FlxG.width,FlxG.height);
+		song_list.updateHitbox();
+		add(song_list);
+
+		var press_enter:BGSprite = new BGSprite('freeplay/freeplayElements', 0, 0, 1, 1, ["press_enter"], true);
+		press_enter.setGraphicSize(FlxG.width,FlxG.height);
+		press_enter.updateHitbox();
+		add(press_enter);
+
 		updateTexts();
 		super.create();
 	}
@@ -236,7 +259,7 @@ class FreeplayState extends MusicBeatState
 			ratingSplit[1] += '0';
 		}
 
-		scoreText.text = 'PERSONAL BEST: ' + lerpScore + ' (' + ratingSplit.join('.') + '%)';
+		scoreText.text = 'PERSONAL BEST\n\n' + lerpScore + ' (' + ratingSplit.join('.') + '%)';
 		positionHighscore();
 
 		var shiftMult:Int = 1;
@@ -451,11 +474,11 @@ class FreeplayState extends MusicBeatState
 				colorTween.cancel();
 			}
 			intendedColor = newColor;
-			colorTween = FlxTween.color(bg, 1, bg.color, intendedColor, {
+			/*colorTween = FlxTween.color(bg, 1, bg.color, intendedColor, {
 				onComplete: function(twn:FlxTween) {
 					colorTween = null;
 				}
-			});
+			});*/
 		}
 
 		// selector.y = (70 * curSelected) + 30;
@@ -507,6 +530,11 @@ class FreeplayState extends MusicBeatState
 		scoreBG.x = FlxG.width - (scoreBG.scale.x / 2);
 		diffText.x = Std.int(scoreBG.x + (scoreBG.width / 2));
 		diffText.x -= diffText.width / 2;
+
+		var diffs = [0,scoreText.y-scoreBG.y, scoreText.y-diffText.y];
+		scoreText.y = 20;
+		scoreBG.y = 350 - diffs[1];
+		diffText.y = 350 - diffs[2];
 	}
 
 	var _drawDistance:Int = 4;

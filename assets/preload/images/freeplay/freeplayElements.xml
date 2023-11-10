@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Funkin Packer v0.1.2 https://neeeoo.github.io/funkin-packer/
+-->
+<TextureAtlas imagePath="freeplayElements.png" width="995" height="687">
+	<SubTexture name="Credits_box" x="7" y="7" width="618" height="297" frameX="-1302" frameY="-0" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="Song_list" x="7" y="318" width="446" height="362" frameX="-104" frameY="-6" frameWidth="1920" frameHeight="1080"/>
+	<SubTexture name="press_enter" x="639" y="7" width="349" height="158" frameX="-1242" frameY="-276" frameWidth="1920" frameHeight="1080"/>
+</TextureAtlas>
