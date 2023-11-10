@@ -977,6 +977,7 @@ HXLINE( 482)			 ::backend::WeekData week = null();
 HXDLIN( 482)			if (::hx::IsNull( week )) {
 HXLINE( 482)				week = ::backend::WeekData_obj::getCurrentWeek();
             			}
+HXDLIN( 482)			::haxe::Log_obj::trace(week->fileName,::hx::SourceInfo(HX_("source/backend/Difficulty.hx",54,35,44,46),32,HX_("backend.Difficulty",75,ec,84,d1),HX_("loadFromWeek",c4,1a,2a,66)));
 HXDLIN( 482)			::String diffStr = week->difficulties;
 HXDLIN( 482)			bool _hx_tmp2;
 HXDLIN( 482)			if (::hx::IsNotNull( diffStr )) {

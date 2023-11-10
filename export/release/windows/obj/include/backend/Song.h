@@ -5,7 +5,7 @@
 #include <hxcpp.h>
 #endif
 
-HX_DECLARE_STACK_FRAME(_hx_pos_db09ff2b98ac40f1_38_new)
+HX_DECLARE_STACK_FRAME(_hx_pos_db09ff2b98ac40f1_40_new)
 HX_DECLARE_CLASS1(backend,Song)
 
 namespace backend{
@@ -37,16 +37,16 @@ class HXCPP_CLASS_ATTRIBUTES Song_obj : public ::hx::Object
 			Song_obj *__this = (Song_obj*)(::hx::Ctx::alloc(_hx_ctx, sizeof(Song_obj), true, "backend.Song"));
 			*(void **)__this = Song_obj::_hx_vtable;
 {
-            	HX_STACKFRAME(&_hx_pos_db09ff2b98ac40f1_38_new)
-HXLINE(  56)		( ( ::backend::Song)(__this) )->gfVersion = HX_("gf",1f,5a,00,00);
-HXLINE(  55)		( ( ::backend::Song)(__this) )->player2 = HX_("dad",47,36,4c,00);
-HXLINE(  54)		( ( ::backend::Song)(__this) )->player1 = HX_("bf",c4,55,00,00);
-HXLINE(  52)		( ( ::backend::Song)(__this) )->speed = ((Float)1);
-HXLINE(  51)		( ( ::backend::Song)(__this) )->disableNoteRGB = false;
-HXLINE(  44)		( ( ::backend::Song)(__this) )->needsVoices = true;
-HXLINE(  93)		( ( ::backend::Song)(__this) )->song = song;
-HXLINE(  94)		( ( ::backend::Song)(__this) )->notes = notes;
-HXLINE(  95)		( ( ::backend::Song)(__this) )->bpm = bpm;
+            	HX_STACKFRAME(&_hx_pos_db09ff2b98ac40f1_40_new)
+HXLINE(  58)		( ( ::backend::Song)(__this) )->gfVersion = HX_("gf",1f,5a,00,00);
+HXLINE(  57)		( ( ::backend::Song)(__this) )->player2 = HX_("dad",47,36,4c,00);
+HXLINE(  56)		( ( ::backend::Song)(__this) )->player1 = HX_("bf",c4,55,00,00);
+HXLINE(  54)		( ( ::backend::Song)(__this) )->speed = ((Float)1);
+HXLINE(  53)		( ( ::backend::Song)(__this) )->disableNoteRGB = false;
+HXLINE(  46)		( ( ::backend::Song)(__this) )->needsVoices = true;
+HXLINE( 120)		( ( ::backend::Song)(__this) )->song = song;
+HXLINE( 121)		( ( ::backend::Song)(__this) )->notes = notes;
+HXLINE( 122)		( ( ::backend::Song)(__this) )->bpm = bpm;
             	}
 		
 			return __this;
@@ -61,6 +61,7 @@ HXLINE(  95)		( ( ::backend::Song)(__this) )->bpm = bpm;
 		::hx::Val __Field(const ::String &inString, ::hx::PropertyAccess inCallProp);
 		static bool __GetStatic(const ::String &inString, Dynamic &outValue, ::hx::PropertyAccess inCallProp);
 		::hx::Val __SetField(const ::String &inString,const ::hx::Val &inValue, ::hx::PropertyAccess inCallProp);
+		static bool __SetStatic(const ::String &inString, Dynamic &ioValue, ::hx::PropertyAccess inCallProp);
 		void __GetFields(Array< ::String> &outFields);
 		static void __register();
 		void __Mark(HX_MARK_PARAMS);
@@ -68,6 +69,8 @@ HXLINE(  95)		( ( ::backend::Song)(__this) )->bpm = bpm;
 		bool _hx_isInstanceOf(int inClassId);
 		::String __ToString() const { return HX_("Song",f5,4f,31,37); }
 
+		static void __boot();
+		static ::String dummySong;
 		static void onLoadJson( ::Dynamic songJson);
 		static ::Dynamic onLoadJson_dyn();
 

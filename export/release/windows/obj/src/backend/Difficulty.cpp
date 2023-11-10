@@ -39,6 +39,9 @@
 #ifndef INCLUDED_flixel_util_IFlxDestroyable
 #include <flixel/util/IFlxDestroyable.h>
 #endif
+#ifndef INCLUDED_haxe_Log
+#include <haxe/Log.h>
+#endif
 #ifndef INCLUDED_states_PlayState
 #include <states/PlayState.h>
 #endif
@@ -106,6 +109,7 @@ void Difficulty_obj::loadFromWeek( ::backend::WeekData week){
 HXLINE(  31)		if (::hx::IsNull( week )) {
 HXLINE(  31)			week = ::backend::WeekData_obj::getCurrentWeek();
             		}
+HXLINE(  32)		::haxe::Log_obj::trace(week->fileName,::hx::SourceInfo(HX_("source/backend/Difficulty.hx",54,35,44,46),32,HX_("backend.Difficulty",75,ec,84,d1),HX_("loadFromWeek",c4,1a,2a,66)));
 HXLINE(  33)		::String diffStr = week->difficulties;
 HXLINE(  34)		bool _hx_tmp;
 HXDLIN(  34)		if (::hx::IsNotNull( diffStr )) {

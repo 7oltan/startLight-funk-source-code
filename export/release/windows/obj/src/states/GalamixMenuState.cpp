@@ -102,6 +102,9 @@
 #ifndef INCLUDED_haxe_IMap
 #include <haxe/IMap.h>
 #endif
+#ifndef INCLUDED_haxe_Log
+#include <haxe/Log.h>
+#endif
 #ifndef INCLUDED_haxe_ds_StringMap
 #include <haxe/ds/StringMap.h>
 #endif
@@ -231,6 +234,7 @@ HXLINE(  55)						 ::backend::WeekData week = null();
 HXDLIN(  55)						if (::hx::IsNull( week )) {
 HXLINE(  55)							week = ::backend::WeekData_obj::getCurrentWeek();
             						}
+HXDLIN(  55)						::haxe::Log_obj::trace(week->fileName,::hx::SourceInfo(HX_("source/backend/Difficulty.hx",54,35,44,46),32,HX_("backend.Difficulty",75,ec,84,d1),HX_("loadFromWeek",c4,1a,2a,66)));
 HXDLIN(  55)						::String diffStr = week->difficulties;
 HXDLIN(  55)						bool _hx_tmp;
 HXDLIN(  55)						if (::hx::IsNotNull( diffStr )) {

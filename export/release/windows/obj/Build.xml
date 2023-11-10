@@ -1771,6 +1771,7 @@
    <depend name="include/flixel/system/frontEnds/SoundFrontEnd.h"/>
    <depend name="include/flixel/util/IFlxDestroyable.h"/>
    <depend name="include/haxe/IMap.h"/>
+   <depend name="include/haxe/Log.h"/>
    <depend name="include/haxe/ds/StringMap.h"/>
    <depend name="include/openfl/events/EventDispatcher.h"/>
    <depend name="include/openfl/events/IEventDispatcher.h"/>
@@ -1924,16 +1925,13 @@
    <depend name="include/flixel/text/FlxTextBorderStyle.h"/>
    <depend name="include/flixel/tweens/FlxEase.h"/>
    <depend name="include/flixel/tweens/FlxTween.h"/>
-   <depend name="include/flixel/tweens/misc/ColorTween.h"/>
    <depend name="include/flixel/tweens/misc/VarTween.h"/>
    <depend name="include/flixel/util/IFlxDestroyable.h"/>
    <depend name="include/flixel/util/IFlxPooled.h"/>
-   <depend name="include/flixel/util/_FlxColor/FlxColor_Impl_.h"/>
    <depend name="include/haxe/Exception.h"/>
    <depend name="include/haxe/Log.h"/>
    <depend name="include/objects/Alignment.h"/>
    <depend name="include/objects/Alphabet.h"/>
-   <depend name="include/objects/AttachedSprite.h"/>
    <depend name="include/openfl/Lib.h"/>
    <depend name="include/openfl/events/EventDispatcher.h"/>
    <depend name="include/openfl/events/IEventDispatcher.h"/>
@@ -14470,9 +14468,10 @@
    <depend name="include/backend/Paths.h"/>
    <depend name="include/backend/Song.h"/>
    <depend name="include/backend/StageData.h"/>
+   <depend name="include/haxe/Log.h"/>
+   <depend name="include/haxe/format/JsonParser.h"/>
    <depend name="include/sys/FileSystem.h"/>
    <depend name="include/sys/io/File.h"/>
-   <depend name="include/tjson/TJSON.h"/>
   </file>
   <file name="src/backend/Section.cpp" >
    <depend name="include/backend/Section.h"/>
@@ -14742,6 +14741,7 @@
    <depend name="include/flixel/addons/ui/interfaces/IFlxUIState.h"/>
    <depend name="include/flixel/group/FlxTypedGroup.h"/>
    <depend name="include/flixel/util/IFlxDestroyable.h"/>
+   <depend name="include/haxe/Log.h"/>
    <depend name="include/states/PlayState.h"/>
   </file>
   <file name="src/backend/CustomFadeTransition.cpp" >
@@ -16454,6 +16454,7 @@
    <depend name="include/flixel/math/FlxRect.h"/>
    <depend name="include/backend/WeekData.h"/>
    <depend name="include/backend/StageData.h"/>
+   <depend name="include/backend/Song.h"/>
    <depend name="include/backend/Section.h"/>
    <depend name="include/backend/Paths.h"/>
    <depend name="include/backend/NoteTypesConfig.h"/>

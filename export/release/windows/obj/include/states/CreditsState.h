@@ -19,10 +19,11 @@ HX_DECLARE_CLASS3(flixel,addons,ui,FlxUIState)
 HX_DECLARE_CLASS4(flixel,addons,ui,interfaces,IEventGetter)
 HX_DECLARE_CLASS4(flixel,addons,ui,interfaces,IFlxUIState)
 HX_DECLARE_CLASS2(flixel,group,FlxTypedGroup)
+HX_DECLARE_CLASS2(flixel,group,FlxTypedSpriteGroup)
 HX_DECLARE_CLASS2(flixel,text,FlxText)
 HX_DECLARE_CLASS2(flixel,tweens,FlxTween)
 HX_DECLARE_CLASS2(flixel,util,IFlxDestroyable)
-HX_DECLARE_CLASS1(objects,AttachedSprite)
+HX_DECLARE_CLASS1(objects,Alphabet)
 HX_DECLARE_CLASS1(states,CreditsState)
 
 namespace states{
@@ -64,12 +65,10 @@ class HXCPP_CLASS_ATTRIBUTES CreditsState_obj : public  ::backend::MusicBeatStat
 		 ::flixel::group::FlxTypedGroup grpOptions;
 		::Array< ::Dynamic> iconArray;
 		::Array< ::Dynamic> creditsStuff;
-		 ::flixel::FlxSprite bg;
 		 ::flixel::text::FlxText descText;
-		int intendedColor;
-		 ::flixel::tweens::FlxTween colorTween;
-		 ::objects::AttachedSprite descBox;
 		Float offsetThing;
+		int widthOFnames;
+		 ::objects::Alphabet roleText;
 		void create();
 
 		bool quitting;
@@ -82,9 +81,6 @@ class HXCPP_CLASS_ATTRIBUTES CreditsState_obj : public  ::backend::MusicBeatStat
 
 		void pushModCreditsToList(::String folder);
 		::Dynamic pushModCreditsToList_dyn();
-
-		bool unselectableCheck(int num);
-		::Dynamic unselectableCheck_dyn();
 
 };
 

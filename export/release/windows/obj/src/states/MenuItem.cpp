@@ -16,15 +16,15 @@
 #include <states/MenuItem.h>
 #endif
 
-HX_DEFINE_STACK_FRAME(_hx_pos_d92b57c60b6c7b0e_235_new,"states.MenuItem","new",0x4f500310,"states.MenuItem.new","states/MainMenuState.hx",235,0x1c04e2b2)
+HX_DEFINE_STACK_FRAME(_hx_pos_d92b57c60b6c7b0e_236_new,"states.MenuItem","new",0x4f500310,"states.MenuItem.new","states/MainMenuState.hx",236,0x1c04e2b2)
 static const int _hx_array_data_a2b57b1e_1[] = {
 	(int)0,(int)0,
 };
 namespace states{
 
 void MenuItem_obj::__construct(){
-            	HX_STACKFRAME(&_hx_pos_d92b57c60b6c7b0e_235_new)
-HXDLIN( 235)		this->offsetSelected = ::Array_obj< int >::fromData( _hx_array_data_a2b57b1e_1,2);
+            	HX_STACKFRAME(&_hx_pos_d92b57c60b6c7b0e_236_new)
+HXDLIN( 236)		this->offsetSelected = ::Array_obj< int >::fromData( _hx_array_data_a2b57b1e_1,2);
             	}
 
 Dynamic MenuItem_obj::__CreateEmpty() { return new MenuItem_obj; }

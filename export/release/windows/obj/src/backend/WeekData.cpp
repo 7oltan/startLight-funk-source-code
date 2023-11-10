@@ -79,8 +79,8 @@ static const ::String _hx_array_data_7c17a7f8_15[] = {
 HX_LOCAL_STACK_FRAME(_hx_pos_40e6927fd11a022a_162_addWeek,"backend.WeekData","addWeek",0x92b7843f,"backend.WeekData.addWeek","backend/WeekData.hx",162,0x34ba5365)
 HX_LOCAL_STACK_FRAME(_hx_pos_40e6927fd11a022a_183_getWeekFile,"backend.WeekData","getWeekFile",0x083495d0,"backend.WeekData.getWeekFile","backend/WeekData.hx",183,0x34ba5365)
 HX_LOCAL_STACK_FRAME(_hx_pos_40e6927fd11a022a_205_getWeekFileName,"backend.WeekData","getWeekFileName",0xddd45c3b,"backend.WeekData.getWeekFileName","backend/WeekData.hx",205,0x34ba5365)
-HX_LOCAL_STACK_FRAME(_hx_pos_40e6927fd11a022a_210_getCurrentWeek,"backend.WeekData","getCurrentWeek",0xeba04f8d,"backend.WeekData.getCurrentWeek","backend/WeekData.hx",210,0x34ba5365)
-HX_LOCAL_STACK_FRAME(_hx_pos_40e6927fd11a022a_213_setDirectoryFromWeek,"backend.WeekData","setDirectoryFromWeek",0x52a1f03f,"backend.WeekData.setDirectoryFromWeek","backend/WeekData.hx",213,0x34ba5365)
+HX_LOCAL_STACK_FRAME(_hx_pos_40e6927fd11a022a_209_getCurrentWeek,"backend.WeekData","getCurrentWeek",0xeba04f8d,"backend.WeekData.getCurrentWeek","backend/WeekData.hx",209,0x34ba5365)
+HX_LOCAL_STACK_FRAME(_hx_pos_40e6927fd11a022a_229_setDirectoryFromWeek,"backend.WeekData","setDirectoryFromWeek",0x52a1f03f,"backend.WeekData.setDirectoryFromWeek","backend/WeekData.hx",229,0x34ba5365)
 HX_LOCAL_STACK_FRAME(_hx_pos_40e6927fd11a022a_32_boot,"backend.WeekData","boot",0xcfd6a868,"backend.WeekData.boot","backend/WeekData.hx",32,0x34ba5365)
 HX_LOCAL_STACK_FRAME(_hx_pos_40e6927fd11a022a_33_boot,"backend.WeekData","boot",0xcfd6a868,"backend.WeekData.boot","backend/WeekData.hx",33,0x34ba5365)
 namespace backend{
@@ -472,32 +472,54 @@ HXDLIN( 205)		return ::backend::WeekData_obj::weeksList->__get(::states::PlaySta
 STATIC_HX_DEFINE_DYNAMIC_FUNC0(WeekData_obj,getWeekFileName,return )
 
  ::backend::WeekData WeekData_obj::getCurrentWeek(){
-            	HX_STACKFRAME(&_hx_pos_40e6927fd11a022a_210_getCurrentWeek)
-HXDLIN( 210)		return ( ( ::backend::WeekData)(::backend::WeekData_obj::weeksLoaded->get(::backend::WeekData_obj::weeksList->__get(::states::PlayState_obj::storyWeek))) );
+            	HX_GC_STACKFRAME(&_hx_pos_40e6927fd11a022a_209_getCurrentWeek)
+HXLINE( 210)		int weekInt = ::states::PlayState_obj::storyWeek;
+HXLINE( 211)		if ((::states::PlayState_obj::storyWeek < ::backend::WeekData_obj::weeksList->length)) {
+HXLINE( 212)			return ( ( ::backend::WeekData)(::backend::WeekData_obj::weeksLoaded->get(::backend::WeekData_obj::weeksList->__get(::states::PlayState_obj::storyWeek))) );
+            		}
+            		else {
+HXLINE( 214)			 ::backend::WeekData fakeWeek = null();
+HXLINE( 215)			::backend::WeekData_obj::reloadWeekFiles(null());
+HXLINE( 217)			if ((::states::PlayState_obj::storyWeek < ::backend::WeekData_obj::weeksList->length)) {
+HXLINE( 218)				::haxe::Log_obj::trace(HX_("second time's the charm",ed,ca,e2,df),::hx::SourceInfo(HX_("source/backend/WeekData.hx",f1,ec,fe,25),218,HX_("backend.WeekData",f8,a7,17,7c),HX_("getCurrentWeek",d7,8b,25,0f)));
+HXLINE( 219)				return ( ( ::backend::WeekData)(::backend::WeekData_obj::weeksLoaded->get(::backend::WeekData_obj::weeksList->__get(::states::PlayState_obj::storyWeek))) );
+            			}
+            			else {
+HXLINE( 222)				::haxe::Log_obj::trace(HX_("bruh here's some fake stuff ig",50,a0,ac,e4),::hx::SourceInfo(HX_("source/backend/WeekData.hx",f1,ec,fe,25),222,HX_("backend.WeekData",f8,a7,17,7c),HX_("getCurrentWeek",d7,8b,25,0f)));
+HXLINE( 223)				fakeWeek =  ::backend::WeekData_obj::__alloc( HX_CTX ,::backend::WeekData_obj::createWeekFile(),HX_("fakeWeek",29,36,32,b5));
+            			}
+HXLINE( 225)			if (::hx::IsNotNull( fakeWeek )) {
+HXLINE( 225)				return fakeWeek;
+            			}
+            			else {
+HXLINE( 225)				return ( ( ::backend::WeekData)(::backend::WeekData_obj::weeksLoaded->get(::backend::WeekData_obj::weeksList->__get(::states::PlayState_obj::storyWeek))) );
+            			}
+            		}
+HXLINE( 211)		return null();
             	}
 
 
 STATIC_HX_DEFINE_DYNAMIC_FUNC0(WeekData_obj,getCurrentWeek,return )
 
 void WeekData_obj::setDirectoryFromWeek( ::backend::WeekData data){
-            	HX_STACKFRAME(&_hx_pos_40e6927fd11a022a_213_setDirectoryFromWeek)
-HXLINE( 214)		::backend::Mods_obj::currentModDirectory = HX_("",00,00,00,00);
-HXLINE( 215)		bool _hx_tmp;
-HXDLIN( 215)		bool _hx_tmp1;
-HXDLIN( 215)		if (::hx::IsNotNull( data )) {
-HXLINE( 215)			_hx_tmp1 = ::hx::IsNotNull( data->folder );
+            	HX_STACKFRAME(&_hx_pos_40e6927fd11a022a_229_setDirectoryFromWeek)
+HXLINE( 230)		::backend::Mods_obj::currentModDirectory = HX_("",00,00,00,00);
+HXLINE( 231)		bool _hx_tmp;
+HXDLIN( 231)		bool _hx_tmp1;
+HXDLIN( 231)		if (::hx::IsNotNull( data )) {
+HXLINE( 231)			_hx_tmp1 = ::hx::IsNotNull( data->folder );
             		}
             		else {
-HXLINE( 215)			_hx_tmp1 = false;
+HXLINE( 231)			_hx_tmp1 = false;
             		}
-HXDLIN( 215)		if (_hx_tmp1) {
-HXLINE( 215)			_hx_tmp = (data->folder.length > 0);
+HXDLIN( 231)		if (_hx_tmp1) {
+HXLINE( 231)			_hx_tmp = (data->folder.length > 0);
             		}
             		else {
-HXLINE( 215)			_hx_tmp = false;
+HXLINE( 231)			_hx_tmp = false;
             		}
-HXDLIN( 215)		if (_hx_tmp) {
-HXLINE( 216)			::backend::Mods_obj::currentModDirectory = data->folder;
+HXDLIN( 231)		if (_hx_tmp) {
+HXLINE( 232)			::backend::Mods_obj::currentModDirectory = data->folder;
             		}
             	}
 

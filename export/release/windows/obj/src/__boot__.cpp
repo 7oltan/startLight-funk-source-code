@@ -1392,6 +1392,9 @@
 #ifndef INCLUDED_backend_StageData
 #include <backend/StageData.h>
 #endif
+#ifndef INCLUDED_backend_Song
+#include <backend/Song.h>
+#endif
 #ifndef INCLUDED_backend_Section
 #include <backend/Section.h>
 #endif
@@ -3735,9 +3738,6 @@
 #ifndef INCLUDED_cpp_Lib
 #include <cpp/Lib.h>
 #endif
-#ifndef INCLUDED_backend_Song
-#include <backend/Song.h>
-#endif
 #ifndef INCLUDED_backend_Rating
 #include <backend/Rating.h>
 #endif
@@ -4374,6 +4374,7 @@ __files__boot();
 ::flixel::math::FlxRect_obj::__register();
 ::backend::WeekData_obj::__register();
 ::backend::StageData_obj::__register();
+::backend::Song_obj::__register();
 ::backend::Section_obj::__register();
 ::backend::Paths_obj::__register();
 ::backend::NoteTypesConfig_obj::__register();
@@ -5155,7 +5156,6 @@ __files__boot();
 ::flixel::util::IFlxPooled_obj::__register();
 ::cutscenes::CutsceneHandler_obj::__register();
 ::cpp::Lib_obj::__register();
-::backend::Song_obj::__register();
 ::backend::Rating_obj::__register();
 ::flixel::addons::ui::interfaces::IFlxUIState_obj::__register();
 ::flixel::addons::ui::interfaces::IEventGetter_obj::__register();
@@ -5355,6 +5355,7 @@ __files__boot();
 ::backend::NoteTypesConfig_obj::__boot();
 ::backend::Paths_obj::__boot();
 ::backend::Section_obj::__boot();
+::backend::Song_obj::__boot();
 ::backend::StageData_obj::__boot();
 ::backend::WeekData_obj::__boot();
 ::flixel::math::FlxRect_obj::__boot();
