@@ -1,42 +1,41 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--
-Created with Funkin Packer v0.1.2 https://neeeoo.github.io/funkin-packer/
--->
-<TextureAtlas imagePath="options.png" width="1481" height="1293">
-	<SubTexture name="options idle0000" x="757" y="191" width="347" height="163" frameX="-0" frameY="-0" frameWidth="347" frameHeight="163"/>
-	<SubTexture name="options idle0001" x="757" y="191" width="347" height="163" frameX="-0" frameY="-0" frameWidth="347" frameHeight="163"/>
-	<SubTexture name="options idle0002" x="750" y="563" width="347" height="163" frameX="-0" frameY="-0" frameWidth="347" frameHeight="163"/>
-	<SubTexture name="options idle0003" x="750" y="563" width="347" height="163" frameX="-0" frameY="-0" frameWidth="347" frameHeight="163"/>
-	<SubTexture name="options idle0004" x="751" y="375" width="347" height="163" frameX="-0" frameY="-0" frameWidth="347" frameHeight="163"/>
-	<SubTexture name="options idle0005" x="751" y="375" width="347" height="163" frameX="-0" frameY="-0" frameWidth="347" frameHeight="163"/>
-	<SubTexture name="options selected0000" x="7" y="7" width="357" height="165" frameX="-0" frameY="-0" frameWidth="357" frameHeight="168"/>
-	<SubTexture name="options selected0001" x="7" y="193" width="351" height="165" frameX="-6" frameY="-0" frameWidth="357" frameHeight="168"/>
-	<SubTexture name="options selected0002" x="747" y="750" width="348" height="166" frameX="-4" frameY="-0" frameWidth="357" frameHeight="168"/>
-	<SubTexture name="options selected0003" x="1118" y="740" width="345" height="162" frameX="-7" frameY="-0" frameWidth="357" frameHeight="168"/>
-	<SubTexture name="options selected0004" x="7" y="937" width="347" height="167" frameX="-6" frameY="-0" frameWidth="357" frameHeight="168"/>
-	<SubTexture name="options selected0005" x="7" y="379" width="351" height="168" frameX="-2" frameY="-0" frameWidth="357" frameHeight="168"/>
-	<SubTexture name="options selected0006" x="379" y="563" width="350" height="166" frameX="-2" frameY="-0" frameWidth="357" frameHeight="168"/>
-	<SubTexture name="options selected0007" x="7" y="752" width="349" height="164" frameX="-3" frameY="-0" frameWidth="357" frameHeight="168"/>
-	<SubTexture name="options selected0008" x="377" y="935" width="347" height="162" frameX="-5" frameY="-0" frameWidth="357" frameHeight="168"/>
-	<SubTexture name="options selected0009" x="745" y="937" width="347" height="161" frameX="-5" frameY="-0" frameWidth="357" frameHeight="168"/>
-	<SubTexture name="options selected0010" x="7" y="1125" width="347" height="161" frameX="-5" frameY="-0" frameWidth="357" frameHeight="168"/>
-	<SubTexture name="options selected0011" x="7" y="1125" width="347" height="161" frameX="-5" frameY="-0" frameWidth="357" frameHeight="168"/>
-	<SubTexture name="options selected0012" x="375" y="1118" width="347" height="161" frameX="-5" frameY="-0" frameWidth="357" frameHeight="168"/>
-	<SubTexture name="options selected0013" x="375" y="1118" width="347" height="161" frameX="-5" frameY="-0" frameWidth="357" frameHeight="168"/>
-	<SubTexture name="options selected0014" x="745" y="937" width="347" height="161" frameX="-5" frameY="-0" frameWidth="357" frameHeight="168"/>
-	<SubTexture name="options selected0015" x="385" y="7" width="351" height="167" frameX="-1" frameY="-0" frameWidth="357" frameHeight="168"/>
-	<SubTexture name="options selected0016" x="379" y="195" width="351" height="165" frameX="-1" frameY="-0" frameWidth="357" frameHeight="168"/>
-	<SubTexture name="options selected0017" x="1111" y="1119" width="346" height="163" frameX="-6" frameY="-0" frameWidth="357" frameHeight="168"/>
-	<SubTexture name="options selected0018" x="377" y="752" width="349" height="162" frameX="-3" frameY="-0" frameWidth="357" frameHeight="168"/>
-	<SubTexture name="options selected0019" x="379" y="381" width="351" height="161" frameX="-1" frameY="-0" frameWidth="357" frameHeight="168"/>
-	<SubTexture name="options selected0020" x="7" y="568" width="351" height="163" frameX="-1" frameY="-0" frameWidth="357" frameHeight="168"/>
-	<SubTexture name="options selected0021" x="757" y="7" width="349" height="163" frameX="-3" frameY="-0" frameWidth="357" frameHeight="168"/>
-	<SubTexture name="options selected0022" x="1119" y="556" width="346" height="163" frameX="-6" frameY="-0" frameWidth="357" frameHeight="168"/>
-	<SubTexture name="options selected0023" x="743" y="1119" width="347" height="162" frameX="-5" frameY="-0" frameWidth="357" frameHeight="168"/>
-	<SubTexture name="options selected0024" x="1127" y="7" width="347" height="162" frameX="-5" frameY="-0" frameWidth="357" frameHeight="168"/>
-	<SubTexture name="options selected0025" x="1127" y="7" width="347" height="162" frameX="-5" frameY="-0" frameWidth="357" frameHeight="168"/>
-	<SubTexture name="options selected0026" x="1127" y="190" width="347" height="162" frameX="-5" frameY="-0" frameWidth="357" frameHeight="168"/>
-	<SubTexture name="options selected0027" x="1127" y="190" width="347" height="162" frameX="-5" frameY="-0" frameWidth="357" frameHeight="168"/>
-	<SubTexture name="options selected0028" x="1125" y="373" width="347" height="162" frameX="-5" frameY="-0" frameWidth="357" frameHeight="168"/>
-	<SubTexture name="options selected0029" x="1125" y="373" width="347" height="162" frameX="-5" frameY="-0" frameWidth="357" frameHeight="168"/>
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="options.png">
+	<!-- Created with Adobe Animate version 22.0.8.217 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="options idle0000" x="0" y="0" width="347" height="225"/>
+	<SubTexture name="options idle0001" x="0" y="0" width="347" height="225"/>
+	<SubTexture name="options idle0002" x="347" y="0" width="347" height="225"/>
+	<SubTexture name="options idle0003" x="347" y="0" width="347" height="225"/>
+	<SubTexture name="options idle0004" x="694" y="0" width="347" height="225"/>
+	<SubTexture name="options idle0005" x="694" y="0" width="347" height="225"/>
+	<SubTexture name="options selected0000" x="1041" y="0" width="357" height="231" frameX="0" frameY="0" frameWidth="357" frameHeight="234"/>
+	<SubTexture name="options selected0001" x="1398" y="0" width="351" height="231" frameX="-6" frameY="0" frameWidth="357" frameHeight="234"/>
+	<SubTexture name="options selected0002" x="0" y="231" width="348" height="229" frameX="-4" frameY="-3" frameWidth="357" frameHeight="234"/>
+	<SubTexture name="options selected0003" x="348" y="231" width="345" height="225" frameX="-7" frameY="-3" frameWidth="357" frameHeight="234"/>
+	<SubTexture name="options selected0004" x="693" y="231" width="347" height="230" frameX="-6" frameY="-3" frameWidth="357" frameHeight="234"/>
+	<SubTexture name="options selected0005" x="1040" y="231" width="351" height="231" frameX="-2" frameY="-3" frameWidth="357" frameHeight="234"/>
+	<SubTexture name="options selected0006" x="1391" y="231" width="350" height="229" frameX="-2" frameY="-3" frameWidth="357" frameHeight="234"/>
+	<SubTexture name="options selected0007" x="0" y="462" width="349" height="227" frameX="-3" frameY="-3" frameWidth="357" frameHeight="234"/>
+	<SubTexture name="options selected0008" x="349" y="462" width="347" height="225" frameX="-5" frameY="-3" frameWidth="357" frameHeight="234"/>
+	<SubTexture name="options selected0009" x="696" y="462" width="347" height="225" frameX="-5" frameY="-3" frameWidth="357" frameHeight="234"/>
+	<SubTexture name="options selected0010" x="1043" y="462" width="347" height="225" frameX="-5" frameY="-3" frameWidth="357" frameHeight="234"/>
+	<SubTexture name="options selected0011" x="1043" y="462" width="347" height="225" frameX="-5" frameY="-3" frameWidth="357" frameHeight="234"/>
+	<SubTexture name="options selected0012" x="1390" y="462" width="347" height="225" frameX="-5" frameY="-3" frameWidth="357" frameHeight="234"/>
+	<SubTexture name="options selected0013" x="1390" y="462" width="347" height="225" frameX="-5" frameY="-3" frameWidth="357" frameHeight="234"/>
+	<SubTexture name="options selected0014" x="696" y="462" width="347" height="225" frameX="-5" frameY="-3" frameWidth="357" frameHeight="234"/>
+	<SubTexture name="options selected0015" x="0" y="689" width="351" height="230" frameX="-1" frameY="-3" frameWidth="357" frameHeight="234"/>
+	<SubTexture name="options selected0016" x="351" y="689" width="351" height="229" frameX="-1" frameY="-3" frameWidth="357" frameHeight="234"/>
+	<SubTexture name="options selected0017" x="702" y="689" width="346" height="226" frameX="-6" frameY="-3" frameWidth="357" frameHeight="234"/>
+	<SubTexture name="options selected0018" x="1048" y="689" width="349" height="225" frameX="-3" frameY="-3" frameWidth="357" frameHeight="234"/>
+	<SubTexture name="options selected0019" x="1397" y="689" width="351" height="224" frameX="-1" frameY="-3" frameWidth="357" frameHeight="234"/>
+	<SubTexture name="options selected0020" x="0" y="919" width="351" height="227" frameX="-1" frameY="-3" frameWidth="357" frameHeight="234"/>
+	<SubTexture name="options selected0021" x="351" y="919" width="349" height="227" frameX="-3" frameY="-3" frameWidth="357" frameHeight="234"/>
+	<SubTexture name="options selected0022" x="700" y="919" width="346" height="226" frameX="-6" frameY="-3" frameWidth="357" frameHeight="234"/>
+	<SubTexture name="options selected0023" x="1046" y="919" width="347" height="225" frameX="-5" frameY="-3" frameWidth="357" frameHeight="234"/>
+	<SubTexture name="options selected0024" x="1393" y="919" width="347" height="225" frameX="-5" frameY="-3" frameWidth="357" frameHeight="234"/>
+	<SubTexture name="options selected0025" x="1393" y="919" width="347" height="225" frameX="-5" frameY="-3" frameWidth="357" frameHeight="234"/>
+	<SubTexture name="options selected0026" x="0" y="1146" width="347" height="225" frameX="-5" frameY="-3" frameWidth="357" frameHeight="234"/>
+	<SubTexture name="options selected0027" x="0" y="1146" width="347" height="225" frameX="-5" frameY="-3" frameWidth="357" frameHeight="234"/>
+	<SubTexture name="options selected0028" x="347" y="1146" width="347" height="225" frameX="-5" frameY="-3" frameWidth="357" frameHeight="234"/>
+	<SubTexture name="options selected0029" x="347" y="1146" width="347" height="225" frameX="-5" frameY="-3" frameWidth="357" frameHeight="234"/>
 </TextureAtlas>

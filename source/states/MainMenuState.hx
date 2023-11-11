@@ -99,6 +99,23 @@ class MainMenuState extends MusicBeatState {
         item.isLocked = (lockText != '');
         items.push(item);
     }
+
+    function customOverlaps(object:FlxObject,isOptions:Bool){//REALLY hardcoded shit but the whole customOverlaps thing is bc of the stem on options, it keeps triggering the select with the credits
+        var m = FlxG.mouse.getScreenPosition();
+        var x:Float = object.x;
+        var y:Float = object.y;
+        var width:Float = object.width;
+        var height:Float = object.height;
+
+        if(isOptions){
+            var space:Float = 75;
+            y += space;
+            height -= space;
+        }
+
+        return  (m.x >= x && m.x < (x+width) && m.y >= y && m.y < (y+height));
+    }
+
     override function update(elapsed:Float){
 		FlxG.camera.followLerp = FlxMath.bound(elapsed * 9 / (FlxG.updateFramerate / 60), 0, 1);
 		if (controls.BACK)
@@ -122,7 +139,7 @@ class MainMenuState extends MusicBeatState {
         var isSelecting:Bool = false;
         itemGroup.forEach(function(button:FlxSprite){
             if(items[button.ID].isMouse){
-                if(FlxG.mouse.overlaps(button)){
+                if(customOverlaps(button,(items[button.ID].name == 'options'))){
                     isSelecting = true;
                     button.offset.set(items[button.ID].offsetSelected[0],items[button.ID].offsetSelected[1]);
                     button.animation.play('selected');

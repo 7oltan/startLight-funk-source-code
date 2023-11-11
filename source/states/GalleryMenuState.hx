@@ -29,7 +29,7 @@ class GalleryMenuState extends MusicBeatState{
         [0,21]
     ];
 
-    var URL:String = 'https://raw.githubusercontent.com/7oltan/nastya-art-test/main/';
+    var URL:String = 'https://raw.githack.com/1Etoile1/eee/main/';
 
     var curSelectedButton:Int = 0;
     var curSelected:Int = 0;
@@ -129,6 +129,7 @@ class GalleryMenuState extends MusicBeatState{
                 var name:String = imageList[i].split('>')[0];
                 var type:String = imageList[i].split('>')[1];
                 call(URL+name,function(data) {
+                    trace(name);
                     var dataBYTE:ByteArray = new ByteArray();
                     data.readBytes(dataBYTE, 0, data.length - data.position);
                     

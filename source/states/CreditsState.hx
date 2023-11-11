@@ -111,7 +111,9 @@ class CreditsState extends MusicBeatState
 		dog.updateHitbox();
 		dog.x = FlxG.width+dog.width;
 		dog.y = FlxG.height-dog.height;
-		FlxTween.tween(dog,{x:0-dog.width},20);
+		if(FlxG.random.bool(20)){
+			FlxTween.tween(dog,{x:0-dog.width},20);
+		}
 		add(dog);
 
 		changeSelection();
@@ -183,6 +185,7 @@ class CreditsState extends MusicBeatState
 					Mods.currentModDirectory = '';
 					//trace(WeekData.weeksList);
 					PlayState.storyWeek = WeekData.weeksList.indexOf("boner");
+					StoryMenuState.weekCompleted.set(WeekData.weeksList[PlayState.storyWeek], true);
 					Difficulty.loadFromWeek();
 					var songLowercase:String = Paths.formatToSongPath('boner');
 					var poop:String = Highscore.formatSong(songLowercase, 0);

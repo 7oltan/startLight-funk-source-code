@@ -216,8 +216,6 @@ null
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_mainmenu_gallery_xml extends null { }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_mainmenu_handselector_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_mainmenu_lock_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_mainmenu_oldoptions_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_mainmenu_oldoptions_xml extends null { }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_mainmenu_options_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_mainmenu_options_xml extends null { }
 @:keep @:bind @:noCompletion #if display private #end class __ASSET__assets_images_mainmenu_sin_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
