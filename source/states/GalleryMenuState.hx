@@ -134,8 +134,16 @@ class GalleryMenuState extends MusicBeatState{
                     data.readBytes(dataBYTE, 0, data.length - data.position);
                     
                     var image:FlxSprite = new FlxSprite(770,160).loadGraphic(FlxGraphic.fromBitmapData(BitmapData.fromBytes(data),false,name));
-                    image.setGraphicSize(400,400);
                     image.updateHitbox();
+                    if(image.width > image.height)
+                        image.setGraphicSize(400);
+                    else
+                        image.setGraphicSize(-1,400);
+                    image.updateHitbox();
+
+                    image.x += (400-image.width)/2;
+                    image.y += (400-image.height)/2;
+
                     image.antialiasing = ClientPrefs.data.antialiasing;
                     image.alpha = 0.00000000000001;
                     switch(type){
