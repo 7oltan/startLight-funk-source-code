@@ -47,6 +47,7 @@ class FreeplayState extends MusicBeatState
 	var missingTextBG:FlxSprite;
 	var missingText:FlxText;
 
+	var ratings:BGSprite; 
 	override function create()
 	{
 		//Paths.clearStoredMemory();
@@ -153,17 +154,6 @@ class FreeplayState extends MusicBeatState
 		missingText.visible = false;
 		add(missingText);
 
-		if(curSelected >= songs.length) curSelected = 0;
-		//bg.color = songs[curSelected].color;
-		//intendedColor = bg.color;
-		lerpSelected = curSelected;
-
-		curDifficulty = Math.round(Math.max(0, Difficulty.defaultList.indexOf(lastDifficultyName)));
-		
-		changeSelection();
-		
-
-
 		var swag:Alphabet = new Alphabet(1, 0, "swag");
 
 		var textBG:FlxSprite = new FlxSprite(0, FlxG.height - 26).makeGraphic(FlxG.width, 26, 0xFF000000);
@@ -182,7 +172,7 @@ class FreeplayState extends MusicBeatState
 		text.scrollFactor.set();
 		add(text);
 		
-		var ratings:BGSprite = new BGSprite('freeplay/freeplayRatings', 0, 0, 1, 1, ["FC","SICK","OK"], true);
+		ratings = new BGSprite('freeplay/freeplayRatings', 0, 0, 1, 1, ["FC","SICK","OK"], true);
 		ratings.setGraphicSize(FlxG.width,FlxG.height);
 		ratings.updateHitbox();
 		add(ratings);
@@ -196,7 +186,15 @@ class FreeplayState extends MusicBeatState
 		press_enter.setGraphicSize(FlxG.width,FlxG.height);
 		press_enter.updateHitbox();
 		add(press_enter);
+		
+		if(curSelected >= songs.length) curSelected = 0;
+		//bg.color = songs[curSelected].color;
+		//intendedColor = bg.color;
+		lerpSelected = curSelected;
 
+		curDifficulty = Math.round(Math.max(0, Difficulty.defaultList.indexOf(lastDifficultyName)));
+		
+		changeSelection();
 		updateTexts();
 		super.create();
 	}
@@ -260,6 +258,7 @@ class FreeplayState extends MusicBeatState
 		}
 
 		scoreText.text = 'PERSONAL BEST\n\n' + lerpScore + ' (' + ratingSplit.join('.') + '%)';
+
 		positionHighscore();
 
 		var shiftMult:Int = 1;
@@ -443,6 +442,15 @@ class FreeplayState extends MusicBeatState
 		intendedScore = Highscore.getScore(songs[curSelected].songName, curDifficulty);
 		intendedRating = Highscore.getRating(songs[curSelected].songName, curDifficulty);
 		#end
+
+		trace(intendedRating*100);
+
+		if(intendedRating*100 >= 80)
+			ratings.animation.play('FC',true);
+		else if(intendedRating*100 >= 60)
+			ratings.animation.play('SICK',true);
+		else
+			ratings.animation.play('OK',true);
 
 		lastDifficultyName = Difficulty.getString(curDifficulty);
 		if (Difficulty.list.length > 1)

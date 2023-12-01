@@ -197,7 +197,7 @@ HXLINE(  27)				 ::backend::WeekData weekFile = ( ( ::backend::WeekData)(::backe
 HXLINE(  28)				if (!(weekFile->galamix)) {
 HXLINE(  29)					continue;
             				}
-HXLINE(  31)				 ::flixel::FlxSprite character =  ::flixel::FlxSprite_obj::__alloc( HX_CTX ,(i * 300),0,null());
+HXLINE(  31)				 ::flixel::FlxSprite character =  ::flixel::FlxSprite_obj::__alloc( HX_CTX ,(((i * 300) + (( (Float)(::flixel::FlxG_obj::width) ) / ( (Float)(2) ))) - ( (Float)(300) )),0,null());
 HXDLIN(  31)				 ::flixel::FlxSprite character1 = character->loadGraphic(::backend::Paths_obj::image((HX_("galamixMenu/",83,c8,bb,51) + weekFile->weekCharacter),null(),null()),null(),null(),null(),null(),null());
 HXLINE(  32)				 ::flixel::graphics::FlxGraphic _hx_tmp = ::backend::Paths_obj::image((HX_("galamixMenu/",83,c8,bb,51) + weekFile->weekCharacter),null(),null());
 HXDLIN(  32)				int _hx_tmp1 = ::Std_obj::_hx_int((character1->get_width() / ( (Float)(2) )));

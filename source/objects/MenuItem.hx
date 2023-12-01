@@ -26,10 +26,23 @@ class MenuItem extends FlxSprite
 	// I'm still learning how math works thanks whoever is reading this lol
 	var fakeFramerate:Int = Math.round((1 / FlxG.elapsed) / 10);
 
+	public var alphaTO:Float = 1;
+
 	override function update(elapsed:Float)
 	{
 		super.update(elapsed);
-		y = FlxMath.lerp(y, (targetY * 120) + 480, FlxMath.bound(elapsed * 10.2, 0, 1));
+		var leNextScale:Float = 1;
+		leNextScale = 1-(FlxMath.absInt(Std.int(targetY))*0.3);
+		scale.x = FlxMath.lerp(scale.x, leNextScale, FlxMath.bound(elapsed * 10.2, 0, 1));
+		scale.y = FlxMath.lerp(scale.y, leNextScale, FlxMath.bound(elapsed * 10.2, 0, 1));
+
+		updateHitbox();
+		screenCenter(Y);
+
+		x = FlxMath.lerp(x, (targetY * (width*1.5))+((FlxG.width/2)-(width/2)), FlxMath.bound(elapsed * 10.2, 0, 1));
+
+		alpha = FlxMath.lerp(alpha, alphaTO, FlxMath.bound(elapsed * 10.2, 0, 1));
+
 
 		if (isFlashing)
 			flashingInt += 1;

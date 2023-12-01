@@ -1,9 +1,10 @@
 function onCreate()
 
-	makeLuaSprite('wizard/white', nil, -1500, -500);
-	makeGraphic('wizard/white',screenWidth*3,screenHeight*3)
-	setScrollFactor('wizard/white', 1, 1);
-	addLuaSprite('wizard/white', false);
+	makeLuaSprite('white', nil, -1500, -500);
+	makeGraphic('white',screenWidth*2,screenHeight*2)
+	screenCenter('white')
+	setScrollFactor('white', 0, 0);
+	addLuaSprite('white', false);
 
 	makeAnimatedLuaSprite('wizard/sillies','wizard/sillies',-720,-170)
 	addAnimationByPrefix('wizard/sillies','wizard/sillies','Idle',12,true)

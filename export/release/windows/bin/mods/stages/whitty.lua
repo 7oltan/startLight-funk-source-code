@@ -4,9 +4,9 @@ function onCreate()
 
 	makeAnimatedLuaSprite('BallisticBackground','BallisticBackground',-550,-125)
 	addAnimationByPrefix('BallisticBackground','BallisticBackground','Background Whitty Moving',24,true)
-	setProperty('BallisticBackground.alpha',0.0000000000000000000000000000000001)
-	addLuaSprite('BallisticBackground',false)
 	objectPlayAnimation('BallisticBackground','BallisticBackground',false)
+	setProperty('BallisticBackground.alpha',0.000000000000000000000000001)
+	addLuaSprite('BallisticBackground',false)
 end
 
 function onEvent(name,val1,val2)

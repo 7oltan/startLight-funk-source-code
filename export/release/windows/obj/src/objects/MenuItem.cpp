@@ -4,6 +4,9 @@
 #define INCLUDED_95f339a1d026d52c
 #include "hxMath.h"
 #endif
+#ifndef INCLUDED_Std
+#include <Std.h>
+#endif
 #ifndef INCLUDED_backend_ClientPrefs
 #include <backend/ClientPrefs.h>
 #endif
@@ -28,8 +31,14 @@
 #ifndef INCLUDED_flixel_graphics_FlxGraphic
 #include <flixel/graphics/FlxGraphic.h>
 #endif
+#ifndef INCLUDED_flixel_math_FlxBasePoint
+#include <flixel/math/FlxBasePoint.h>
+#endif
 #ifndef INCLUDED_flixel_util_IFlxDestroyable
 #include <flixel/util/IFlxDestroyable.h>
+#endif
+#ifndef INCLUDED_flixel_util_IFlxPooled
+#include <flixel/util/IFlxPooled.h>
 #endif
 #ifndef INCLUDED_objects_MenuItem
 #include <objects/MenuItem.h>
@@ -37,13 +46,14 @@
 
 HX_DEFINE_STACK_FRAME(_hx_pos_f389d0832565e595_3_new,"objects.MenuItem","new",0x3388a03e,"objects.MenuItem.new","objects/MenuItem.hx",3,0x5a161e91)
 HX_LOCAL_STACK_FRAME(_hx_pos_f389d0832565e595_20_startFlashing,"objects.MenuItem","startFlashing",0xf4727912,"objects.MenuItem.startFlashing","objects/MenuItem.hx",20,0x5a161e91)
-HX_LOCAL_STACK_FRAME(_hx_pos_f389d0832565e595_30_update,"objects.MenuItem","update",0xb23974eb,"objects.MenuItem.update","objects/MenuItem.hx",30,0x5a161e91)
+HX_LOCAL_STACK_FRAME(_hx_pos_f389d0832565e595_32_update,"objects.MenuItem","update",0xb23974eb,"objects.MenuItem.update","objects/MenuItem.hx",32,0x5a161e91)
 namespace objects{
 
 void MenuItem_obj::__construct(Float x,Float y,::String __o_weekName){
             		::String weekName = __o_weekName;
             		if (::hx::IsNull(__o_weekName)) weekName = HX_("",00,00,00,00);
             	HX_STACKFRAME(&_hx_pos_f389d0832565e595_3_new)
+HXLINE(  29)		this->alphaTO = ((Float)1);
 HXLINE(  27)		this->fakeFramerate = ::Math_obj::round(((( (Float)(1) ) / ::flixel::FlxG_obj::elapsed) / ( (Float)(10) )));
 HXLINE(  16)		this->isFlashing = false;
 HXLINE(   6)		this->flashingInt = 0;
@@ -85,34 +95,129 @@ HXDLIN(  20)		this->isFlashing = true;
 HX_DEFINE_DYNAMIC_FUNC0(MenuItem_obj,startFlashing,(void))
 
 void MenuItem_obj::update(Float elapsed){
-            	HX_STACKFRAME(&_hx_pos_f389d0832565e595_30_update)
-HXLINE(  31)		this->super::update(elapsed);
-HXLINE(  32)		Float a = this->y;
-HXDLIN(  32)		Float Value = (elapsed * ((Float)10.2));
-HXDLIN(  32)		Float lowerBound;
-HXDLIN(  32)		if ((Value < 0)) {
-HXLINE(  32)			lowerBound = ( (Float)(0) );
+            	HX_STACKFRAME(&_hx_pos_f389d0832565e595_32_update)
+HXLINE(  33)		this->super::update(elapsed);
+HXLINE(  34)		Float leNextScale = ( (Float)(1) );
+HXLINE(  35)		int n = ::Std_obj::_hx_int(this->targetY);
+HXDLIN(  35)		int leNextScale1;
+HXDLIN(  35)		if ((n > 0)) {
+HXLINE(  35)			leNextScale1 = n;
             		}
             		else {
-HXLINE(  32)			lowerBound = Value;
+HXLINE(  35)			leNextScale1 = -(n);
             		}
-HXDLIN(  32)		Float _hx_tmp;
-HXDLIN(  32)		if ((lowerBound > 1)) {
-HXLINE(  32)			_hx_tmp = ( (Float)(1) );
+HXDLIN(  35)		leNextScale = (( (Float)(1) ) - (( (Float)(leNextScale1) ) * ((Float)0.3)));
+HXLINE(  36)		{
+HXLINE(  36)			Float a = this->scale->x;
+HXDLIN(  36)			Float Value = (elapsed * ((Float)10.2));
+HXDLIN(  36)			Float lowerBound;
+HXDLIN(  36)			if ((Value < 0)) {
+HXLINE(  36)				lowerBound = ( (Float)(0) );
+            			}
+            			else {
+HXLINE(  36)				lowerBound = Value;
+            			}
+HXDLIN(  36)			Float x;
+HXDLIN(  36)			if ((lowerBound > 1)) {
+HXLINE(  36)				x = ( (Float)(1) );
+            			}
+            			else {
+HXLINE(  36)				x = lowerBound;
+            			}
+HXDLIN(  36)			this->scale->set_x((a + (x * (leNextScale - a))));
+            		}
+HXLINE(  37)		{
+HXLINE(  37)			Float a1 = this->scale->y;
+HXDLIN(  37)			Float Value1 = (elapsed * ((Float)10.2));
+HXDLIN(  37)			Float lowerBound1;
+HXDLIN(  37)			if ((Value1 < 0)) {
+HXLINE(  37)				lowerBound1 = ( (Float)(0) );
+            			}
+            			else {
+HXLINE(  37)				lowerBound1 = Value1;
+            			}
+HXDLIN(  37)			Float y;
+HXDLIN(  37)			if ((lowerBound1 > 1)) {
+HXLINE(  37)				y = ( (Float)(1) );
+            			}
+            			else {
+HXLINE(  37)				y = lowerBound1;
+            			}
+HXDLIN(  37)			this->scale->set_y((a1 + (y * (leNextScale - a1))));
+            		}
+HXLINE(  39)		this->updateHitbox();
+HXLINE(  40)		{
+HXLINE(  40)			int axes = 16;
+HXDLIN(  40)			bool _hx_tmp;
+HXDLIN(  40)			if ((axes != 1)) {
+HXLINE(  40)				_hx_tmp = (axes == 17);
+            			}
+            			else {
+HXLINE(  40)				_hx_tmp = true;
+            			}
+HXDLIN(  40)			if (_hx_tmp) {
+HXLINE(  40)				int _hx_tmp = ::flixel::FlxG_obj::width;
+HXDLIN(  40)				this->set_x(((( (Float)(_hx_tmp) ) - this->get_width()) / ( (Float)(2) )));
+            			}
+HXDLIN(  40)			bool _hx_tmp1;
+HXDLIN(  40)			if ((axes != 16)) {
+HXLINE(  40)				_hx_tmp1 = (axes == 17);
+            			}
+            			else {
+HXLINE(  40)				_hx_tmp1 = true;
+            			}
+HXDLIN(  40)			if (_hx_tmp1) {
+HXLINE(  40)				int _hx_tmp = ::flixel::FlxG_obj::height;
+HXDLIN(  40)				this->set_y(((( (Float)(_hx_tmp) ) - this->get_height()) / ( (Float)(2) )));
+            			}
+            		}
+HXLINE(  42)		Float a2 = this->x;
+HXDLIN(  42)		Float b = this->targetY;
+HXDLIN(  42)		Float b1 = (b * (this->get_width() * ((Float)1.5)));
+HXDLIN(  42)		Float b2 = (( (Float)(::flixel::FlxG_obj::width) ) / ( (Float)(2) ));
+HXDLIN(  42)		Float b3 = (b1 + (b2 - (this->get_width() / ( (Float)(2) ))));
+HXDLIN(  42)		Float Value2 = (elapsed * ((Float)10.2));
+HXDLIN(  42)		Float lowerBound2;
+HXDLIN(  42)		if ((Value2 < 0)) {
+HXLINE(  42)			lowerBound2 = ( (Float)(0) );
             		}
             		else {
-HXLINE(  32)			_hx_tmp = lowerBound;
+HXLINE(  42)			lowerBound2 = Value2;
             		}
-HXDLIN(  32)		this->set_y((a + (_hx_tmp * (((this->targetY * ( (Float)(120) )) + 480) - a))));
-HXLINE(  34)		if (this->isFlashing) {
-HXLINE(  35)			 ::objects::MenuItem _hx_tmp = ::hx::ObjectPtr<OBJ_>(this);
-HXDLIN(  35)			_hx_tmp->flashingInt = (_hx_tmp->flashingInt + 1);
-            		}
-HXLINE(  37)		if ((::hx::Mod(this->flashingInt,this->fakeFramerate) >= ::Math_obj::floor((( (Float)(this->fakeFramerate) ) / ( (Float)(2) ))))) {
-HXLINE(  38)			this->set_color(-13369345);
+HXDLIN(  42)		Float _hx_tmp2;
+HXDLIN(  42)		if ((lowerBound2 > 1)) {
+HXLINE(  42)			_hx_tmp2 = ( (Float)(1) );
             		}
             		else {
-HXLINE(  40)			this->set_color(-1);
+HXLINE(  42)			_hx_tmp2 = lowerBound2;
+            		}
+HXDLIN(  42)		this->set_x((a2 + (_hx_tmp2 * (b3 - a2))));
+HXLINE(  44)		Float a3 = this->alpha;
+HXDLIN(  44)		Float Value3 = (elapsed * ((Float)10.2));
+HXDLIN(  44)		Float lowerBound3;
+HXDLIN(  44)		if ((Value3 < 0)) {
+HXLINE(  44)			lowerBound3 = ( (Float)(0) );
+            		}
+            		else {
+HXLINE(  44)			lowerBound3 = Value3;
+            		}
+HXDLIN(  44)		Float _hx_tmp3;
+HXDLIN(  44)		if ((lowerBound3 > 1)) {
+HXLINE(  44)			_hx_tmp3 = ( (Float)(1) );
+            		}
+            		else {
+HXLINE(  44)			_hx_tmp3 = lowerBound3;
+            		}
+HXDLIN(  44)		this->set_alpha((a3 + (_hx_tmp3 * (this->alphaTO - a3))));
+HXLINE(  47)		if (this->isFlashing) {
+HXLINE(  48)			 ::objects::MenuItem _hx_tmp = ::hx::ObjectPtr<OBJ_>(this);
+HXDLIN(  48)			_hx_tmp->flashingInt = (_hx_tmp->flashingInt + 1);
+            		}
+HXLINE(  50)		if ((::hx::Mod(this->flashingInt,this->fakeFramerate) >= ::Math_obj::floor((( (Float)(this->fakeFramerate) ) / ( (Float)(2) ))))) {
+HXLINE(  51)			this->set_color(-13369345);
+            		}
+            		else {
+HXLINE(  53)			this->set_color(-1);
             		}
             	}
 
@@ -143,6 +248,7 @@ MenuItem_obj::MenuItem_obj()
 		break;
 	case 7:
 		if (HX_FIELD_EQ(inName,"targetY") ) { return ::hx::Val( targetY ); }
+		if (HX_FIELD_EQ(inName,"alphaTO") ) { return ::hx::Val( alphaTO ); }
 		break;
 	case 10:
 		if (HX_FIELD_EQ(inName,"isFlashing") ) { return ::hx::Val( isFlashing ); }
@@ -162,6 +268,7 @@ MenuItem_obj::MenuItem_obj()
 	switch(inName.length) {
 	case 7:
 		if (HX_FIELD_EQ(inName,"targetY") ) { targetY=inValue.Cast< Float >(); return inValue; }
+		if (HX_FIELD_EQ(inName,"alphaTO") ) { alphaTO=inValue.Cast< Float >(); return inValue; }
 		break;
 	case 10:
 		if (HX_FIELD_EQ(inName,"isFlashing") ) { isFlashing=inValue.Cast< bool >(); return inValue; }
@@ -181,6 +288,7 @@ void MenuItem_obj::__GetFields(Array< ::String> &outFields)
 	outFields->push(HX_("flashingInt",dd,0a,bd,91));
 	outFields->push(HX_("isFlashing",3c,97,97,14));
 	outFields->push(HX_("fakeFramerate",38,6f,b1,5e));
+	outFields->push(HX_("alphaTO",59,04,16,b2));
 	super::__GetFields(outFields);
 };
 
@@ -190,6 +298,7 @@ static ::hx::StorageInfo MenuItem_obj_sMemberStorageInfo[] = {
 	{::hx::fsInt,(int)offsetof(MenuItem_obj,flashingInt),HX_("flashingInt",dd,0a,bd,91)},
 	{::hx::fsBool,(int)offsetof(MenuItem_obj,isFlashing),HX_("isFlashing",3c,97,97,14)},
 	{::hx::fsInt,(int)offsetof(MenuItem_obj,fakeFramerate),HX_("fakeFramerate",38,6f,b1,5e)},
+	{::hx::fsFloat,(int)offsetof(MenuItem_obj,alphaTO),HX_("alphaTO",59,04,16,b2)},
 	{ ::hx::fsUnknown, 0, null()}
 };
 static ::hx::StaticInfo *MenuItem_obj_sStaticStorageInfo = 0;
@@ -201,6 +310,7 @@ static ::String MenuItem_obj_sMemberFields[] = {
 	HX_("isFlashing",3c,97,97,14),
 	HX_("startFlashing",b4,e7,a3,9e),
 	HX_("fakeFramerate",38,6f,b1,5e),
+	HX_("alphaTO",59,04,16,b2),
 	HX_("update",09,86,05,87),
 	::String(null()) };
 

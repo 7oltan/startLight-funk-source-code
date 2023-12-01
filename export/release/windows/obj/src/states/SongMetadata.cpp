@@ -7,24 +7,24 @@
 #include <states/SongMetadata.h>
 #endif
 
-HX_DEFINE_STACK_FRAME(_hx_pos_8e23e7423f533d70_568_new,"states.SongMetadata","new",0x9038fc22,"states.SongMetadata.new","states/FreeplayState.hx",568,0x1b2e20da)
+HX_DEFINE_STACK_FRAME(_hx_pos_8e23e7423f533d70_576_new,"states.SongMetadata","new",0x9038fc22,"states.SongMetadata.new","states/FreeplayState.hx",576,0x1b2e20da)
 namespace states{
 
 void SongMetadata_obj::__construct(::String song,int week,::String songCharacter,int color){
-            	HX_STACKFRAME(&_hx_pos_8e23e7423f533d70_568_new)
-HXLINE( 575)		this->lastDifficulty = null();
-HXLINE( 574)		this->folder = HX_("",00,00,00,00);
-HXLINE( 573)		this->color = -7179779;
-HXLINE( 572)		this->songCharacter = HX_("",00,00,00,00);
-HXLINE( 571)		this->week = 0;
-HXLINE( 570)		this->songName = HX_("",00,00,00,00);
-HXLINE( 579)		this->songName = song;
-HXLINE( 580)		this->week = week;
-HXLINE( 581)		this->songCharacter = songCharacter;
-HXLINE( 582)		this->color = color;
-HXLINE( 583)		this->folder = ::backend::Mods_obj::currentModDirectory;
-HXLINE( 584)		if (::hx::IsNull( this->folder )) {
-HXLINE( 584)			this->folder = HX_("",00,00,00,00);
+            	HX_STACKFRAME(&_hx_pos_8e23e7423f533d70_576_new)
+HXLINE( 583)		this->lastDifficulty = null();
+HXLINE( 582)		this->folder = HX_("",00,00,00,00);
+HXLINE( 581)		this->color = -7179779;
+HXLINE( 580)		this->songCharacter = HX_("",00,00,00,00);
+HXLINE( 579)		this->week = 0;
+HXLINE( 578)		this->songName = HX_("",00,00,00,00);
+HXLINE( 587)		this->songName = song;
+HXLINE( 588)		this->week = week;
+HXLINE( 589)		this->songCharacter = songCharacter;
+HXLINE( 590)		this->color = color;
+HXLINE( 591)		this->folder = ::backend::Mods_obj::currentModDirectory;
+HXLINE( 592)		if (::hx::IsNull( this->folder )) {
+HXLINE( 592)			this->folder = HX_("",00,00,00,00);
             		}
             	}
 

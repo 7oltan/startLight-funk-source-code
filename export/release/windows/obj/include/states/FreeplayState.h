@@ -23,6 +23,7 @@ HX_DECLARE_CLASS2(flixel,sound,FlxSound)
 HX_DECLARE_CLASS2(flixel,text,FlxText)
 HX_DECLARE_CLASS2(flixel,tweens,FlxTween)
 HX_DECLARE_CLASS2(flixel,util,IFlxDestroyable)
+HX_DECLARE_CLASS1(objects,BGSprite)
 HX_DECLARE_CLASS1(objects,HealthIcon)
 HX_DECLARE_CLASS1(states,FreeplayState)
 HX_DECLARE_CLASS1(states,SongMetadata)
@@ -90,6 +91,7 @@ class HXCPP_CLASS_ATTRIBUTES FreeplayState_obj : public  ::backend::MusicBeatSta
 		 ::flixel::tweens::FlxTween colorTween;
 		 ::flixel::FlxSprite missingTextBG;
 		 ::flixel::text::FlxText missingText;
+		 ::objects::BGSprite ratings;
 		void create();
 
 		void closeSubState();

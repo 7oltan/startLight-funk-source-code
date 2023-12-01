@@ -28,7 +28,7 @@ class GalamixMenuState extends MusicBeatState{
 			if(!weekFile.galamix)
 				continue;// skip
 
-            var character:FlxSprite = new FlxSprite((i*300),0).loadGraphic(Paths.image('galamixMenu/'+weekFile.weekCharacter));
+            var character:FlxSprite = new FlxSprite((i*300)+(FlxG.width/2)-300,0).loadGraphic(Paths.image('galamixMenu/'+weekFile.weekCharacter));
             character.loadGraphic(Paths.image('galamixMenu/'+weekFile.weekCharacter),true,Std.int(character.width/2),Std.int(character.height));
             character.animation.add('idle',[0],0,false);
             character.animation.add('selected',[1],0,false);

@@ -71,21 +71,27 @@ class HXCPP_CLASS_ATTRIBUTES StoryMenuState_obj : public  ::backend::MusicBeatSt
 		 ::flixel::text::FlxText scoreText;
 		int curDifficulty;
 		 ::flixel::text::FlxText txtWeekTitle;
-		 ::flixel::FlxSprite bgSprite;
 		 ::flixel::text::FlxText txtTracklist;
 		 ::flixel::group::FlxTypedGroup grpWeekText;
-		 ::flixel::group::FlxTypedGroup grpWeekCharacters;
 		 ::flixel::group::FlxTypedGroup grpLocks;
 		 ::flixel::group::FlxTypedGroup difficultySelectors;
 		 ::flixel::FlxSprite sprDifficulty;
 		 ::flixel::FlxSprite leftArrow;
 		 ::flixel::FlxSprite rightArrow;
 		::Array< ::Dynamic> loadedWeeks;
+		 ::flixel::FlxSprite win;
+		::Array< int > phillyLightsColors;
+		int curLight;
+		 ::flixel::FlxSprite clouds1;
+		 ::flixel::FlxSprite clouds2;
+		::Array< Float > difficultyXY;
 		void create();
 
 		void closeSubState();
 
 		void update(Float elapsed);
+
+		void beatHit();
 
 		bool movedBack;
 		bool selectedWeek;

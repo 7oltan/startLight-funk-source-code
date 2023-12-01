@@ -54,6 +54,7 @@ class HXCPP_CLASS_ATTRIBUTES MenuItem_obj : public  ::flixel::FlxSprite_obj
 		::Dynamic startFlashing_dyn();
 
 		int fakeFramerate;
+		Float alphaTO;
 		void update(Float elapsed);
 
 };

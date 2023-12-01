@@ -1320,6 +1320,7 @@
    <depend name="include/Std.h"/>
    <depend name="include/StringTools.h"/>
    <depend name="include/backend/ClientPrefs.h"/>
+   <depend name="include/backend/Conductor.h"/>
    <depend name="include/backend/Controls.h"/>
    <depend name="include/backend/Difficulty.h"/>
    <depend name="include/backend/DiscordClient.h"/>
@@ -1353,6 +1354,7 @@
    <depend name="include/flixel/input/keyboard/FlxKeyList.h"/>
    <depend name="include/flixel/input/keyboard/FlxKeyboard.h"/>
    <depend name="include/flixel/input/mouse/FlxMouse.h"/>
+   <depend name="include/flixel/math/FlxRandom.h"/>
    <depend name="include/flixel/sound/FlxSound.h"/>
    <depend name="include/flixel/system/FlxSoundGroup.h"/>
    <depend name="include/flixel/system/frontEnds/SoundFrontEnd.h"/>
@@ -1367,12 +1369,10 @@
    <depend name="include/haxe/IMap.h"/>
    <depend name="include/haxe/Log.h"/>
    <depend name="include/haxe/ds/StringMap.h"/>
-   <depend name="include/objects/MenuCharacter.h"/>
    <depend name="include/objects/MenuItem.h"/>
    <depend name="include/openfl/events/EventDispatcher.h"/>
    <depend name="include/openfl/events/IEventDispatcher.h"/>
    <depend name="include/openfl/media/Sound.h"/>
-   <depend name="include/openfl/text/TextFormat.h"/>
    <depend name="include/states/FreeplayState.h"/>
    <depend name="include/states/LoadingState.h"/>
    <depend name="include/states/MainMenuState.h"/>
@@ -1671,6 +1671,14 @@
    <depend name="include/states/MultiCallback.h"/>
    <depend name="include/states/PlayState.h"/>
   </file>
+  <file name="src/states/GalleryBar.cpp" >
+   <depend name="include/Std.h"/>
+   <depend name="include/flixel/FlxBasic.h"/>
+   <depend name="include/flixel/FlxObject.h"/>
+   <depend name="include/flixel/FlxSprite.h"/>
+   <depend name="include/flixel/util/IFlxDestroyable.h"/>
+   <depend name="include/states/GalleryBar.h"/>
+  </file>
   <file name="src/states/GalleryMenuState.cpp" >
    <depend name="include/Std.h"/>
    <depend name="include/StringTools.h"/>
@@ -1724,6 +1732,7 @@
    <depend name="include/openfl/events/EventDispatcher.h"/>
    <depend name="include/openfl/events/IEventDispatcher.h"/>
    <depend name="include/openfl/events/IOErrorEvent.h"/>
+   <depend name="include/openfl/events/ProgressEvent.h"/>
    <depend name="include/openfl/events/TextEvent.h"/>
    <depend name="include/openfl/media/Sound.h"/>
    <depend name="include/openfl/net/URLLoader.h"/>
@@ -1731,6 +1740,7 @@
    <depend name="include/openfl/utils/ByteArrayData.h"/>
    <depend name="include/openfl/utils/IDataInput.h"/>
    <depend name="include/openfl/utils/IDataOutput.h"/>
+   <depend name="include/states/GalleryBar.h"/>
    <depend name="include/states/GalleryMenuState.h"/>
    <depend name="include/states/MainMenuState.h"/>
    <depend name="include/sys/FileSystem.h"/>
@@ -1813,6 +1823,7 @@
    <depend name="include/flixel/addons/ui/FlxUIState.h"/>
    <depend name="include/flixel/addons/ui/interfaces/IEventGetter.h"/>
    <depend name="include/flixel/addons/ui/interfaces/IFlxUIState.h"/>
+   <depend name="include/flixel/animation/FlxAnimationController.h"/>
    <depend name="include/flixel/graphics/FlxGraphic.h"/>
    <depend name="include/flixel/group/FlxTypedGroup.h"/>
    <depend name="include/flixel/group/FlxTypedSpriteGroup.h"/>
@@ -6306,6 +6317,7 @@
    <depend name="include/sys/io/File.h"/>
   </file>
   <file name="src/objects/MenuItem.cpp" >
+   <depend name="include/Std.h"/>
    <depend name="include/backend/ClientPrefs.h"/>
    <depend name="include/backend/Paths.h"/>
    <depend name="include/backend/SaveVariables.h"/>
@@ -6314,7 +6326,9 @@
    <depend name="include/flixel/FlxObject.h"/>
    <depend name="include/flixel/FlxSprite.h"/>
    <depend name="include/flixel/graphics/FlxGraphic.h"/>
+   <depend name="include/flixel/math/FlxBasePoint.h"/>
    <depend name="include/flixel/util/IFlxDestroyable.h"/>
+   <depend name="include/flixel/util/IFlxPooled.h"/>
    <depend name="include/objects/MenuItem.h"/>
   </file>
   <file name="src/objects/MenuCharacter.cpp" >
@@ -15224,6 +15238,12 @@
    <depend name="include/lime/text/Font.h"/>
    <depend name="include/openfl/text/Font.h"/>
   </file>
+  <file name="src/__ASSET__OPENFL__assets_fonts_schluber_ttf.cpp" >
+   <depend name="include/ManifestResources.h"/>
+   <depend name="include/__ASSET__OPENFL__assets_fonts_schluber_ttf.h"/>
+   <depend name="include/lime/text/Font.h"/>
+   <depend name="include/openfl/text/Font.h"/>
+  </file>
   <file name="src/__ASSET__OPENFL__assets_fonts_pixel_otf.cpp" >
    <depend name="include/ManifestResources.h"/>
    <depend name="include/__ASSET__OPENFL__assets_fonts_pixel_otf.h"/>
@@ -15250,6 +15270,11 @@
   <file name="src/__ASSET__assets_fonts_vcr_ttf.cpp" >
    <depend name="include/ManifestResources.h"/>
    <depend name="include/__ASSET__assets_fonts_vcr_ttf.h"/>
+   <depend name="include/lime/text/Font.h"/>
+  </file>
+  <file name="src/__ASSET__assets_fonts_schluber_ttf.cpp" >
+   <depend name="include/ManifestResources.h"/>
+   <depend name="include/__ASSET__assets_fonts_schluber_ttf.h"/>
    <depend name="include/lime/text/Font.h"/>
   </file>
   <file name="src/__ASSET__assets_fonts_pixel_otf.cpp" >
@@ -15599,6 +15624,7 @@
    <depend name="include/Reflect.h"/>
    <depend name="include/StringTools.h"/>
    <depend name="include/__ASSET__OPENFL__assets_fonts_pixel_otf.h"/>
+   <depend name="include/__ASSET__OPENFL__assets_fonts_schluber_ttf.h"/>
    <depend name="include/__ASSET__OPENFL__assets_fonts_vcr_ttf.h"/>
    <depend name="include/__ASSET__OPENFL__flixel_fonts_monsterrat_ttf.h"/>
    <depend name="include/__ASSET__OPENFL__flixel_fonts_nokiafc22_ttf.h"/>
@@ -16089,6 +16115,7 @@
    <depend name="include/states/OutdatedState.h"/>
    <depend name="include/states/MainMenuState.h"/>
    <depend name="include/states/LoadingState.h"/>
+   <depend name="include/states/GalleryMenuState.h"/>
    <depend name="include/states/FreeplayState.h"/>
    <depend name="include/states/FlashingState.h"/>
    <depend name="include/psychlua/CustomFlxColor.h"/>

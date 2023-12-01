@@ -7950,6 +7950,11 @@
 						172800,
 						2,
 						2325
+					],
+					[
+						172800,
+						6,
+						0
 					]
 				],
 				"sectionBeats": 4,
@@ -9260,7 +9265,7 @@
 				"mustHitSection": true
 			}
 		],
-		"player2": "GauntletNastya",
+		"player2": "NastyaGauntlet",
 		"gfVersion": "no-character",
 		"events": [
 			[
@@ -9280,6 +9285,16 @@
 						"Fade UI",
 						"0",
 						"9"
+					]
+				]
+			],
+			[
+				6225,
+				[
+					[
+						"Play Animation",
+						"voiceline",
+						"Dad"
 					]
 				]
 			],
@@ -9569,7 +9584,7 @@
 					[
 						"Change Character",
 						"Dad",
-						"GauntletNastya"
+						"NastyaGauntlet"
 					],
 					[
 						"Change Character",
@@ -9930,6 +9945,31 @@
 						"Shader",
 						"1",
 						""
+					],
+					[
+						"Change Character",
+						"Dad",
+						"NastyaPixel"
+					],
+					[
+						"Change Character",
+						"BF",
+						"gfGauntletPixel"
+					],
+					[
+						"pixelEvent",
+						"pixel",
+						""
+					],
+					[
+						"stage test",
+						"pixel",
+						""
+					],
+					[
+						"Flash",
+						"",
+						""
 					]
 				]
 			],
@@ -10030,6 +10070,31 @@
 						"Add Camera Zoom",
 						"0.01",
 						""
+					],
+					[
+						"Flash",
+						"",
+						""
+					],
+					[
+						"stage test",
+						"normal",
+						""
+					],
+					[
+						"pixelEvent",
+						"normal",
+						""
+					],
+					[
+						"Change Character",
+						"Dad",
+						"NastyaGauntlet"
+					],
+					[
+						"Change Character",
+						"BF",
+						"Playergf"
 					]
 				]
 			],
@@ -10154,6 +10219,21 @@
 				]
 			],
 			[
+				168000,
+				[
+					[
+						"Play Animation",
+						"oraora",
+						"Dad"
+					],
+					[
+						"Flash",
+						"",
+						""
+					]
+				]
+			],
+			[
 				168525,
 				[
 					[
@@ -10203,6 +10283,11 @@
 					],
 					[
 						"Lyrics",
+						"",
+						""
+					],
+					[
+						"Flash",
 						"",
 						""
 					]

@@ -1,0 +1,101 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				-280,
+				-553
+			],
+			"loop": true,
+			"fps": 24,
+			"anim": "oraora",
+			"indices": [],
+			"name": "punching"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "singLEFT",
+			"fps": 12,
+			"name": "left",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "idle",
+			"fps": 12,
+			"name": "idle",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-125,
+				-35
+			],
+			"anim": "singDOWN",
+			"fps": 12,
+			"name": "down",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "singUP",
+			"fps": 12,
+			"name": "up",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "singRIGHT",
+			"fps": 12,
+			"name": "right",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "voiceline",
+			"fps": 12,
+			"name": "voiceline",
+			"indices": []
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/nastyaGauntlet",
+	"position": [
+		-240,
+		-650
+	],
+	"health_bar": "nastya",
+	"healthicon": "nastya",
+	"flip_x": false,
+	"healthbar_colors": [
+		195,
+		0,
+		81
+	],
+	"camera_position": [
+		190,
+		20
+	],
+	"sing_duration": 6.1,
+	"scale": 1
+}

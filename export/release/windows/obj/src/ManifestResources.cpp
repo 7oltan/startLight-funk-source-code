@@ -12,6 +12,9 @@
 #ifndef INCLUDED___ASSET__OPENFL__assets_fonts_pixel_otf
 #include <__ASSET__OPENFL__assets_fonts_pixel_otf.h>
 #endif
+#ifndef INCLUDED___ASSET__OPENFL__assets_fonts_schluber_ttf
+#include <__ASSET__OPENFL__assets_fonts_schluber_ttf.h>
+#endif
 #ifndef INCLUDED___ASSET__OPENFL__assets_fonts_vcr_ttf
 #include <__ASSET__OPENFL__assets_fonts_vcr_ttf.h>
 #endif
@@ -88,55 +91,56 @@ HXLINE(  55)		if (::hx::IsNull( ::ManifestResources_obj::rootPath )) {
 HXLINE(  64)			::ManifestResources_obj::rootPath = HX_("./",41,28,00,00);
             		}
 HXLINE(  70)		::openfl::text::Font_obj::registerFont(::hx::ClassOf< ::__ASSET__OPENFL__assets_fonts_pixel_otf >());
-HXLINE(  71)		::openfl::text::Font_obj::registerFont(::hx::ClassOf< ::__ASSET__OPENFL__assets_fonts_vcr_ttf >());
-HXLINE(  72)		::openfl::text::Font_obj::registerFont(::hx::ClassOf< ::__ASSET__OPENFL__flixel_fonts_nokiafc22_ttf >());
-HXLINE(  73)		::openfl::text::Font_obj::registerFont(::hx::ClassOf< ::__ASSET__OPENFL__flixel_fonts_monsterrat_ttf >());
-HXLINE(  77)		 ::Dynamic data;
-HXDLIN(  77)		 ::Dynamic manifest;
-HXDLIN(  77)		 ::Dynamic bundle;
-HXLINE(  90)		{
-HXLINE(  90)			::String v = (::ManifestResources_obj::rootPath + HX_("manifest/videos.json",1e,f9,65,67));
-HXDLIN(  90)			::lime::utils::Assets_obj::libraryPaths->set(HX_("videos",98,d7,95,e5),v);
-            		}
+HXLINE(  71)		::openfl::text::Font_obj::registerFont(::hx::ClassOf< ::__ASSET__OPENFL__assets_fonts_schluber_ttf >());
+HXLINE(  72)		::openfl::text::Font_obj::registerFont(::hx::ClassOf< ::__ASSET__OPENFL__assets_fonts_vcr_ttf >());
+HXLINE(  73)		::openfl::text::Font_obj::registerFont(::hx::ClassOf< ::__ASSET__OPENFL__flixel_fonts_nokiafc22_ttf >());
+HXLINE(  74)		::openfl::text::Font_obj::registerFont(::hx::ClassOf< ::__ASSET__OPENFL__flixel_fonts_monsterrat_ttf >());
+HXLINE(  78)		 ::Dynamic data;
+HXDLIN(  78)		 ::Dynamic manifest;
+HXDLIN(  78)		 ::Dynamic bundle;
 HXLINE(  91)		{
-HXLINE(  91)			::String v1 = (::ManifestResources_obj::rootPath + HX_("manifest/songs.json",38,27,75,ee));
-HXDLIN(  91)			::lime::utils::Assets_obj::libraryPaths->set(HX_("songs",fe,36,c7,80),v1);
+HXLINE(  91)			::String v = (::ManifestResources_obj::rootPath + HX_("manifest/videos.json",1e,f9,65,67));
+HXDLIN(  91)			::lime::utils::Assets_obj::libraryPaths->set(HX_("videos",98,d7,95,e5),v);
             		}
 HXLINE(  92)		{
-HXLINE(  92)			::String v2 = (::ManifestResources_obj::rootPath + HX_("manifest/shared.json",f1,c2,0a,f4));
-HXDLIN(  92)			::lime::utils::Assets_obj::libraryPaths->set(HX_("shared",a5,5e,2b,1d),v2);
+HXLINE(  92)			::String v1 = (::ManifestResources_obj::rootPath + HX_("manifest/songs.json",38,27,75,ee));
+HXDLIN(  92)			::lime::utils::Assets_obj::libraryPaths->set(HX_("songs",fe,36,c7,80),v1);
             		}
 HXLINE(  93)		{
-HXLINE(  93)			::String v3 = (::ManifestResources_obj::rootPath + HX_("manifest/default.json",95,ea,cc,42));
-HXDLIN(  93)			::lime::utils::Assets_obj::libraryPaths->set(HX_("default",c1,d8,c3,9b),v3);
+HXLINE(  93)			::String v2 = (::ManifestResources_obj::rootPath + HX_("manifest/shared.json",f1,c2,0a,f4));
+HXDLIN(  93)			::lime::utils::Assets_obj::libraryPaths->set(HX_("shared",a5,5e,2b,1d),v2);
             		}
-HXLINE(  77)		 ::lime::utils::AssetLibrary library = ::lime::utils::Assets_obj::getLibrary(HX_("videos",98,d7,95,e5));
-HXLINE(  97)		if (::hx::IsNotNull( library )) {
-HXLINE(  97)			::ManifestResources_obj::preloadLibraries->push(library);
+HXLINE(  94)		{
+HXLINE(  94)			::String v3 = (::ManifestResources_obj::rootPath + HX_("manifest/default.json",95,ea,cc,42));
+HXDLIN(  94)			::lime::utils::Assets_obj::libraryPaths->set(HX_("default",c1,d8,c3,9b),v3);
             		}
-            		else {
-HXLINE(  98)			::ManifestResources_obj::preloadLibraryNames->push(HX_("videos",98,d7,95,e5));
-            		}
-HXLINE(  99)		library = ::lime::utils::Assets_obj::getLibrary(HX_("songs",fe,36,c7,80));
-HXLINE( 100)		if (::hx::IsNotNull( library )) {
-HXLINE( 100)			::ManifestResources_obj::preloadLibraries->push(library);
+HXLINE(  78)		 ::lime::utils::AssetLibrary library = ::lime::utils::Assets_obj::getLibrary(HX_("videos",98,d7,95,e5));
+HXLINE(  98)		if (::hx::IsNotNull( library )) {
+HXLINE(  98)			::ManifestResources_obj::preloadLibraries->push(library);
             		}
             		else {
-HXLINE( 101)			::ManifestResources_obj::preloadLibraryNames->push(HX_("songs",fe,36,c7,80));
+HXLINE(  99)			::ManifestResources_obj::preloadLibraryNames->push(HX_("videos",98,d7,95,e5));
             		}
-HXLINE( 102)		library = ::lime::utils::Assets_obj::getLibrary(HX_("shared",a5,5e,2b,1d));
-HXLINE( 103)		if (::hx::IsNotNull( library )) {
-HXLINE( 103)			::ManifestResources_obj::preloadLibraries->push(library);
-            		}
-            		else {
-HXLINE( 104)			::ManifestResources_obj::preloadLibraryNames->push(HX_("shared",a5,5e,2b,1d));
-            		}
-HXLINE( 105)		library = ::lime::utils::Assets_obj::getLibrary(HX_("default",c1,d8,c3,9b));
-HXLINE( 106)		if (::hx::IsNotNull( library )) {
-HXLINE( 106)			::ManifestResources_obj::preloadLibraries->push(library);
+HXLINE( 100)		library = ::lime::utils::Assets_obj::getLibrary(HX_("songs",fe,36,c7,80));
+HXLINE( 101)		if (::hx::IsNotNull( library )) {
+HXLINE( 101)			::ManifestResources_obj::preloadLibraries->push(library);
             		}
             		else {
-HXLINE( 107)			::ManifestResources_obj::preloadLibraryNames->push(HX_("default",c1,d8,c3,9b));
+HXLINE( 102)			::ManifestResources_obj::preloadLibraryNames->push(HX_("songs",fe,36,c7,80));
+            		}
+HXLINE( 103)		library = ::lime::utils::Assets_obj::getLibrary(HX_("shared",a5,5e,2b,1d));
+HXLINE( 104)		if (::hx::IsNotNull( library )) {
+HXLINE( 104)			::ManifestResources_obj::preloadLibraries->push(library);
+            		}
+            		else {
+HXLINE( 105)			::ManifestResources_obj::preloadLibraryNames->push(HX_("shared",a5,5e,2b,1d));
+            		}
+HXLINE( 106)		library = ::lime::utils::Assets_obj::getLibrary(HX_("default",c1,d8,c3,9b));
+HXLINE( 107)		if (::hx::IsNotNull( library )) {
+HXLINE( 107)			::ManifestResources_obj::preloadLibraries->push(library);
+            		}
+            		else {
+HXLINE( 108)			::ManifestResources_obj::preloadLibraryNames->push(HX_("default",c1,d8,c3,9b));
             		}
             	}
 

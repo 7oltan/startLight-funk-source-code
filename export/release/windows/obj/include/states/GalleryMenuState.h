@@ -21,6 +21,7 @@ HX_DECLARE_CLASS4(flixel,addons,ui,interfaces,IFlxUIState)
 HX_DECLARE_CLASS2(flixel,group,FlxTypedGroup)
 HX_DECLARE_CLASS2(flixel,text,FlxText)
 HX_DECLARE_CLASS2(flixel,util,IFlxDestroyable)
+HX_DECLARE_CLASS1(states,GalleryBar)
 HX_DECLARE_CLASS1(states,GalleryMenuState)
 
 namespace states{
@@ -50,7 +51,9 @@ class HXCPP_CLASS_ATTRIBUTES GalleryMenuState_obj : public  ::backend::MusicBeat
 
 		HX_DO_RTTI_ALL;
 		::hx::Val __Field(const ::String &inString, ::hx::PropertyAccess inCallProp);
+		static bool __GetStatic(const ::String &inString, Dynamic &outValue, ::hx::PropertyAccess inCallProp);
 		::hx::Val __SetField(const ::String &inString,const ::hx::Val &inValue, ::hx::PropertyAccess inCallProp);
+		static bool __SetStatic(const ::String &inString, Dynamic &ioValue, ::hx::PropertyAccess inCallProp);
 		void __GetFields(Array< ::String> &outFields);
 		static void __register();
 		void __Mark(HX_MARK_PARAMS);
@@ -58,6 +61,8 @@ class HXCPP_CLASS_ATTRIBUTES GalleryMenuState_obj : public  ::backend::MusicBeat
 		bool _hx_isInstanceOf(int inClassId);
 		::String __ToString() const { return HX_("GalleryMenuState",20,79,82,37); }
 
+		static void __boot();
+		static bool thisStateIsDestroyed;
 		bool oldMouse;
 		 ::flixel::group::FlxTypedGroup itemGroup;
 		 ::flixel::group::FlxTypedGroup nastyaGroup;
@@ -73,6 +78,11 @@ class HXCPP_CLASS_ATTRIBUTES GalleryMenuState_obj : public  ::backend::MusicBeat
 		 ::flixel::FlxSprite arrowDOWN;
 		 ::flixel::text::FlxText imagesText;
 		 ::flixel::FlxSprite nastya;
+		 ::states::GalleryBar loadingBar;
+		 ::states::GalleryBar progressBar;
+		 ::flixel::text::FlxText progressText;
+		 ::flixel::text::FlxText GYAT;
+		Float lurpLoadingBar;
 		void create();
 
 		 ::flixel::text::FlxText errorText;
@@ -83,6 +93,8 @@ class HXCPP_CLASS_ATTRIBUTES GalleryMenuState_obj : public  ::backend::MusicBeat
 		::Dynamic changeSelection_dyn();
 
 		void update(Float elapsed);
+
+		void destroy();
 
 };
 

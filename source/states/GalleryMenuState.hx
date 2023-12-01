@@ -40,11 +40,20 @@ class GalleryMenuState extends MusicBeatState{
 
     var imagesText:FlxText;
     var nastya:FlxSprite;
+
+    var loadingBar:GalleryBar;
+    var progressBar:GalleryBar;
+    var progressText:FlxText;
+    var GYAT:FlxText;
+
+    var lurpLoadingBar:Float = 0.0;
+
+    public static var thisStateIsDestroyed:Bool = true;
     override public function create() {
         super.create();
+        thisStateIsDestroyed = false;
 
         oldMouse = FlxG.mouse.visible;
-        FlxG.mouse.visible = true;
 
 		var bg:FlxSprite = new FlxSprite(0,0).loadGraphic(Paths.image('gallery-bg'));
 		bg.antialiasing = ClientPrefs.data.antialiasing;
@@ -116,6 +125,29 @@ class GalleryMenuState extends MusicBeatState{
         black.screenCenter();
         add(black);
 
+        progressBar = new GalleryBar((FlxG.width-FlxG.width*0.85)/2,FlxG.height-100,FlxG.width*0.85,30,FlxColor.GREEN,FlxColor.BLACK);
+        add(progressBar);
+
+        loadingBar = new GalleryBar((FlxG.width-FlxG.width*0.6)/2,progressBar.y+progressBar.height,FlxG.width*0.6,15,FlxColor.WHITE,FlxColor.BLACK);
+        add(loadingBar);
+        
+        progressText = new FlxText(-5000,loadingBar.y,(progressBar.width-loadingBar.width)/2," ",20);
+		progressText.setFormat(Paths.font("vcr.ttf"), 15, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+		progressText.borderSize = 2;
+        add(progressText);
+        
+        var shitAhhText:String = '| this Gallery is online! so it takes time to load the images, if you want to submit fanart post it on twitter/X tagging @starlightFunk(fake account) or @___etoile___ |';
+
+        var blackBG:FlxSprite = new FlxSprite(0,(FlxG.height/2)+100).makeGraphic(FlxG.width,20,FlxColor.BLACK);
+        blackBG.alpha = 0.7;
+        add(blackBG);
+
+        GYAT = new FlxText(0,(FlxG.height/2)+100,0,shitAhhText+shitAhhText,20);
+		GYAT.setFormat(Paths.font("vcr.ttf"), 20, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+		GYAT.borderSize = 2;
+        add(GYAT);
+        FlxTween.tween(GYAT,{x:-GYAT.width/2},20,{onComplete:function(t) GYAT.x = 0,type:LOOPING});
+
         errorText = new FlxText(0,0,FlxG.width*0.8,"slay",20);
         errorText.alpha = 0;
         errorText.setFormat("VCR OSD Mono", 32, FlxColor.WHITE, CENTER);
@@ -124,7 +156,6 @@ class GalleryMenuState extends MusicBeatState{
         FlxTween.tween(FlxG.sound.music,{volume:0.5},0.3,{ease : FlxEase.linear});
         call(URL+'image-list.txt',function(dataText){
             var imageList:Array<String> = CoolUtil.listFromString(dataText);
-
             for(i in 0...imageList.length){
                 var name:String = imageList[i].split('>')[0];
                 var type:String = imageList[i].split('>')[1];
@@ -133,7 +164,7 @@ class GalleryMenuState extends MusicBeatState{
                     var dataBYTE:ByteArray = new ByteArray();
                     data.readBytes(dataBYTE, 0, data.length - data.position);
                     
-                    var image:FlxSprite = new FlxSprite(770,160).loadGraphic(FlxGraphic.fromBitmapData(BitmapData.fromBytes(data),false,name));
+                    var image:FlxSprite = new FlxSprite(790,160).loadGraphic(FlxGraphic.fromBitmapData(BitmapData.fromBytes(data),false,name));
                     image.updateHitbox();
                     if(image.width > image.height)
                         image.setGraphicSize(400);
@@ -161,8 +192,17 @@ class GalleryMenuState extends MusicBeatState{
                         ready = true;
                         FlxTween.tween(black,{alpha:0},0.2,{ease : FlxEase.linear,onComplete:function(t)remove(black)});
                         FlxTween.tween(FlxG.sound.music,{volume:1},0.2,{ease : FlxEase.linear});
+                        FlxG.mouse.visible = true;
+                        blackBG.alpha = 0;
+                        GYAT.alpha = 0;
+                        loadingBar.alpha = 0;
+                        progressBar.alpha = 0;
+                        progressText.alpha = 0;
                         errorText.alpha = 0;
                     }
+                    progressBar.percent = (nastyaGroup.members.length+conceptGroup.members.length+otherGroup.members.length)/imageList.length;
+                    progressText.text = (nastyaGroup.members.length+conceptGroup.members.length+otherGroup.members.length)+' / '+imageList.length+' || '+Std.int(((nastyaGroup.members.length+conceptGroup.members.length+otherGroup.members.length)/imageList.length)*100)+'%';
+                    progressText.x = (loadingBar.x+loadingBar.width+((progressBar.width-loadingBar.width)/4))-(progressText.width/2);
                 },BINARY);
             }
         },TEXT);
@@ -177,14 +217,18 @@ class GalleryMenuState extends MusicBeatState{
         var file:URLLoader = new URLLoader();
         file.dataFormat = dataFormat;
         
-        file.addEventListener(Event.COMPLETE, function(e){ callBack(file.data);errorText.alpha = 0;});
-        /*file.addEventListener(ProgressEvent.PROGRESS,function(e){ //idk if i should add those later
-            progressBar.width = (FlxG.width*0.8)*(e.bytesLoaded/e.bytesTotal);
-            progressBar.screenCenter(X);
+        file.addEventListener(Event.COMPLETE, function(e){
+            if(GalleryMenuState.thisStateIsDestroyed) return; //ugh took me long enough to get, thanks winn/whatify <3
+            callBack(file.data);
+            errorText.alpha = 0;
+        });
+        file.addEventListener(ProgressEvent.PROGRESS,function(e){ //idk if i should add this later
+            lurpLoadingBar = e.bytesLoaded/e.bytesTotal;
             trace(e);
-        });*/
+        });
         file.addEventListener(IOErrorEvent.IO_ERROR, function(e){ // error handler is killing me
             trace(e);  
+
             new FlxTimer().start(1, function(tmr:FlxTimer)
                 call(url,callBack,dataFormat)
             );
@@ -192,7 +236,7 @@ class GalleryMenuState extends MusicBeatState{
             var shortText:String = e.text;
             if(shortText == "Couldn't resolve host name")
                 shortText = 'no internet';
-            if(shortText.contains('404'))
+            if(shortText.contains('404')) // not workin???
                 shortText = 'file not found, please contact _etoile_ on discord about this if you can';
 
             errorText.alpha = 1;
@@ -239,7 +283,8 @@ class GalleryMenuState extends MusicBeatState{
                 image.visible = true;
                 image.alpha = 0.6;
                 image.y = 160-10;
-                FlxTween.tween(image, {y: 160, alpha: 1}, 0.07);
+                image.y += (400-image.height)/2;
+                FlxTween.tween(image, {y: image.y+10, alpha: 1}, 0.07);
             }
             else
                 image.visible = false;
@@ -248,6 +293,11 @@ class GalleryMenuState extends MusicBeatState{
 
     override public function update(elapsed:Float) {
         super.update(elapsed);
+
+        if(lurpLoadingBar >= loadingBar.percent)
+            loadingBar.percent = FlxMath.lerp(loadingBar.percent, lurpLoadingBar, FlxMath.bound(elapsed * 30, 0, 1));
+        else
+            loadingBar.percent = lurpLoadingBar;
 
         itemGroup.forEach(function(button:FlxSprite){
             if(FlxG.mouse.overlaps(button)){
@@ -292,5 +342,47 @@ class GalleryMenuState extends MusicBeatState{
             FlxG.mouse.visible = oldMouse;
             FlxG.sound.music.volume = 1;
         }
+    }
+    
+    override public function destroy(){
+        super.destroy(); 
+        GalleryMenuState.thisStateIsDestroyed = true;
+    }
+}
+
+class GalleryBar extends FlxSprite{
+    var barWidth:Float = 0;
+    var barHeight:Float = 0;
+    var colorA:FlxColor;
+    var colorB:FlxColor;
+
+    public var percent:Float = 0; //0 to 1
+    override public function new(x,y,barWidth:Float,barHeight:Float,colorA:FlxColor,colorB:FlxColor) {
+        super(x,y);
+        this.barWidth = barWidth;
+        this.barHeight = barHeight;
+        this.colorA = colorA;
+        this.colorB = colorB;
+        makeGraphic(Std.int(barWidth),Std.int(barHeight),colorB);
+    }
+
+    override function draw(){
+        super.draw();
+        var barA:FlxSprite = new FlxSprite(x,y).makeGraphic(Std.int(barWidth*percent),Std.int(barHeight),colorA);
+        barA.alpha = alpha;
+        barA.draw();
+        
+        var UP:FlxSprite = new FlxSprite(x,y).makeGraphic(Std.int(barWidth),Std.int(barHeight*0.3),FlxColor.BLACK);
+        UP.alpha = alpha;
+        UP.draw();
+        var DOWN:FlxSprite = new FlxSprite(x,y+barHeight-Std.int(barHeight*0.3)).makeGraphic(Std.int(barWidth),Std.int(barHeight*0.3),FlxColor.BLACK);
+        DOWN.alpha = alpha;
+        DOWN.draw();
+        var UP:FlxSprite = new FlxSprite(x,y).makeGraphic(Std.int(barWidth*0.01),Std.int(barHeight),FlxColor.BLACK);
+        UP.alpha = alpha;
+        UP.draw();
+        var UP:FlxSprite = new FlxSprite(x+barWidth-Std.int(barWidth*0.01),y).makeGraphic(Std.int(barWidth*0.01),Std.int(barHeight),FlxColor.BLACK);
+        UP.alpha = alpha;
+        UP.draw();
     }
 }

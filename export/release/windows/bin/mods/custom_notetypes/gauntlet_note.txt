@@ -1,0 +1,5 @@
+texture = "gauntlet_hurt"
+rgbShader.r = 0xFF8800
+rgbShader.g = 0xFFFFFF
+rgbShader.b = 0xBF4D06
+hitsound = "confirmMenu"

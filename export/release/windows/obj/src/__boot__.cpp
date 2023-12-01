@@ -252,6 +252,9 @@
 #ifndef INCLUDED_states_LoadingState
 #include <states/LoadingState.h>
 #endif
+#ifndef INCLUDED_states_GalleryMenuState
+#include <states/GalleryMenuState.h>
+#endif
 #ifndef INCLUDED_states_FreeplayState
 #include <states/FreeplayState.h>
 #endif
@@ -1680,8 +1683,8 @@
 #ifndef INCLUDED_states_MultiCallback
 #include <states/MultiCallback.h>
 #endif
-#ifndef INCLUDED_states_GalleryMenuState
-#include <states/GalleryMenuState.h>
+#ifndef INCLUDED_states_GalleryBar
+#include <states/GalleryBar.h>
 #endif
 #ifndef INCLUDED_states_GalamixMenuState
 #include <states/GalamixMenuState.h>
@@ -3822,11 +3825,17 @@
 #ifndef INCLUDED___ASSET__OPENFL__assets_fonts_vcr_ttf
 #include <__ASSET__OPENFL__assets_fonts_vcr_ttf.h>
 #endif
+#ifndef INCLUDED___ASSET__OPENFL__assets_fonts_schluber_ttf
+#include <__ASSET__OPENFL__assets_fonts_schluber_ttf.h>
+#endif
 #ifndef INCLUDED___ASSET__OPENFL__assets_fonts_pixel_otf
 #include <__ASSET__OPENFL__assets_fonts_pixel_otf.h>
 #endif
 #ifndef INCLUDED___ASSET__assets_fonts_vcr_ttf
 #include <__ASSET__assets_fonts_vcr_ttf.h>
+#endif
+#ifndef INCLUDED___ASSET__assets_fonts_schluber_ttf
+#include <__ASSET__assets_fonts_schluber_ttf.h>
 #endif
 #ifndef INCLUDED___ASSET__assets_fonts_pixel_otf
 #include <__ASSET__assets_fonts_pixel_otf.h>
@@ -3994,6 +4003,7 @@ __files__boot();
 ::states::OutdatedState_obj::__register();
 ::states::MainMenuState_obj::__register();
 ::states::LoadingState_obj::__register();
+::states::GalleryMenuState_obj::__register();
 ::states::FreeplayState_obj::__register();
 ::states::FlashingState_obj::__register();
 ::psychlua::CustomFlxColor_obj::__register();
@@ -4470,7 +4480,7 @@ __files__boot();
 ::states::editors::CharacterEditorState_obj::__register();
 ::states::MenuItem_obj::__register();
 ::states::MultiCallback_obj::__register();
-::states::GalleryMenuState_obj::__register();
+::states::GalleryBar_obj::__register();
 ::states::GalamixMenuState_obj::__register();
 ::states::SongMetadata_obj::__register();
 ::states::CreditsState_obj::__register();
@@ -5184,8 +5194,10 @@ __files__boot();
 ::__ASSET__OPENFL__flixel_fonts_monsterrat_ttf_obj::__register();
 ::__ASSET__OPENFL__flixel_fonts_nokiafc22_ttf_obj::__register();
 ::__ASSET__OPENFL__assets_fonts_vcr_ttf_obj::__register();
+::__ASSET__OPENFL__assets_fonts_schluber_ttf_obj::__register();
 ::__ASSET__OPENFL__assets_fonts_pixel_otf_obj::__register();
 ::__ASSET__assets_fonts_vcr_ttf_obj::__register();
+::__ASSET__assets_fonts_schluber_ttf_obj::__register();
 ::__ASSET__assets_fonts_pixel_otf_obj::__register();
 ::lime::graphics::Image_obj::__register();
 ::lime::text::Font_obj::__register();
@@ -5735,6 +5747,7 @@ __files__boot();
 ::psychlua::CustomFlxColor_obj::__boot();
 ::states::FlashingState_obj::__boot();
 ::states::FreeplayState_obj::__boot();
+::states::GalleryMenuState_obj::__boot();
 ::states::LoadingState_obj::__boot();
 ::states::MainMenuState_obj::__boot();
 ::states::OutdatedState_obj::__boot();
