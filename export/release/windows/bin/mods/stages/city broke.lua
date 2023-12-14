@@ -5,29 +5,40 @@ local pixel = {}
 function makeBGsprite(name,scroll,typee)
 	local plus = 0
 	if typee == pixel then
-		plus = 450
+		plus = 450-210
 		if name == 'nastya/pixel/Sky' then
-			plus = 200
+			plus = 200-210
 		end
 	end
-	makeLuaSprite(name, name, -800, -500+plus);
+	makeLuaSprite(name, name, -850, -290+plus);
 	setScrollFactor(name, scroll, scroll);
 	addLuaSprite(name, false);
 	if typee == pixel then
 		local pixelZoom = getPropertyFromClass('states.PlayState','daPixelZoom')
 		scaleObject(name,pixelZoom*1.35, pixelZoom*1.35)
 		setProperty(name..'.antialiasing',false)
-	else
-    	scaleObject(name, 0.8, 0.8)
 	end
 	table.insert(typee,name)
 end
 
 function onCreate()
+
+	--CACHE MONEY MONEY
+	local pixelShit = {'bad-pixel','combo-pixel','shit-pixel','sick-pixel','good-pixel','noteSkins/NOTE_assets','noteSkins/NOTE_assetsENDS'}
+	for i = 0,9 do
+		table.insert(pixelShit,'num'..i..'-pixel')
+	end
+	debugPrint(pixelShit)
+	for i = 1,#pixelShit do
+		precacheImage('pixelUI/'..pixelShit[i])
+	end
+
+	precacheImage('noteSplashes/noteSplashes')
+
 	makeBGsprite('nastya/sky', 0.4,sprites)
+	makeBGsprite('nastya/moon', 0.4,sprites)
 	makeBGsprite('nastya/buildings1', 0.5,sprites)
 	makeBGsprite('nastya/buildings2', 0.6,sprites)
-	makeBGsprite('nastya/buildings3', 0.7,sprites) 
 	makeBGsprite('nastya/city', 0.8,sprites)
 	makeBGsprite('nastya/groundBroken', 1,sprites)
 

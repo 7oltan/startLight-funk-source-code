@@ -13,6 +13,8 @@ import states.editors.ChartingState;
 import substates.GameplayChangersSubstate;
 import substates.ResetScoreSubState;
 
+import flixel.math.FlxPoint;
+
 #if MODS_ALLOWED
 import sys.FileSystem;
 #end
@@ -35,10 +37,8 @@ class FreeplayState extends MusicBeatState
 	var intendedScore:Int = 0;
 	var intendedRating:Float = 0;
 
-	private var grpSongs:FlxTypedGroup<Alphabet>;
+	private var grpSongs:FlxTypedGroup<SongObject>;
 	private var curPlaying:Bool = false;
-
-	private var iconArray:Array<HealthIcon> = [];
 
 	var bg:FlxSprite;
 	var intendedColor:Int;
@@ -94,34 +94,18 @@ class FreeplayState extends MusicBeatState
 		add(bg);
 		bg.screenCenter();
 
-		grpSongs = new FlxTypedGroup<Alphabet>();
+		grpSongs = new FlxTypedGroup<SongObject>();
 		add(grpSongs);
 
 		for (i in 0...songs.length)
 		{
-			var songText:Alphabet = new Alphabet(90, 320, songs[i].songName, true);
-			songText.targetY = i;
-			grpSongs.add(songText);
 
-			songText.scaleX = Math.min(1, 980 / songText.width);
-			songText.snapToPosition();
+			var bar:SongObject = new SongObject(i,songs[i].songName,songs[i].songCharacter);
+			bar.x = ((bar.targetY-curSelected) * bar.distancePerItem.x) + bar.startPosition.x;
+			bar.y = ((bar.targetY-curSelected) * 1.3 * bar.distancePerItem.y) + bar.startPosition.y;
+			grpSongs.add(bar);
 
 			Mods.currentModDirectory = songs[i].folder;
-			var icon:HealthIcon = new HealthIcon(songs[i].songCharacter);
-			icon.sprTracker = songText;
-
-			
-			// too laggy with a lot of songs, so i had to recode the logic for it
-			songText.visible = songText.active = songText.isMenuItem = false;
-			icon.visible = icon.active = false;
-
-			// using a FlxGroup is too much fuss!
-			iconArray.push(icon);
-			add(icon);
-
-			// songText.x += 40;
-			// DONT PUT X IN THE FIRST PARAMETER OF new ALPHABET() !!
-			// songText.screenCenter(X);
 		}
 		WeekData.setDirectoryFromWeek();
 
@@ -492,14 +476,6 @@ class FreeplayState extends MusicBeatState
 		// selector.y = (70 * curSelected) + 30;
 
 		var bullShit:Int = 0;
-
-		for (i in 0...iconArray.length)
-		{
-			iconArray[i].alpha = 0.6;
-		}
-
-		iconArray[curSelected].alpha = 1;
-
 		for (item in grpSongs.members)
 		{
 			bullShit++;
@@ -539,10 +515,10 @@ class FreeplayState extends MusicBeatState
 		diffText.x = Std.int(scoreBG.x + (scoreBG.width / 2));
 		diffText.x -= diffText.width / 2;
 
-		var diffs = [0,scoreText.y-scoreBG.y, scoreText.y-diffText.y];
+		var diffs = [0,scoreText.y-scoreBG.y, scoreText.y];
 		scoreText.y = 20;
 		scoreBG.y = 350 - diffs[1];
-		diffText.y = 350 - diffs[2];
+		diffText.y = 20+scoreText.height;
 	}
 
 	var _drawDistance:Int = 4;
@@ -553,7 +529,6 @@ class FreeplayState extends MusicBeatState
 		for (i in _lastVisibles)
 		{
 			grpSongs.members[i].visible = grpSongs.members[i].active = false;
-			iconArray[i].visible = iconArray[i].active = false;
 		}
 		_lastVisibles = [];
 
@@ -561,13 +536,11 @@ class FreeplayState extends MusicBeatState
 		var max:Int = Math.round(Math.max(0, Math.min(songs.length, lerpSelected + _drawDistance)));
 		for (i in min...max)
 		{
-			var item:Alphabet = grpSongs.members[i];
+			var item:SongObject = grpSongs.members[i];
 			item.visible = item.active = true;
 			item.x = ((item.targetY - lerpSelected) * item.distancePerItem.x) + item.startPosition.x;
 			item.y = ((item.targetY - lerpSelected) * 1.3 * item.distancePerItem.y) + item.startPosition.y;
 
-			var icon:HealthIcon = iconArray[i];
-			icon.visible = icon.active = true;
 			_lastVisibles.push(i);
 		}
 	}
@@ -590,5 +563,54 @@ class SongMetadata
 		this.color = color;
 		this.folder = Mods.currentModDirectory;
 		if(this.folder == null) this.folder = '';
+	}
+}
+
+class SongObject extends FlxSpriteGroup{
+	public var targetY:Int = 0;
+	public var distancePerItem:FlxPoint = new FlxPoint(20, 120);
+	public var startPosition:FlxPoint = new FlxPoint(90, 320); //for the calculations
+	override public function new(targetY:Int,songName:String,icon:String){
+		super();
+		this.targetY = targetY;
+
+		var barLeft:FlxSprite = new FlxSprite(-80,-25).loadGraphic(Paths.image('freeplay/bar-left'));
+		add(barLeft);
+
+		var barMiddle:FlxSprite = new FlxSprite(0,-25).loadGraphic(Paths.image('freeplay/bar-middle'));
+		add(barMiddle);
+
+		var barRight:FlxSprite = new FlxSprite(0,-25).loadGraphic(Paths.image('freeplay/bar-right'));
+		add(barRight);
+
+		var songText:Alphabet = new Alphabet(0,0, songName, true);
+		songText.scaleX = Math.min(0.8, 980 / songText.width);
+		add(songText);
+
+		barMiddle.setGraphicSize(0,Std.int(songText.height*(198/126)));
+		barMiddle.updateHitbox();
+		barLeft.setGraphicSize(0,Std.int(songText.height*(198/126)));
+		barLeft.updateHitbox();
+		barRight.setGraphicSize(0,Std.int(songText.height*(198/126)));
+		barRight.updateHitbox();
+
+		barMiddle.setGraphicSize(Std.int(songText.width-210/*barLeft.width-barRight.width*/),Std.int(barMiddle.height));
+		barMiddle.updateHitbox();
+		barMiddle.x = barLeft.x+barLeft.width;
+
+		barRight.x = barMiddle.x+barMiddle.width;
+
+		songText.scaleY = 0.8;
+
+		var icon:HealthIcon = new HealthIcon(icon);
+		icon.setGraphicSize(Std.int(icon.width*0.6));
+		icon.updateHitbox();
+		icon.setPosition(barRight.x+(barRight.width/2)-(icon.width/2)-15,-40);
+		add(icon);
+	}
+	override function update(elapsed:Float){
+		/*x = FlxMath.lerp(x, (targetY * distancePerItem.x) + 90, FlxMath.bound(elapsed * 9.6, 0, 1));
+		y = FlxMath.lerp(y, (targetY * 1.3 * distancePerItem.y) + 320, FlxMath.bound(elapsed * 9.6, 0, 1));*/
+		super.update(elapsed);
 	}
 }

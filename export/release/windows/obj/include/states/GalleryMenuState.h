@@ -83,6 +83,7 @@ class HXCPP_CLASS_ATTRIBUTES GalleryMenuState_obj : public  ::backend::MusicBeat
 		 ::flixel::text::FlxText progressText;
 		 ::flixel::text::FlxText GYAT;
 		Float lurpLoadingBar;
+		::Array< ::String > imageList;
 		void create();
 
 		 ::flixel::text::FlxText errorText;

@@ -1,62 +1,62 @@
 {
 	"animations": [
 		{
+			"loop": false,
 			"offsets": [
 				0,
 				0
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "idle",
-			"indices": [],
-			"name": "idle"
+			"fps": 24,
+			"name": "idle",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				-25,
 				-163
 			],
-			"loop": false,
-			"fps": 20,
 			"anim": "singDOWN",
-			"indices": [],
-			"name": "whitty down pose"
+			"fps": 20,
+			"name": "whitty down pose",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				85,
 				57
 			],
-			"loop": false,
-			"fps": 21,
 			"anim": "singUP",
-			"indices": [],
-			"name": "whitty up pose"
+			"fps": 21,
+			"name": "whitty up pose",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				45,
 				-18
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singRIGHT",
-			"indices": [],
-			"name": "whitty right pose"
+			"fps": 24,
+			"name": "whitty right pose",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				71,
 				-63
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singLEFT",
-			"indices": [],
-			"name": "whitty left pose"
+			"fps": 24,
+			"name": "whitty left pose",
+			"indices": []
 		}
 	],
-	"no_antialiasing": true,
+	"no_antialiasing": false,
 	"image": "characters/galamixWhitty",
 	"position": [
 		0,

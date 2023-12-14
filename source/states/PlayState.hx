@@ -1644,6 +1644,9 @@ class PlayState extends MusicBeatState
 		}*/
 		callOnScripts('onUpdate', [elapsed]);
 
+		player1Bar.alpha = healthBar.alpha;
+		player2Bar.alpha = healthBar.alpha;
+
 		FlxG.camera.followLerp = 0;
 		if(!inCutscene && !paused) {
 			FlxG.camera.followLerp = FlxMath.bound(elapsed * 2.4 * cameraSpeed * playbackRate / (FlxG.updateFramerate / 60), 0, 1);
@@ -1668,6 +1671,12 @@ class PlayState extends MusicBeatState
 			var charC:Character = boyfriend;
 			if(currentCameraCharacter)
 				charC = dad;
+			
+			if(SONG.notes[curSection] != null){
+				if(SONG.notes[curSection].gfSection || lastWasGfNote)
+					charC = gf;
+			}
+
 			if(charC.animation.curAnim.name.startsWith("singLEFT"))
 					XX -= BANG;
 			if(charC.animation.curAnim.name.startsWith("singRIGHT"))
@@ -2229,6 +2238,7 @@ class PlayState extends MusicBeatState
 	}
 
 	var currentCameraCharacter:Bool = false;
+	var lastWasGfNote:Bool = false;
 
 	function moveCameraSection(?sec:Null<Int>):Void {
 		if(sec == null) sec = curSection;
@@ -2933,6 +2943,8 @@ class PlayState extends MusicBeatState
 				char = gf;
 			}
 
+			lastWasGfNote = note.gfNote;
+
 			if(char != null)
 			{
 				char.playAnim(animToPlay, true);
@@ -3010,6 +3022,8 @@ class PlayState extends MusicBeatState
 					char = gf;
 					animCheck = 'cheer';
 				}
+	
+				lastWasGfNote = note.gfNote;
 				
 				if(char != null)
 				{
@@ -3599,4 +3613,10 @@ class PlayState extends MusicBeatState
 		return false;
 	}
 	#end
+
+	override function draw(){//jus for the stupid shader
+		callOnScripts('onDraw');
+		super.draw();
+		callOnScripts('onDrawPost');
+	}
 }

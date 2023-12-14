@@ -49,6 +49,8 @@ class GalleryMenuState extends MusicBeatState{
     var lurpLoadingBar:Float = 0.0;
 
     public static var thisStateIsDestroyed:Bool = true;
+
+    var imageList:Array<String> = [];
     override public function create() {
         super.create();
         thisStateIsDestroyed = false;
@@ -155,12 +157,13 @@ class GalleryMenuState extends MusicBeatState{
 
         FlxTween.tween(FlxG.sound.music,{volume:0.5},0.3,{ease : FlxEase.linear});
         call(URL+'image-list.txt',function(dataText){
-            var imageList:Array<String> = CoolUtil.listFromString(dataText);
+            imageList = CoolUtil.listFromString(dataText);
+
             for(i in 0...imageList.length){
                 var name:String = imageList[i].split('>')[0];
                 var type:String = imageList[i].split('>')[1];
                 call(URL+name,function(data) {
-                    trace(name);
+                    //trace(name);
                     var dataBYTE:ByteArray = new ByteArray();
                     data.readBytes(dataBYTE, 0, data.length - data.position);
                     
@@ -208,7 +211,6 @@ class GalleryMenuState extends MusicBeatState{
         },TEXT);
     }
 
-
     var errorText:FlxText;
 
     function call(url:String,callBack:Dynamic->Void,dataFormat:openfl.net.URLLoaderDataFormat){  
@@ -222,12 +224,12 @@ class GalleryMenuState extends MusicBeatState{
             callBack(file.data);
             errorText.alpha = 0;
         });
-        file.addEventListener(ProgressEvent.PROGRESS,function(e){ //idk if i should add this later
+        file.addEventListener(ProgressEvent.PROGRESS,function(e){ //idk if i should add this later... update added it xxx
             lurpLoadingBar = e.bytesLoaded/e.bytesTotal;
-            trace(e);
+            //trace(e);
         });
         file.addEventListener(IOErrorEvent.IO_ERROR, function(e){ // error handler is killing me
-            trace(e);  
+            //trace(e);  
 
             new FlxTimer().start(1, function(tmr:FlxTimer)
                 call(url,callBack,dataFormat)

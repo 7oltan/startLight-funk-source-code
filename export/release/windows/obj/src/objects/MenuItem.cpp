@@ -145,79 +145,79 @@ HXLINE(  37)				y = lowerBound1;
             			}
 HXDLIN(  37)			this->scale->set_y((a1 + (y * (leNextScale - a1))));
             		}
-HXLINE(  39)		this->updateHitbox();
-HXLINE(  40)		{
-HXLINE(  40)			int axes = 16;
-HXDLIN(  40)			bool _hx_tmp;
-HXDLIN(  40)			if ((axes != 1)) {
-HXLINE(  40)				_hx_tmp = (axes == 17);
+HXLINE(  40)		this->updateHitbox();
+HXLINE(  41)		{
+HXLINE(  41)			int axes = 16;
+HXDLIN(  41)			bool _hx_tmp;
+HXDLIN(  41)			if ((axes != 1)) {
+HXLINE(  41)				_hx_tmp = (axes == 17);
             			}
             			else {
-HXLINE(  40)				_hx_tmp = true;
+HXLINE(  41)				_hx_tmp = true;
             			}
-HXDLIN(  40)			if (_hx_tmp) {
-HXLINE(  40)				int _hx_tmp = ::flixel::FlxG_obj::width;
-HXDLIN(  40)				this->set_x(((( (Float)(_hx_tmp) ) - this->get_width()) / ( (Float)(2) )));
+HXDLIN(  41)			if (_hx_tmp) {
+HXLINE(  41)				int _hx_tmp = ::flixel::FlxG_obj::width;
+HXDLIN(  41)				this->set_x(((( (Float)(_hx_tmp) ) - this->get_width()) / ( (Float)(2) )));
             			}
-HXDLIN(  40)			bool _hx_tmp1;
-HXDLIN(  40)			if ((axes != 16)) {
-HXLINE(  40)				_hx_tmp1 = (axes == 17);
+HXDLIN(  41)			bool _hx_tmp1;
+HXDLIN(  41)			if ((axes != 16)) {
+HXLINE(  41)				_hx_tmp1 = (axes == 17);
             			}
             			else {
-HXLINE(  40)				_hx_tmp1 = true;
+HXLINE(  41)				_hx_tmp1 = true;
             			}
-HXDLIN(  40)			if (_hx_tmp1) {
-HXLINE(  40)				int _hx_tmp = ::flixel::FlxG_obj::height;
-HXDLIN(  40)				this->set_y(((( (Float)(_hx_tmp) ) - this->get_height()) / ( (Float)(2) )));
+HXDLIN(  41)			if (_hx_tmp1) {
+HXLINE(  41)				int _hx_tmp = ::flixel::FlxG_obj::height;
+HXDLIN(  41)				this->set_y(((( (Float)(_hx_tmp) ) - this->get_height()) / ( (Float)(2) )));
             			}
             		}
-HXLINE(  42)		Float a2 = this->x;
-HXDLIN(  42)		Float b = this->targetY;
-HXDLIN(  42)		Float b1 = (b * (this->get_width() * ((Float)1.5)));
-HXDLIN(  42)		Float b2 = (( (Float)(::flixel::FlxG_obj::width) ) / ( (Float)(2) ));
-HXDLIN(  42)		Float b3 = (b1 + (b2 - (this->get_width() / ( (Float)(2) ))));
-HXDLIN(  42)		Float Value2 = (elapsed * ((Float)10.2));
-HXDLIN(  42)		Float lowerBound2;
-HXDLIN(  42)		if ((Value2 < 0)) {
-HXLINE(  42)			lowerBound2 = ( (Float)(0) );
+HXLINE(  43)		Float a2 = this->x;
+HXDLIN(  43)		Float b = this->targetY;
+HXDLIN(  43)		Float b1 = (b * (this->get_width() * ((Float)1.5)));
+HXDLIN(  43)		Float b2 = (( (Float)(::flixel::FlxG_obj::width) ) / ( (Float)(2) ));
+HXDLIN(  43)		Float b3 = (b1 + (b2 - (this->get_width() / ( (Float)(2) ))));
+HXDLIN(  43)		Float Value2 = (elapsed * ((Float)10.2));
+HXDLIN(  43)		Float lowerBound2;
+HXDLIN(  43)		if ((Value2 < 0)) {
+HXLINE(  43)			lowerBound2 = ( (Float)(0) );
             		}
             		else {
-HXLINE(  42)			lowerBound2 = Value2;
+HXLINE(  43)			lowerBound2 = Value2;
             		}
-HXDLIN(  42)		Float _hx_tmp2;
-HXDLIN(  42)		if ((lowerBound2 > 1)) {
-HXLINE(  42)			_hx_tmp2 = ( (Float)(1) );
-            		}
-            		else {
-HXLINE(  42)			_hx_tmp2 = lowerBound2;
-            		}
-HXDLIN(  42)		this->set_x((a2 + (_hx_tmp2 * (b3 - a2))));
-HXLINE(  44)		Float a3 = this->alpha;
-HXDLIN(  44)		Float Value3 = (elapsed * ((Float)10.2));
-HXDLIN(  44)		Float lowerBound3;
-HXDLIN(  44)		if ((Value3 < 0)) {
-HXLINE(  44)			lowerBound3 = ( (Float)(0) );
+HXDLIN(  43)		Float _hx_tmp2;
+HXDLIN(  43)		if ((lowerBound2 > 1)) {
+HXLINE(  43)			_hx_tmp2 = ( (Float)(1) );
             		}
             		else {
-HXLINE(  44)			lowerBound3 = Value3;
+HXLINE(  43)			_hx_tmp2 = lowerBound2;
             		}
-HXDLIN(  44)		Float _hx_tmp3;
-HXDLIN(  44)		if ((lowerBound3 > 1)) {
-HXLINE(  44)			_hx_tmp3 = ( (Float)(1) );
-            		}
-            		else {
-HXLINE(  44)			_hx_tmp3 = lowerBound3;
-            		}
-HXDLIN(  44)		this->set_alpha((a3 + (_hx_tmp3 * (this->alphaTO - a3))));
-HXLINE(  47)		if (this->isFlashing) {
-HXLINE(  48)			 ::objects::MenuItem _hx_tmp = ::hx::ObjectPtr<OBJ_>(this);
-HXDLIN(  48)			_hx_tmp->flashingInt = (_hx_tmp->flashingInt + 1);
-            		}
-HXLINE(  50)		if ((::hx::Mod(this->flashingInt,this->fakeFramerate) >= ::Math_obj::floor((( (Float)(this->fakeFramerate) ) / ( (Float)(2) ))))) {
-HXLINE(  51)			this->set_color(-13369345);
+HXDLIN(  43)		this->set_x((a2 + (_hx_tmp2 * (b3 - a2))));
+HXLINE(  45)		Float a3 = this->alpha;
+HXDLIN(  45)		Float Value3 = (elapsed * ((Float)10.2));
+HXDLIN(  45)		Float lowerBound3;
+HXDLIN(  45)		if ((Value3 < 0)) {
+HXLINE(  45)			lowerBound3 = ( (Float)(0) );
             		}
             		else {
-HXLINE(  53)			this->set_color(-1);
+HXLINE(  45)			lowerBound3 = Value3;
+            		}
+HXDLIN(  45)		Float _hx_tmp3;
+HXDLIN(  45)		if ((lowerBound3 > 1)) {
+HXLINE(  45)			_hx_tmp3 = ( (Float)(1) );
+            		}
+            		else {
+HXLINE(  45)			_hx_tmp3 = lowerBound3;
+            		}
+HXDLIN(  45)		this->set_alpha((a3 + (_hx_tmp3 * (this->alphaTO - a3))));
+HXLINE(  48)		if (this->isFlashing) {
+HXLINE(  49)			 ::objects::MenuItem _hx_tmp = ::hx::ObjectPtr<OBJ_>(this);
+HXDLIN(  49)			_hx_tmp->flashingInt = (_hx_tmp->flashingInt + 1);
+            		}
+HXLINE(  51)		if ((::hx::Mod(this->flashingInt,this->fakeFramerate) >= ::Math_obj::floor((( (Float)(this->fakeFramerate) ) / ( (Float)(2) ))))) {
+HXLINE(  52)			this->set_color(-13369345);
+            		}
+            		else {
+HXLINE(  54)			this->set_color(-1);
             		}
             	}
 

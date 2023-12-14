@@ -80,7 +80,7 @@ HX_LOCAL_STACK_FRAME(_hx_pos_40e6927fd11a022a_162_addWeek,"backend.WeekData","ad
 HX_LOCAL_STACK_FRAME(_hx_pos_40e6927fd11a022a_183_getWeekFile,"backend.WeekData","getWeekFile",0x083495d0,"backend.WeekData.getWeekFile","backend/WeekData.hx",183,0x34ba5365)
 HX_LOCAL_STACK_FRAME(_hx_pos_40e6927fd11a022a_205_getWeekFileName,"backend.WeekData","getWeekFileName",0xddd45c3b,"backend.WeekData.getWeekFileName","backend/WeekData.hx",205,0x34ba5365)
 HX_LOCAL_STACK_FRAME(_hx_pos_40e6927fd11a022a_209_getCurrentWeek,"backend.WeekData","getCurrentWeek",0xeba04f8d,"backend.WeekData.getCurrentWeek","backend/WeekData.hx",209,0x34ba5365)
-HX_LOCAL_STACK_FRAME(_hx_pos_40e6927fd11a022a_229_setDirectoryFromWeek,"backend.WeekData","setDirectoryFromWeek",0x52a1f03f,"backend.WeekData.setDirectoryFromWeek","backend/WeekData.hx",229,0x34ba5365)
+HX_LOCAL_STACK_FRAME(_hx_pos_40e6927fd11a022a_230_setDirectoryFromWeek,"backend.WeekData","setDirectoryFromWeek",0x52a1f03f,"backend.WeekData.setDirectoryFromWeek","backend/WeekData.hx",230,0x34ba5365)
 HX_LOCAL_STACK_FRAME(_hx_pos_40e6927fd11a022a_32_boot,"backend.WeekData","boot",0xcfd6a868,"backend.WeekData.boot","backend/WeekData.hx",32,0x34ba5365)
 HX_LOCAL_STACK_FRAME(_hx_pos_40e6927fd11a022a_33_boot,"backend.WeekData","boot",0xcfd6a868,"backend.WeekData.boot","backend/WeekData.hx",33,0x34ba5365)
 namespace backend{
@@ -475,24 +475,25 @@ STATIC_HX_DEFINE_DYNAMIC_FUNC0(WeekData_obj,getWeekFileName,return )
             	HX_GC_STACKFRAME(&_hx_pos_40e6927fd11a022a_209_getCurrentWeek)
 HXLINE( 210)		int weekInt = ::states::PlayState_obj::storyWeek;
 HXLINE( 211)		if ((::states::PlayState_obj::storyWeek < ::backend::WeekData_obj::weeksList->length)) {
-HXLINE( 212)			return ( ( ::backend::WeekData)(::backend::WeekData_obj::weeksLoaded->get(::backend::WeekData_obj::weeksList->__get(::states::PlayState_obj::storyWeek))) );
+HXLINE( 212)			::haxe::Log_obj::trace(::backend::WeekData_obj::weeksList->__get(::states::PlayState_obj::storyWeek),::hx::SourceInfo(HX_("source/backend/WeekData.hx",f1,ec,fe,25),212,HX_("backend.WeekData",f8,a7,17,7c),HX_("getCurrentWeek",d7,8b,25,0f)));
+HXLINE( 213)			return ( ( ::backend::WeekData)(::backend::WeekData_obj::weeksLoaded->get(::backend::WeekData_obj::weeksList->__get(::states::PlayState_obj::storyWeek))) );
             		}
             		else {
-HXLINE( 214)			 ::backend::WeekData fakeWeek = null();
-HXLINE( 215)			::backend::WeekData_obj::reloadWeekFiles(null());
-HXLINE( 217)			if ((::states::PlayState_obj::storyWeek < ::backend::WeekData_obj::weeksList->length)) {
-HXLINE( 218)				::haxe::Log_obj::trace(HX_("second time's the charm",ed,ca,e2,df),::hx::SourceInfo(HX_("source/backend/WeekData.hx",f1,ec,fe,25),218,HX_("backend.WeekData",f8,a7,17,7c),HX_("getCurrentWeek",d7,8b,25,0f)));
-HXLINE( 219)				return ( ( ::backend::WeekData)(::backend::WeekData_obj::weeksLoaded->get(::backend::WeekData_obj::weeksList->__get(::states::PlayState_obj::storyWeek))) );
+HXLINE( 215)			 ::backend::WeekData fakeWeek = null();
+HXLINE( 216)			::backend::WeekData_obj::reloadWeekFiles(null());
+HXLINE( 218)			if ((::states::PlayState_obj::storyWeek < ::backend::WeekData_obj::weeksList->length)) {
+HXLINE( 219)				::haxe::Log_obj::trace(HX_("second time's the charm",ed,ca,e2,df),::hx::SourceInfo(HX_("source/backend/WeekData.hx",f1,ec,fe,25),219,HX_("backend.WeekData",f8,a7,17,7c),HX_("getCurrentWeek",d7,8b,25,0f)));
+HXLINE( 220)				return ( ( ::backend::WeekData)(::backend::WeekData_obj::weeksLoaded->get(::backend::WeekData_obj::weeksList->__get(::states::PlayState_obj::storyWeek))) );
             			}
             			else {
-HXLINE( 222)				::haxe::Log_obj::trace(HX_("bruh here's some fake stuff ig",50,a0,ac,e4),::hx::SourceInfo(HX_("source/backend/WeekData.hx",f1,ec,fe,25),222,HX_("backend.WeekData",f8,a7,17,7c),HX_("getCurrentWeek",d7,8b,25,0f)));
-HXLINE( 223)				fakeWeek =  ::backend::WeekData_obj::__alloc( HX_CTX ,::backend::WeekData_obj::createWeekFile(),HX_("fakeWeek",29,36,32,b5));
+HXLINE( 223)				::haxe::Log_obj::trace(HX_("bruh here's some fake stuff ig",50,a0,ac,e4),::hx::SourceInfo(HX_("source/backend/WeekData.hx",f1,ec,fe,25),223,HX_("backend.WeekData",f8,a7,17,7c),HX_("getCurrentWeek",d7,8b,25,0f)));
+HXLINE( 224)				fakeWeek =  ::backend::WeekData_obj::__alloc( HX_CTX ,::backend::WeekData_obj::createWeekFile(),HX_("fakeWeek",29,36,32,b5));
             			}
-HXLINE( 225)			if (::hx::IsNotNull( fakeWeek )) {
-HXLINE( 225)				return fakeWeek;
+HXLINE( 226)			if (::hx::IsNotNull( fakeWeek )) {
+HXLINE( 226)				return fakeWeek;
             			}
             			else {
-HXLINE( 225)				return ( ( ::backend::WeekData)(::backend::WeekData_obj::weeksLoaded->get(::backend::WeekData_obj::weeksList->__get(::states::PlayState_obj::storyWeek))) );
+HXLINE( 226)				return ( ( ::backend::WeekData)(::backend::WeekData_obj::weeksLoaded->get(::backend::WeekData_obj::weeksList->__get(::states::PlayState_obj::storyWeek))) );
             			}
             		}
 HXLINE( 211)		return null();
@@ -502,24 +503,24 @@ HXLINE( 211)		return null();
 STATIC_HX_DEFINE_DYNAMIC_FUNC0(WeekData_obj,getCurrentWeek,return )
 
 void WeekData_obj::setDirectoryFromWeek( ::backend::WeekData data){
-            	HX_STACKFRAME(&_hx_pos_40e6927fd11a022a_229_setDirectoryFromWeek)
-HXLINE( 230)		::backend::Mods_obj::currentModDirectory = HX_("",00,00,00,00);
-HXLINE( 231)		bool _hx_tmp;
-HXDLIN( 231)		bool _hx_tmp1;
-HXDLIN( 231)		if (::hx::IsNotNull( data )) {
-HXLINE( 231)			_hx_tmp1 = ::hx::IsNotNull( data->folder );
+            	HX_STACKFRAME(&_hx_pos_40e6927fd11a022a_230_setDirectoryFromWeek)
+HXLINE( 231)		::backend::Mods_obj::currentModDirectory = HX_("",00,00,00,00);
+HXLINE( 232)		bool _hx_tmp;
+HXDLIN( 232)		bool _hx_tmp1;
+HXDLIN( 232)		if (::hx::IsNotNull( data )) {
+HXLINE( 232)			_hx_tmp1 = ::hx::IsNotNull( data->folder );
             		}
             		else {
-HXLINE( 231)			_hx_tmp1 = false;
+HXLINE( 232)			_hx_tmp1 = false;
             		}
-HXDLIN( 231)		if (_hx_tmp1) {
-HXLINE( 231)			_hx_tmp = (data->folder.length > 0);
+HXDLIN( 232)		if (_hx_tmp1) {
+HXLINE( 232)			_hx_tmp = (data->folder.length > 0);
             		}
             		else {
-HXLINE( 231)			_hx_tmp = false;
+HXLINE( 232)			_hx_tmp = false;
             		}
-HXDLIN( 231)		if (_hx_tmp) {
-HXLINE( 232)			::backend::Mods_obj::currentModDirectory = data->folder;
+HXDLIN( 232)		if (_hx_tmp) {
+HXLINE( 233)			::backend::Mods_obj::currentModDirectory = data->folder;
             		}
             	}
 

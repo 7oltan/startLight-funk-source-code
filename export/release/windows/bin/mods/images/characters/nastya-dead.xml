@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Free texture packer v0.6.7 http://free-tex-packer.com
+-->
+<TextureAtlas imagePath="ded_nasty.png" width="2646" height="2989">
+  <SubTexture name="ded_loop0001.png" x="0" y="0"  width="441" height="973" frameX="-307" frameY="-516" frameWidth="1080" frameHeight="1920"/>
+  <SubTexture name="ded_loop0002.png" x="0" y="973"  width="441" height="973" frameX="-307" frameY="-516" frameWidth="1080" frameHeight="1920"/>
+  <SubTexture name="ded_loop0003.png" x="441" y="0"  width="441" height="973" frameX="-307" frameY="-516" frameWidth="1080" frameHeight="1920"/>
+  <SubTexture name="ded_loop0004.png" x="0" y="1946"  width="441" height="973" frameX="-307" frameY="-516" frameWidth="1080" frameHeight="1920"/>
+  <SubTexture name="ded_loop0005.png" x="441" y="973"  width="441" height="973" frameX="-307" frameY="-516" frameWidth="1080" frameHeight="1920"/>
+  <SubTexture name="ded_loop0006.png" x="882" y="0"  width="441" height="973" frameX="-307" frameY="-516" frameWidth="1080" frameHeight="1920"/>
+  <SubTexture name="ded_loop0007.png" x="441" y="1946"  width="441" height="973" frameX="-307" frameY="-516" frameWidth="1080" frameHeight="1920"/>
+  <SubTexture name="ded_restart0001.png" x="882" y="973"  width="446" height="1033" frameX="-302" frameY="-457" frameWidth="1080" frameHeight="1920"/>
+  <SubTexture name="ded_restart0002.png" x="882" y="2006"  width="441" height="976" frameX="-307" frameY="-513" frameWidth="1080" frameHeight="1920"/>
+  <SubTexture name="ded_restart0003.png" x="1323" y="0"  width="441" height="973" frameX="-307" frameY="-516" frameWidth="1080" frameHeight="1920"/>
+  <SubTexture name="ded_start0001.png" x="1328" y="973"  width="543" height="1043" frameX="-200" frameY="-447" frameWidth="1080" frameHeight="1920"/>
+  <SubTexture name="ded_start0002.png" x="1871" y="973"  width="762" height="1112" frameX="-74" frameY="-377" frameWidth="1080" frameHeight="1920"/>
+  <SubTexture name="ded_start0003.png" x="1764" y="0"  width="441" height="973" frameX="-307" frameY="-516" frameWidth="1080" frameHeight="1920"/>
+  <SubTexture name="ded_start0005.png" x="1323" y="2016"  width="441" height="973" frameX="-307" frameY="-516" frameWidth="1080" frameHeight="1920"/>
+  <SubTexture name="ded_start0006.png" x="2205" y="0"  width="441" height="973" frameX="-307" frameY="-516" frameWidth="1080" frameHeight="1920"/>
+  <SubTexture name="ded_loop0008.png" x="0" y="0"  width="441" height="973" frameX="-307" frameY="-516" frameWidth="1080" frameHeight="1920"/>
+  <SubTexture name="ded_start0007.png" x="0" y="0"  width="441" height="973" frameX="-307" frameY="-516" frameWidth="1080" frameHeight="1920"/>
+  <SubTexture name="ded_restart0004.png" x="1323" y="0"  width="441" height="973" frameX="-307" frameY="-516" frameWidth="1080" frameHeight="1920"/>
+  <SubTexture name="ded_restart0005.png" x="1323" y="0"  width="441" height="973" frameX="-307" frameY="-516" frameWidth="1080" frameHeight="1920"/>
+  <SubTexture name="ded_start0004.png" x="1764" y="0"  width="441" height="973" frameX="-307" frameY="-516" frameWidth="1080" frameHeight="1920"/>
+</TextureAtlas>

@@ -1,21 +1,25 @@
 {
 	"animations": [
 		{
+			"loop": false,
 			"offsets": [
 				0,
 				0
 			],
-			"loop": false,
-			"fps": 11,
 			"anim": "deathConfirm",
-			"indices": [],
-			"name": "Deathrestart"
+			"fps": 11,
+			"name": "Deathrestart",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				0,
 				0
 			],
+			"anim": "firstDeath",
+			"fps": 11,
+			"name": "Deathstart",
 			"indices": [
 				0,
 				1,
@@ -47,17 +51,17 @@
 				9,
 				9,
 				9
-			],
-			"fps": 11,
-			"anim": "firstDeath",
-			"loop": false,
-			"name": "Deathstart"
+			]
 		},
 		{
+			"loop": true,
 			"offsets": [
 				0,
 				0
 			],
+			"anim": "deathLoop",
+			"fps": 11,
+			"name": "Deathloop",
 			"indices": [
 				0,
 				1,
@@ -76,14 +80,10 @@
 				5,
 				5,
 				5
-			],
-			"fps": 11,
-			"anim": "deathLoop",
-			"loop": true,
-			"name": "Deathloop"
+			]
 		}
 	],
-	"no_antialiasing": true,
+	"no_antialiasing": false,
 	"image": "characters/mogosdead",
 	"position": [
 		-190,

@@ -216,6 +216,21 @@
 #ifndef INCLUDED_tea_backend_SScriptX
 #include <tea/backend/SScriptX.h>
 #endif
+#ifndef INCLUDED_sys_ssl_Socket
+#include <sys/ssl/Socket.h>
+#endif
+#ifndef INCLUDED_sys_ssl_Key
+#include <sys/ssl/Key.h>
+#endif
+#ifndef INCLUDED_sys_ssl_Certificate
+#include <sys/ssl/Certificate.h>
+#endif
+#ifndef INCLUDED_sys_net_Host
+#include <sys/net/Host.h>
+#endif
+#ifndef INCLUDED_sys_Http
+#include <sys/Http.h>
+#endif
 #ifndef INCLUDED_substates_PauseSubState
 #include <substates/PauseSubState.h>
 #endif
@@ -1419,6 +1434,9 @@
 #ifndef INCLUDED_backend_Mods
 #include <backend/Mods.h>
 #endif
+#ifndef INCLUDED_backend_InternetConnection
+#include <backend/InternetConnection.h>
+#endif
 #ifndef INCLUDED_backend_Highscore
 #include <backend/Highscore.h>
 #endif
@@ -1623,6 +1641,21 @@
 #ifndef INCLUDED_sys_thread_Deque
 #include <sys/thread/Deque.h>
 #endif
+#ifndef INCLUDED_sys_ssl__Socket_SocketOutput
+#include <sys/ssl/_Socket/SocketOutput.h>
+#endif
+#ifndef INCLUDED_sys_ssl__Socket_SocketInput
+#include <sys/ssl/_Socket/SocketInput.h>
+#endif
+#ifndef INCLUDED_sys_net_Socket
+#include <sys/net/Socket.h>
+#endif
+#ifndef INCLUDED_sys_net__Socket_SocketOutput
+#include <sys/net/_Socket/SocketOutput.h>
+#endif
+#ifndef INCLUDED_sys_net__Socket_SocketInput
+#include <sys/net/_Socket/SocketInput.h>
+#endif
 #ifndef INCLUDED_sys_io_Process
 #include <sys/io/Process.h>
 #endif
@@ -1688,6 +1721,9 @@
 #endif
 #ifndef INCLUDED_states_GalamixMenuState
 #include <states/GalamixMenuState.h>
+#endif
+#ifndef INCLUDED_states_SongObject
+#include <states/SongObject.h>
 #endif
 #ifndef INCLUDED_states_SongMetadata
 #include <states/SongMetadata.h>
@@ -3057,6 +3093,9 @@
 #ifndef INCLUDED_haxe_io_Eof
 #include <haxe/io/Eof.h>
 #endif
+#ifndef INCLUDED_haxe_io_BytesOutput
+#include <haxe/io/BytesOutput.h>
+#endif
 #ifndef INCLUDED_haxe_io_Output
 #include <haxe/io/Output.h>
 #endif
@@ -3068,6 +3107,9 @@
 #endif
 #ifndef INCLUDED_haxe_io_BytesBuffer
 #include <haxe/io/BytesBuffer.h>
+#endif
+#ifndef INCLUDED_haxe_http_HttpBase
+#include <haxe/http/HttpBase.h>
 #endif
 #ifndef INCLUDED_haxe_format_JsonPrinter
 #include <haxe/format/JsonPrinter.h>
@@ -3991,6 +4033,11 @@ __files__boot();
 ::ValueType_obj::__register();
 ::tjson::TJSON_obj::__register();
 ::tea::backend::SScriptX_obj::__register();
+::sys::ssl::Socket_obj::__register();
+::sys::ssl::Key_obj::__register();
+::sys::ssl::Certificate_obj::__register();
+::sys::net::Host_obj::__register();
+::sys::Http_obj::__register();
 ::substates::PauseSubState_obj::__register();
 ::substates::GameOverSubstate_obj::__register();
 ::states::editors::WeekEditorState_obj::__register();
@@ -4392,6 +4439,7 @@ __files__boot();
 ::flixel::addons::ui::FlxUIState_obj::__register();
 ::flixel::addons::transition::FlxTransitionableState_obj::__register();
 ::backend::Mods_obj::__register();
+::backend::InternetConnection_obj::__register();
 ::backend::Highscore_obj::__register();
 ::backend::DiscordClient_obj::__register();
 ::backend::Difficulty_obj::__register();
@@ -4460,6 +4508,11 @@ __files__boot();
 ::sys::thread::Lock_obj::__register();
 ::sys::thread::_EventLoop::RegularEvent_obj::__register();
 ::sys::thread::Deque_obj::__register();
+::sys::ssl::_Socket::SocketOutput_obj::__register();
+::sys::ssl::_Socket::SocketInput_obj::__register();
+::sys::net::Socket_obj::__register();
+::sys::net::_Socket::SocketOutput_obj::__register();
+::sys::net::_Socket::SocketInput_obj::__register();
 ::sys::io::Process_obj::__register();
 ::sys::io::_Process::Stdout_obj::__register();
 ::sys::io::_Process::Stdin_obj::__register();
@@ -4482,6 +4535,7 @@ __files__boot();
 ::states::MultiCallback_obj::__register();
 ::states::GalleryBar_obj::__register();
 ::states::GalamixMenuState_obj::__register();
+::states::SongObject_obj::__register();
 ::states::SongMetadata_obj::__register();
 ::states::CreditsState_obj::__register();
 ::shaders::RGBPaletteShader_obj::__register();
@@ -4938,10 +4992,12 @@ __files__boot();
 ::haxe::io::Path_obj::__register();
 ::haxe::io::FPHelper_obj::__register();
 ::haxe::io::Eof_obj::__register();
+::haxe::io::BytesOutput_obj::__register();
 ::haxe::io::Output_obj::__register();
 ::haxe::io::BytesInput_obj::__register();
 ::haxe::io::Input_obj::__register();
 ::haxe::io::BytesBuffer_obj::__register();
+::haxe::http::HttpBase_obj::__register();
 ::haxe::format::JsonPrinter_obj::__register();
 ::haxe::format::JsonParser_obj::__register();
 ::haxe::exceptions::NotImplementedException_obj::__register();
@@ -5301,6 +5357,10 @@ __files__boot();
 ::sys::thread::_Thread::HaxeThread_obj::__init__();
 ::lime::utils::Log_obj::__init__();
 ::openfl::ui::Multitouch_obj::__init__();
+::sys::net::Host_obj::__init__();
+::sys::ssl::Certificate_obj::__init__();
+::sys::ssl::Key_obj::__init__();
+::sys::ssl::Socket_obj::__init__();
 ::haxe::Log_obj::__boot();
 ::lime::_internal::backend::native::NativeCFFI_obj::__boot();
 ::lime::_internal::backend::native::NativeApplication_obj::__boot();
@@ -5360,6 +5420,7 @@ __files__boot();
 ::backend::Difficulty_obj::__boot();
 ::backend::DiscordClient_obj::__boot();
 ::backend::Highscore_obj::__boot();
+::backend::InternetConnection_obj::__boot();
 ::backend::Mods_obj::__boot();
 ::flixel::addons::transition::FlxTransitionableState_obj::__boot();
 ::flixel::addons::ui::FlxUIState_obj::__boot();
@@ -5760,6 +5821,11 @@ __files__boot();
 ::states::editors::WeekEditorState_obj::__boot();
 ::substates::GameOverSubstate_obj::__boot();
 ::substates::PauseSubState_obj::__boot();
+::sys::Http_obj::__boot();
+::sys::net::Host_obj::__boot();
+::sys::ssl::Certificate_obj::__boot();
+::sys::ssl::Key_obj::__boot();
+::sys::ssl::Socket_obj::__boot();
 ::tea::backend::SScriptX_obj::__boot();
 ::tjson::TJSON_obj::__boot();
 }

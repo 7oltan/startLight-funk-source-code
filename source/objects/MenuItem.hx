@@ -36,6 +36,7 @@ class MenuItem extends FlxSprite
 		scale.x = FlxMath.lerp(scale.x, leNextScale, FlxMath.bound(elapsed * 10.2, 0, 1));
 		scale.y = FlxMath.lerp(scale.y, leNextScale, FlxMath.bound(elapsed * 10.2, 0, 1));
 
+
 		updateHitbox();
 		screenCenter(Y);
 

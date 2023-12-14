@@ -24,7 +24,6 @@ HX_DECLARE_CLASS2(flixel,text,FlxText)
 HX_DECLARE_CLASS2(flixel,tweens,FlxTween)
 HX_DECLARE_CLASS2(flixel,util,IFlxDestroyable)
 HX_DECLARE_CLASS1(objects,BGSprite)
-HX_DECLARE_CLASS1(objects,HealthIcon)
 HX_DECLARE_CLASS1(states,FreeplayState)
 HX_DECLARE_CLASS1(states,SongMetadata)
 
@@ -85,7 +84,6 @@ class HXCPP_CLASS_ATTRIBUTES FreeplayState_obj : public  ::backend::MusicBeatSta
 		Float intendedRating;
 		 ::flixel::group::FlxTypedGroup grpSongs;
 		bool curPlaying;
-		::Array< ::Dynamic> iconArray;
 		 ::flixel::FlxSprite bg;
 		int intendedColor;
 		 ::flixel::tweens::FlxTween colorTween;

@@ -84,6 +84,79 @@
   <file name="src/sys/thread/Deque.cpp" >
    <depend name="include/sys/thread/Deque.h"/>
   </file>
+  <file name="src/sys/ssl/Socket.cpp" >
+   <depend name="include/Std.h"/>
+   <depend name="include/cpp/Lib.h"/>
+   <depend name="include/haxe/Exception.h"/>
+   <depend name="include/haxe/io/Error.h"/>
+   <depend name="include/haxe/io/Input.h"/>
+   <depend name="include/haxe/io/Output.h"/>
+   <depend name="include/sys/net/Host.h"/>
+   <depend name="include/sys/net/Socket.h"/>
+   <depend name="include/sys/ssl/Certificate.h"/>
+   <depend name="include/sys/ssl/Key.h"/>
+   <depend name="include/sys/ssl/Socket.h"/>
+   <depend name="include/sys/ssl/_Socket/SocketInput.h"/>
+   <depend name="include/sys/ssl/_Socket/SocketOutput.h"/>
+  </file>
+  <file name="src/sys/ssl/_Socket/SocketOutput.cpp" >
+   <depend name="include/haxe/Exception.h"/>
+   <depend name="include/haxe/io/Bytes.h"/>
+   <depend name="include/haxe/io/Error.h"/>
+   <depend name="include/haxe/io/Output.h"/>
+   <depend name="include/sys/net/Socket.h"/>
+   <depend name="include/sys/ssl/Socket.h"/>
+   <depend name="include/sys/ssl/_Socket/SocketOutput.h"/>
+  </file>
+  <file name="src/sys/ssl/_Socket/SocketInput.cpp" >
+   <depend name="include/haxe/Exception.h"/>
+   <depend name="include/haxe/io/Bytes.h"/>
+   <depend name="include/haxe/io/Eof.h"/>
+   <depend name="include/haxe/io/Error.h"/>
+   <depend name="include/haxe/io/Input.h"/>
+   <depend name="include/sys/net/Socket.h"/>
+   <depend name="include/sys/ssl/Socket.h"/>
+   <depend name="include/sys/ssl/_Socket/SocketInput.h"/>
+  </file>
+  <file name="src/sys/ssl/Key.cpp" >
+   <depend name="include/sys/ssl/Key.h"/>
+  </file>
+  <file name="src/sys/ssl/Certificate.cpp" >
+   <depend name="include/Sys.h"/>
+   <depend name="include/sys/FileSystem.h"/>
+   <depend name="include/sys/ssl/Certificate.h"/>
+  </file>
+  <file name="src/sys/net/Socket.cpp" >
+   <depend name="include/Reflect.h"/>
+   <depend name="include/Std.h"/>
+   <depend name="include/cpp/Lib.h"/>
+   <depend name="include/haxe/Exception.h"/>
+   <depend name="include/haxe/io/Input.h"/>
+   <depend name="include/haxe/io/Output.h"/>
+   <depend name="include/sys/net/Host.h"/>
+   <depend name="include/sys/net/Socket.h"/>
+   <depend name="include/sys/net/_Socket/SocketInput.h"/>
+   <depend name="include/sys/net/_Socket/SocketOutput.h"/>
+  </file>
+  <file name="src/sys/net/_Socket/SocketOutput.cpp" >
+   <depend name="include/haxe/Exception.h"/>
+   <depend name="include/haxe/io/Bytes.h"/>
+   <depend name="include/haxe/io/Eof.h"/>
+   <depend name="include/haxe/io/Error.h"/>
+   <depend name="include/haxe/io/Output.h"/>
+   <depend name="include/sys/net/_Socket/SocketOutput.h"/>
+  </file>
+  <file name="src/sys/net/_Socket/SocketInput.cpp" >
+   <depend name="include/haxe/Exception.h"/>
+   <depend name="include/haxe/io/Bytes.h"/>
+   <depend name="include/haxe/io/Eof.h"/>
+   <depend name="include/haxe/io/Error.h"/>
+   <depend name="include/haxe/io/Input.h"/>
+   <depend name="include/sys/net/_Socket/SocketInput.h"/>
+  </file>
+  <file name="src/sys/net/Host.cpp" >
+   <depend name="include/sys/net/Host.h"/>
+  </file>
   <file name="src/sys/io/Process.cpp" >
    <depend name="include/haxe/Exception.h"/>
    <depend name="include/haxe/io/Input.h"/>
@@ -130,6 +203,29 @@
    <depend name="include/sys/io/File.h"/>
    <depend name="include/sys/io/FileInput.h"/>
    <depend name="include/sys/io/FileOutput.h"/>
+  </file>
+  <file name="src/sys/Http.cpp" >
+   <depend name="include/EReg.h"/>
+   <depend name="include/Lambda.h"/>
+   <depend name="include/Std.h"/>
+   <depend name="include/StringBuf.h"/>
+   <depend name="include/StringTools.h"/>
+   <depend name="include/haxe/Exception.h"/>
+   <depend name="include/haxe/IMap.h"/>
+   <depend name="include/haxe/ds/StringMap.h"/>
+   <depend name="include/haxe/http/HttpBase.h"/>
+   <depend name="include/haxe/io/Bytes.h"/>
+   <depend name="include/haxe/io/BytesBuffer.h"/>
+   <depend name="include/haxe/io/BytesOutput.h"/>
+   <depend name="include/haxe/io/Encoding.h"/>
+   <depend name="include/haxe/io/Eof.h"/>
+   <depend name="include/haxe/io/Error.h"/>
+   <depend name="include/haxe/io/Input.h"/>
+   <depend name="include/haxe/io/Output.h"/>
+   <depend name="include/sys/Http.h"/>
+   <depend name="include/sys/net/Host.h"/>
+   <depend name="include/sys/net/Socket.h"/>
+   <depend name="include/sys/ssl/Socket.h"/>
   </file>
   <file name="src/sys/FileSystem.cpp" >
    <depend name="include/Date.h"/>
@@ -1269,6 +1365,7 @@
    <depend name="include/flixel/input/keyboard/FlxKeyList.h"/>
    <depend name="include/flixel/input/keyboard/FlxKeyboard.h"/>
    <depend name="include/flixel/input/mouse/FlxMouse.h"/>
+   <depend name="include/flixel/math/FlxBasePoint.h"/>
    <depend name="include/flixel/math/FlxRandom.h"/>
    <depend name="include/flixel/sound/FlxSound.h"/>
    <depend name="include/flixel/system/FlxSoundGroup.h"/>
@@ -1281,6 +1378,7 @@
    <depend name="include/flixel/util/FlxTimer.h"/>
    <depend name="include/flixel/util/FlxTimerManager.h"/>
    <depend name="include/flixel/util/IFlxDestroyable.h"/>
+   <depend name="include/flixel/util/IFlxPooled.h"/>
    <depend name="include/flixel/util/_FlxColor/FlxColor_Impl_.h"/>
    <depend name="include/haxe/Exception.h"/>
    <depend name="include/haxe/IMap.h"/>
@@ -1332,6 +1430,7 @@
    <depend name="include/backend/Song.h"/>
    <depend name="include/backend/WeekData.h"/>
    <depend name="include/flixel/FlxBasic.h"/>
+   <depend name="include/flixel/FlxCamera.h"/>
    <depend name="include/flixel/FlxG.h"/>
    <depend name="include/flixel/FlxObject.h"/>
    <depend name="include/flixel/FlxSprite.h"/>
@@ -1354,17 +1453,20 @@
    <depend name="include/flixel/input/keyboard/FlxKeyList.h"/>
    <depend name="include/flixel/input/keyboard/FlxKeyboard.h"/>
    <depend name="include/flixel/input/mouse/FlxMouse.h"/>
+   <depend name="include/flixel/math/FlxBasePoint.h"/>
    <depend name="include/flixel/math/FlxRandom.h"/>
    <depend name="include/flixel/sound/FlxSound.h"/>
    <depend name="include/flixel/system/FlxSoundGroup.h"/>
    <depend name="include/flixel/system/frontEnds/SoundFrontEnd.h"/>
    <depend name="include/flixel/text/FlxText.h"/>
    <depend name="include/flixel/text/FlxTextBorderStyle.h"/>
+   <depend name="include/flixel/tweens/FlxEase.h"/>
    <depend name="include/flixel/tweens/FlxTween.h"/>
    <depend name="include/flixel/tweens/misc/VarTween.h"/>
    <depend name="include/flixel/util/FlxTimer.h"/>
    <depend name="include/flixel/util/FlxTimerManager.h"/>
    <depend name="include/flixel/util/IFlxDestroyable.h"/>
+   <depend name="include/flixel/util/IFlxPooled.h"/>
    <depend name="include/haxe/Exception.h"/>
    <depend name="include/haxe/IMap.h"/>
    <depend name="include/haxe/Log.h"/>
@@ -1554,6 +1656,7 @@
    <depend name="include/backend/Difficulty.h"/>
    <depend name="include/backend/DiscordClient.h"/>
    <depend name="include/backend/Highscore.h"/>
+   <depend name="include/backend/InternetConnection.h"/>
    <depend name="include/backend/Mods.h"/>
    <depend name="include/backend/MusicBeatState.h"/>
    <depend name="include/backend/Paths.h"/>
@@ -1587,9 +1690,12 @@
    <depend name="include/flixel/sound/FlxSound.h"/>
    <depend name="include/flixel/system/FlxSoundGroup.h"/>
    <depend name="include/flixel/system/frontEnds/SoundFrontEnd.h"/>
+   <depend name="include/flixel/text/FlxText.h"/>
+   <depend name="include/flixel/text/FlxTextBorderStyle.h"/>
    <depend name="include/flixel/tweens/FlxEase.h"/>
    <depend name="include/flixel/tweens/FlxTween.h"/>
    <depend name="include/flixel/tweens/misc/VarTween.h"/>
+   <depend name="include/flixel/util/FlxSave.h"/>
    <depend name="include/flixel/util/FlxTimer.h"/>
    <depend name="include/flixel/util/FlxTimerManager.h"/>
    <depend name="include/flixel/util/IFlxDestroyable.h"/>
@@ -1723,7 +1829,6 @@
    <depend name="include/flixel/util/FlxTimerManager.h"/>
    <depend name="include/flixel/util/IFlxDestroyable.h"/>
    <depend name="include/flixel/util/IFlxPooled.h"/>
-   <depend name="include/haxe/Log.h"/>
    <depend name="include/haxe/io/Bytes.h"/>
    <depend name="include/openfl/display/BitmapData.h"/>
    <depend name="include/openfl/display/IBitmapDrawable.h"/>
@@ -1791,6 +1896,21 @@
    <depend name="include/states/MainMenuState.h"/>
    <depend name="include/states/PlayState.h"/>
   </file>
+  <file name="src/states/SongObject.cpp" >
+   <depend name="include/Std.h"/>
+   <depend name="include/backend/Paths.h"/>
+   <depend name="include/flixel/FlxBasic.h"/>
+   <depend name="include/flixel/FlxObject.h"/>
+   <depend name="include/flixel/FlxSprite.h"/>
+   <depend name="include/flixel/graphics/FlxGraphic.h"/>
+   <depend name="include/flixel/group/FlxTypedSpriteGroup.h"/>
+   <depend name="include/flixel/math/FlxBasePoint.h"/>
+   <depend name="include/flixel/util/IFlxDestroyable.h"/>
+   <depend name="include/flixel/util/IFlxPooled.h"/>
+   <depend name="include/objects/Alphabet.h"/>
+   <depend name="include/objects/HealthIcon.h"/>
+   <depend name="include/states/SongObject.h"/>
+  </file>
   <file name="src/states/SongMetadata.cpp" >
    <depend name="include/backend/Mods.h"/>
    <depend name="include/states/SongMetadata.h"/>
@@ -1850,7 +1970,6 @@
    <depend name="include/haxe/ds/StringMap.h"/>
    <depend name="include/objects/Alphabet.h"/>
    <depend name="include/objects/BGSprite.h"/>
-   <depend name="include/objects/HealthIcon.h"/>
    <depend name="include/openfl/events/EventDispatcher.h"/>
    <depend name="include/openfl/events/IEventDispatcher.h"/>
    <depend name="include/openfl/media/Sound.h"/>
@@ -1859,6 +1978,7 @@
    <depend name="include/states/MainMenuState.h"/>
    <depend name="include/states/PlayState.h"/>
    <depend name="include/states/SongMetadata.h"/>
+   <depend name="include/states/SongObject.h"/>
    <depend name="include/states/StoryMenuState.h"/>
    <depend name="include/substates/GameplayChangersSubstate.h"/>
    <depend name="include/substates/ResetScoreSubState.h"/>
@@ -8876,6 +8996,14 @@
   <file name="src/haxe/io/Encoding.cpp" >
    <depend name="include/haxe/io/Encoding.h"/>
   </file>
+  <file name="src/haxe/io/BytesOutput.cpp" >
+   <depend name="include/haxe/Exception.h"/>
+   <depend name="include/haxe/io/Bytes.h"/>
+   <depend name="include/haxe/io/BytesBuffer.h"/>
+   <depend name="include/haxe/io/BytesOutput.h"/>
+   <depend name="include/haxe/io/Error.h"/>
+   <depend name="include/haxe/io/Output.h"/>
+  </file>
   <file name="src/haxe/io/Output.cpp" >
    <depend name="include/haxe/Exception.h"/>
    <depend name="include/haxe/exceptions/NotImplementedException.h"/>
@@ -8908,6 +9036,12 @@
   <file name="src/haxe/io/BytesBuffer.cpp" >
    <depend name="include/haxe/io/Bytes.h"/>
    <depend name="include/haxe/io/BytesBuffer.h"/>
+  </file>
+  <file name="src/haxe/http/HttpBase.cpp" >
+   <depend name="include/Reflect.h"/>
+   <depend name="include/haxe/http/HttpBase.h"/>
+   <depend name="include/haxe/io/Bytes.h"/>
+   <depend name="include/haxe/io/Encoding.h"/>
   </file>
   <file name="src/haxe/format/JsonPrinter.cpp" >
    <depend name="include/Date.h"/>
@@ -14694,6 +14828,13 @@
    <depend name="include/sys/io/File.h"/>
    <depend name="include/tjson/TJSON.h"/>
   </file>
+  <file name="src/backend/InternetConnection.cpp" >
+   <depend name="include/backend/InternetConnection.h"/>
+   <depend name="include/haxe/Exception.h"/>
+   <depend name="include/haxe/Log.h"/>
+   <depend name="include/haxe/http/HttpBase.h"/>
+   <depend name="include/sys/Http.h"/>
+  </file>
   <file name="src/backend/InputFormatter.cpp" >
    <depend name="include/backend/InputFormatter.h"/>
    <depend name="include/flixel/FlxG.h"/>
@@ -16103,6 +16244,11 @@
    <depend name="include/ValueType.h"/>
    <depend name="include/tjson/TJSON.h"/>
    <depend name="include/tea/backend/SScriptX.h"/>
+   <depend name="include/sys/ssl/Socket.h"/>
+   <depend name="include/sys/ssl/Key.h"/>
+   <depend name="include/sys/ssl/Certificate.h"/>
+   <depend name="include/sys/net/Host.h"/>
+   <depend name="include/sys/Http.h"/>
    <depend name="include/substates/PauseSubState.h"/>
    <depend name="include/substates/GameOverSubstate.h"/>
    <depend name="include/states/editors/WeekEditorState.h"/>
@@ -16504,6 +16650,7 @@
    <depend name="include/flixel/addons/ui/FlxUIState.h"/>
    <depend name="include/flixel/addons/transition/FlxTransitionableState.h"/>
    <depend name="include/backend/Mods.h"/>
+   <depend name="include/backend/InternetConnection.h"/>
    <depend name="include/backend/Highscore.h"/>
    <depend name="include/backend/DiscordClient.h"/>
    <depend name="include/backend/Difficulty.h"/>
@@ -16661,6 +16808,8 @@
 <include name="${HXCPP}/src/hx/libs/regexp/Build.xml"/>
 <include name="${HXCPP}/src/hx/libs/std/Build.xml"/>
 <include name="${HXCPP}/src/hx/libs/std/Build.xml"/>
+<include name="${HXCPP}/src/hx/libs/std/Build.xml"/>
+<include name="${HXCPP}/src/hx/libs/ssl/Build.xml"/>
 <include name="${HXCPP}/src/hx/libs/std/Build.xml"/>
 <set name="LINC_DISCORD_RPC_PATH" value="C:/HaxeToolkit/haxe/lib/discord_rpc/git/"/>
 <include name="${LINC_DISCORD_RPC_PATH}linc/linc_discord_rpc.xml" />

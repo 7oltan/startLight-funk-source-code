@@ -78,6 +78,8 @@ class HXCPP_CLASS_ATTRIBUTES StoryMenuState_obj : public  ::backend::MusicBeatSt
 		 ::flixel::FlxSprite sprDifficulty;
 		 ::flixel::FlxSprite leftArrow;
 		 ::flixel::FlxSprite rightArrow;
+		 ::flixel::FlxSprite leftArrow2;
+		 ::flixel::FlxSprite rightArrow2;
 		::Array< ::Dynamic> loadedWeeks;
 		 ::flixel::FlxSprite win;
 		::Array< int > phillyLightsColors;
@@ -85,6 +87,7 @@ class HXCPP_CLASS_ATTRIBUTES StoryMenuState_obj : public  ::backend::MusicBeatSt
 		 ::flixel::FlxSprite clouds1;
 		 ::flixel::FlxSprite clouds2;
 		::Array< Float > difficultyXY;
+		 ::flixel::FlxSprite hat;
 		void create();
 
 		void closeSubState();

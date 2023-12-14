@@ -209,6 +209,7 @@ class WeekData {
 	public static function getCurrentWeek():WeekData {
 		var weekInt = PlayState.storyWeek;
 		if(PlayState.storyWeek < weeksList.length){
+			trace(weeksList[PlayState.storyWeek]);
 			return weeksLoaded.get(weeksList[PlayState.storyWeek]);
 		} else {
 			var fakeWeek:WeekData = null;

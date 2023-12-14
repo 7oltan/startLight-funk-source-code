@@ -1,110 +1,110 @@
 {
 	"animations": [
 		{
+			"loop": false,
 			"offsets": [
 				-5,
 				0
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "idle",
-			"indices": [],
-			"name": "idle"
+			"fps": 24,
+			"name": "idle",
+			"indices": []
 		},
 		{
 			"offsets": [
-				127,
-				-12
+				274,
+				89
 			],
 			"loop": false,
 			"fps": 24,
 			"anim": "singLEFT",
 			"indices": [],
-			"name": "wizard left"
+			"name": "left"
 		},
 		{
 			"offsets": [
-				-1,
-				-133
+				227,
+				-16
 			],
 			"loop": false,
 			"fps": 24,
 			"anim": "singDOWN",
 			"indices": [],
-			"name": "wizard down"
+			"name": "down"
 		},
 		{
 			"offsets": [
-				24,
-				111
+				23,
+				84
 			],
 			"loop": false,
 			"fps": 24,
 			"anim": "singUP",
 			"indices": [],
-			"name": "wizard up"
+			"name": "up"
 		},
 		{
 			"offsets": [
-				-90,
-				-4
+				-10,
+				34
 			],
 			"loop": false,
 			"fps": 24,
 			"anim": "singRIGHT",
 			"indices": [],
-			"name": "wizard right"
+			"name": "right"
 		},
 		{
-			"offsets": [
-				174,
-				-7
-			],
 			"loop": false,
-			"fps": 24,
+			"offsets": [
+				224,
+				-15
+			],
 			"anim": "singLEFTmiss",
-			"indices": [],
-			"name": "left miss"
+			"fps": 24,
+			"name": "missL",
+			"indices": []
 		},
 		{
-			"offsets": [
-				42,
-				-102
-			],
 			"loop": false,
-			"fps": 24,
+			"offsets": [
+				122,
+				-79
+			],
 			"anim": "singDOWNmiss",
-			"indices": [],
-			"name": "down miss"
+			"fps": 24,
+			"name": "missD",
+			"indices": []
 		},
 		{
-			"offsets": [
-				58,
-				220
-			],
 			"loop": false,
-			"fps": 24,
+			"offsets": [
+				23,
+				123
+			],
 			"anim": "singUPmiss",
-			"indices": [],
-			"name": "up miss"
+			"fps": 24,
+			"name": "missU",
+			"indices": []
 		},
 		{
-			"offsets": [
-				-65,
-				-3
-			],
 			"loop": false,
-			"fps": 24,
+			"offsets": [
+				-10,
+				10
+			],
 			"anim": "singRIGHTmiss",
-			"indices": [],
-			"name": "right miss"
+			"fps": 24,
+			"name": "missR",
+			"indices": []
 		}
 	],
 	"no_antialiasing": false,
 	"image": "characters/wizardNastya",
 	"position": [
-		20,
-		290
+		90,
+		280
 	],
 	"health_bar": "nastya",
 	"healthicon": "nastyaSG",
@@ -112,12 +112,12 @@
 	"healthbar_colors": [
 		195,
 		0,
-		101
+		81
 	],
 	"camera_position": [
-		30,
-		10
+		250,
+		-110
 	],
 	"sing_duration": 4,
-	"scale": 1.2
+	"scale": 1.1
 }

@@ -362,6 +362,7 @@ class HXCPP_CLASS_ATTRIBUTES PlayState_obj : public  ::backend::MusicBeatState_o
 		::Dynamic triggerEvent_dyn();
 
 		bool currentCameraCharacter;
+		bool lastWasGfNote;
 		void moveCameraSection( ::Dynamic sec);
 		::Dynamic moveCameraSection_dyn();
 
@@ -498,6 +499,8 @@ class HXCPP_CLASS_ATTRIBUTES PlayState_obj : public  ::backend::MusicBeatState_o
 
 		bool initLuaShader(::String name, ::Dynamic glslVersion);
 		::Dynamic initLuaShader_dyn();
+
+		void draw();
 
 };
 

@@ -1,21 +1,13 @@
 {
 	"animations": [
 		{
-			"loop": false,
 			"offsets": [
 				0,
 				0
 			],
-			"anim": "deathConfirm",
+			"loop": true,
 			"fps": 12,
-			"name": "deathrestart",
-			"indices": []
-		},
-		{
-			"offsets": [
-				0,
-				0
-			],
+			"anim": "deathLoop",
 			"indices": [
 				0,
 				1,
@@ -35,16 +27,28 @@
 				5,
 				5
 			],
-			"fps": 12,
-			"anim": "deathLoop",
-			"loop": true,
-			"name": "deathloop"
+			"name": "ded_loop"
 		},
 		{
 			"offsets": [
 				0,
 				0
 			],
+			"loop": false,
+			"fps": 12,
+			"anim": "deathConfirm",
+			"indices": [],
+			"name": "ded_restart"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "firstDeath",
+			"fps": 12,
+			"name": "ded_start",
 			"indices": [
 				0,
 				1,
@@ -75,20 +79,26 @@
 				9,
 				9,
 				9,
+				9,
+				9,
+				9,
+				9,
+				9,
+				9,
+				9,
+				9,
+				9,
 				9
-			],
-			"fps": 12,
-			"anim": "firstDeath",
-			"loop": false,
-			"name": "Death0"
+			]
 		}
 	],
 	"no_antialiasing": false,
-	"image": "characters/nastya",
+	"image": "characters/nastya-dead",
 	"position": [
-		-210,
-		-445
+		-320,
+		-615
 	],
+	"health_bar": "default",
 	"healthicon": "Pnastya",
 	"flip_x": false,
 	"healthbar_colors": [
@@ -98,8 +108,8 @@
 	],
 	"camera_position": [
 		50,
-		20
+		10
 	],
 	"sing_duration": 8.1,
-	"scale": 1
+	"scale": 0.75
 }

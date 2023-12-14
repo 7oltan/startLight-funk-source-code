@@ -20,6 +20,10 @@ class MainMenuState extends MusicBeatState {
     var selected:Bool = false;
     var oldMouse:Bool = true;
 
+    var lockArray:Array<FlxSprite> = [];
+
+    var lockText:FlxText;
+
     override function create(){
         oldMouse = FlxG.mouse.visible;
         //og main menu shiz
@@ -48,12 +52,12 @@ class MainMenuState extends MusicBeatState {
 		swmg.scrollFactor.set();
 		add(swmg);
 
-        addItem('Gallery',-100, 100,[54,90],new GalleryMenuState());
+        addItem('Gallery',-100, 100,[54,90],new GalleryMenuState(),false,InternetConnection.isAvailable()?'':'no connection');
         addItem('storymode',500, 0,[64,69],new StoryMenuState());
         addItem('freeplay',1100, 0,[64,64],new FreeplayState());
         addItem('options',-300,660,[5,3],new OptionsState(),true);
         addItem('credits',-260,550,[22,12],new CreditsState(),true);
-        addItem('G',1200,600,[22,224],new GalamixMenuState(),true);
+        addItem('G',1200,600,[22,224],new GalamixMenuState(),true,FlxG.save.data.weekCompleted.get('nastya') ? '' : 'finish the main week in story mode then come back!');
 
         itemGroup = new FlxTypedGroup<FlxSprite>();
         add(itemGroup);
@@ -70,6 +74,19 @@ class MainMenuState extends MusicBeatState {
                 button.scrollFactor.set();
             button.ID = i;
             itemGroup.add(button);
+            if(items[i].isLocked){
+                trace(items[i].lockText);
+                var lock:FlxSprite = new FlxSprite(button.x,button.y).loadGraphic(Paths.image('mainmenu/lock'));
+                lock.antialiasing = ClientPrefs.data.antialiasing;
+                lock.ID = i;
+                if(items[i].isMouse)
+                    lock.scrollFactor.set();
+                /*lock.setGraphicSize(Std.int(button.width*0.85));
+                lock.updateHitbox();*/
+                lock.setPosition(button.x+(button.width/2)-(lock.width/2),button.y+(button.height/2)-(lock.height/2));
+                add(lock);
+                lockArray.push(lock);
+            }
         }
 
 		hand = new FlxSprite(200,200).loadGraphic(Paths.image('mainmenu/handSelector'));
@@ -83,6 +100,13 @@ class MainMenuState extends MusicBeatState {
 		add(camFollow);
         
 		FlxG.camera.follow(camFollow, null, 0);
+
+		lockText = new FlxText(0,-180,0, "", 32);
+		lockText.setFormat("vcr.ttf", 50, FlxColor.WHITE, RIGHT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+		lockText.borderSize = 1.25;
+		lockText.screenCenter(X);
+		lockText.scrollFactor.set();
+        add(lockText);
 
         changeSelection(0);
         super.create();
@@ -125,10 +149,6 @@ class MainMenuState extends MusicBeatState {
             MusicBeatState.switchState(new TitleState());
         }
         
-		if (controls.UI_LEFT_P)
-            changeSelection(-1);
-		if (controls.UI_RIGHT_P)
-            changeSelection(1);
 
         if (controls.justPressed('debug_1'))
 			MusicBeatState.switchState(new MasterEditorMenu());
@@ -136,29 +156,58 @@ class MainMenuState extends MusicBeatState {
 		if (controls.ACCEPT)
             startSwitchin(items[curSelected].state);
 
+        for(lock in lockArray){
+            if(curSelected == lock.ID)
+                lock.alpha = 1;
+            else
+                lock.alpha = 0.7;
+        }
+
         var isSelecting:Bool = false;
         itemGroup.forEach(function(button:FlxSprite){
             if(items[button.ID].isMouse){
                 if(customOverlaps(button,(items[button.ID].name == 'options'))){
                     isSelecting = true;
-                    button.offset.set(items[button.ID].offsetSelected[0],items[button.ID].offsetSelected[1]);
-                    button.animation.play('selected');
+   
+                    for(lock in lockArray){
+                        if(button.ID == lock.ID)
+                            lock.alpha = 1;
+                    }
+
+                    if(!items[button.ID].isLocked){
+                        button.offset.set(items[button.ID].offsetSelected[0],items[button.ID].offsetSelected[1]);
+                        button.animation.play('selected');
+                        lockText.visible = false;
+                    }else{
+                        lockText.text = items[button.ID].lockText;
+                        lockText.screenCenter(X);
+                        lockText.visible = true;
+                    }
 
                     hand.setPosition(button.x+((items[button.ID].x > FlxG.width/2) ? 0-hand.height : button.width+(hand.height/2)),button.y-25+(button.height/2)-(hand.height/2));
                     hand.angle = items[button.ID].x > FlxG.width/2 ? -90 : 90;
                     hand.scrollFactor.set();
 
-                    if(FlxG.mouse.justPressed)
+                    if(FlxG.mouse.justPressed && !items[button.ID].isLocked)
                         startSwitchin(items[button.ID].state);
                 }else{
                     button.offset.set();
                     button.animation.play('idle');
                 }
-                
             }
         });
 
+
         if(!isSelecting){
+            if (controls.UI_LEFT_P)
+                changeSelection(-1);
+            if (controls.UI_RIGHT_P)
+                changeSelection(1);
+
+            lockText.visible = items[curSelected].isLocked;
+            lockText.text = items[curSelected].lockText;
+            lockText.screenCenter(X);
+
             var button = itemGroup.members[curSelected];
             hand.setPosition(button.x+(button.width/2)-(hand.width/2),button.y-25-150);
             hand.angle = 0;
@@ -236,8 +285,15 @@ class MainMenuState extends MusicBeatState {
         
         itemGroup.forEach(function(button:FlxSprite){
             if(button.ID == curSelected && !items[button.ID].isMouse){
-                button.offset.set(items[button.ID].offsetSelected[0],items[button.ID].offsetSelected[1]);
-                button.animation.play('selected');
+                if(!items[button.ID].isLocked){
+                    button.offset.set(items[button.ID].offsetSelected[0],items[button.ID].offsetSelected[1]);
+                    button.animation.play('selected');
+                    lockText.visible = false;
+                }else{
+                    lockText.text = items[button.ID].lockText;
+                    lockText.screenCenter(X);
+                    lockText.visible = true;
+                }
                 camFollow.x = button.getGraphicMidpoint().x-items[button.ID].offsetSelected[0];
 
                 hand.setPosition(button.x+(button.width/2)-(hand.width/2),button.y-25-150);

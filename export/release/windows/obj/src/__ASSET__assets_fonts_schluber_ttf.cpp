@@ -10,13 +10,13 @@
 #include <lime/text/Font.h>
 #endif
 
-HX_DEFINE_STACK_FRAME(_hx_pos_deb88ae628644509_836_new,"__ASSET__assets_fonts_schluber_ttf","new",0x618b5dae,"__ASSET__assets_fonts_schluber_ttf.new","ManifestResources.hx",836,0xf77aa668)
+HX_DEFINE_STACK_FRAME(_hx_pos_deb88ae628644509_843_new,"__ASSET__assets_fonts_schluber_ttf","new",0x618b5dae,"__ASSET__assets_fonts_schluber_ttf.new","ManifestResources.hx",843,0xf77aa668)
 
 void __ASSET__assets_fonts_schluber_ttf_obj::__construct(){
-            	HX_STACKFRAME(&_hx_pos_deb88ae628644509_836_new)
-HXDLIN( 836)		this->_hx___fontPath = (::ManifestResources_obj::rootPath + HX_("assets/fonts/Schluber.ttf",dd,e5,6f,b0));
-HXDLIN( 836)		this->name = HX_("Schluber",ae,c5,2c,b2);
-HXDLIN( 836)		super::__construct(null());
+            	HX_STACKFRAME(&_hx_pos_deb88ae628644509_843_new)
+HXDLIN( 843)		this->_hx___fontPath = (::ManifestResources_obj::rootPath + HX_("assets/fonts/Schluber.ttf",dd,e5,6f,b0));
+HXDLIN( 843)		this->name = HX_("Schluber",ae,c5,2c,b2);
+HXDLIN( 843)		super::__construct(null());
             	}
 
 Dynamic __ASSET__assets_fonts_schluber_ttf_obj::__CreateEmpty() { return new __ASSET__assets_fonts_schluber_ttf_obj; }

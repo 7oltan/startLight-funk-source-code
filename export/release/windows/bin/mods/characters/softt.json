@@ -1,23 +1,24 @@
 {
 	"animations": [
 		{
+			"loop": false,
 			"offsets": [
 				0,
 				0
 			],
-			"loop": false,
-			"fps": 12,
 			"anim": "idle",
-			"indices": [],
-			"name": "Idle"
+			"fps": 12,
+			"name": "Idle",
+			"indices": []
 		}
 	],
-	"no_antialiasing": true,
+	"no_antialiasing": false,
 	"image": "characters/soft",
 	"position": [
 		-216,
 		-360
 	],
+	"health_bar": "default",
 	"healthicon": "gf",
 	"flip_x": true,
 	"healthbar_colors": [
