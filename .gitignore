@@ -1,1 +1,3 @@
 export/release/linux/*
+export/release/windows/obj/*
+export/release/windows/haxe/*
