@@ -1,6 +1,6 @@
 {
 	"song": {
-		"player1": "Playergf",
+		"player1": "PLAYERGF",
 		"notes": [
 			{
 				"sectionNotes": [],
@@ -9589,7 +9589,7 @@
 					[
 						"Change Character",
 						"BF",
-						"Playergf"
+						"PLAYERGF"
 					],
 					[
 						"stage test",
@@ -10094,7 +10094,7 @@
 					[
 						"Change Character",
 						"BF",
-						"Playergf"
+						"PLAYERGF"
 					]
 				]
 			],
