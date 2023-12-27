@@ -23,6 +23,7 @@ class MainMenuState extends MusicBeatState {
     var lockArray:Array<FlxSprite> = [];
 
     var lockText:FlxText;
+    var justG:MenuItem = null;
 
     override function create(){
         oldMouse = FlxG.mouse.visible;
@@ -57,7 +58,7 @@ class MainMenuState extends MusicBeatState {
         addItem('freeplay',1100, 0,[64,64],new FreeplayState());
         addItem('options',-300,660,[5,3],new OptionsState(),true);
         addItem('credits',-260,550,[22,12],new CreditsState(),true);
-        addItem('G',1200,600,[22,224],new GalamixMenuState(),true,FlxG.save.data.weekCompleted.get('nastya') ? '' : 'finish the main week in story mode then come back!');
+        justG = addItem('G',1200,600,[22,224],new GalamixMenuState(),true,'finish the main week in story mode then come back!');
 
         itemGroup = new FlxTypedGroup<FlxSprite>();
         add(itemGroup);
@@ -86,6 +87,7 @@ class MainMenuState extends MusicBeatState {
                 lock.setPosition(button.x+(button.width/2)-(lock.width/2),button.y+(button.height/2)-(lock.height/2));
                 add(lock);
                 lockArray.push(lock);
+                items[i].lockSprite = lock;
             }
         }
 
@@ -111,7 +113,7 @@ class MainMenuState extends MusicBeatState {
         changeSelection(0);
         super.create();
     }
-    function addItem(name:String,x:Float,y:Float,offsetSelected:Array<Int>,state:Null<FlxState>,?isMouse:Bool=false,?lockText:String=''){
+    function addItem(name:String,x:Float,y:Float,offsetSelected:Array<Int>,state:Null<FlxState>,?isMouse:Bool=false,?lockText:String=''):Null<MenuItem>{
         var item:MenuItem=new MenuItem();
         item.name = name;
         item.x = x;
@@ -122,6 +124,7 @@ class MainMenuState extends MusicBeatState {
         item.lockText = lockText;
         item.isLocked = (lockText != '');
         items.push(item);
+        return item;
     }
 
     function customOverlaps(object:FlxObject,isOptions:Bool){//REALLY hardcoded shit but the whole customOverlaps thing is bc of the stem on options, it keeps triggering the select with the credits
@@ -139,8 +142,13 @@ class MainMenuState extends MusicBeatState {
 
         return  (m.x >= x && m.x < (x+width) && m.y >= y && m.y < (y+height));
     }
-
+    var saveDataFixed = false;
     override function update(elapsed:Float){
+        if(!saveDataFixed){
+            saveDataFixed = true;
+            justG.lockText = FlxG.save.data.weekCompleted!=null && FlxG.save.data.weekCompleted.exists('nastya') && FlxG.save.data.weekCompleted.get('nastya') ? '' :justG.lockText;
+        }
+
 		FlxG.camera.followLerp = FlxMath.bound(elapsed * 9 / (FlxG.updateFramerate / 60), 0, 1);
 		if (controls.BACK)
         {
@@ -314,8 +322,15 @@ class MenuItem{
     public var x:Float;
     public var y:Float;
     public var isLocked:Bool;
-    public var lockText:String;
+    //public var lockText:String;
     public var offsetSelected:Array<Int>=[0,0];
     public var state:Null<FlxState>;
+    public var lockSprite:Null<FlxSprite>;
+    public var lockText(default, set):String;
+    function set_lockText(newText) {
+        isLocked = (newText != '');
+        if(lockSprite!=null) lockSprite.visible = isLocked;
+        return lockText = newText;
+    }
     public function new(){}
 }
