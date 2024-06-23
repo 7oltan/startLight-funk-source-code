@@ -108,8 +108,6 @@ class StoryMenuState extends MusicBeatState
 
 		var num:Int = 0;
 
-		WeekData.weeksList.reverse();
-
 		var fakeWeekMap:Map<String,WeekData> = new Map<String,WeekData>();
 		var fakeWeekList:Array<String> = [];
 
@@ -248,12 +246,19 @@ class StoryMenuState extends MusicBeatState
 		if (FlxG.sound.music != null)
 			Conductor.songPosition = FlxG.sound.music.time;
 
-		clouds1.x += 1;
-		clouds2.x += 1;
+		var tweenVal:Float = elapsed * 100;
+		clouds1.x += tweenVal;
+		clouds2.x += tweenVal;
 		if(clouds1.x>=FlxG.width)
 			clouds1.x = -FlxG.width;
 		if(clouds2.x>=FlxG.width)
 			clouds2.x = -FlxG.width;
+
+		//if they were fucked up
+		if(clouds1.x > clouds2.x)
+			clouds1.x = clouds2.x+FlxG.width;
+		if(clouds2.x > clouds1.x)
+			clouds2.x = clouds1.x+FlxG.width;
 
 		win.alpha -= (Conductor.crochet / 1000) * FlxG.elapsed * 1.5;
 
@@ -371,8 +376,11 @@ class StoryMenuState extends MusicBeatState
 
 	function selectWeek()
 	{
-		if(loadedWeeks[curWeek].songs.length <= 0)
+		if(loadedWeeks[curWeek].songs.length <= 0){
+			FlxG.sound.play(Paths.sound('lockMenu'));
+			FlxG.camera.shake(0.005,0.1);
 			return null;
+		}
 		if (!weekIsLocked(loadedWeeks[curWeek].fileName))
 		{
 					FlxTween.tween(FlxG.camera, {zoom: 3}, 1.2, {ease: FlxEase.circIn});
@@ -392,6 +400,7 @@ class StoryMenuState extends MusicBeatState
 			{
 				PlayState.storyPlaylist = songArray;
 				PlayState.isStoryMode = true;
+				PlayState.galamix = false;
 				selectedWeek = true;
 	
 				var diffic = Difficulty.getFilePath(curDifficulty);

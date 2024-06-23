@@ -71,6 +71,7 @@ class HXCPP_CLASS_ATTRIBUTES CreditsState_obj : public  ::backend::MusicBeatStat
 		 ::objects::Alphabet roleText;
 		 ::flixel::FlxSprite dog;
 		bool oldMouse;
+		bool finishedMainWeek;
 		void create();
 
 		bool quitting;

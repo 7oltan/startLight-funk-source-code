@@ -15,6 +15,7 @@ HX_DECLARE_CLASS1(flixel,FlxSprite)
 HX_DECLARE_CLASS1(flixel,FlxState)
 HX_DECLARE_CLASS1(flixel,FlxSubState)
 HX_DECLARE_CLASS2(flixel,group,FlxTypedGroup)
+HX_DECLARE_CLASS2(flixel,sound,FlxSound)
 HX_DECLARE_CLASS2(flixel,util,IFlxDestroyable)
 HX_DECLARE_CLASS1(objects,Character)
 HX_DECLARE_CLASS1(substates,GameOverSubstate)
@@ -70,10 +71,14 @@ class HXCPP_CLASS_ATTRIBUTES GameOverSubstate_obj : public  ::backend::MusicBeat
 		bool updateCamera;
 		bool playingDeathSound;
 		::String stageSuffix;
+		 ::flixel::sound::FlxSound deathSound;
+		 ::flixel::FlxSprite coloredBG;
+		Float ogZoom;
 		void create();
 
+		void beatHit();
+
 		bool startedDeath;
-		bool isFollowingAlready;
 		void update(Float elapsed);
 
 		bool isEnding;

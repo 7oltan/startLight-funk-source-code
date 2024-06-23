@@ -15,7 +15,7 @@ class MainMenuState extends MusicBeatState {
     var hand:FlxSprite;
     var items:Array<MenuItem>=[];
     var itemGroup:FlxTypedGroup<FlxSprite>;
-    var curSelected:Int = 0;
+    var curSelected:Int = 1;
 	var camFollow:FlxObject;
     var selected:Bool = false;
     var oldMouse:Bool = true;
@@ -23,7 +23,8 @@ class MainMenuState extends MusicBeatState {
     var lockArray:Array<FlxSprite> = [];
 
     var lockText:FlxText;
-    var justG:MenuItem = null;
+
+    var finishedMainWeek:Bool;
 
     override function create(){
         oldMouse = FlxG.mouse.visible;
@@ -48,17 +49,23 @@ class MainMenuState extends MusicBeatState {
 		bg.screenCenter();bg.x -= 13;bg.y += 100;
 		add(bg);
 
-		swmg = new FlxSprite(200,200).loadGraphic(Paths.image('mainmenu/sin'));
-		swmg.antialiasing = ClientPrefs.data.antialiasing;
-		swmg.scrollFactor.set();
-		add(swmg);
+        finishedMainWeek = FlxG.save.data.weekCompleted!=null && FlxG.save.data.weekCompleted.exists('nastya') && FlxG.save.data.weekCompleted.get('nastya');
+
+        if(finishedMainWeek){
+            swmg = new FlxSprite(200,200).loadGraphic(Paths.image('mainmenu/sin'));
+            swmg.antialiasing = ClientPrefs.data.antialiasing;
+            swmg.scrollFactor.set();
+            add(swmg);      
+        }
+
 
         addItem('Gallery',-100, 100,[54,90],new GalleryMenuState(),false,InternetConnection.isAvailable()?'':'no connection');
         addItem('storymode',500, 0,[64,69],new StoryMenuState());
-        addItem('freeplay',1100, 0,[64,64],new FreeplayState());
+        var can:Bool = FlxG.save.data.weekCompleted!=null && FlxG.save.data.weekCompleted.keys().hasNext();
+        addItem('freeplay',1100, 0,[64,64],new FreeplayState(),can ? '' : 'unlock any song then come back!');
         addItem('options',-300,660,[5,3],new OptionsState(),true);
         addItem('credits',-260,550,[22,12],new CreditsState(),true);
-        justG = addItem('G',1200,600,[22,224],new GalamixMenuState(),true,'finish the main week in story mode then come back!');
+        addItem('G',1200,600,[22,224],new GalamixMenuState(),true, finishedMainWeek ? '' : 'finish the main week in story mode then come back!');
 
         itemGroup = new FlxTypedGroup<FlxSprite>();
         add(itemGroup);
@@ -95,7 +102,7 @@ class MainMenuState extends MusicBeatState {
 		hand.antialiasing = ClientPrefs.data.antialiasing;
 		hand.scrollFactor.set();
 		add(hand);
-		FlxTween.tween(hand.offset, {y: 50}, 0.6, {ease: FlxEase.quadInOut, type: PINGPONG, startDelay: 0.1});
+        doHandTween(false);
 
 		camFollow = new FlxObject(0, 0, 1, 1);
         camFollow.screenCenter();
@@ -113,6 +120,22 @@ class MainMenuState extends MusicBeatState {
         changeSelection(0);
         super.create();
     }
+
+    var alrSideWays:Bool = true;
+    var handTween:FlxTween;
+    function doHandTween(sideWays:Bool){
+        if(sideWays == alrSideWays)
+            return;
+        alrSideWays = sideWays;
+        if(handTween != null)
+            handTween.cancel();
+        hand.offset.set();
+        if(sideWays)
+		    handTween = FlxTween.tween(hand.offset, {x: 50}, 0.6, {ease: FlxEase.quadInOut, type: PINGPONG, startDelay: 0.1});
+        else
+		    handTween = FlxTween.tween(hand.offset, {y: 50}, 0.6, {ease: FlxEase.quadInOut, type: PINGPONG, startDelay: 0.1});
+    }
+
     function addItem(name:String,x:Float,y:Float,offsetSelected:Array<Int>,state:Null<FlxState>,?isMouse:Bool=false,?lockText:String=''):Null<MenuItem>{
         var item:MenuItem=new MenuItem();
         item.name = name;
@@ -142,13 +165,7 @@ class MainMenuState extends MusicBeatState {
 
         return  (m.x >= x && m.x < (x+width) && m.y >= y && m.y < (y+height));
     }
-    var saveDataFixed = false;
     override function update(elapsed:Float){
-        if(!saveDataFixed){
-            saveDataFixed = true;
-            justG.lockText = FlxG.save.data.weekCompleted!=null && FlxG.save.data.weekCompleted.exists('nastya') && FlxG.save.data.weekCompleted.get('nastya') ? '' :justG.lockText;
-        }
-
 		FlxG.camera.followLerp = FlxMath.bound(elapsed * 9 / (FlxG.updateFramerate / 60), 0, 1);
 		if (controls.BACK)
         {
@@ -161,8 +178,15 @@ class MainMenuState extends MusicBeatState {
         if (controls.justPressed('debug_1'))
 			MusicBeatState.switchState(new MasterEditorMenu());
 
-		if (controls.ACCEPT)
-            startSwitchin(items[curSelected].state);
+		if (controls.ACCEPT){
+            if(items[curSelected].isLocked){
+                FlxG.sound.play(Paths.sound('lockMenu'));
+                FlxG.camera.shake(0.005,0.1);
+            }else{
+				FlxG.sound.play(Paths.sound('confirmMenu'));
+                startSwitchin(items[curSelected].state);
+            }
+        }
 
         for(lock in lockArray){
             if(curSelected == lock.ID)
@@ -184,6 +208,8 @@ class MainMenuState extends MusicBeatState {
 
                     if(!items[button.ID].isLocked){
                         button.offset.set(items[button.ID].offsetSelected[0],items[button.ID].offsetSelected[1]);
+                        if(button.animation.curAnim.name == 'idle')           
+                            FlxG.sound.play(Paths.sound('scrollMenu'));
                         button.animation.play('selected');
                         lockText.visible = false;
                     }else{
@@ -192,12 +218,20 @@ class MainMenuState extends MusicBeatState {
                         lockText.visible = true;
                     }
 
-                    hand.setPosition(button.x+((items[button.ID].x > FlxG.width/2) ? 0-hand.height : button.width+(hand.height/2)),button.y-25+(button.height/2)-(hand.height/2));
+                    hand.setPosition(button.x+25+((items[button.ID].x > FlxG.width/2) ? 0-hand.height : button.width+(hand.height/2)),button.y+(items[button.ID].name == 'options' ? 30 : 0)+(button.height/2)-(hand.height/2));
                     hand.angle = items[button.ID].x > FlxG.width/2 ? -90 : 90;
                     hand.scrollFactor.set();
+                    doHandTween(true);
 
-                    if(FlxG.mouse.justPressed && !items[button.ID].isLocked)
-                        startSwitchin(items[button.ID].state);
+                    if(FlxG.mouse.justPressed){
+                        if(items[button.ID].isLocked){
+                            FlxG.sound.play(Paths.sound('lockMenu'));
+                            FlxG.camera.shake(0.005,0.1);
+                        }else{
+                            FlxG.sound.play(Paths.sound('confirmMenu'));
+                            startSwitchin(items[button.ID].state);
+                        }
+                    }
                 }else{
                     button.offset.set();
                     button.animation.play('idle');
@@ -220,29 +254,33 @@ class MainMenuState extends MusicBeatState {
             hand.setPosition(button.x+(button.width/2)-(hand.width/2),button.y-25-150);
             hand.angle = 0;
             hand.scrollFactor.set(button.scrollFactor.x,button.scrollFactor.y);
+            doHandTween(false);
         }
 
         //shadow wizard money gang shit
     
-        if(FlxG.mouse.overlaps(swmg)){
-            swmg.alpha = 1;
-            if(FlxG.mouse.justPressed){
-				PlayState.isStoryMode = false;
-                persistentUpdate = false;
-                WeekData.reloadWeekFiles(false);
-                Mods.currentModDirectory = '';
-                //trace(WeekData.weeksList);
-                PlayState.storyWeek = WeekData.weeksList.indexOf("weekspells");
-                Difficulty.loadFromWeek();
-                var songLowercase:String = Paths.formatToSongPath('shadow-government');
-                var poop:String = Highscore.formatSong(songLowercase, 0);
-                
-				PlayState.SONG = Song.loadFromJson(poop, songLowercase);
-				PlayState.storyDifficulty = 0;
-                startSwitchin(new PlayState());
-            }
-        }else
-            swmg.alpha = 0.7;
+        if(finishedMainWeek){
+            if(FlxG.mouse.overlaps(swmg)){
+                swmg.alpha = 1;
+                if(FlxG.mouse.justPressed){
+                    PlayState.isStoryMode = false;
+                    persistentUpdate = false;
+                    WeekData.reloadWeekFiles(false);
+                    Mods.currentModDirectory = '';
+                    //trace(WeekData.weeksList);
+                    PlayState.storyWeek = WeekData.weeksList.indexOf("weekspells");
+                    PlayState.fromMenu = true;
+                    Difficulty.loadFromWeek();
+                    var songLowercase:String = Paths.formatToSongPath('shadow-government');
+                    var poop:String = Highscore.formatSong(songLowercase, 0);
+                    
+                    PlayState.SONG = Song.loadFromJson(poop, songLowercase);
+                    PlayState.storyDifficulty = 0;
+                    startSwitchin(new PlayState());
+                }
+            }else
+                swmg.alpha = 0.7;
+        }
 
         super.update(elapsed);
     }

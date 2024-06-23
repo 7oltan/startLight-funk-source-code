@@ -64,6 +64,8 @@ class FreeplayState extends MusicBeatState
 
 		for (i in 0...WeekData.weeksList.length) {
 			if(weekIsLocked(WeekData.weeksList[i])) continue;
+			var yes:Bool = FlxG.save.data.weekCompleted!=null && FlxG.save.data.weekCompleted.exists(WeekData.weeksList[i]) && FlxG.save.data.weekCompleted.get(WeekData.weeksList[i]);
+			if(!yes) continue;
 
 			var leWeek:WeekData = WeekData.weeksLoaded.get(WeekData.weeksList[i]);
 			var leSongs:Array<String> = [];
@@ -156,8 +158,8 @@ class FreeplayState extends MusicBeatState
 		text.scrollFactor.set();
 		add(text);
 		
-		ratings = new BGSprite('freeplay/freeplayRatings', 0, 0, 1, 1, ["FC","SICK","OK"], true);
-		ratings.setGraphicSize(FlxG.width,FlxG.height);
+		ratings = new BGSprite('freeplay/freeplayRatings', 0, 0, 1, 1, ["FC","SICK","OK",'BAD','GOOD'], true);
+		ratings.setGraphicSize(Std.int(ratings.width*0.6));
 		ratings.updateHitbox();
 		add(ratings);
 
@@ -362,6 +364,8 @@ class FreeplayState extends MusicBeatState
 			{
 				PlayState.SONG = Song.loadFromJson(poop, songLowercase);
 				PlayState.isStoryMode = false;
+				PlayState.galamix = false;
+                PlayState.fromMenu = false;
 				PlayState.storyDifficulty = curDifficulty;
 
 				trace('CURRENT WEEK: ' + WeekData.getWeekFileName());
@@ -422,6 +426,8 @@ class FreeplayState extends MusicBeatState
 		if (curDifficulty >= Difficulty.list.length)
 			curDifficulty = 0;
 
+		diffText.visible = (Difficulty.list.length > 1);
+
 		#if !switch
 		intendedScore = Highscore.getScore(songs[curSelected].songName, curDifficulty);
 		intendedRating = Highscore.getRating(songs[curSelected].songName, curDifficulty);
@@ -429,12 +435,21 @@ class FreeplayState extends MusicBeatState
 
 		trace(intendedRating*100);
 
-		if(intendedRating*100 >= 80)
+		if(intendedRating*100 == 100)
 			ratings.animation.play('FC',true);
-		else if(intendedRating*100 >= 60)
+		else if(intendedRating*100 >= 80)
 			ratings.animation.play('SICK',true);
-		else
+		else if(intendedRating*100 >= 60)
+			ratings.animation.play('GOOD',true);
+		else if(intendedRating*100 >= 40)
 			ratings.animation.play('OK',true);
+		else
+			ratings.animation.play('BAD',true);
+
+		ratings.updateHitbox();
+		ratings.x = 800-(ratings.width/2);
+
+		ratings.visible = !(intendedRating*100 == 0);
 
 		lastDifficultyName = Difficulty.getString(curDifficulty);
 		if (Difficulty.list.length > 1)
@@ -450,7 +465,7 @@ class FreeplayState extends MusicBeatState
 	function changeSelection(change:Int = 0, playSound:Bool = true)
 	{
 		_updateSongLastDifficulty();
-		if(playSound) FlxG.sound.play(Paths.sound('scrollMenu'), 0.4);
+		if(playSound) FlxG.sound.play(Paths.sound('scrollMenu'));
 
 		var lastList:Array<String> = Difficulty.list;
 		curSelected += change;
@@ -505,6 +520,7 @@ class FreeplayState extends MusicBeatState
 
 	inline private function _updateSongLastDifficulty()
 	{
+		trace(Difficulty.getString(curDifficulty));
 		songs[curSelected].lastDifficulty = Difficulty.getString(curDifficulty);
 	}
 

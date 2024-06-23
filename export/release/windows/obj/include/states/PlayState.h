@@ -95,6 +95,8 @@ class HXCPP_CLASS_ATTRIBUTES PlayState_obj : public  ::backend::MusicBeatState_o
 
 		static  ::Dynamic SONG;
 		static bool isStoryMode;
+		static bool galamix;
+		static bool fromMenu;
 		static int storyWeek;
 		static ::Array< ::String > storyPlaylist;
 		static int storyDifficulty;

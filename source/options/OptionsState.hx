@@ -2,10 +2,12 @@ package options;
 
 import states.MainMenuState;
 import backend.StageData;
+import backend.WeekData;
+import flixel.effects.FlxFlicker;
 
 class OptionsState extends MusicBeatState
 {
-	var options:Array<String> = ['Note Colors', 'Controls', 'Adjust Delay and Combo', 'Graphics', 'Visuals and UI', 'Gameplay'];
+	var options:Array<String> = ['Note Colors', 'Controls','Unlock Everything', 'Adjust Delay and Combo', 'Graphics', 'Visuals and UI', 'Gameplay','Reset'];
 	private var grpOptions:FlxTypedGroup<Alphabet>;
 	private static var curSelected:Int = 0;
 	public static var menuBG:FlxSprite;
@@ -17,6 +19,11 @@ class OptionsState extends MusicBeatState
 				openSubState(new options.NotesSubState());
 			case 'Controls':
 				openSubState(new options.ControlsSubState());
+			case 'Unlock Everything':
+				flicker();		
+				WeekData.reloadWeekFiles();
+				for(i in 0...WeekData.weeksList.length)
+					FlxG.save.data.weekCompleted.set(WeekData.weeksList[i],true);
 			case 'Graphics':
 				openSubState(new options.GraphicsSettingsSubState());
 			case 'Visuals and UI':
@@ -25,7 +32,17 @@ class OptionsState extends MusicBeatState
 				openSubState(new options.GameplaySettingsSubState());
 			case 'Adjust Delay and Combo':
 				MusicBeatState.switchState(new options.NoteOffsetState());
+			case 'Reset':
+				flicker();
+				WeekData.reloadWeekFiles();
+				for(i in 0...WeekData.weeksList.length)
+					FlxG.save.data.weekCompleted.remove(WeekData.weeksList[i]);
 		}
+	}
+
+	function flicker(){
+		FlxG.sound.play(Paths.sound('confirmMenu'));
+		FlxFlicker.flicker(grpOptions.members[curSelected], 1, 0.06, true, false);
 	}
 
 	var selectorLeft:Alphabet;
@@ -35,6 +52,8 @@ class OptionsState extends MusicBeatState
 		#if desktop
 		DiscordClient.changePresence("Options Menu", null);
 		#end
+
+		Paths.setCurrentLevel('shared');
 
 		var bg:FlxSprite = new FlxSprite().loadGraphic(Paths.image('menuDesat'));
 		bg.antialiasing = ClientPrefs.data.antialiasing;
@@ -50,14 +69,17 @@ class OptionsState extends MusicBeatState
 		for (i in 0...options.length)
 		{
 			var optionText:Alphabet = new Alphabet(0, 0, options[i], true);
+			optionText.setScale(0.85);
 			optionText.screenCenter();
-			optionText.y += (100 * (i - (options.length / 2))) + 50;
+			optionText.y += (85 * (i - (options.length / 2))) + 50;
 			grpOptions.add(optionText);
 		}
 
 		selectorLeft = new Alphabet(0, 0, '>', true);
+		selectorLeft.setScale(0.85);
 		add(selectorLeft);
 		selectorRight = new Alphabet(0, 0, '<', true);
+		selectorRight.setScale(0.85);
 		add(selectorRight);
 
 		changeSelection();

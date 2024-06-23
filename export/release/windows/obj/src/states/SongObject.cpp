@@ -44,52 +44,52 @@
 #include <states/SongObject.h>
 #endif
 
-HX_DEFINE_STACK_FRAME(_hx_pos_31c7b0a4620b79b3_569_new,"states.SongObject","new",0x02143932,"states.SongObject.new","states/FreeplayState.hx",569,0x1b2e20da)
-HX_LOCAL_STACK_FRAME(_hx_pos_31c7b0a4620b79b3_614_update,"states.SongObject","update",0x6644ec77,"states.SongObject.update","states/FreeplayState.hx",614,0x1b2e20da)
+HX_DEFINE_STACK_FRAME(_hx_pos_31c7b0a4620b79b3_584_new,"states.SongObject","new",0x02143932,"states.SongObject.new","states/FreeplayState.hx",584,0x1b2e20da)
+HX_LOCAL_STACK_FRAME(_hx_pos_31c7b0a4620b79b3_629_update,"states.SongObject","update",0x6644ec77,"states.SongObject.update","states/FreeplayState.hx",629,0x1b2e20da)
 namespace states{
 
 void SongObject_obj::__construct(int targetY,::String songName,::String icon){
-            	HX_GC_STACKFRAME(&_hx_pos_31c7b0a4620b79b3_569_new)
-HXLINE( 572)		 ::flixel::math::FlxBasePoint this1 =  ::flixel::math::FlxBasePoint_obj::__alloc( HX_CTX ,90,320);
-HXDLIN( 572)		this->startPosition = this1;
-HXLINE( 571)		 ::flixel::math::FlxBasePoint this11 =  ::flixel::math::FlxBasePoint_obj::__alloc( HX_CTX ,20,120);
-HXDLIN( 571)		this->distancePerItem = this11;
-HXLINE( 570)		this->targetY = 0;
-HXLINE( 574)		super::__construct(null(),null(),null());
-HXLINE( 575)		this->targetY = targetY;
-HXLINE( 577)		 ::flixel::FlxSprite barLeft =  ::flixel::FlxSprite_obj::__alloc( HX_CTX ,-80,-25,null());
-HXDLIN( 577)		 ::flixel::FlxSprite barLeft1 = barLeft->loadGraphic(::backend::Paths_obj::image(HX_("freeplay/bar-left",90,96,5d,95),null(),null()),null(),null(),null(),null(),null());
-HXLINE( 578)		this->add(barLeft1);
-HXLINE( 580)		 ::flixel::FlxSprite barMiddle =  ::flixel::FlxSprite_obj::__alloc( HX_CTX ,0,-25,null());
-HXDLIN( 580)		 ::flixel::FlxSprite barMiddle1 = barMiddle->loadGraphic(::backend::Paths_obj::image(HX_("freeplay/bar-middle",1e,d6,73,8b),null(),null()),null(),null(),null(),null(),null());
-HXLINE( 581)		this->add(barMiddle1);
-HXLINE( 583)		 ::flixel::FlxSprite barRight =  ::flixel::FlxSprite_obj::__alloc( HX_CTX ,0,-25,null());
-HXDLIN( 583)		 ::flixel::FlxSprite barRight1 = barRight->loadGraphic(::backend::Paths_obj::image(HX_("freeplay/bar-right",33,35,93,93),null(),null()),null(),null(),null(),null(),null());
-HXLINE( 584)		this->add(barRight1);
-HXLINE( 586)		 ::objects::Alphabet songText =  ::objects::Alphabet_obj::__alloc( HX_CTX ,( (Float)(0) ),( (Float)(0) ),songName,true);
-HXLINE( 587)		songText->set_scaleX(::Math_obj::min(((Float)0.8),(( (Float)(980) ) / songText->get_width())));
-HXLINE( 588)		this->add(songText);
-HXLINE( 590)		barMiddle1->setGraphicSize(0,::Std_obj::_hx_int((songText->get_height() * ((Float)1.5714285714285714))));
-HXLINE( 591)		barMiddle1->updateHitbox();
-HXLINE( 592)		barLeft1->setGraphicSize(0,::Std_obj::_hx_int((songText->get_height() * ((Float)1.5714285714285714))));
-HXLINE( 593)		barLeft1->updateHitbox();
-HXLINE( 594)		barRight1->setGraphicSize(0,::Std_obj::_hx_int((songText->get_height() * ((Float)1.5714285714285714))));
-HXLINE( 595)		barRight1->updateHitbox();
-HXLINE( 597)		int _hx_tmp = ::Std_obj::_hx_int((songText->get_width() - ( (Float)(210) )));
-HXDLIN( 597)		barMiddle1->setGraphicSize(_hx_tmp,::Std_obj::_hx_int(barMiddle1->get_height()));
-HXLINE( 598)		barMiddle1->updateHitbox();
-HXLINE( 599)		Float barLeft2 = barLeft1->x;
-HXDLIN( 599)		barMiddle1->set_x((barLeft2 + barLeft1->get_width()));
-HXLINE( 601)		Float barMiddle2 = barMiddle1->x;
-HXDLIN( 601)		barRight1->set_x((barMiddle2 + barMiddle1->get_width()));
-HXLINE( 603)		songText->set_scaleY(((Float)0.8));
-HXLINE( 605)		 ::objects::HealthIcon icon1 =  ::objects::HealthIcon_obj::__alloc( HX_CTX ,icon,null(),null());
-HXLINE( 606)		icon1->setGraphicSize(::Std_obj::_hx_int((icon1->get_width() * ((Float)0.6))),null());
-HXLINE( 607)		icon1->updateHitbox();
-HXLINE( 608)		Float barRight2 = barRight1->x;
-HXDLIN( 608)		Float _hx_tmp1 = (barRight2 + (barRight1->get_width() / ( (Float)(2) )));
-HXDLIN( 608)		icon1->setPosition(((_hx_tmp1 - (icon1->get_width() / ( (Float)(2) ))) - ( (Float)(15) )),-40);
-HXLINE( 609)		this->add(icon1);
+            	HX_GC_STACKFRAME(&_hx_pos_31c7b0a4620b79b3_584_new)
+HXLINE( 587)		 ::flixel::math::FlxBasePoint this1 =  ::flixel::math::FlxBasePoint_obj::__alloc( HX_CTX ,90,320);
+HXDLIN( 587)		this->startPosition = this1;
+HXLINE( 586)		 ::flixel::math::FlxBasePoint this11 =  ::flixel::math::FlxBasePoint_obj::__alloc( HX_CTX ,20,120);
+HXDLIN( 586)		this->distancePerItem = this11;
+HXLINE( 585)		this->targetY = 0;
+HXLINE( 589)		super::__construct(null(),null(),null());
+HXLINE( 590)		this->targetY = targetY;
+HXLINE( 592)		 ::flixel::FlxSprite barLeft =  ::flixel::FlxSprite_obj::__alloc( HX_CTX ,-80,-25,null());
+HXDLIN( 592)		 ::flixel::FlxSprite barLeft1 = barLeft->loadGraphic(::backend::Paths_obj::image(HX_("freeplay/bar-left",90,96,5d,95),null(),null()),null(),null(),null(),null(),null());
+HXLINE( 593)		this->add(barLeft1);
+HXLINE( 595)		 ::flixel::FlxSprite barMiddle =  ::flixel::FlxSprite_obj::__alloc( HX_CTX ,0,-25,null());
+HXDLIN( 595)		 ::flixel::FlxSprite barMiddle1 = barMiddle->loadGraphic(::backend::Paths_obj::image(HX_("freeplay/bar-middle",1e,d6,73,8b),null(),null()),null(),null(),null(),null(),null());
+HXLINE( 596)		this->add(barMiddle1);
+HXLINE( 598)		 ::flixel::FlxSprite barRight =  ::flixel::FlxSprite_obj::__alloc( HX_CTX ,0,-25,null());
+HXDLIN( 598)		 ::flixel::FlxSprite barRight1 = barRight->loadGraphic(::backend::Paths_obj::image(HX_("freeplay/bar-right",33,35,93,93),null(),null()),null(),null(),null(),null(),null());
+HXLINE( 599)		this->add(barRight1);
+HXLINE( 601)		 ::objects::Alphabet songText =  ::objects::Alphabet_obj::__alloc( HX_CTX ,( (Float)(0) ),( (Float)(0) ),songName,true);
+HXLINE( 602)		songText->set_scaleX(::Math_obj::min(((Float)0.8),(( (Float)(980) ) / songText->get_width())));
+HXLINE( 603)		this->add(songText);
+HXLINE( 605)		barMiddle1->setGraphicSize(0,::Std_obj::_hx_int((songText->get_height() * ((Float)1.5714285714285714))));
+HXLINE( 606)		barMiddle1->updateHitbox();
+HXLINE( 607)		barLeft1->setGraphicSize(0,::Std_obj::_hx_int((songText->get_height() * ((Float)1.5714285714285714))));
+HXLINE( 608)		barLeft1->updateHitbox();
+HXLINE( 609)		barRight1->setGraphicSize(0,::Std_obj::_hx_int((songText->get_height() * ((Float)1.5714285714285714))));
+HXLINE( 610)		barRight1->updateHitbox();
+HXLINE( 612)		int _hx_tmp = ::Std_obj::_hx_int((songText->get_width() - ( (Float)(210) )));
+HXDLIN( 612)		barMiddle1->setGraphicSize(_hx_tmp,::Std_obj::_hx_int(barMiddle1->get_height()));
+HXLINE( 613)		barMiddle1->updateHitbox();
+HXLINE( 614)		Float barLeft2 = barLeft1->x;
+HXDLIN( 614)		barMiddle1->set_x((barLeft2 + barLeft1->get_width()));
+HXLINE( 616)		Float barMiddle2 = barMiddle1->x;
+HXDLIN( 616)		barRight1->set_x((barMiddle2 + barMiddle1->get_width()));
+HXLINE( 618)		songText->set_scaleY(((Float)0.8));
+HXLINE( 620)		 ::objects::HealthIcon icon1 =  ::objects::HealthIcon_obj::__alloc( HX_CTX ,icon,null(),null());
+HXLINE( 621)		icon1->setGraphicSize(::Std_obj::_hx_int((icon1->get_width() * ((Float)0.6))),null());
+HXLINE( 622)		icon1->updateHitbox();
+HXLINE( 623)		Float barRight2 = barRight1->x;
+HXDLIN( 623)		Float _hx_tmp1 = (barRight2 + (barRight1->get_width() / ( (Float)(2) )));
+HXDLIN( 623)		icon1->setPosition(((_hx_tmp1 - (icon1->get_width() / ( (Float)(2) ))) - ( (Float)(15) )),-40);
+HXLINE( 624)		this->add(icon1);
             	}
 
 Dynamic SongObject_obj::__CreateEmpty() { return new SongObject_obj; }
@@ -120,8 +120,8 @@ bool SongObject_obj::_hx_isInstanceOf(int inClassId) {
 }
 
 void SongObject_obj::update(Float elapsed){
-            	HX_STACKFRAME(&_hx_pos_31c7b0a4620b79b3_614_update)
-HXDLIN( 614)		this->super::update(elapsed);
+            	HX_STACKFRAME(&_hx_pos_31c7b0a4620b79b3_629_update)
+HXDLIN( 629)		this->super::update(elapsed);
             	}
 
 

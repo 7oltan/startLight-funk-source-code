@@ -3,6 +3,12 @@
 #ifndef INCLUDED_flixel_FlxBasic
 #include <flixel/FlxBasic.h>
 #endif
+#ifndef INCLUDED_flixel_FlxObject
+#include <flixel/FlxObject.h>
+#endif
+#ifndef INCLUDED_flixel_FlxSprite
+#include <flixel/FlxSprite.h>
+#endif
 #ifndef INCLUDED_flixel_FlxState
 #include <flixel/FlxState.h>
 #endif
@@ -16,15 +22,16 @@
 #include <states/MenuItem.h>
 #endif
 
-HX_DEFINE_STACK_FRAME(_hx_pos_d92b57c60b6c7b0e_318_new,"states.MenuItem","new",0x4f500310,"states.MenuItem.new","states/MainMenuState.hx",318,0x1c04e2b2)
+HX_DEFINE_STACK_FRAME(_hx_pos_d92b57c60b6c7b0e_364_new,"states.MenuItem","new",0x4f500310,"states.MenuItem.new","states/MainMenuState.hx",364,0x1c04e2b2)
 static const int _hx_array_data_a2b57b1e_1[] = {
 	(int)0,(int)0,
 };
+HX_LOCAL_STACK_FRAME(_hx_pos_d92b57c60b6c7b0e_368_set_lockText,"states.MenuItem","set_lockText",0x0c513505,"states.MenuItem.set_lockText","states/MainMenuState.hx",368,0x1c04e2b2)
 namespace states{
 
 void MenuItem_obj::__construct(){
-            	HX_STACKFRAME(&_hx_pos_d92b57c60b6c7b0e_318_new)
-HXDLIN( 318)		this->offsetSelected = ::Array_obj< int >::fromData( _hx_array_data_a2b57b1e_1,2);
+            	HX_STACKFRAME(&_hx_pos_d92b57c60b6c7b0e_364_new)
+HXDLIN( 364)		this->offsetSelected = ::Array_obj< int >::fromData( _hx_array_data_a2b57b1e_1,2);
             	}
 
 Dynamic MenuItem_obj::__CreateEmpty() { return new MenuItem_obj; }
@@ -41,6 +48,18 @@ Dynamic MenuItem_obj::__Create(::hx::DynamicArray inArgs)
 bool MenuItem_obj::_hx_isInstanceOf(int inClassId) {
 	return inClassId==(int)0x00000001 || inClassId==(int)0x7987e67c;
 }
+
+::String MenuItem_obj::set_lockText(::String newText){
+            	HX_STACKFRAME(&_hx_pos_d92b57c60b6c7b0e_368_set_lockText)
+HXLINE( 369)		this->isLocked = (newText != HX_("",00,00,00,00));
+HXLINE( 370)		if (::hx::IsNotNull( this->lockSprite )) {
+HXLINE( 370)			this->lockSprite->set_visible(this->isLocked);
+            		}
+HXLINE( 371)		return (this->lockText = newText);
+            	}
+
+
+HX_DEFINE_DYNAMIC_FUNC1(MenuItem_obj,set_lockText,return )
 
 
 ::hx::ObjectPtr< MenuItem_obj > MenuItem_obj::__new() {
@@ -68,9 +87,10 @@ void MenuItem_obj::__Mark(HX_MARK_PARAMS)
 	HX_MARK_MEMBER_NAME(x,"x");
 	HX_MARK_MEMBER_NAME(y,"y");
 	HX_MARK_MEMBER_NAME(isLocked,"isLocked");
-	HX_MARK_MEMBER_NAME(lockText,"lockText");
 	HX_MARK_MEMBER_NAME(offsetSelected,"offsetSelected");
 	HX_MARK_MEMBER_NAME(state,"state");
+	HX_MARK_MEMBER_NAME(lockSprite,"lockSprite");
+	HX_MARK_MEMBER_NAME(lockText,"lockText");
 	HX_MARK_END_CLASS();
 }
 
@@ -81,9 +101,10 @@ void MenuItem_obj::__Visit(HX_VISIT_PARAMS)
 	HX_VISIT_MEMBER_NAME(x,"x");
 	HX_VISIT_MEMBER_NAME(y,"y");
 	HX_VISIT_MEMBER_NAME(isLocked,"isLocked");
-	HX_VISIT_MEMBER_NAME(lockText,"lockText");
 	HX_VISIT_MEMBER_NAME(offsetSelected,"offsetSelected");
 	HX_VISIT_MEMBER_NAME(state,"state");
+	HX_VISIT_MEMBER_NAME(lockSprite,"lockSprite");
+	HX_VISIT_MEMBER_NAME(lockText,"lockText");
 }
 
 ::hx::Val MenuItem_obj::__Field(const ::String &inName,::hx::PropertyAccess inCallProp)
@@ -105,6 +126,12 @@ void MenuItem_obj::__Visit(HX_VISIT_PARAMS)
 	case 8:
 		if (HX_FIELD_EQ(inName,"isLocked") ) { return ::hx::Val( isLocked ); }
 		if (HX_FIELD_EQ(inName,"lockText") ) { return ::hx::Val( lockText ); }
+		break;
+	case 10:
+		if (HX_FIELD_EQ(inName,"lockSprite") ) { return ::hx::Val( lockSprite ); }
+		break;
+	case 12:
+		if (HX_FIELD_EQ(inName,"set_lockText") ) { return ::hx::Val( set_lockText_dyn() ); }
 		break;
 	case 14:
 		if (HX_FIELD_EQ(inName,"offsetSelected") ) { return ::hx::Val( offsetSelected ); }
@@ -130,7 +157,10 @@ void MenuItem_obj::__Visit(HX_VISIT_PARAMS)
 		break;
 	case 8:
 		if (HX_FIELD_EQ(inName,"isLocked") ) { isLocked=inValue.Cast< bool >(); return inValue; }
-		if (HX_FIELD_EQ(inName,"lockText") ) { lockText=inValue.Cast< ::String >(); return inValue; }
+		if (HX_FIELD_EQ(inName,"lockText") ) { if (inCallProp == ::hx::paccAlways) return ::hx::Val( set_lockText(inValue.Cast< ::String >()) );lockText=inValue.Cast< ::String >(); return inValue; }
+		break;
+	case 10:
+		if (HX_FIELD_EQ(inName,"lockSprite") ) { lockSprite=inValue.Cast<  ::flixel::FlxSprite >(); return inValue; }
 		break;
 	case 14:
 		if (HX_FIELD_EQ(inName,"offsetSelected") ) { offsetSelected=inValue.Cast< ::Array< int > >(); return inValue; }
@@ -145,9 +175,10 @@ void MenuItem_obj::__GetFields(Array< ::String> &outFields)
 	outFields->push(HX_("x",78,00,00,00));
 	outFields->push(HX_("y",79,00,00,00));
 	outFields->push(HX_("isLocked",94,a0,30,b2));
-	outFields->push(HX_("lockText",38,66,1e,92));
 	outFields->push(HX_("offsetSelected",0e,c9,ec,47));
 	outFields->push(HX_("state",11,76,0b,84));
+	outFields->push(HX_("lockSprite",50,2e,3c,0e));
+	outFields->push(HX_("lockText",38,66,1e,92));
 	super::__GetFields(outFields);
 };
 
@@ -158,9 +189,10 @@ static ::hx::StorageInfo MenuItem_obj_sMemberStorageInfo[] = {
 	{::hx::fsFloat,(int)offsetof(MenuItem_obj,x),HX_("x",78,00,00,00)},
 	{::hx::fsFloat,(int)offsetof(MenuItem_obj,y),HX_("y",79,00,00,00)},
 	{::hx::fsBool,(int)offsetof(MenuItem_obj,isLocked),HX_("isLocked",94,a0,30,b2)},
-	{::hx::fsString,(int)offsetof(MenuItem_obj,lockText),HX_("lockText",38,66,1e,92)},
 	{::hx::fsObject /* ::Array< int > */ ,(int)offsetof(MenuItem_obj,offsetSelected),HX_("offsetSelected",0e,c9,ec,47)},
 	{::hx::fsObject /*  ::flixel::FlxState */ ,(int)offsetof(MenuItem_obj,state),HX_("state",11,76,0b,84)},
+	{::hx::fsObject /*  ::flixel::FlxSprite */ ,(int)offsetof(MenuItem_obj,lockSprite),HX_("lockSprite",50,2e,3c,0e)},
+	{::hx::fsString,(int)offsetof(MenuItem_obj,lockText),HX_("lockText",38,66,1e,92)},
 	{ ::hx::fsUnknown, 0, null()}
 };
 static ::hx::StaticInfo *MenuItem_obj_sStaticStorageInfo = 0;
@@ -172,9 +204,11 @@ static ::String MenuItem_obj_sMemberFields[] = {
 	HX_("x",78,00,00,00),
 	HX_("y",79,00,00,00),
 	HX_("isLocked",94,a0,30,b2),
-	HX_("lockText",38,66,1e,92),
 	HX_("offsetSelected",0e,c9,ec,47),
 	HX_("state",11,76,0b,84),
+	HX_("lockSprite",50,2e,3c,0e),
+	HX_("lockText",38,66,1e,92),
+	HX_("set_lockText",b5,3d,31,5c),
 	::String(null()) };
 
 ::hx::Class MenuItem_obj::__mClass;

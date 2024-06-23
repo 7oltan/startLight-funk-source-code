@@ -19,22 +19,22 @@
 #include <states/GalleryBar.h>
 #endif
 
-HX_DEFINE_STACK_FRAME(_hx_pos_ad5dfaa78ade375d_355_new,"states.GalleryBar","new",0x7ec51f9f,"states.GalleryBar.new","states/GalleryMenuState.hx",355,0xdfe23d11)
-HX_LOCAL_STACK_FRAME(_hx_pos_ad5dfaa78ade375d_371_draw,"states.GalleryBar","draw",0x672433e5,"states.GalleryBar.draw","states/GalleryMenuState.hx",371,0xdfe23d11)
+HX_DEFINE_STACK_FRAME(_hx_pos_ad5dfaa78ade375d_512_new,"states.GalleryBar","new",0x7ec51f9f,"states.GalleryBar.new","states/GalleryMenuState.hx",512,0xdfe23d11)
+HX_LOCAL_STACK_FRAME(_hx_pos_ad5dfaa78ade375d_528_draw,"states.GalleryBar","draw",0x672433e5,"states.GalleryBar.draw","states/GalleryMenuState.hx",528,0xdfe23d11)
 namespace states{
 
 void GalleryBar_obj::__construct( ::Dynamic x, ::Dynamic y,Float barWidth,Float barHeight,int colorA,int colorB){
-            	HX_STACKFRAME(&_hx_pos_ad5dfaa78ade375d_355_new)
-HXLINE( 361)		this->percent = ((Float)0);
-HXLINE( 357)		this->barHeight = ((Float)0);
-HXLINE( 356)		this->barWidth = ((Float)0);
-HXLINE( 363)		super::__construct(x,y,null());
-HXLINE( 364)		this->barWidth = barWidth;
-HXLINE( 365)		this->barHeight = barHeight;
-HXLINE( 366)		this->colorA = colorA;
-HXLINE( 367)		this->colorB = colorB;
-HXLINE( 368)		int _hx_tmp = ::Std_obj::_hx_int(barWidth);
-HXDLIN( 368)		this->makeGraphic(_hx_tmp,::Std_obj::_hx_int(barHeight),colorB,null(),null());
+            	HX_STACKFRAME(&_hx_pos_ad5dfaa78ade375d_512_new)
+HXLINE( 518)		this->percent = ((Float)0);
+HXLINE( 514)		this->barHeight = ((Float)0);
+HXLINE( 513)		this->barWidth = ((Float)0);
+HXLINE( 520)		super::__construct(x,y,null());
+HXLINE( 521)		this->barWidth = barWidth;
+HXLINE( 522)		this->barHeight = barHeight;
+HXLINE( 523)		this->colorA = colorA;
+HXLINE( 524)		this->colorB = colorB;
+HXLINE( 525)		int _hx_tmp = ::Std_obj::_hx_int(barWidth);
+HXDLIN( 525)		this->makeGraphic(_hx_tmp,::Std_obj::_hx_int(barHeight),colorB,null(),null());
             	}
 
 Dynamic GalleryBar_obj::__CreateEmpty() { return new GalleryBar_obj; }
@@ -61,38 +61,38 @@ bool GalleryBar_obj::_hx_isInstanceOf(int inClassId) {
 }
 
 void GalleryBar_obj::draw(){
-            	HX_GC_STACKFRAME(&_hx_pos_ad5dfaa78ade375d_371_draw)
-HXLINE( 372)		this->super::draw();
-HXLINE( 373)		 ::flixel::FlxSprite barA =  ::flixel::FlxSprite_obj::__alloc( HX_CTX ,this->x,this->y,null());
-HXDLIN( 373)		int barA1 = ::Std_obj::_hx_int((this->barWidth * this->percent));
-HXDLIN( 373)		int barA2 = ::Std_obj::_hx_int(this->barHeight);
-HXDLIN( 373)		 ::flixel::FlxSprite barA3 = barA->makeGraphic(barA1,barA2,this->colorA,null(),null());
-HXLINE( 374)		barA3->set_alpha(this->alpha);
-HXLINE( 375)		barA3->draw();
-HXLINE( 377)		 ::flixel::FlxSprite UP =  ::flixel::FlxSprite_obj::__alloc( HX_CTX ,this->x,this->y,null());
-HXDLIN( 377)		int UP1 = ::Std_obj::_hx_int(this->barWidth);
-HXDLIN( 377)		 ::flixel::FlxSprite UP2 = UP->makeGraphic(UP1,::Std_obj::_hx_int((this->barHeight * ((Float)0.3))),-16777216,null(),null());
-HXLINE( 378)		UP2->set_alpha(this->alpha);
-HXLINE( 379)		UP2->draw();
-HXLINE( 380)		Float DOWN = this->x;
-HXDLIN( 380)		Float DOWN1 = (this->y + this->barHeight);
-HXDLIN( 380)		 ::flixel::FlxSprite DOWN2 =  ::flixel::FlxSprite_obj::__alloc( HX_CTX ,DOWN,(DOWN1 - ( (Float)(::Std_obj::_hx_int((this->barHeight * ((Float)0.3)))) )),null());
-HXDLIN( 380)		int DOWN3 = ::Std_obj::_hx_int(this->barWidth);
-HXDLIN( 380)		 ::flixel::FlxSprite DOWN4 = DOWN2->makeGraphic(DOWN3,::Std_obj::_hx_int((this->barHeight * ((Float)0.3))),-16777216,null(),null());
-HXLINE( 381)		DOWN4->set_alpha(this->alpha);
-HXLINE( 382)		DOWN4->draw();
-HXLINE( 383)		 ::flixel::FlxSprite UP3 =  ::flixel::FlxSprite_obj::__alloc( HX_CTX ,this->x,this->y,null());
-HXDLIN( 383)		int UP4 = ::Std_obj::_hx_int((this->barWidth * ((Float)0.01)));
-HXDLIN( 383)		 ::flixel::FlxSprite UP5 = UP3->makeGraphic(UP4,::Std_obj::_hx_int(this->barHeight),-16777216,null(),null());
-HXLINE( 384)		UP5->set_alpha(this->alpha);
-HXLINE( 385)		UP5->draw();
-HXLINE( 386)		Float UP6 = (this->x + this->barWidth);
-HXDLIN( 386)		Float UP7 = (UP6 - ( (Float)(::Std_obj::_hx_int((this->barWidth * ((Float)0.01)))) ));
-HXDLIN( 386)		 ::flixel::FlxSprite UP8 =  ::flixel::FlxSprite_obj::__alloc( HX_CTX ,UP7,this->y,null());
-HXDLIN( 386)		int UP9 = ::Std_obj::_hx_int((this->barWidth * ((Float)0.01)));
-HXDLIN( 386)		 ::flixel::FlxSprite UP10 = UP8->makeGraphic(UP9,::Std_obj::_hx_int(this->barHeight),-16777216,null(),null());
-HXLINE( 387)		UP10->set_alpha(this->alpha);
-HXLINE( 388)		UP10->draw();
+            	HX_GC_STACKFRAME(&_hx_pos_ad5dfaa78ade375d_528_draw)
+HXLINE( 529)		this->super::draw();
+HXLINE( 530)		 ::flixel::FlxSprite barA =  ::flixel::FlxSprite_obj::__alloc( HX_CTX ,this->x,this->y,null());
+HXDLIN( 530)		int barA1 = ::Std_obj::_hx_int((this->barWidth * this->percent));
+HXDLIN( 530)		int barA2 = ::Std_obj::_hx_int(this->barHeight);
+HXDLIN( 530)		 ::flixel::FlxSprite barA3 = barA->makeGraphic(barA1,barA2,this->colorA,null(),null());
+HXLINE( 531)		barA3->set_alpha(this->alpha);
+HXLINE( 532)		barA3->draw();
+HXLINE( 534)		 ::flixel::FlxSprite UP =  ::flixel::FlxSprite_obj::__alloc( HX_CTX ,this->x,this->y,null());
+HXDLIN( 534)		int UP1 = ::Std_obj::_hx_int(this->barWidth);
+HXDLIN( 534)		 ::flixel::FlxSprite UP2 = UP->makeGraphic(UP1,::Std_obj::_hx_int((this->barHeight * ((Float)0.3))),-16777216,null(),null());
+HXLINE( 535)		UP2->set_alpha(this->alpha);
+HXLINE( 536)		UP2->draw();
+HXLINE( 537)		Float DOWN = this->x;
+HXDLIN( 537)		Float DOWN1 = (this->y + this->barHeight);
+HXDLIN( 537)		 ::flixel::FlxSprite DOWN2 =  ::flixel::FlxSprite_obj::__alloc( HX_CTX ,DOWN,(DOWN1 - ( (Float)(::Std_obj::_hx_int((this->barHeight * ((Float)0.3)))) )),null());
+HXDLIN( 537)		int DOWN3 = ::Std_obj::_hx_int(this->barWidth);
+HXDLIN( 537)		 ::flixel::FlxSprite DOWN4 = DOWN2->makeGraphic(DOWN3,::Std_obj::_hx_int((this->barHeight * ((Float)0.3))),-16777216,null(),null());
+HXLINE( 538)		DOWN4->set_alpha(this->alpha);
+HXLINE( 539)		DOWN4->draw();
+HXLINE( 540)		 ::flixel::FlxSprite UP3 =  ::flixel::FlxSprite_obj::__alloc( HX_CTX ,this->x,this->y,null());
+HXDLIN( 540)		int UP4 = ::Std_obj::_hx_int((this->barWidth * ((Float)0.01)));
+HXDLIN( 540)		 ::flixel::FlxSprite UP5 = UP3->makeGraphic(UP4,::Std_obj::_hx_int(this->barHeight),-16777216,null(),null());
+HXLINE( 541)		UP5->set_alpha(this->alpha);
+HXLINE( 542)		UP5->draw();
+HXLINE( 543)		Float UP6 = (this->x + this->barWidth);
+HXDLIN( 543)		Float UP7 = (UP6 - ( (Float)(::Std_obj::_hx_int((this->barWidth * ((Float)0.01)))) ));
+HXDLIN( 543)		 ::flixel::FlxSprite UP8 =  ::flixel::FlxSprite_obj::__alloc( HX_CTX ,UP7,this->y,null());
+HXDLIN( 543)		int UP9 = ::Std_obj::_hx_int((this->barWidth * ((Float)0.01)));
+HXDLIN( 543)		 ::flixel::FlxSprite UP10 = UP8->makeGraphic(UP9,::Std_obj::_hx_int(this->barHeight),-16777216,null(),null());
+HXLINE( 544)		UP10->set_alpha(this->alpha);
+HXLINE( 545)		UP10->draw();
             	}
 
 

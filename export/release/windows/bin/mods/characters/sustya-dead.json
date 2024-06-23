@@ -54,33 +54,15 @@
 			]
 		},
 		{
-			"loop": true,
 			"offsets": [
 				0,
 				0
 			],
-			"anim": "deathLoop",
+			"loop": false,
 			"fps": 11,
-			"name": "Deathloop",
-			"indices": [
-				0,
-				1,
-				2,
-				3,
-				4,
-				5,
-				5,
-				5,
-				5,
-				5,
-				5,
-				5,
-				5,
-				5,
-				5,
-				5,
-				5
-			]
+			"anim": "deathLoop",
+			"indices": [],
+			"name": "Deathloop"
 		}
 	],
 	"no_antialiasing": false,
@@ -93,13 +75,13 @@
 	"healthicon": "sustya",
 	"flip_x": true,
 	"healthbar_colors": [
-		195,
-		0,
-		81
+		255,
+		180,
+		195
 	],
 	"camera_position": [
-		200,
-		-50
+		270,
+		-170
 	],
 	"sing_duration": 6.1,
 	"scale": 1.2

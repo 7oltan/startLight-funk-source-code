@@ -48,17 +48,19 @@ class NoteOffsetState extends MusicBeatState
 
 		FlxG.cameras.setDefaultDrawTarget(camGame, true);
 		CustomFadeTransition.nextCamera = camOther;
-		FlxG.camera.scroll.set(120, 130);
+		FlxG.camera.scroll.set(-720, 150);
 
 		persistentUpdate = true;
 		FlxG.sound.pause();
 
+		add(new FlxSprite(0,0).makeGraphic(3000,1500).screenCenter());
+
 		// Characters
-		gf = new Character(400, 130, 'gf');
+		gf = new Character(-700, 120, 'sand');
 		gf.x += gf.positionArray[0];
 		gf.y += gf.positionArray[1];
 		gf.scrollFactor.set(0.95, 0.95);
-		boyfriend = new Character(770, 100, 'bf', true);
+		boyfriend = new Character(100, 100, 'dog', true);
 		boyfriend.x += boyfriend.positionArray[0];
 		boyfriend.y += boyfriend.positionArray[1];
 		add(gf);
@@ -107,9 +109,8 @@ class NoteOffsetState extends MusicBeatState
 		repositionCombo();
 
 		// Note delay stuff
-		beatText = new Alphabet(0, 0, 'Beat Hit!', true);
+		beatText = new Alphabet(-520, 0, 'Beat Hit!', true);
 		beatText.setScale(0.6, 0.6);
-		beatText.x += 260;
 		beatText.alpha = 0;
 		beatText.acceleration.y = 250;
 		beatText.visible = false;
@@ -166,7 +167,7 @@ class NoteOffsetState extends MusicBeatState
 	}
 
 	var holdTime:Float = 0;
-	var onComboMenu:Bool = true;
+	var onComboMenu:Bool = false;
 	var holdingObjectType:Null<Bool> = null;
 
 	var startMousePos:FlxPoint = new FlxPoint();
@@ -384,13 +385,6 @@ class NoteOffsetState extends MusicBeatState
 			}
 		}
 
-		if((!controls.controllerMode && controls.ACCEPT) ||
-		(controls.controllerMode && FlxG.gamepads.anyJustPressed(START)))
-		{
-			onComboMenu = !onComboMenu;
-			updateMode();
-		}
-
 		if(controls.BACK)
 		{
 			if(zoomTween != null) zoomTween.cancel();
@@ -536,6 +530,6 @@ class NoteOffsetState extends MusicBeatState
 		else
 			str2 = '(Press Start to Switch)';
 
-		changeModeText.text = '< ${str.toUpperCase()} ${str2.toUpperCase()} >';
+		changeModeText.text = '< ${str.toUpperCase()} >';
 	}
 }

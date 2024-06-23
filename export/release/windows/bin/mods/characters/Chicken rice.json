@@ -1,67 +1,68 @@
 {
 	"animations": [
 		{
-			"loop": false,
 			"offsets": [
 				110,
 				72
 			],
+			"loop": false,
+			"fps": 24,
 			"anim": "idle",
-			"fps": 24,
-			"name": "idle",
-			"indices": []
+			"indices": [],
+			"name": "Occurrence idle"
 		},
 		{
-			"loop": false,
 			"offsets": [
-				97,
-				18
+				100,
+				32
 			],
-			"anim": "singDOWN",
+			"loop": false,
 			"fps": 24,
-			"name": "down",
-			"indices": []
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "Occurrence down"
 		},
 		{
-			"loop": false,
 			"offsets": [
-				218,
+				209,
+				72
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "Occurrence left"
+		},
+		{
+			"offsets": [
+				68,
 				71
 			],
-			"anim": "singLEFT",
-			"fps": 24,
-			"name": "left",
-			"indices": []
-		},
-		{
 			"loop": false,
-			"offsets": [
-				64,
-				73
-			],
+			"fps": 24,
 			"anim": "singRIGHT",
-			"fps": 24,
-			"name": "right",
-			"indices": []
+			"indices": [],
+			"name": "Occurrence right"
 		},
 		{
-			"loop": false,
 			"offsets": [
-				252,
-				363
+				242,
+				322
 			],
-			"anim": "singUP",
+			"loop": false,
 			"fps": 20,
-			"name": "up",
-			"indices": []
+			"anim": "singUP",
+			"indices": [],
+			"name": "Occurrence up"
 		}
 	],
 	"no_antialiasing": false,
 	"image": "characters/Chicken rice",
 	"position": [
-		300,
-		400
+		120,
+		380
 	],
+	"health_bar": "default",
 	"healthicon": "waffles",
 	"flip_x": false,
 	"healthbar_colors": [
@@ -70,9 +71,9 @@
 		75
 	],
 	"camera_position": [
-		-150,
-		-130
+		-10,
+		-110
 	],
 	"sing_duration": 6.1,
-	"scale": 2
+	"scale": 0.999999999999999
 }

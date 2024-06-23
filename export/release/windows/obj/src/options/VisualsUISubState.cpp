@@ -4,9 +4,6 @@
 #define INCLUDED_95f339a1d026d52c
 #include "hxMath.h"
 #endif
-#ifndef INCLUDED_EReg
-#include <EReg.h>
-#endif
 #ifndef INCLUDED_Main
 #include <Main.h>
 #endif
@@ -18,9 +15,6 @@
 #endif
 #ifndef INCLUDED_backend_Mods
 #include <backend/Mods.h>
-#endif
-#ifndef INCLUDED_backend_MusicBeatState
-#include <backend/MusicBeatState.h>
 #endif
 #ifndef INCLUDED_backend_MusicBeatSubstate
 #include <backend/MusicBeatSubstate.h>
@@ -34,9 +28,6 @@
 #ifndef INCLUDED_flixel_FlxBasic
 #include <flixel/FlxBasic.h>
 #endif
-#ifndef INCLUDED_flixel_FlxG
-#include <flixel/FlxG.h>
-#endif
 #ifndef INCLUDED_flixel_FlxObject
 #include <flixel/FlxObject.h>
 #endif
@@ -49,32 +40,11 @@
 #ifndef INCLUDED_flixel_FlxSubState
 #include <flixel/FlxSubState.h>
 #endif
-#ifndef INCLUDED_flixel_addons_transition_FlxTransitionableState
-#include <flixel/addons/transition/FlxTransitionableState.h>
-#endif
-#ifndef INCLUDED_flixel_addons_ui_FlxUIState
-#include <flixel/addons/ui/FlxUIState.h>
-#endif
-#ifndef INCLUDED_flixel_addons_ui_interfaces_IEventGetter
-#include <flixel/addons/ui/interfaces/IEventGetter.h>
-#endif
-#ifndef INCLUDED_flixel_addons_ui_interfaces_IFlxUIState
-#include <flixel/addons/ui/interfaces/IFlxUIState.h>
-#endif
 #ifndef INCLUDED_flixel_group_FlxTypedGroup
 #include <flixel/group/FlxTypedGroup.h>
 #endif
 #ifndef INCLUDED_flixel_math_FlxBasePoint
 #include <flixel/math/FlxBasePoint.h>
-#endif
-#ifndef INCLUDED_flixel_sound_FlxSound
-#include <flixel/sound/FlxSound.h>
-#endif
-#ifndef INCLUDED_flixel_system_FlxSoundGroup
-#include <flixel/system/FlxSoundGroup.h>
-#endif
-#ifndef INCLUDED_flixel_system_frontEnds_SoundFrontEnd
-#include <flixel/system/frontEnds/SoundFrontEnd.h>
 #endif
 #ifndef INCLUDED_flixel_tweens_FlxEase
 #include <flixel/tweens/FlxEase.h>
@@ -121,9 +91,6 @@
 #ifndef INCLUDED_openfl_events_IEventDispatcher
 #include <openfl/events/IEventDispatcher.h>
 #endif
-#ifndef INCLUDED_openfl_media_Sound
-#include <openfl/media/Sound.h>
-#endif
 #ifndef INCLUDED_openfl_text_TextField
 #include <openfl/text/TextField.h>
 #endif
@@ -132,9 +99,6 @@
 #endif
 #ifndef INCLUDED_options_Option
 #include <options/Option.h>
-#endif
-#ifndef INCLUDED_options_OptionsState
-#include <options/OptionsState.h>
 #endif
 #ifndef INCLUDED_options_VisualsUISubState
 #include <options/VisualsUISubState.h>
@@ -150,21 +114,15 @@ HX_DEFINE_STACK_FRAME(_hx_pos_4e14480e50e84747_7_new,"options.VisualsUISubState"
 static const ::String _hx_array_data_f33bd928_10[] = {
 	HX_("Time Left",fa,08,f2,62),HX_("Time Elapsed",29,71,5d,35),HX_("Song Name",76,e6,ca,de),HX_("Disabled",9c,fd,b5,55),
 };
-static const ::String _hx_array_data_f33bd928_11[] = {
-	HX_("None",d8,3e,e3,33),HX_("Breakfast",bb,92,df,ea),HX_("Tea Time",9d,d4,cb,99),
-};
-HX_LOCAL_STACK_FRAME(_hx_pos_4e14480e50e84747_160_changeSelection,"options.VisualsUISubState","changeSelection",0x8fb3a576,"options.VisualsUISubState.changeSelection","options/VisualsUISubState.hx",160,0x3f30f917)
-HX_LOCAL_STACK_FRAME(_hx_pos_4e14480e50e84747_178_onChangePauseMusic,"options.VisualsUISubState","onChangePauseMusic",0xdfdbfe24,"options.VisualsUISubState.onChangePauseMusic","options/VisualsUISubState.hx",178,0x3f30f917)
-HX_LOCAL_STACK_FRAME(_hx_pos_4e14480e50e84747_189_onChangeNoteSkin,"options.VisualsUISubState","onChangeNoteSkin",0x98669ca4,"options.VisualsUISubState.onChangeNoteSkin","options/VisualsUISubState.hx",189,0x3f30f917)
-HX_LOCAL_STACK_FRAME(_hx_pos_4e14480e50e84747_188_onChangeNoteSkin,"options.VisualsUISubState","onChangeNoteSkin",0x98669ca4,"options.VisualsUISubState.onChangeNoteSkin","options/VisualsUISubState.hx",188,0x3f30f917)
-HX_LOCAL_STACK_FRAME(_hx_pos_4e14480e50e84747_197_changeNoteSkin,"options.VisualsUISubState","changeNoteSkin",0x5380e1a5,"options.VisualsUISubState.changeNoteSkin","options/VisualsUISubState.hx",197,0x3f30f917)
-HX_LOCAL_STACK_FRAME(_hx_pos_4e14480e50e84747_208_destroy,"options.VisualsUISubState","destroy",0x298befb4,"options.VisualsUISubState.destroy","options/VisualsUISubState.hx",208,0x3f30f917)
-HX_LOCAL_STACK_FRAME(_hx_pos_4e14480e50e84747_216_onChangeFPSCounter,"options.VisualsUISubState","onChangeFPSCounter",0xf92afa68,"options.VisualsUISubState.onChangeFPSCounter","options/VisualsUISubState.hx",216,0x3f30f917)
+HX_LOCAL_STACK_FRAME(_hx_pos_4e14480e50e84747_152_changeSelection,"options.VisualsUISubState","changeSelection",0x8fb3a576,"options.VisualsUISubState.changeSelection","options/VisualsUISubState.hx",152,0x3f30f917)
+HX_LOCAL_STACK_FRAME(_hx_pos_4e14480e50e84747_169_onChangeNoteSkin,"options.VisualsUISubState","onChangeNoteSkin",0x98669ca4,"options.VisualsUISubState.onChangeNoteSkin","options/VisualsUISubState.hx",169,0x3f30f917)
+HX_LOCAL_STACK_FRAME(_hx_pos_4e14480e50e84747_168_onChangeNoteSkin,"options.VisualsUISubState","onChangeNoteSkin",0x98669ca4,"options.VisualsUISubState.onChangeNoteSkin","options/VisualsUISubState.hx",168,0x3f30f917)
+HX_LOCAL_STACK_FRAME(_hx_pos_4e14480e50e84747_177_changeNoteSkin,"options.VisualsUISubState","changeNoteSkin",0x5380e1a5,"options.VisualsUISubState.changeNoteSkin","options/VisualsUISubState.hx",177,0x3f30f917)
+HX_LOCAL_STACK_FRAME(_hx_pos_4e14480e50e84747_190_onChangeFPSCounter,"options.VisualsUISubState","onChangeFPSCounter",0xf92afa68,"options.VisualsUISubState.onChangeFPSCounter","options/VisualsUISubState.hx",190,0x3f30f917)
 namespace options{
 
 void VisualsUISubState_obj::__construct(){
             	HX_GC_STACKFRAME(&_hx_pos_4e14480e50e84747_7_new)
-HXLINE( 176)		this->changedMusic = false;
 HXLINE(  12)		this->noteY = ((Float)90);
 HXLINE(  11)		this->notesTween = ::Array_obj< ::Dynamic>::__new(0);
 HXLINE(   9)		this->noteOptionID = -1;
@@ -488,15 +446,12 @@ HXLINE( 114)		this->addOption(option6);
 HXLINE( 117)		 ::options::Option option7 =  ::options::Option_obj::__alloc( HX_CTX ,HX_("FPS Counter",85,ef,54,c9),HX_("If unchecked, hides FPS Counter.",17,fc,a1,74),HX_("showFPS",ec,0a,9a,7b),HX_("bool",2a,84,1b,41),null());
 HXLINE( 121)		this->addOption(option7);
 HXLINE( 122)		option7->onChange = this->onChangeFPSCounter_dyn();
-HXLINE( 125)		 ::options::Option option8 =  ::options::Option_obj::__alloc( HX_CTX ,HX_("Pause Screen Song:",9b,6e,16,2a),HX_("What song do you prefer for the Pause Screen?",9a,c8,b3,59),HX_("pauseMusic",cf,6d,d3,e5),HX_("string",d1,28,30,11),::Array_obj< ::String >::fromData( _hx_array_data_f33bd928_11,3));
-HXLINE( 130)		this->addOption(option8);
-HXLINE( 131)		option8->onChange = this->onChangePauseMusic_dyn();
-HXLINE( 142)		 ::options::Option option9 =  ::options::Option_obj::__alloc( HX_CTX ,HX_("Discord Rich Presence",2b,ef,99,77),HX_("Uncheck this to prevent accidental leaks, it will hide the Application from your \"Playing\" box on Discord",0b,e4,6b,c9),HX_("discordRPC",99,18,34,b0),HX_("bool",2a,84,1b,41),null());
-HXLINE( 146)		this->addOption(option9);
-HXLINE( 149)		 ::options::Option option10 =  ::options::Option_obj::__alloc( HX_CTX ,HX_("Combo Stacking",ec,30,59,b7),HX_("If unchecked, Ratings and Combo won't stack, saving on System Memory and making them easier to read",d6,be,78,3a),HX_("comboStacking",08,45,bb,e0),HX_("bool",2a,84,1b,41),null());
-HXLINE( 153)		this->addOption(option10);
-HXLINE( 155)		super::__construct();
-HXLINE( 156)		this->add(this->notes);
+HXLINE( 134)		 ::options::Option option8 =  ::options::Option_obj::__alloc( HX_CTX ,HX_("Discord Rich Presence",2b,ef,99,77),HX_("Uncheck this to prevent accidental leaks, it will hide the Application from your \"Playing\" box on Discord",0b,e4,6b,c9),HX_("discordRPC",99,18,34,b0),HX_("bool",2a,84,1b,41),null());
+HXLINE( 138)		this->addOption(option8);
+HXLINE( 141)		 ::options::Option option9 =  ::options::Option_obj::__alloc( HX_CTX ,HX_("Combo Stacking",ec,30,59,b7),HX_("If unchecked, Ratings and Combo won't stack, saving on System Memory and making them easier to read",d6,be,78,3a),HX_("comboStacking",08,45,bb,e0),HX_("bool",2a,84,1b,41),null());
+HXLINE( 145)		this->addOption(option9);
+HXLINE( 147)		super::__construct();
+HXLINE( 148)		this->add(this->notes);
             	}
 
 Dynamic VisualsUISubState_obj::__CreateEmpty() { return new VisualsUISubState_obj; }
@@ -532,28 +487,28 @@ bool VisualsUISubState_obj::_hx_isInstanceOf(int inClassId) {
 
 void VisualsUISubState_obj::changeSelection(::hx::Null< int >  __o_change){
             		int change = __o_change.Default(0);
-            	HX_STACKFRAME(&_hx_pos_4e14480e50e84747_160_changeSelection)
-HXLINE( 161)		this->super::changeSelection(change);
-HXLINE( 163)		if ((this->noteOptionID < 0)) {
-HXLINE( 163)			return;
+            	HX_STACKFRAME(&_hx_pos_4e14480e50e84747_152_changeSelection)
+HXLINE( 153)		this->super::changeSelection(change);
+HXLINE( 155)		if ((this->noteOptionID < 0)) {
+HXLINE( 155)			return;
             		}
-HXLINE( 165)		{
-HXLINE( 165)			int _g = 0;
-HXDLIN( 165)			int _g1 = ::objects::Note_obj::colArray->length;
-HXDLIN( 165)			while((_g < _g1)){
-HXLINE( 165)				_g = (_g + 1);
-HXDLIN( 165)				int i = (_g - 1);
-HXLINE( 167)				 ::objects::StrumNote note = Dynamic( this->notes->members->__get(i)).StaticCast<  ::objects::StrumNote >();
-HXLINE( 168)				if (::hx::IsNotNull( this->notesTween->__get(i).StaticCast<  ::flixel::tweens::FlxTween >() )) {
-HXLINE( 168)					this->notesTween->__get(i).StaticCast<  ::flixel::tweens::FlxTween >()->cancel();
+HXLINE( 157)		{
+HXLINE( 157)			int _g = 0;
+HXDLIN( 157)			int _g1 = ::objects::Note_obj::colArray->length;
+HXDLIN( 157)			while((_g < _g1)){
+HXLINE( 157)				_g = (_g + 1);
+HXDLIN( 157)				int i = (_g - 1);
+HXLINE( 159)				 ::objects::StrumNote note = Dynamic( this->notes->members->__get(i)).StaticCast<  ::objects::StrumNote >();
+HXLINE( 160)				if (::hx::IsNotNull( this->notesTween->__get(i).StaticCast<  ::flixel::tweens::FlxTween >() )) {
+HXLINE( 160)					this->notesTween->__get(i).StaticCast<  ::flixel::tweens::FlxTween >()->cancel();
             				}
-HXLINE( 169)				if ((this->curSelected == this->noteOptionID)) {
-HXLINE( 170)					this->notesTween[i] = ::flixel::tweens::FlxTween_obj::tween(note, ::Dynamic(::hx::Anon_obj::Create(1)
+HXLINE( 161)				if ((this->curSelected == this->noteOptionID)) {
+HXLINE( 162)					this->notesTween[i] = ::flixel::tweens::FlxTween_obj::tween(note, ::Dynamic(::hx::Anon_obj::Create(1)
             						->setFixed(0,HX_("y",79,00,00,00),this->noteY)),(::Math_obj::abs((note->y / (200 + this->noteY))) / ( (Float)(3) )), ::Dynamic(::hx::Anon_obj::Create(1)
             						->setFixed(0,HX_("ease",ee,8b,0c,43),::flixel::tweens::FlxEase_obj::quadInOut_dyn())));
             				}
             				else {
-HXLINE( 172)					this->notesTween[i] = ::flixel::tweens::FlxTween_obj::tween(note, ::Dynamic(::hx::Anon_obj::Create(1)
+HXLINE( 164)					this->notesTween[i] = ::flixel::tweens::FlxTween_obj::tween(note, ::Dynamic(::hx::Anon_obj::Create(1)
             						->setFixed(0,HX_("y",79,00,00,00),-200)),(::Math_obj::abs((note->y / (200 + this->noteY))) / ( (Float)(3) )), ::Dynamic(::hx::Anon_obj::Create(1)
             						->setFixed(0,HX_("ease",ee,8b,0c,43),::flixel::tweens::FlxEase_obj::quadInOut_dyn())));
             				}
@@ -562,88 +517,48 @@ HXLINE( 172)					this->notesTween[i] = ::flixel::tweens::FlxTween_obj::tween(not
             	}
 
 
-void VisualsUISubState_obj::onChangePauseMusic(){
-            	HX_GC_STACKFRAME(&_hx_pos_4e14480e50e84747_178_onChangePauseMusic)
-HXLINE( 179)		if ((::backend::ClientPrefs_obj::data->pauseMusic == HX_("None",d8,3e,e3,33))) {
-HXLINE( 180)			::flixel::FlxG_obj::sound->music->set_volume(( (Float)(0) ));
-            		}
-            		else {
-HXLINE( 182)			 ::flixel::_hx_system::frontEnds::SoundFrontEnd _hx_tmp = ::flixel::FlxG_obj::sound;
-HXDLIN( 182)			::String path = ::backend::ClientPrefs_obj::data->pauseMusic;
-HXDLIN( 182)			 ::EReg invalidChars =  ::EReg_obj::__alloc( HX_CTX ,HX_("[~&\\\\;:<>#]",7e,4d,88,67),HX_("",00,00,00,00));
-HXDLIN( 182)			 ::EReg hideChars =  ::EReg_obj::__alloc( HX_CTX ,HX_("[.,'\"%?!]",ca,d9,c0,ac),HX_("",00,00,00,00));
-HXDLIN( 182)			::String path1 = invalidChars->split(::StringTools_obj::replace(path,HX_(" ",20,00,00,00),HX_("-",2d,00,00,00)))->join(HX_("-",2d,00,00,00));
-HXDLIN( 182)			::String library = null();
-HXDLIN( 182)			 ::openfl::media::Sound file = ::backend::Paths_obj::returnSound(HX_("music",a5,d0,5a,10),hideChars->split(path1)->join(HX_("",00,00,00,00)).toLowerCase(),library);
-HXDLIN( 182)			_hx_tmp->playMusic(file,null(),null(),null());
-            		}
-HXLINE( 184)		this->changedMusic = true;
-            	}
-
-
-HX_DEFINE_DYNAMIC_FUNC0(VisualsUISubState_obj,onChangePauseMusic,(void))
-
 void VisualsUISubState_obj::onChangeNoteSkin(){
             		HX_BEGIN_LOCAL_FUNC_S1(::hx::LocalFunc,_hx_Closure_0, ::options::VisualsUISubState,_gthis) HXARGC(1)
             		void _hx_run( ::objects::StrumNote note){
-            			HX_STACKFRAME(&_hx_pos_4e14480e50e84747_189_onChangeNoteSkin)
-HXLINE( 190)			_gthis->changeNoteSkin(note);
-HXLINE( 191)			note->centerOffsets(null());
-HXLINE( 192)			{
-HXLINE( 192)				 ::flixel::math::FlxBasePoint this1 = note->origin;
-HXDLIN( 192)				Float y = (( (Float)(note->frameHeight) ) * ((Float)0.5));
-HXDLIN( 192)				this1->set_x((( (Float)(note->frameWidth) ) * ((Float)0.5)));
-HXDLIN( 192)				this1->set_y(y);
+            			HX_STACKFRAME(&_hx_pos_4e14480e50e84747_169_onChangeNoteSkin)
+HXLINE( 170)			_gthis->changeNoteSkin(note);
+HXLINE( 171)			note->centerOffsets(null());
+HXLINE( 172)			{
+HXLINE( 172)				 ::flixel::math::FlxBasePoint this1 = note->origin;
+HXDLIN( 172)				Float y = (( (Float)(note->frameHeight) ) * ((Float)0.5));
+HXDLIN( 172)				this1->set_x((( (Float)(note->frameWidth) ) * ((Float)0.5)));
+HXDLIN( 172)				this1->set_y(y);
             			}
             		}
             		HX_END_LOCAL_FUNC1((void))
 
-            	HX_STACKFRAME(&_hx_pos_4e14480e50e84747_188_onChangeNoteSkin)
-HXDLIN( 188)		 ::options::VisualsUISubState _gthis = ::hx::ObjectPtr<OBJ_>(this);
-HXLINE( 189)		this->notes->forEachAlive( ::Dynamic(new _hx_Closure_0(_gthis)),null());
+            	HX_STACKFRAME(&_hx_pos_4e14480e50e84747_168_onChangeNoteSkin)
+HXDLIN( 168)		 ::options::VisualsUISubState _gthis = ::hx::ObjectPtr<OBJ_>(this);
+HXLINE( 169)		this->notes->forEachAlive( ::Dynamic(new _hx_Closure_0(_gthis)),null());
             	}
 
 
 HX_DEFINE_DYNAMIC_FUNC0(VisualsUISubState_obj,onChangeNoteSkin,(void))
 
 void VisualsUISubState_obj::changeNoteSkin( ::objects::StrumNote note){
-            	HX_STACKFRAME(&_hx_pos_4e14480e50e84747_197_changeNoteSkin)
-HXLINE( 198)		::String skin = ::objects::Note_obj::defaultNoteSkin;
-HXLINE( 199)		::String customSkin = (skin + ::objects::Note_obj::getNoteSkinPostfix());
-HXLINE( 200)		if (::backend::Paths_obj::fileExists(((HX_("images/",77,50,74,c1) + customSkin) + HX_(".png",3b,2d,bd,1e)),HX_("IMAGE",3b,57,57,3b),null(),null())) {
-HXLINE( 200)			skin = customSkin;
+            	HX_STACKFRAME(&_hx_pos_4e14480e50e84747_177_changeNoteSkin)
+HXLINE( 178)		::String skin = ::objects::Note_obj::defaultNoteSkin;
+HXLINE( 179)		::String customSkin = (skin + ::objects::Note_obj::getNoteSkinPostfix());
+HXLINE( 180)		if (::backend::Paths_obj::fileExists(((HX_("images/",77,50,74,c1) + customSkin) + HX_(".png",3b,2d,bd,1e)),HX_("IMAGE",3b,57,57,3b),null(),null())) {
+HXLINE( 180)			skin = customSkin;
             		}
-HXLINE( 202)		note->set_texture(skin);
-HXLINE( 203)		note->reloadNote();
-HXLINE( 204)		note->playAnim(HX_("static",ae,dc,fb,05),null());
+HXLINE( 182)		note->set_texture(skin);
+HXLINE( 183)		note->reloadNote();
+HXLINE( 184)		note->playAnim(HX_("static",ae,dc,fb,05),null());
             	}
 
 
 HX_DEFINE_DYNAMIC_FUNC1(VisualsUISubState_obj,changeNoteSkin,(void))
 
-void VisualsUISubState_obj::destroy(){
-            	HX_STACKFRAME(&_hx_pos_4e14480e50e84747_208_destroy)
-HXLINE( 209)		bool _hx_tmp;
-HXDLIN( 209)		if (this->changedMusic) {
-HXLINE( 209)			_hx_tmp = !(::options::OptionsState_obj::onPlayState);
-            		}
-            		else {
-HXLINE( 209)			_hx_tmp = false;
-            		}
-HXDLIN( 209)		if (_hx_tmp) {
-HXLINE( 209)			 ::flixel::_hx_system::frontEnds::SoundFrontEnd _hx_tmp = ::flixel::FlxG_obj::sound;
-HXDLIN( 209)			::String library = null();
-HXDLIN( 209)			 ::openfl::media::Sound file = ::backend::Paths_obj::returnSound(HX_("music",a5,d0,5a,10),HX_("freakyMenu",15,c9,93,86),library);
-HXDLIN( 209)			_hx_tmp->playMusic(file,1,true,null());
-            		}
-HXLINE( 210)		this->super::destroy();
-            	}
-
-
 void VisualsUISubState_obj::onChangeFPSCounter(){
-            	HX_STACKFRAME(&_hx_pos_4e14480e50e84747_216_onChangeFPSCounter)
-HXDLIN( 216)		if (::hx::IsNotNull( ::Main_obj::fpsVar )) {
-HXLINE( 217)			::Main_obj::fpsVar->set_visible(::backend::ClientPrefs_obj::data->showFPS);
+            	HX_STACKFRAME(&_hx_pos_4e14480e50e84747_190_onChangeFPSCounter)
+HXDLIN( 190)		if (::hx::IsNotNull( ::Main_obj::fpsVar )) {
+HXLINE( 191)			::Main_obj::fpsVar->set_visible(::backend::ClientPrefs_obj::data->showFPS);
             		}
             	}
 
@@ -675,7 +590,6 @@ void VisualsUISubState_obj::__Mark(HX_MARK_PARAMS)
 	HX_MARK_MEMBER_NAME(notes,"notes");
 	HX_MARK_MEMBER_NAME(notesTween,"notesTween");
 	HX_MARK_MEMBER_NAME(noteY,"noteY");
-	HX_MARK_MEMBER_NAME(changedMusic,"changedMusic");
 	 ::options::BaseOptionsMenu_obj::__Mark(HX_MARK_ARG);
 	HX_MARK_END_CLASS();
 }
@@ -686,7 +600,6 @@ void VisualsUISubState_obj::__Visit(HX_VISIT_PARAMS)
 	HX_VISIT_MEMBER_NAME(notes,"notes");
 	HX_VISIT_MEMBER_NAME(notesTween,"notesTween");
 	HX_VISIT_MEMBER_NAME(noteY,"noteY");
-	HX_VISIT_MEMBER_NAME(changedMusic,"changedMusic");
 	 ::options::BaseOptionsMenu_obj::__Visit(HX_VISIT_ARG);
 }
 
@@ -697,15 +610,11 @@ void VisualsUISubState_obj::__Visit(HX_VISIT_PARAMS)
 		if (HX_FIELD_EQ(inName,"notes") ) { return ::hx::Val( notes ); }
 		if (HX_FIELD_EQ(inName,"noteY") ) { return ::hx::Val( noteY ); }
 		break;
-	case 7:
-		if (HX_FIELD_EQ(inName,"destroy") ) { return ::hx::Val( destroy_dyn() ); }
-		break;
 	case 10:
 		if (HX_FIELD_EQ(inName,"notesTween") ) { return ::hx::Val( notesTween ); }
 		break;
 	case 12:
 		if (HX_FIELD_EQ(inName,"noteOptionID") ) { return ::hx::Val( noteOptionID ); }
-		if (HX_FIELD_EQ(inName,"changedMusic") ) { return ::hx::Val( changedMusic ); }
 		break;
 	case 14:
 		if (HX_FIELD_EQ(inName,"changeNoteSkin") ) { return ::hx::Val( changeNoteSkin_dyn() ); }
@@ -717,7 +626,6 @@ void VisualsUISubState_obj::__Visit(HX_VISIT_PARAMS)
 		if (HX_FIELD_EQ(inName,"onChangeNoteSkin") ) { return ::hx::Val( onChangeNoteSkin_dyn() ); }
 		break;
 	case 18:
-		if (HX_FIELD_EQ(inName,"onChangePauseMusic") ) { return ::hx::Val( onChangePauseMusic_dyn() ); }
 		if (HX_FIELD_EQ(inName,"onChangeFPSCounter") ) { return ::hx::Val( onChangeFPSCounter_dyn() ); }
 	}
 	return super::__Field(inName,inCallProp);
@@ -735,7 +643,6 @@ void VisualsUISubState_obj::__Visit(HX_VISIT_PARAMS)
 		break;
 	case 12:
 		if (HX_FIELD_EQ(inName,"noteOptionID") ) { noteOptionID=inValue.Cast< int >(); return inValue; }
-		if (HX_FIELD_EQ(inName,"changedMusic") ) { changedMusic=inValue.Cast< bool >(); return inValue; }
 	}
 	return super::__SetField(inName,inValue,inCallProp);
 }
@@ -746,7 +653,6 @@ void VisualsUISubState_obj::__GetFields(Array< ::String> &outFields)
 	outFields->push(HX_("notes",41,dc,ca,9f));
 	outFields->push(HX_("notesTween",6a,32,28,11));
 	outFields->push(HX_("noteY",27,dc,ca,9f));
-	outFields->push(HX_("changedMusic",11,9b,d1,51));
 	super::__GetFields(outFields);
 };
 
@@ -756,7 +662,6 @@ static ::hx::StorageInfo VisualsUISubState_obj_sMemberStorageInfo[] = {
 	{::hx::fsObject /*  ::flixel::group::FlxTypedGroup */ ,(int)offsetof(VisualsUISubState_obj,notes),HX_("notes",41,dc,ca,9f)},
 	{::hx::fsObject /* ::Array< ::Dynamic> */ ,(int)offsetof(VisualsUISubState_obj,notesTween),HX_("notesTween",6a,32,28,11)},
 	{::hx::fsFloat,(int)offsetof(VisualsUISubState_obj,noteY),HX_("noteY",27,dc,ca,9f)},
-	{::hx::fsBool,(int)offsetof(VisualsUISubState_obj,changedMusic),HX_("changedMusic",11,9b,d1,51)},
 	{ ::hx::fsUnknown, 0, null()}
 };
 static ::hx::StaticInfo *VisualsUISubState_obj_sStaticStorageInfo = 0;
@@ -768,11 +673,8 @@ static ::String VisualsUISubState_obj_sMemberFields[] = {
 	HX_("notesTween",6a,32,28,11),
 	HX_("noteY",27,dc,ca,9f),
 	HX_("changeSelection",bc,98,b5,48),
-	HX_("changedMusic",11,9b,d1,51),
-	HX_("onChangePauseMusic",9e,da,98,ca),
 	HX_("onChangeNoteSkin",9e,86,19,c1),
 	HX_("changeNoteSkin",1f,79,c3,b4),
-	HX_("destroy",fa,2c,86,24),
 	HX_("onChangeFPSCounter",e2,d6,e7,e3),
 	::String(null()) };
 

@@ -67,9 +67,8 @@ function onEvent(name,v1,v2)
         end
         makeLuaText('LyricsWow',textLyrics,1280,0,600)
         setTextColor('LyricsWow',colorLyrics)
-
-        setProperty('LyricsWow.scale.x',1.5)
-        setProperty('LyricsWow.scale.y',1.5)
+        setTextFont('LyricsWow','Schluber.ttf')
+        setTextSize('LyricsWow',50)
         setObjectCamera('LyricsWow','other')
         addLuaText('LyricsWow',true)
         setProperty('LyricsWow.alpha',1)
@@ -84,7 +83,7 @@ function onEvent(name,v1,v2)
             setTextBorder('LyricsWow',0,'000000')
             setObjectOrder('LyricsWow',getObjectOrder('blackBorderLyrics2') + 1)
         else
-            setTextBorder('LyricsWow',1,'000000')
+            setTextBorder('LyricsWow',0,'000000')
         end
         runTimer('removeLyricsEvent',tonumber(v2))
         runTimer('removeLyricsBars',tonumber(v2) + 2)

@@ -136,7 +136,7 @@ HXDLIN( 276)		 ::Dynamic init = ::hx::ClassOf< ::lime::app::Application >();
 
 void ApplicationMain_obj::main(){
             	HX_STACKFRAME(&_hx_pos_6fcf922b66429816_18_main)
-HXLINE(  19)		::lime::_hx_system::System_obj::_hx___registerEntryPoint(HX_("PsychEngine",3d,1b,63,8f),::ApplicationMain_obj::create_dyn());
+HXLINE(  19)		::lime::_hx_system::System_obj::_hx___registerEntryPoint(HX_("starlight",c4,93,9b,78),::ApplicationMain_obj::create_dyn());
 HXLINE(  26)		::ApplicationMain_obj::create(null());
             	}
 
@@ -168,10 +168,10 @@ HXLINE( 119)			::ApplicationMain_obj::start(stage);
             	HX_GC_STACKFRAME(&_hx_pos_6fcf922b66429816_31_create)
 HXLINE(  32)		 ::openfl::display::Application app =  ::openfl::display::Application_obj::__alloc( HX_CTX );
 HXLINE(  35)		::ManifestResources_obj::init(config);
-HXLINE(  38)		app->meta->set(HX_("build",2e,db,ea,ba),HX_("15",e4,2a,00,00));
+HXLINE(  38)		app->meta->set(HX_("build",2e,db,ea,ba),HX_("18",e7,2a,00,00));
 HXLINE(  39)		app->meta->set(HX_("company",3d,15,69,83),HX_("ShadowMario",e4,7d,20,5e));
-HXLINE(  40)		app->meta->set(HX_("file",7c,ce,bb,43),HX_("PsychEngine",3d,1b,63,8f));
-HXLINE(  41)		app->meta->set(HX_("name",4b,72,ff,48),HX_("Friday Night Funkin': Psych Engine",1a,50,f6,97));
+HXLINE(  40)		app->meta->set(HX_("file",7c,ce,bb,43),HX_("starlight",c4,93,9b,78));
+HXLINE(  41)		app->meta->set(HX_("name",4b,72,ff,48),HX_("Starlight Funk ft.Nastya",e4,94,f5,b6));
 HXLINE(  42)		app->meta->set(HX_("packageName",f1,04,ad,04),HX_("com.shadowmario.psychengine",c6,9e,3e,fb));
 HXLINE(  43)		app->meta->set(HX_("version",18,e7,f1,7c),HX_("0.2.8",be,c1,c9,c1));
 HXLINE(  49)		 ::Dynamic attributes =  ::Dynamic(::hx::Anon_obj::Create(16)
@@ -184,7 +184,7 @@ HXLINE(  49)		 ::Dynamic attributes =  ::Dynamic(::hx::Anon_obj::Create(16)
             			->setFixed(6,HX_("y",79,00,00,00),null())
             			->setFixed(7,HX_("height",e7,07,4c,02),720)
             			->setFixed(8,HX_("element",bc,ae,54,06),null())
-            			->setFixed(9,HX_("title",98,15,3b,10),HX_("Friday Night Funkin': Psych Engine",1a,50,f6,97))
+            			->setFixed(9,HX_("title",98,15,3b,10),HX_("Starlight Funk ft.Nastya",e4,94,f5,b6))
             			->setFixed(10,HX_("alwaysOnTop",67,4d,53,16),false)
             			->setFixed(11,HX_("borderless",45,46,71,17),false)
             			->setFixed(12,HX_("minimized",86,fb,9d,28),false)

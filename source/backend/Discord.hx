@@ -116,9 +116,28 @@ class DiscordClient
 
 		_options.details = details;
 		_options.state = state;
-		_options.largeImageKey = 'icon';
+		if(smallImageKey != null){
+			switch(smallImageKey){
+				case 'nastya' | 'pnastya' :
+					_options.largeImageKey = Main.stupidMia;
+				case 'whitty':
+					_options.largeImageKey = 'whitty';
+				case 'Bwhitty':
+					_options.largeImageKey = 'whittyangy';
+				case 'purple':
+					_options.largeImageKey = 'mongos';
+				case 'wizard':
+					_options.largeImageKey = 'wizard';
+				case 'waffles':
+					_options.largeImageKey = 'bbg';
+				default:
+					_options.largeImageKey = 'icon';
+			}
+		}
+		else
+			_options.largeImageKey = 'icon';
 		_options.largeImageText = "Engine Version: " + states.MainMenuState.psychEngineVersion;
-		_options.smallImageKey = smallImageKey;
+		//_options.smallImageKey = smallImageKey;
 		// Obtained times are in milliseconds so they are divided so Discord can use it
 		_options.startTimestamp = Std.int(startTimestamp / 1000);
 		_options.endTimestamp = Std.int(endTimestamp / 1000);

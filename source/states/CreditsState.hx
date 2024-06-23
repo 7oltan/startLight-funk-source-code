@@ -27,6 +27,8 @@ class CreditsState extends MusicBeatState
 	var dog:FlxSprite;
 
 	var oldMouse:Bool;
+
+	var finishedMainWeek:Bool;
 	override function create()
 	{
 		#if desktop
@@ -38,7 +40,7 @@ class CreditsState extends MusicBeatState
 		oldMouse = FlxG.mouse.visible;
 		FlxG.mouse.visible = true;
 		
-		var bg:FlxSprite = new FlxSprite().loadGraphic(Paths.image('creditsMenu-bg'));
+		var bg:FlxSprite = new FlxSprite().loadGraphic(Paths.image('credits/creditsMenu-bg'));
 		bg.antialiasing = ClientPrefs.data.antialiasing;
 		bg.screenCenter();
 		add(bg);
@@ -102,19 +104,23 @@ class CreditsState extends MusicBeatState
 		descText.scrollFactor.set();
 		//descText.borderSize = 2.4;
 		add(descText);
-
+	
+        finishedMainWeek = FlxG.save.data.weekCompleted!=null && FlxG.save.data.weekCompleted.exists('nastya') && FlxG.save.data.weekCompleted.get('nastya');
 		
-		dog = new FlxSprite(880,200).loadGraphic(Paths.image('WOOF'),true,462,225);
-		dog.antialiasing = ClientPrefs.data.antialiasing;
-		dog.animation.add('idle',[0,1],1);
-		dog.animation.play('idle');
-		dog.updateHitbox();
-		dog.x = FlxG.width+dog.width;
-		dog.y = FlxG.height-dog.height;
-		if(FlxG.random.bool(20)){
-			FlxTween.tween(dog,{x:0-dog.width},20);
+		if(finishedMainWeek){
+			dog = new FlxSprite(880,200).loadGraphic(Paths.image('credits/WOOF'),true,462,225);
+			dog.antialiasing = ClientPrefs.data.antialiasing;
+			dog.animation.add('idle',[0,1],1);
+			dog.animation.play('idle');
+			dog.updateHitbox();
+			dog.x = FlxG.width+dog.width;
+			dog.y = FlxG.height-dog.height;
+			if(FlxG.random.bool(50)){
+				FlxTween.tween(dog,{x:0-dog.width},20);
+			}
+			add(dog);
 		}
-		add(dog);
+
 
 		changeSelection();
 		super.create();
@@ -176,26 +182,30 @@ class CreditsState extends MusicBeatState
 				quitting = true;
 			}
 
-			if(FlxG.mouse.overlaps(dog)){
-				dog.alpha = 1;
-				if(FlxG.mouse.justPressed){
-					PlayState.isStoryMode = false;
-					persistentUpdate = false;
-					WeekData.reloadWeekFiles(false);
-					Mods.currentModDirectory = '';
-					//trace(WeekData.weeksList);
-					PlayState.storyWeek = WeekData.weeksList.indexOf("boner");
-					StoryMenuState.weekCompleted.set(WeekData.weeksList[PlayState.storyWeek], true);
-					Difficulty.loadFromWeek();
-					var songLowercase:String = Paths.formatToSongPath('boner');
-					var poop:String = Highscore.formatSong(songLowercase, 0);
-					
-					PlayState.SONG = Song.loadFromJson(poop, songLowercase);
-					PlayState.storyDifficulty = 0;
-					LoadingState.loadAndSwitchState(new PlayState());
-				}
-			}else
-				dog.alpha = 0.6;
+			
+			if(finishedMainWeek){
+				if(FlxG.mouse.overlaps(dog)){
+					dog.alpha = 1;
+					if(FlxG.mouse.justPressed){
+						PlayState.isStoryMode = false;
+						persistentUpdate = false;
+						WeekData.reloadWeekFiles(false);
+						Mods.currentModDirectory = '';
+						//trace(WeekData.weeksList);
+						PlayState.storyWeek = WeekData.weeksList.indexOf("boner");
+						PlayState.fromMenu = true;
+						StoryMenuState.weekCompleted.set(WeekData.weeksList[PlayState.storyWeek], true);
+						Difficulty.loadFromWeek();
+						var songLowercase:String = Paths.formatToSongPath('boner');
+						var poop:String = Highscore.formatSong(songLowercase, 0);
+						
+						PlayState.SONG = Song.loadFromJson(poop, songLowercase);
+						PlayState.storyDifficulty = 0;
+						LoadingState.loadAndSwitchState(new PlayState());
+					}
+				}else
+					dog.alpha = 0.6;
+			}
 		}
 		
 		super.update(elapsed);

@@ -13,13 +13,13 @@
 #include <openfl/text/Font.h>
 #endif
 
-HX_DEFINE_STACK_FRAME(_hx_pos_66de3d1e457bb5fd_869_new,"__ASSET__OPENFL__assets_fonts_schluber_ttf","new",0xe405d8fe,"__ASSET__OPENFL__assets_fonts_schluber_ttf.new","ManifestResources.hx",869,0xf77aa668)
+HX_DEFINE_STACK_FRAME(_hx_pos_66de3d1e457bb5fd_839_new,"__ASSET__OPENFL__assets_fonts_schluber_ttf","new",0xe405d8fe,"__ASSET__OPENFL__assets_fonts_schluber_ttf.new","ManifestResources.hx",839,0xf77aa668)
 
 void __ASSET__OPENFL__assets_fonts_schluber_ttf_obj::__construct(){
-            	HX_STACKFRAME(&_hx_pos_66de3d1e457bb5fd_869_new)
-HXDLIN( 869)		this->_hx___fontPath = (::ManifestResources_obj::rootPath + HX_("assets/fonts/Schluber.ttf",dd,e5,6f,b0));
-HXDLIN( 869)		this->name = HX_("Schluber",ae,c5,2c,b2);
-HXDLIN( 869)		super::__construct(null());
+            	HX_STACKFRAME(&_hx_pos_66de3d1e457bb5fd_839_new)
+HXDLIN( 839)		this->_hx___fontPath = (::ManifestResources_obj::rootPath + HX_("assets/fonts/Schluber.ttf",dd,e5,6f,b0));
+HXDLIN( 839)		this->name = HX_("Schluber",ae,c5,2c,b2);
+HXDLIN( 839)		super::__construct(null());
             	}
 
 Dynamic __ASSET__OPENFL__assets_fonts_schluber_ttf_obj::__CreateEmpty() { return new __ASSET__OPENFL__assets_fonts_schluber_ttf_obj; }

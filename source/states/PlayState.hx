@@ -144,6 +144,8 @@ class PlayState extends MusicBeatState
 
 	public static var SONG:SwagSong = null;
 	public static var isStoryMode:Bool = false;
+	public static var galamix:Bool = false;
+	public static var fromMenu:Bool = false;
 	public static var storyWeek:Int = 0;
 	public static var storyPlaylist:Array<String> = [];
 	public static var storyDifficulty:Int = 1;
@@ -330,7 +332,7 @@ class PlayState extends MusicBeatState
 
 		// String that contains the mode defined here so it isn't necessary to call changePresence for each mode
 		if (isStoryMode)
-			detailsText = "Story Mode: " + WeekData.getCurrentWeek().weekName;
+			detailsText = "Story Mode";
 		else
 			detailsText = "Freeplay";
 
@@ -497,13 +499,15 @@ class PlayState extends MusicBeatState
 		camFollow.setPosition(camPos.x, camPos.y);
 		camPos.put();
 				
+		moveCamera(true);
+
 		if (prevCamFollow != null)
 		{
 			camFollow = prevCamFollow;
 			prevCamFollow = null;
 		}
 		add(camFollow);
-
+		
 		FlxG.camera.follow(camFollow, LOCKON, 0);
 		FlxG.camera.zoom = defaultCamZoom;
 		FlxG.camera.snapToTarget();
@@ -2395,7 +2399,10 @@ class PlayState extends MusicBeatState
 					if(FlxTransitionableState.skipNextTransIn) {
 						CustomFadeTransition.nextCamera = null;
 					}
-					MusicBeatState.switchState(new StoryMenuState());
+					if(galamix)
+						MusicBeatState.switchState(new GalamixMenuState());
+					else
+						MusicBeatState.switchState(new StoryMenuState());
 
 					// if ()
 					if(!ClientPrefs.getGameplaySetting('practice') && !ClientPrefs.getGameplaySetting('botplay')) {
@@ -2435,7 +2442,17 @@ class PlayState extends MusicBeatState
 				if(FlxTransitionableState.skipNextTransIn) {
 					CustomFadeTransition.nextCamera = null;
 				}
-				MusicBeatState.switchState(new FreeplayState());
+				if(fromMenu){
+					MusicBeatState.switchState(new MainMenuState());
+					if(!ClientPrefs.getGameplaySetting('practice') && !ClientPrefs.getGameplaySetting('botplay')) {
+						StoryMenuState.weekCompleted.set(WeekData.weeksList[storyWeek], true);
+						Highscore.saveWeekScore(WeekData.getWeekFileName(), campaignScore, storyDifficulty);
+
+						FlxG.save.data.weekCompleted = StoryMenuState.weekCompleted;
+						FlxG.save.flush();
+					}
+				}else
+					MusicBeatState.switchState(new FreeplayState());
 				FlxG.sound.playMusic(Paths.music('freakyMenu'));
 				changedDifficulty = false;
 			}
@@ -2523,7 +2540,7 @@ class PlayState extends MusicBeatState
 		note.rating = daRating.name;
 		score = daRating.score;
 
-		if(daRating.noteSplash && !note.noteSplashData.disabled)
+		if((daRating.noteSplash && !note.noteSplashData.disabled) || note.splashEveryTime)
 			spawnNoteSplashOnNote(note);
 
 		if(!practiceMode && !cpuControlled) {

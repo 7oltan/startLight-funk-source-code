@@ -20,6 +20,7 @@ HX_DECLARE_CLASS4(flixel,addons,ui,interfaces,IEventGetter)
 HX_DECLARE_CLASS4(flixel,addons,ui,interfaces,IFlxUIState)
 HX_DECLARE_CLASS2(flixel,group,FlxTypedGroup)
 HX_DECLARE_CLASS2(flixel,text,FlxText)
+HX_DECLARE_CLASS2(flixel,tweens,FlxTween)
 HX_DECLARE_CLASS2(flixel,util,IFlxDestroyable)
 HX_DECLARE_CLASS1(states,MainMenuState)
 HX_DECLARE_CLASS1(states,MenuItem)
@@ -73,9 +74,15 @@ class HXCPP_CLASS_ATTRIBUTES MainMenuState_obj : public  ::backend::MusicBeatSta
 		bool oldMouse;
 		::Array< ::Dynamic> lockArray;
 		 ::flixel::text::FlxText lockText;
+		bool finishedMainWeek;
 		void create();
 
-		void addItem(::String name,Float x,Float y,::Array< int > offsetSelected, ::flixel::FlxState state, ::Dynamic isMouse,::String lockText);
+		bool alrSideWays;
+		 ::flixel::tweens::FlxTween handTween;
+		void doHandTween(bool sideWays);
+		::Dynamic doHandTween_dyn();
+
+		 ::states::MenuItem addItem(::String name,Float x,Float y,::Array< int > offsetSelected, ::flixel::FlxState state, ::Dynamic isMouse,::String lockText);
 		::Dynamic addItem_dyn();
 
 		bool customOverlaps( ::flixel::FlxObject object,bool isOptions);

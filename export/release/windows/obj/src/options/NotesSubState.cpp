@@ -281,9 +281,9 @@ static const int _hx_array_data_0afa74a2_24[] = {
 };
 HX_LOCAL_STACK_FRAME(_hx_pos_13db6fe15635f7e3_655_updateNotes,"options.NotesSubState","updateNotes",0x4c70d7ac,"options.NotesSubState.updateNotes","options/NotesSubState.hx",655,0x2831b15d)
 HX_LOCAL_STACK_FRAME(_hx_pos_13db6fe15635f7e3_671_updateColors,"options.NotesSubState","updateColors",0x2b1cc7e5,"options.NotesSubState.updateColors","options/NotesSubState.hx",671,0x2831b15d)
-HX_LOCAL_STACK_FRAME(_hx_pos_13db6fe15635f7e3_702_setShaderColor,"options.NotesSubState","setShaderColor",0xcbe01dc8,"options.NotesSubState.setShaderColor","options/NotesSubState.hx",702,0x2831b15d)
-HX_LOCAL_STACK_FRAME(_hx_pos_13db6fe15635f7e3_703_getShaderColor,"options.NotesSubState","getShaderColor",0xabc03554,"options.NotesSubState.getShaderColor","options/NotesSubState.hx",703,0x2831b15d)
-HX_LOCAL_STACK_FRAME(_hx_pos_13db6fe15635f7e3_704_getShader,"options.NotesSubState","getShader",0xc3ac258f,"options.NotesSubState.getShader","options/NotesSubState.hx",704,0x2831b15d)
+HX_LOCAL_STACK_FRAME(_hx_pos_13db6fe15635f7e3_701_setShaderColor,"options.NotesSubState","setShaderColor",0xcbe01dc8,"options.NotesSubState.setShaderColor","options/NotesSubState.hx",701,0x2831b15d)
+HX_LOCAL_STACK_FRAME(_hx_pos_13db6fe15635f7e3_702_getShaderColor,"options.NotesSubState","getShaderColor",0xabc03554,"options.NotesSubState.getShaderColor","options/NotesSubState.hx",702,0x2831b15d)
+HX_LOCAL_STACK_FRAME(_hx_pos_13db6fe15635f7e3_703_getShader,"options.NotesSubState","getShader",0xc3ac258f,"options.NotesSubState.getShader","options/NotesSubState.hx",703,0x2831b15d)
 namespace options{
 
 void NotesSubState_obj::__construct(){
@@ -1667,7 +1667,14 @@ HXLINE( 663)					_hx_tmp1 = true;
 HXDLIN( 663)				if (_hx_tmp1) {
 HXLINE( 663)					note->playAnim(newAnim,true);
             				}
-HXLINE( 664)				if (( (bool)(instant) )) {
+HXLINE( 664)				bool _hx_tmp2;
+HXDLIN( 664)				if (( (bool)(instant) )) {
+HXLINE( 664)					_hx_tmp2 = ::hx::IsNotNull( note->animation->_curAnim );
+            				}
+            				else {
+HXLINE( 664)					_hx_tmp2 = false;
+            				}
+HXDLIN( 664)				if (_hx_tmp2) {
 HXLINE( 664)					note->animation->_curAnim->finish();
             				}
             			}
@@ -1757,24 +1764,24 @@ HXDLIN( 698)				_hx_tmp->set_b(strumRGB->set_b(color));
 HX_DEFINE_DYNAMIC_FUNC1(NotesSubState_obj,updateColors,(void))
 
 void NotesSubState_obj::setShaderColor(int value){
-            	HX_STACKFRAME(&_hx_pos_13db6fe15635f7e3_702_setShaderColor)
-HXDLIN( 702)		this->dataArray->__get(this->curSelectedNote).StaticCast< ::Array< int > >()[this->curSelectedMode] = value;
+            	HX_STACKFRAME(&_hx_pos_13db6fe15635f7e3_701_setShaderColor)
+HXDLIN( 701)		this->dataArray->__get(this->curSelectedNote).StaticCast< ::Array< int > >()[this->curSelectedMode] = value;
             	}
 
 
 HX_DEFINE_DYNAMIC_FUNC1(NotesSubState_obj,setShaderColor,(void))
 
 int NotesSubState_obj::getShaderColor(){
-            	HX_STACKFRAME(&_hx_pos_13db6fe15635f7e3_703_getShaderColor)
-HXDLIN( 703)		return this->dataArray->__get(this->curSelectedNote).StaticCast< ::Array< int > >()->__get(this->curSelectedMode);
+            	HX_STACKFRAME(&_hx_pos_13db6fe15635f7e3_702_getShaderColor)
+HXDLIN( 702)		return this->dataArray->__get(this->curSelectedNote).StaticCast< ::Array< int > >()->__get(this->curSelectedMode);
             	}
 
 
 HX_DEFINE_DYNAMIC_FUNC0(NotesSubState_obj,getShaderColor,return )
 
  ::shaders::RGBPalette NotesSubState_obj::getShader(){
-            	HX_STACKFRAME(&_hx_pos_13db6fe15635f7e3_704_getShader)
-HXDLIN( 704)		return ::objects::Note_obj::globalRgbShaders->__get(this->curSelectedNote).StaticCast<  ::shaders::RGBPalette >();
+            	HX_STACKFRAME(&_hx_pos_13db6fe15635f7e3_703_getShader)
+HXDLIN( 703)		return ::objects::Note_obj::globalRgbShaders->__get(this->curSelectedNote).StaticCast<  ::shaders::RGBPalette >();
             	}
 
 

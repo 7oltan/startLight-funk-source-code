@@ -62,17 +62,11 @@ class HXCPP_CLASS_ATTRIBUTES VisualsUISubState_obj : public  ::options::BaseOpti
 		Float noteY;
 		void changeSelection(::hx::Null< int >  change);
 
-		bool changedMusic;
-		void onChangePauseMusic();
-		::Dynamic onChangePauseMusic_dyn();
-
 		void onChangeNoteSkin();
 		::Dynamic onChangeNoteSkin_dyn();
 
 		void changeNoteSkin( ::objects::StrumNote note);
 		::Dynamic changeNoteSkin_dyn();
-
-		void destroy();
 
 		void onChangeFPSCounter();
 		::Dynamic onChangeFPSCounter_dyn();

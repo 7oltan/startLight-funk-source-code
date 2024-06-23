@@ -2,6 +2,7 @@ package psychlua;
 
 #if (!flash && sys)
 import flixel.addons.display.FlxRuntimeShader;
+import openfl.filters.ShaderFilter;
 #end
 
 class ShaderFunctions
@@ -40,6 +41,44 @@ class ShaderFunctions
 			if(leObj != null) {
 				var arr:Array<String> = funk.runtimeShaders.get(shader);
 				leObj.shader = new FlxRuntimeShader(arr[0], arr[1]);
+				return true;
+			}
+			#else
+			FunkinLua.luaTrace("setSpriteShader: Platform unsupported for Runtime Shaders!", false, false, FlxColor.RED);
+			#end
+			return false;
+		});
+		funk.addLocalCallback("setCameraShader", function(camera:String, shader:String) {
+			if(!ClientPrefs.data.shaders) return false;
+
+			#if (!flash && MODS_ALLOWED && sys)
+			if(!funk.runtimeShaders.exists(shader) && !funk.initLuaShader(shader))
+			{
+				FunkinLua.luaTrace('setSpriteShader: Shader $shader is missing!', false, false, FlxColor.RED);
+				return false;
+			}
+
+			var leObj:FlxCamera = LuaUtils.cameraFromString(camera);
+
+			if(leObj != null) {
+				var arr:Array<String> = funk.runtimeShaders.get(shader);
+				leObj.setFilters([new ShaderFilter(cast new FlxRuntimeShader(arr[0], arr[1]))]);
+				return true;
+			}
+			#else
+			FunkinLua.luaTrace("setSpriteShader: Platform unsupported for Runtime Shaders!", false, false, FlxColor.RED);
+			#end
+			return false;
+		});
+		funk.addLocalCallback("removeCameraShader", function(camera:String) {
+			if(!ClientPrefs.data.shaders) return false;
+
+			#if (!flash && MODS_ALLOWED && sys)
+
+			var leObj:FlxCamera = LuaUtils.cameraFromString(camera);
+
+			if(leObj != null) {
+				leObj.setFilters([]);
 				return true;
 			}
 			#else

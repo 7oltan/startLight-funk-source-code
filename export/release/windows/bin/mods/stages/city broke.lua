@@ -28,12 +28,10 @@ function onCreate()
 	for i = 0,9 do
 		table.insert(pixelShit,'num'..i..'-pixel')
 	end
-	debugPrint(pixelShit)
+	
 	for i = 1,#pixelShit do
 		precacheImage('pixelUI/'..pixelShit[i])
 	end
-
-	precacheImage('noteSplashes/noteSplashes')
 
 	makeBGsprite('nastya/sky', 0.4,sprites)
 	makeBGsprite('nastya/moon', 0.4,sprites)

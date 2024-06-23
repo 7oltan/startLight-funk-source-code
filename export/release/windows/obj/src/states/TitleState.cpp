@@ -296,48 +296,45 @@ static const int _hx_array_data_81c3dd25_10[] = {
 static const int _hx_array_data_81c3dd25_11[] = {
 	(int)15,(int)16,(int)17,(int)18,(int)19,(int)20,(int)21,(int)22,(int)23,(int)24,(int)25,(int)26,(int)27,(int)28,(int)29,
 };
-HX_LOCAL_STACK_FRAME(_hx_pos_f4f54134d4f9e667_342_getIntroTextShit,"states.TitleState","getIntroTextShit",0xb448648c,"states.TitleState.getIntroTextShit","states/TitleState.hx",342,0xa989be18)
-HX_LOCAL_STACK_FRAME(_hx_pos_f4f54134d4f9e667_366_update,"states.TitleState","update",0x5d4d1e32,"states.TitleState.update","states/TitleState.hx",366,0xa989be18)
-HX_LOCAL_STACK_FRAME(_hx_pos_f4f54134d4f9e667_431_update,"states.TitleState","update",0x5d4d1e32,"states.TitleState.update","states/TitleState.hx",431,0xa989be18)
-HX_LOCAL_STACK_FRAME(_hx_pos_f4f54134d4f9e667_509_createCoolText,"states.TitleState","createCoolText",0x558b345b,"states.TitleState.createCoolText","states/TitleState.hx",509,0xa989be18)
-HX_LOCAL_STACK_FRAME(_hx_pos_f4f54134d4f9e667_523_addMoreText,"states.TitleState","addMoreText",0x3373315a,"states.TitleState.addMoreText","states/TitleState.hx",523,0xa989be18)
-HX_LOCAL_STACK_FRAME(_hx_pos_f4f54134d4f9e667_534_deleteCoolText,"states.TitleState","deleteCoolText",0x5d27d48a,"states.TitleState.deleteCoolText","states/TitleState.hx",534,0xa989be18)
-HX_LOCAL_STACK_FRAME(_hx_pos_f4f54134d4f9e667_544_beatHit,"states.TitleState","beatHit",0x1c627634,"states.TitleState.beatHit","states/TitleState.hx",544,0xa989be18)
+HX_LOCAL_STACK_FRAME(_hx_pos_f4f54134d4f9e667_310_getIntroTextShit,"states.TitleState","getIntroTextShit",0xb448648c,"states.TitleState.getIntroTextShit","states/TitleState.hx",310,0xa989be18)
+HX_LOCAL_STACK_FRAME(_hx_pos_f4f54134d4f9e667_334_update,"states.TitleState","update",0x5d4d1e32,"states.TitleState.update","states/TitleState.hx",334,0xa989be18)
+HX_LOCAL_STACK_FRAME(_hx_pos_f4f54134d4f9e667_399_update,"states.TitleState","update",0x5d4d1e32,"states.TitleState.update","states/TitleState.hx",399,0xa989be18)
+HX_LOCAL_STACK_FRAME(_hx_pos_f4f54134d4f9e667_477_createCoolText,"states.TitleState","createCoolText",0x558b345b,"states.TitleState.createCoolText","states/TitleState.hx",477,0xa989be18)
+HX_LOCAL_STACK_FRAME(_hx_pos_f4f54134d4f9e667_491_addMoreText,"states.TitleState","addMoreText",0x3373315a,"states.TitleState.addMoreText","states/TitleState.hx",491,0xa989be18)
+HX_LOCAL_STACK_FRAME(_hx_pos_f4f54134d4f9e667_502_deleteCoolText,"states.TitleState","deleteCoolText",0x5d27d48a,"states.TitleState.deleteCoolText","states/TitleState.hx",502,0xa989be18)
+HX_LOCAL_STACK_FRAME(_hx_pos_f4f54134d4f9e667_512_beatHit,"states.TitleState","beatHit",0x1c627634,"states.TitleState.beatHit","states/TitleState.hx",512,0xa989be18)
 static const ::String _hx_array_data_81c3dd25_26[] = {
-	HX_("Psych Engine by",10,a0,74,89),
+	HX_("StarLight Funk by",6f,3d,05,ff),
 };
-static const ::String _hx_array_data_81c3dd25_27[] = {
-	HX_("Not associated",53,f0,cf,18),HX_("with",06,76,f8,4e),
-};
-HX_LOCAL_STACK_FRAME(_hx_pos_f4f54134d4f9e667_633_skipIntro,"states.TitleState","skipIntro",0x75bd5ee4,"states.TitleState.skipIntro","states/TitleState.hx",633,0xa989be18)
-HX_LOCAL_STACK_FRAME(_hx_pos_f4f54134d4f9e667_670_skipIntro,"states.TitleState","skipIntro",0x75bd5ee4,"states.TitleState.skipIntro","states/TitleState.hx",670,0xa989be18)
-HX_LOCAL_STACK_FRAME(_hx_pos_f4f54134d4f9e667_682_skipIntro,"states.TitleState","skipIntro",0x75bd5ee4,"states.TitleState.skipIntro","states/TitleState.hx",682,0xa989be18)
+HX_LOCAL_STACK_FRAME(_hx_pos_f4f54134d4f9e667_557_skipIntro,"states.TitleState","skipIntro",0x75bd5ee4,"states.TitleState.skipIntro","states/TitleState.hx",557,0xa989be18)
+HX_LOCAL_STACK_FRAME(_hx_pos_f4f54134d4f9e667_597_skipIntro,"states.TitleState","skipIntro",0x75bd5ee4,"states.TitleState.skipIntro","states/TitleState.hx",597,0xa989be18)
+HX_LOCAL_STACK_FRAME(_hx_pos_f4f54134d4f9e667_609_skipIntro,"states.TitleState","skipIntro",0x75bd5ee4,"states.TitleState.skipIntro","states/TitleState.hx",609,0xa989be18)
 HX_LOCAL_STACK_FRAME(_hx_pos_f4f54134d4f9e667_44_boot,"states.TitleState","boot",0xa2d9901b,"states.TitleState.boot","states/TitleState.hx",44,0xa989be18)
-static const int _hx_array_data_81c3dd25_33[] = {
+static const int _hx_array_data_81c3dd25_32[] = {
 	(int)48,
 };
 HX_LOCAL_STACK_FRAME(_hx_pos_f4f54134d4f9e667_45_boot,"states.TitleState","boot",0xa2d9901b,"states.TitleState.boot","states/TitleState.hx",45,0xa989be18)
-static const int _hx_array_data_81c3dd25_35[] = {
+static const int _hx_array_data_81c3dd25_34[] = {
 	(int)109,(int)189,
 };
 HX_LOCAL_STACK_FRAME(_hx_pos_f4f54134d4f9e667_46_boot,"states.TitleState","boot",0xa2d9901b,"states.TitleState.boot","states/TitleState.hx",46,0xa989be18)
-static const int _hx_array_data_81c3dd25_37[] = {
+static const int _hx_array_data_81c3dd25_36[] = {
 	(int)107,(int)187,
 };
 HX_LOCAL_STACK_FRAME(_hx_pos_f4f54134d4f9e667_48_boot,"states.TitleState","boot",0xa2d9901b,"states.TitleState.boot","states/TitleState.hx",48,0xa989be18)
 HX_LOCAL_STACK_FRAME(_hx_pos_f4f54134d4f9e667_75_boot,"states.TitleState","boot",0xa2d9901b,"states.TitleState.boot","states/TitleState.hx",75,0xa989be18)
-HX_LOCAL_STACK_FRAME(_hx_pos_f4f54134d4f9e667_360_boot,"states.TitleState","boot",0xa2d9901b,"states.TitleState.boot","states/TitleState.hx",360,0xa989be18)
-HX_LOCAL_STACK_FRAME(_hx_pos_f4f54134d4f9e667_542_boot,"states.TitleState","boot",0xa2d9901b,"states.TitleState.boot","states/TitleState.hx",542,0xa989be18)
+HX_LOCAL_STACK_FRAME(_hx_pos_f4f54134d4f9e667_328_boot,"states.TitleState","boot",0xa2d9901b,"states.TitleState.boot","states/TitleState.hx",328,0xa989be18)
+HX_LOCAL_STACK_FRAME(_hx_pos_f4f54134d4f9e667_510_boot,"states.TitleState","boot",0xa2d9901b,"states.TitleState.boot","states/TitleState.hx",510,0xa989be18)
 namespace states{
 
 void TitleState_obj::__construct( ::flixel::addons::transition::TransitionData TransIn, ::flixel::addons::transition::TransitionData TransOut){
             	HX_STACKFRAME(&_hx_pos_f4f54134d4f9e667_42_new)
-HXLINE( 631)		this->increaseVolume = false;
-HXLINE( 630)		this->skippedIntro = false;
-HXLINE( 541)		this->sickBeats = 0;
-HXLINE( 363)		this->titleTimer = ((Float)0);
-HXLINE( 362)		this->newTitle = false;
-HXLINE( 359)		this->transitioning = false;
+HXLINE( 555)		this->increaseVolume = false;
+HXLINE( 554)		this->skippedIntro = false;
+HXLINE( 509)		this->sickBeats = 0;
+HXLINE( 331)		this->titleTimer = ((Float)0);
+HXLINE( 330)		this->newTitle = false;
+HXLINE( 327)		this->transitioning = false;
 HXLINE( 191)		this->swagShader = null();
 HXLINE( 189)		this->danceLeft = false;
 HXLINE(  71)		this->mustUpdate = false;
@@ -477,7 +474,7 @@ HXDLIN(  95)		::String _hx_tmp2 = (::openfl::Lib_obj::get_current()->stage->appl
 HXDLIN(  95)		_hx_tmp1->bind(HX_("funkin",31,b2,4f,6f),(_hx_tmp2 + ::flixel::util::FlxSave_obj::validate(::openfl::Lib_obj::get_current()->stage->application->meta->get_string(HX_("file",7c,ce,bb,43)))));
 HXLINE(  97)		::backend::ClientPrefs_obj::loadPrefs();
 HXLINE( 123)		::backend::Highscore_obj::load();
-HXLINE( 126)		this->titleJSON = ::tjson::TJSON_obj::parse(::backend::Paths_obj::getTextFromFile(HX_("images/gfDanceTitle.json",1b,dc,af,fc),null()),null(),null());
+HXLINE( 126)		this->titleJSON = ::tjson::TJSON_obj::parse(::backend::Paths_obj::getTextFromFile(HX_("images/title/gfDanceTitle.json",64,37,ad,0a),null()),null(),null());
 HXLINE( 147)		if (!(::states::TitleState_obj::initialized)) {
 HXLINE( 149)			bool _hx_tmp;
 HXDLIN( 149)			if (::hx::IsNotNull( ::flixel::FlxG_obj::save->data )) {
@@ -555,7 +552,7 @@ HXLINE( 208)			_hx_tmp = ::hx::IsNotEq( this->titleJSON->__Field(HX_("background
 HXLINE( 208)			_hx_tmp = false;
             		}
 HXDLIN( 208)		if (_hx_tmp) {
-HXLINE( 209)			bg->loadGraphic(::backend::Paths_obj::image(( (::String)(this->titleJSON->__Field(HX_("backgroundSprite",93,8a,2c,8e),::hx::paccDynamic)) ),null(),null()),null(),null(),null(),null(),null());
+HXLINE( 209)			bg->loadGraphic(::backend::Paths_obj::image(( (::String)((HX_("title/",97,cf,77,23) + this->titleJSON->__Field(HX_("backgroundSprite",93,8a,2c,8e),::hx::paccDynamic))) ),null(),null()),null(),null(),null(),null(),null());
             		}
             		else {
 HXLINE( 211)			bg->makeGraphic(::flixel::FlxG_obj::width,::flixel::FlxG_obj::height,-16777216,null(),null());
@@ -564,9 +561,9 @@ HXLINE( 216)		this->add(bg);
 HXLINE( 218)		this->logoBl =  ::flixel::FlxSprite_obj::__alloc( HX_CTX ,this->titleJSON->__Field(HX_("titlex",e0,cf,77,23),::hx::paccDynamic),this->titleJSON->__Field(HX_("titley",e1,cf,77,23),::hx::paccDynamic),null());
 HXLINE( 219)		 ::flixel::FlxSprite _hx_tmp2 = this->logoBl;
 HXDLIN( 219)		::String library = null();
-HXDLIN( 219)		 ::flixel::graphics::FlxGraphic imageLoaded = ::backend::Paths_obj::image(HX_("logoBumpin",26,cb,02,ab),null(),true);
+HXDLIN( 219)		 ::flixel::graphics::FlxGraphic imageLoaded = ::backend::Paths_obj::image(HX_("title/logoBumpin",7d,9d,24,45),null(),true);
 HXDLIN( 219)		bool xmlExists = false;
-HXDLIN( 219)		::String xml = ::backend::Paths_obj::modFolders(((HX_("images/",77,50,74,c1) + HX_("logoBumpin",26,cb,02,ab)) + HX_(".xml",69,3e,c3,1e)));
+HXDLIN( 219)		::String xml = ::backend::Paths_obj::modFolders(((HX_("images/",77,50,74,c1) + HX_("title/logoBumpin",7d,9d,24,45)) + HX_(".xml",69,3e,c3,1e)));
 HXDLIN( 219)		if (::sys::FileSystem_obj::exists(xml)) {
 HXLINE( 219)			xmlExists = true;
             		}
@@ -575,14 +572,14 @@ HXDLIN( 219)		if (::hx::IsNotNull( imageLoaded )) {
 HXLINE( 219)			_hx_tmp3 = imageLoaded;
             		}
             		else {
-HXLINE( 219)			_hx_tmp3 = ::backend::Paths_obj::image(HX_("logoBumpin",26,cb,02,ab),library,true);
+HXLINE( 219)			_hx_tmp3 = ::backend::Paths_obj::image(HX_("title/logoBumpin",7d,9d,24,45),library,true);
             		}
 HXDLIN( 219)		::String _hx_tmp4;
 HXDLIN( 219)		if (xmlExists) {
 HXLINE( 219)			_hx_tmp4 = ::sys::io::File_obj::getContent(xml);
             		}
             		else {
-HXLINE( 219)			_hx_tmp4 = ::backend::Paths_obj::getPath(((HX_("images/",77,50,74,c1) + HX_("logoBumpin",26,cb,02,ab)) + HX_(".xml",69,3e,c3,1e)),null(),library,null());
+HXLINE( 219)			_hx_tmp4 = ::backend::Paths_obj::getPath(((HX_("images/",77,50,74,c1) + HX_("title/logoBumpin",7d,9d,24,45)) + HX_(".xml",69,3e,c3,1e)),null(),library,null());
             		}
 HXDLIN( 219)		_hx_tmp2->set_frames(::flixel::graphics::frames::FlxAtlasFrames_obj::fromSparrow(_hx_tmp3,_hx_tmp4));
 HXLINE( 220)		this->logoBl->set_antialiasing(::backend::ClientPrefs_obj::data->antialiasing);
@@ -603,195 +600,161 @@ HXLINE( 233)		::String easterEgg = ( (::String)(::flixel::FlxG_obj::save->data->
 HXLINE( 234)		if (::hx::IsNull( easterEgg )) {
 HXLINE( 234)			easterEgg = HX_("",00,00,00,00);
             		}
-HXLINE( 236)		{
-HXLINE( 236)			::String _g = easterEgg.toUpperCase();
-HXLINE( 258)			{
-HXLINE( 262)				 ::flixel::FlxSprite _hx_tmp5 = this->gfDance;
-HXDLIN( 262)				::String library1 = null();
-HXDLIN( 262)				 ::flixel::graphics::FlxGraphic imageLoaded1 = ::backend::Paths_obj::image(HX_("gfDanceTitle",64,64,d2,7b),null(),true);
-HXDLIN( 262)				bool xmlExists1 = false;
-HXDLIN( 262)				::String xml1 = ::backend::Paths_obj::modFolders(((HX_("images/",77,50,74,c1) + HX_("gfDanceTitle",64,64,d2,7b)) + HX_(".xml",69,3e,c3,1e)));
-HXDLIN( 262)				if (::sys::FileSystem_obj::exists(xml1)) {
-HXLINE( 262)					xmlExists1 = true;
-            				}
-HXDLIN( 262)				 ::Dynamic _hx_tmp6;
-HXDLIN( 262)				if (::hx::IsNotNull( imageLoaded1 )) {
-HXLINE( 262)					_hx_tmp6 = imageLoaded1;
-            				}
-            				else {
-HXLINE( 262)					_hx_tmp6 = ::backend::Paths_obj::image(HX_("gfDanceTitle",64,64,d2,7b),library1,true);
-            				}
-HXDLIN( 262)				::String _hx_tmp7;
-HXDLIN( 262)				if (xmlExists1) {
-HXLINE( 262)					_hx_tmp7 = ::sys::io::File_obj::getContent(xml1);
-            				}
-            				else {
-HXLINE( 262)					_hx_tmp7 = ::backend::Paths_obj::getPath(((HX_("images/",77,50,74,c1) + HX_("gfDanceTitle",64,64,d2,7b)) + HX_(".xml",69,3e,c3,1e)),null(),library1,null());
-            				}
-HXDLIN( 262)				_hx_tmp5->set_frames(::flixel::graphics::frames::FlxAtlasFrames_obj::fromSparrow(_hx_tmp6,_hx_tmp7));
-HXLINE( 263)				this->gfDance->animation->addByIndices(HX_("danceLeft",da,cc,f9,df),HX_("gfDance",94,88,3a,eb),::Array_obj< int >::fromData( _hx_array_data_81c3dd25_10,16),HX_("",00,00,00,00),24,false,null(),null());
-HXLINE( 264)				this->gfDance->animation->addByIndices(HX_("danceRight",a9,7f,a6,91),HX_("gfDance",94,88,3a,eb),::Array_obj< int >::fromData( _hx_array_data_81c3dd25_11,15),HX_("",00,00,00,00),24,false,null(),null());
-            			}
+HXLINE( 236)		 ::flixel::FlxSprite _hx_tmp5 = this->gfDance;
+HXDLIN( 236)		::String library1 = null();
+HXDLIN( 236)		 ::flixel::graphics::FlxGraphic imageLoaded1 = ::backend::Paths_obj::image(HX_("title/gfDanceTitle",7b,ba,ce,3f),null(),true);
+HXDLIN( 236)		bool xmlExists1 = false;
+HXDLIN( 236)		::String xml1 = ::backend::Paths_obj::modFolders(((HX_("images/",77,50,74,c1) + HX_("title/gfDanceTitle",7b,ba,ce,3f)) + HX_(".xml",69,3e,c3,1e)));
+HXDLIN( 236)		if (::sys::FileSystem_obj::exists(xml1)) {
+HXLINE( 236)			xmlExists1 = true;
             		}
-HXLINE( 267)		this->add(this->gfDance);
-HXLINE( 268)		this->add(this->logoBl);
-HXLINE( 269)		if (::hx::IsNotNull( this->swagShader )) {
-HXLINE( 271)			this->gfDance->shader = this->swagShader->shader;
-HXLINE( 272)			this->logoBl->shader = this->swagShader->shader;
-            		}
-HXLINE( 275)		this->titleText =  ::flixel::FlxSprite_obj::__alloc( HX_CTX ,this->titleJSON->__Field(HX_("startx",d6,61,fa,05),::hx::paccDynamic),this->titleJSON->__Field(HX_("starty",d7,61,fa,05),::hx::paccDynamic),null());
-HXLINE( 276)		 ::flixel::FlxSprite _hx_tmp8 = this->titleText;
-HXDLIN( 276)		::String library2 = null();
-HXDLIN( 276)		 ::flixel::graphics::FlxGraphic imageLoaded2 = ::backend::Paths_obj::image(HX_("titleEnter",60,80,6b,82),null(),true);
-HXDLIN( 276)		bool xmlExists2 = false;
-HXDLIN( 276)		::String xml2 = ::backend::Paths_obj::modFolders(((HX_("images/",77,50,74,c1) + HX_("titleEnter",60,80,6b,82)) + HX_(".xml",69,3e,c3,1e)));
-HXDLIN( 276)		if (::sys::FileSystem_obj::exists(xml2)) {
-HXLINE( 276)			xmlExists2 = true;
-            		}
-HXDLIN( 276)		 ::Dynamic _hx_tmp9;
-HXDLIN( 276)		if (::hx::IsNotNull( imageLoaded2 )) {
-HXLINE( 276)			_hx_tmp9 = imageLoaded2;
+HXDLIN( 236)		 ::Dynamic _hx_tmp6;
+HXDLIN( 236)		if (::hx::IsNotNull( imageLoaded1 )) {
+HXLINE( 236)			_hx_tmp6 = imageLoaded1;
             		}
             		else {
-HXLINE( 276)			_hx_tmp9 = ::backend::Paths_obj::image(HX_("titleEnter",60,80,6b,82),library2,true);
+HXLINE( 236)			_hx_tmp6 = ::backend::Paths_obj::image(HX_("title/gfDanceTitle",7b,ba,ce,3f),library1,true);
             		}
-HXDLIN( 276)		::String _hx_tmp10;
-HXDLIN( 276)		if (xmlExists2) {
-HXLINE( 276)			_hx_tmp10 = ::sys::io::File_obj::getContent(xml2);
-            		}
-            		else {
-HXLINE( 276)			_hx_tmp10 = ::backend::Paths_obj::getPath(((HX_("images/",77,50,74,c1) + HX_("titleEnter",60,80,6b,82)) + HX_(".xml",69,3e,c3,1e)),null(),library2,null());
-            		}
-HXDLIN( 276)		_hx_tmp8->set_frames(::flixel::graphics::frames::FlxAtlasFrames_obj::fromSparrow(_hx_tmp9,_hx_tmp10));
-HXLINE( 277)		::Array< ::Dynamic> animFrames = ::Array_obj< ::Dynamic>::__new(0);
-HXLINE( 278)		{
-HXLINE( 279)			this->titleText->animation->findByPrefix(animFrames,HX_("ENTER IDLE",3c,57,01,7a));
-HXLINE( 280)			this->titleText->animation->findByPrefix(animFrames,HX_("ENTER FREEZE",7f,78,5c,d6));
-            		}
-HXLINE( 283)		if ((animFrames->length > 0)) {
-HXLINE( 284)			this->newTitle = true;
-HXLINE( 286)			this->titleText->animation->addByPrefix(HX_("idle",14,a7,b3,45),HX_("ENTER IDLE",3c,57,01,7a),24,null(),null(),null());
-HXLINE( 287)			::String _hx_tmp;
-HXDLIN( 287)			if (::backend::ClientPrefs_obj::data->flashing) {
-HXLINE( 287)				_hx_tmp = HX_("ENTER PRESSED",5a,47,9f,63);
-            			}
-            			else {
-HXLINE( 287)				_hx_tmp = HX_("ENTER FREEZE",7f,78,5c,d6);
-            			}
-HXDLIN( 287)			this->titleText->animation->addByPrefix(HX_("press",83,53,88,c8),_hx_tmp,24,null(),null(),null());
+HXDLIN( 236)		::String _hx_tmp7;
+HXDLIN( 236)		if (xmlExists1) {
+HXLINE( 236)			_hx_tmp7 = ::sys::io::File_obj::getContent(xml1);
             		}
             		else {
-HXLINE( 290)			this->newTitle = false;
-HXLINE( 292)			this->titleText->animation->addByPrefix(HX_("idle",14,a7,b3,45),HX_("Press Enter to Begin",e9,79,2c,83),24,null(),null(),null());
-HXLINE( 293)			this->titleText->animation->addByPrefix(HX_("press",83,53,88,c8),HX_("ENTER PRESSED",5a,47,9f,63),24,null(),null(),null());
+HXLINE( 236)			_hx_tmp7 = ::backend::Paths_obj::getPath(((HX_("images/",77,50,74,c1) + HX_("title/gfDanceTitle",7b,ba,ce,3f)) + HX_(".xml",69,3e,c3,1e)),null(),library1,null());
             		}
-HXLINE( 296)		this->titleText->animation->play(HX_("idle",14,a7,b3,45),null(),null(),null());
-HXLINE( 297)		this->titleText->updateHitbox();
-HXLINE( 299)		this->add(this->titleText);
-HXLINE( 301)		 ::flixel::FlxSprite logo =  ::flixel::FlxSprite_obj::__alloc( HX_CTX ,null(),null(),null());
-HXDLIN( 301)		 ::flixel::FlxSprite logo1 = logo->loadGraphic(::backend::Paths_obj::image(HX_("logo",6b,9f,b7,47),null(),null()),null(),null(),null(),null(),null());
-HXLINE( 302)		logo1->set_antialiasing(::backend::ClientPrefs_obj::data->antialiasing);
-HXLINE( 303)		{
-HXLINE( 303)			int axes = 17;
-HXDLIN( 303)			bool _hx_tmp11;
-HXDLIN( 303)			if ((axes != 1)) {
-HXLINE( 303)				_hx_tmp11 = (axes == 17);
-            			}
-            			else {
-HXLINE( 303)				_hx_tmp11 = true;
-            			}
-HXDLIN( 303)			if (_hx_tmp11) {
-HXLINE( 303)				int _hx_tmp = ::flixel::FlxG_obj::width;
-HXDLIN( 303)				logo1->set_x(((( (Float)(_hx_tmp) ) - logo1->get_width()) / ( (Float)(2) )));
-            			}
-HXDLIN( 303)			bool _hx_tmp12;
-HXDLIN( 303)			if ((axes != 16)) {
-HXLINE( 303)				_hx_tmp12 = (axes == 17);
-            			}
-            			else {
-HXLINE( 303)				_hx_tmp12 = true;
-            			}
-HXDLIN( 303)			if (_hx_tmp12) {
-HXLINE( 303)				int _hx_tmp = ::flixel::FlxG_obj::height;
-HXDLIN( 303)				logo1->set_y(((( (Float)(_hx_tmp) ) - logo1->get_height()) / ( (Float)(2) )));
-            			}
+HXDLIN( 236)		_hx_tmp5->set_frames(::flixel::graphics::frames::FlxAtlasFrames_obj::fromSparrow(_hx_tmp6,_hx_tmp7));
+HXLINE( 237)		this->gfDance->animation->addByIndices(HX_("danceLeft",da,cc,f9,df),HX_("gfDance",94,88,3a,eb),::Array_obj< int >::fromData( _hx_array_data_81c3dd25_10,16),HX_("",00,00,00,00),24,false,null(),null());
+HXLINE( 238)		this->gfDance->animation->addByIndices(HX_("danceRight",a9,7f,a6,91),HX_("gfDance",94,88,3a,eb),::Array_obj< int >::fromData( _hx_array_data_81c3dd25_11,15),HX_("",00,00,00,00),24,false,null(),null());
+HXLINE( 240)		this->add(this->gfDance);
+HXLINE( 241)		this->add(this->logoBl);
+HXLINE( 242)		if (::hx::IsNotNull( this->swagShader )) {
+HXLINE( 244)			this->gfDance->shader = this->swagShader->shader;
+HXLINE( 245)			this->logoBl->shader = this->swagShader->shader;
             		}
-HXLINE( 309)		this->credGroup =  ::flixel::group::FlxTypedGroup_obj::__alloc( HX_CTX ,null());
-HXLINE( 310)		this->add(this->credGroup);
-HXLINE( 311)		this->textGroup =  ::flixel::group::FlxTypedGroup_obj::__alloc( HX_CTX ,null());
-HXLINE( 313)		this->blackScreen =  ::flixel::FlxSprite_obj::__alloc( HX_CTX ,null(),null(),null())->makeGraphic(::flixel::FlxG_obj::width,::flixel::FlxG_obj::height,-16777216,null(),null());
-HXLINE( 314)		this->credGroup->add(this->blackScreen).StaticCast<  ::flixel::FlxBasic >();
-HXLINE( 316)		this->credTextShit =  ::objects::Alphabet_obj::__alloc( HX_CTX ,( (Float)(0) ),( (Float)(0) ),HX_("",00,00,00,00),true);
-HXLINE( 317)		{
-HXLINE( 317)			 ::objects::Alphabet _this = this->credTextShit;
-HXDLIN( 317)			int axes1 = 17;
-HXDLIN( 317)			bool _hx_tmp13;
-HXDLIN( 317)			if ((axes1 != 1)) {
-HXLINE( 317)				_hx_tmp13 = (axes1 == 17);
-            			}
-            			else {
-HXLINE( 317)				_hx_tmp13 = true;
-            			}
-HXDLIN( 317)			if (_hx_tmp13) {
-HXLINE( 317)				int _hx_tmp = ::flixel::FlxG_obj::width;
-HXDLIN( 317)				_this->set_x(((( (Float)(_hx_tmp) ) - _this->get_width()) / ( (Float)(2) )));
-            			}
-HXDLIN( 317)			bool _hx_tmp14;
-HXDLIN( 317)			if ((axes1 != 16)) {
-HXLINE( 317)				_hx_tmp14 = (axes1 == 17);
-            			}
-            			else {
-HXLINE( 317)				_hx_tmp14 = true;
-            			}
-HXDLIN( 317)			if (_hx_tmp14) {
-HXLINE( 317)				int _hx_tmp = ::flixel::FlxG_obj::height;
-HXDLIN( 317)				_this->set_y(((( (Float)(_hx_tmp) ) - _this->get_height()) / ( (Float)(2) )));
-            			}
+HXLINE( 248)		this->titleText =  ::flixel::FlxSprite_obj::__alloc( HX_CTX ,this->titleJSON->__Field(HX_("startx",d6,61,fa,05),::hx::paccDynamic),this->titleJSON->__Field(HX_("starty",d7,61,fa,05),::hx::paccDynamic),null());
+HXLINE( 249)		 ::flixel::FlxSprite _hx_tmp8 = this->titleText;
+HXDLIN( 249)		::String library2 = null();
+HXDLIN( 249)		 ::flixel::graphics::FlxGraphic imageLoaded2 = ::backend::Paths_obj::image(HX_("title/titleEnter",b7,52,8d,1c),null(),true);
+HXDLIN( 249)		bool xmlExists2 = false;
+HXDLIN( 249)		::String xml2 = ::backend::Paths_obj::modFolders(((HX_("images/",77,50,74,c1) + HX_("title/titleEnter",b7,52,8d,1c)) + HX_(".xml",69,3e,c3,1e)));
+HXDLIN( 249)		if (::sys::FileSystem_obj::exists(xml2)) {
+HXLINE( 249)			xmlExists2 = true;
             		}
-HXLINE( 321)		this->credTextShit->set_visible(false);
-HXLINE( 323)		 ::flixel::FlxSprite _hx_tmp15 =  ::flixel::FlxSprite_obj::__alloc( HX_CTX ,0,(( (Float)(::flixel::FlxG_obj::height) ) * ((Float)0.52)),null());
-HXDLIN( 323)		this->ngSpr = _hx_tmp15->loadGraphic(::backend::Paths_obj::image(HX_("newgrounds_logo",1e,5c,8d,a6),null(),null()),null(),null(),null(),null(),null());
-HXLINE( 324)		this->add(this->ngSpr);
-HXLINE( 325)		this->ngSpr->set_visible(false);
-HXLINE( 326)		 ::flixel::FlxSprite _hx_tmp16 = this->ngSpr;
-HXDLIN( 326)		_hx_tmp16->setGraphicSize(::Std_obj::_hx_int((this->ngSpr->get_width() * ((Float)0.8))),null());
-HXLINE( 327)		this->ngSpr->updateHitbox();
-HXLINE( 328)		{
-HXLINE( 328)			 ::flixel::FlxSprite _this1 = this->ngSpr;
-HXDLIN( 328)			int axes2 = 1;
-HXDLIN( 328)			bool _hx_tmp17;
-HXDLIN( 328)			if ((axes2 != 1)) {
-HXLINE( 328)				_hx_tmp17 = (axes2 == 17);
+HXDLIN( 249)		 ::Dynamic _hx_tmp9;
+HXDLIN( 249)		if (::hx::IsNotNull( imageLoaded2 )) {
+HXLINE( 249)			_hx_tmp9 = imageLoaded2;
+            		}
+            		else {
+HXLINE( 249)			_hx_tmp9 = ::backend::Paths_obj::image(HX_("title/titleEnter",b7,52,8d,1c),library2,true);
+            		}
+HXDLIN( 249)		::String _hx_tmp10;
+HXDLIN( 249)		if (xmlExists2) {
+HXLINE( 249)			_hx_tmp10 = ::sys::io::File_obj::getContent(xml2);
+            		}
+            		else {
+HXLINE( 249)			_hx_tmp10 = ::backend::Paths_obj::getPath(((HX_("images/",77,50,74,c1) + HX_("title/titleEnter",b7,52,8d,1c)) + HX_(".xml",69,3e,c3,1e)),null(),library2,null());
+            		}
+HXDLIN( 249)		_hx_tmp8->set_frames(::flixel::graphics::frames::FlxAtlasFrames_obj::fromSparrow(_hx_tmp9,_hx_tmp10));
+HXLINE( 250)		::Array< ::Dynamic> animFrames = ::Array_obj< ::Dynamic>::__new(0);
+HXLINE( 251)		{
+HXLINE( 252)			this->titleText->animation->findByPrefix(animFrames,HX_("ENTER IDLE",3c,57,01,7a));
+HXLINE( 253)			this->titleText->animation->findByPrefix(animFrames,HX_("ENTER FREEZE",7f,78,5c,d6));
+            		}
+HXLINE( 256)		if ((animFrames->length > 0)) {
+HXLINE( 257)			this->newTitle = true;
+HXLINE( 259)			this->titleText->animation->addByPrefix(HX_("idle",14,a7,b3,45),HX_("ENTER IDLE",3c,57,01,7a),24,null(),null(),null());
+HXLINE( 260)			::String _hx_tmp;
+HXDLIN( 260)			if (::backend::ClientPrefs_obj::data->flashing) {
+HXLINE( 260)				_hx_tmp = HX_("ENTER PRESSED",5a,47,9f,63);
             			}
             			else {
-HXLINE( 328)				_hx_tmp17 = true;
+HXLINE( 260)				_hx_tmp = HX_("ENTER FREEZE",7f,78,5c,d6);
             			}
-HXDLIN( 328)			if (_hx_tmp17) {
-HXLINE( 328)				int _hx_tmp = ::flixel::FlxG_obj::width;
-HXDLIN( 328)				_this1->set_x(((( (Float)(_hx_tmp) ) - _this1->get_width()) / ( (Float)(2) )));
-            			}
-HXDLIN( 328)			bool _hx_tmp18;
-HXDLIN( 328)			if ((axes2 != 16)) {
-HXLINE( 328)				_hx_tmp18 = (axes2 == 17);
+HXDLIN( 260)			this->titleText->animation->addByPrefix(HX_("press",83,53,88,c8),_hx_tmp,24,null(),null(),null());
+            		}
+            		else {
+HXLINE( 263)			this->newTitle = false;
+HXLINE( 265)			this->titleText->animation->addByPrefix(HX_("idle",14,a7,b3,45),HX_("Press Enter to Begin",e9,79,2c,83),24,null(),null(),null());
+HXLINE( 266)			this->titleText->animation->addByPrefix(HX_("press",83,53,88,c8),HX_("ENTER PRESSED",5a,47,9f,63),24,null(),null(),null());
+            		}
+HXLINE( 269)		this->titleText->animation->play(HX_("idle",14,a7,b3,45),null(),null(),null());
+HXLINE( 270)		this->titleText->updateHitbox();
+HXLINE( 272)		this->add(this->titleText);
+HXLINE( 277)		this->credGroup =  ::flixel::group::FlxTypedGroup_obj::__alloc( HX_CTX ,null());
+HXLINE( 278)		this->add(this->credGroup);
+HXLINE( 279)		this->textGroup =  ::flixel::group::FlxTypedGroup_obj::__alloc( HX_CTX ,null());
+HXLINE( 281)		this->blackScreen =  ::flixel::FlxSprite_obj::__alloc( HX_CTX ,null(),null(),null())->makeGraphic(::flixel::FlxG_obj::width,::flixel::FlxG_obj::height,-16777216,null(),null());
+HXLINE( 282)		this->credGroup->add(this->blackScreen).StaticCast<  ::flixel::FlxBasic >();
+HXLINE( 284)		this->credTextShit =  ::objects::Alphabet_obj::__alloc( HX_CTX ,( (Float)(0) ),( (Float)(0) ),HX_("",00,00,00,00),true);
+HXLINE( 285)		{
+HXLINE( 285)			 ::objects::Alphabet _this = this->credTextShit;
+HXDLIN( 285)			int axes = 17;
+HXDLIN( 285)			bool _hx_tmp11;
+HXDLIN( 285)			if ((axes != 1)) {
+HXLINE( 285)				_hx_tmp11 = (axes == 17);
             			}
             			else {
-HXLINE( 328)				_hx_tmp18 = true;
+HXLINE( 285)				_hx_tmp11 = true;
             			}
-HXDLIN( 328)			if (_hx_tmp18) {
-HXLINE( 328)				int _hx_tmp = ::flixel::FlxG_obj::height;
-HXDLIN( 328)				_this1->set_y(((( (Float)(_hx_tmp) ) - _this1->get_height()) / ( (Float)(2) )));
+HXDLIN( 285)			if (_hx_tmp11) {
+HXLINE( 285)				int _hx_tmp = ::flixel::FlxG_obj::width;
+HXDLIN( 285)				_this->set_x(((( (Float)(_hx_tmp) ) - _this->get_width()) / ( (Float)(2) )));
+            			}
+HXDLIN( 285)			bool _hx_tmp12;
+HXDLIN( 285)			if ((axes != 16)) {
+HXLINE( 285)				_hx_tmp12 = (axes == 17);
+            			}
+            			else {
+HXLINE( 285)				_hx_tmp12 = true;
+            			}
+HXDLIN( 285)			if (_hx_tmp12) {
+HXLINE( 285)				int _hx_tmp = ::flixel::FlxG_obj::height;
+HXDLIN( 285)				_this->set_y(((( (Float)(_hx_tmp) ) - _this->get_height()) / ( (Float)(2) )));
             			}
             		}
-HXLINE( 329)		this->ngSpr->set_antialiasing(::backend::ClientPrefs_obj::data->antialiasing);
-HXLINE( 331)		::flixel::tweens::FlxTween_obj::tween(this->credTextShit, ::Dynamic(::hx::Anon_obj::Create(1)
+HXLINE( 289)		this->credTextShit->set_visible(false);
+HXLINE( 291)		this->ngSpr =  ::flixel::FlxSprite_obj::__alloc( HX_CTX ,0,(( (Float)(::flixel::FlxG_obj::height) ) * ((Float)0.52)),null());
+HXLINE( 292)		this->add(this->ngSpr);
+HXLINE( 293)		this->ngSpr->set_visible(false);
+HXLINE( 294)		 ::flixel::FlxSprite _hx_tmp13 = this->ngSpr;
+HXDLIN( 294)		_hx_tmp13->setGraphicSize(::Std_obj::_hx_int((this->ngSpr->get_width() * ((Float)0.8))),null());
+HXLINE( 295)		this->ngSpr->updateHitbox();
+HXLINE( 296)		{
+HXLINE( 296)			 ::flixel::FlxSprite _this1 = this->ngSpr;
+HXDLIN( 296)			int axes1 = 1;
+HXDLIN( 296)			bool _hx_tmp14;
+HXDLIN( 296)			if ((axes1 != 1)) {
+HXLINE( 296)				_hx_tmp14 = (axes1 == 17);
+            			}
+            			else {
+HXLINE( 296)				_hx_tmp14 = true;
+            			}
+HXDLIN( 296)			if (_hx_tmp14) {
+HXLINE( 296)				int _hx_tmp = ::flixel::FlxG_obj::width;
+HXDLIN( 296)				_this1->set_x(((( (Float)(_hx_tmp) ) - _this1->get_width()) / ( (Float)(2) )));
+            			}
+HXDLIN( 296)			bool _hx_tmp15;
+HXDLIN( 296)			if ((axes1 != 16)) {
+HXLINE( 296)				_hx_tmp15 = (axes1 == 17);
+            			}
+            			else {
+HXLINE( 296)				_hx_tmp15 = true;
+            			}
+HXDLIN( 296)			if (_hx_tmp15) {
+HXLINE( 296)				int _hx_tmp = ::flixel::FlxG_obj::height;
+HXDLIN( 296)				_this1->set_y(((( (Float)(_hx_tmp) ) - _this1->get_height()) / ( (Float)(2) )));
+            			}
+            		}
+HXLINE( 297)		this->ngSpr->set_antialiasing(::backend::ClientPrefs_obj::data->antialiasing);
+HXLINE( 299)		::flixel::tweens::FlxTween_obj::tween(this->credTextShit, ::Dynamic(::hx::Anon_obj::Create(1)
             			->setFixed(0,HX_("y",79,00,00,00),(this->credTextShit->y + 20))),((Float)2.9), ::Dynamic(::hx::Anon_obj::Create(2)
             			->setFixed(0,HX_("ease",ee,8b,0c,43),::flixel::tweens::FlxEase_obj::quadInOut_dyn())
             			->setFixed(1,HX_("type",ba,f2,08,4d),4)));
-HXLINE( 333)		if (::states::TitleState_obj::initialized) {
-HXLINE( 334)			this->skipIntro();
+HXLINE( 301)		if (::states::TitleState_obj::initialized) {
+HXLINE( 302)			this->skipIntro();
             		}
             		else {
-HXLINE( 336)			::states::TitleState_obj::initialized = true;
+HXLINE( 304)			::states::TitleState_obj::initialized = true;
             		}
             	}
 
@@ -799,437 +762,437 @@ HXLINE( 336)			::states::TitleState_obj::initialized = true;
 HX_DEFINE_DYNAMIC_FUNC0(TitleState_obj,startIntro,(void))
 
 ::Array< ::Dynamic> TitleState_obj::getIntroTextShit(){
-            	HX_STACKFRAME(&_hx_pos_f4f54134d4f9e667_342_getIntroTextShit)
-HXLINE( 344)		::String defaultDirectory = HX_("assets/",4c,2a,dc,36);
-HXDLIN( 344)		bool allowDuplicates = false;
-HXDLIN( 344)		if (::hx::IsNull( defaultDirectory )) {
-HXLINE( 344)			defaultDirectory = HX_("assets/",4c,2a,dc,36);
+            	HX_STACKFRAME(&_hx_pos_f4f54134d4f9e667_310_getIntroTextShit)
+HXLINE( 312)		::String defaultDirectory = HX_("assets/",4c,2a,dc,36);
+HXDLIN( 312)		bool allowDuplicates = false;
+HXDLIN( 312)		if (::hx::IsNull( defaultDirectory )) {
+HXLINE( 312)			defaultDirectory = HX_("assets/",4c,2a,dc,36);
             		}
-HXDLIN( 344)		defaultDirectory = ::StringTools_obj::trim(defaultDirectory);
-HXDLIN( 344)		if (!(::StringTools_obj::endsWith(defaultDirectory,HX_("/",2f,00,00,00)))) {
-HXLINE( 344)			defaultDirectory = (defaultDirectory + HX_("/",2f,00,00,00));
+HXDLIN( 312)		defaultDirectory = ::StringTools_obj::trim(defaultDirectory);
+HXDLIN( 312)		if (!(::StringTools_obj::endsWith(defaultDirectory,HX_("/",2f,00,00,00)))) {
+HXLINE( 312)			defaultDirectory = (defaultDirectory + HX_("/",2f,00,00,00));
             		}
-HXDLIN( 344)		if (!(::StringTools_obj::startsWith(defaultDirectory,HX_("assets/",4c,2a,dc,36)))) {
-HXLINE( 344)			defaultDirectory = (HX_("assets/",4c,2a,dc,36) + defaultDirectory);
+HXDLIN( 312)		if (!(::StringTools_obj::startsWith(defaultDirectory,HX_("assets/",4c,2a,dc,36)))) {
+HXLINE( 312)			defaultDirectory = (HX_("assets/",4c,2a,dc,36) + defaultDirectory);
             		}
-HXDLIN( 344)		::Array< ::String > mergedList = ::Array_obj< ::String >::__new(0);
-HXDLIN( 344)		::Array< ::String > foldersToCheck = ::Array_obj< ::String >::__new(0);
-HXDLIN( 344)		if (::sys::FileSystem_obj::exists((defaultDirectory + HX_("data/introText.txt",d6,92,cf,a9)))) {
-HXLINE( 344)			foldersToCheck->push((defaultDirectory + HX_("data/introText.txt",d6,92,cf,a9)));
+HXDLIN( 312)		::Array< ::String > mergedList = ::Array_obj< ::String >::__new(0);
+HXDLIN( 312)		::Array< ::String > foldersToCheck = ::Array_obj< ::String >::__new(0);
+HXDLIN( 312)		if (::sys::FileSystem_obj::exists((defaultDirectory + HX_("data/introText.txt",d6,92,cf,a9)))) {
+HXLINE( 312)			foldersToCheck->push((defaultDirectory + HX_("data/introText.txt",d6,92,cf,a9)));
             		}
-HXDLIN( 344)		{
-HXLINE( 344)			{
-HXLINE( 344)				int _g = 0;
-HXDLIN( 344)				::Array< ::String > _g1 = ::backend::Mods_obj::globalMods;
-HXDLIN( 344)				while((_g < _g1->length)){
-HXLINE( 344)					::String mod = _g1->__get(_g);
-HXDLIN( 344)					_g = (_g + 1);
-HXDLIN( 344)					::String key = ((mod + HX_("/",2f,00,00,00)) + HX_("data/introText.txt",d6,92,cf,a9));
-HXDLIN( 344)					if (::hx::IsNull( key )) {
-HXLINE( 344)						key = HX_("",00,00,00,00);
+HXDLIN( 312)		{
+HXLINE( 312)			{
+HXLINE( 312)				int _g = 0;
+HXDLIN( 312)				::Array< ::String > _g1 = ::backend::Mods_obj::globalMods;
+HXDLIN( 312)				while((_g < _g1->length)){
+HXLINE( 312)					::String mod = _g1->__get(_g);
+HXDLIN( 312)					_g = (_g + 1);
+HXDLIN( 312)					::String key = ((mod + HX_("/",2f,00,00,00)) + HX_("data/introText.txt",d6,92,cf,a9));
+HXDLIN( 312)					if (::hx::IsNull( key )) {
+HXLINE( 312)						key = HX_("",00,00,00,00);
             					}
-HXDLIN( 344)					::String folder = (HX_("mods/",9e,2f,58,0c) + key);
-HXDLIN( 344)					if (::sys::FileSystem_obj::exists(folder)) {
-HXLINE( 344)						foldersToCheck->push(folder);
+HXDLIN( 312)					::String folder = (HX_("mods/",9e,2f,58,0c) + key);
+HXDLIN( 312)					if (::sys::FileSystem_obj::exists(folder)) {
+HXLINE( 312)						foldersToCheck->push(folder);
             					}
             				}
             			}
-HXDLIN( 344)			::String key = HX_("data/introText.txt",d6,92,cf,a9);
-HXDLIN( 344)			if (::hx::IsNull( key )) {
-HXLINE( 344)				key = HX_("",00,00,00,00);
+HXDLIN( 312)			::String key = HX_("data/introText.txt",d6,92,cf,a9);
+HXDLIN( 312)			if (::hx::IsNull( key )) {
+HXLINE( 312)				key = HX_("",00,00,00,00);
             			}
-HXDLIN( 344)			::String folder = (HX_("mods/",9e,2f,58,0c) + key);
-HXDLIN( 344)			if (::sys::FileSystem_obj::exists(folder)) {
-HXLINE( 344)				::String key = HX_("data/introText.txt",d6,92,cf,a9);
-HXDLIN( 344)				if (::hx::IsNull( key )) {
-HXLINE( 344)					key = HX_("",00,00,00,00);
+HXDLIN( 312)			::String folder = (HX_("mods/",9e,2f,58,0c) + key);
+HXDLIN( 312)			if (::sys::FileSystem_obj::exists(folder)) {
+HXLINE( 312)				::String key = HX_("data/introText.txt",d6,92,cf,a9);
+HXDLIN( 312)				if (::hx::IsNull( key )) {
+HXLINE( 312)					key = HX_("",00,00,00,00);
             				}
-HXDLIN( 344)				foldersToCheck->push((HX_("mods/",9e,2f,58,0c) + key));
+HXDLIN( 312)				foldersToCheck->push((HX_("mods/",9e,2f,58,0c) + key));
             			}
-HXDLIN( 344)			bool _hx_tmp;
-HXDLIN( 344)			if (::hx::IsNotNull( ::backend::Mods_obj::currentModDirectory )) {
-HXLINE( 344)				_hx_tmp = (::backend::Mods_obj::currentModDirectory.length > 0);
+HXDLIN( 312)			bool _hx_tmp;
+HXDLIN( 312)			if (::hx::IsNotNull( ::backend::Mods_obj::currentModDirectory )) {
+HXLINE( 312)				_hx_tmp = (::backend::Mods_obj::currentModDirectory.length > 0);
             			}
             			else {
-HXLINE( 344)				_hx_tmp = false;
+HXLINE( 312)				_hx_tmp = false;
             			}
-HXDLIN( 344)			if (_hx_tmp) {
-HXLINE( 344)				::String key = ((::backend::Mods_obj::currentModDirectory + HX_("/",2f,00,00,00)) + HX_("data/introText.txt",d6,92,cf,a9));
-HXDLIN( 344)				if (::hx::IsNull( key )) {
-HXLINE( 344)					key = HX_("",00,00,00,00);
+HXDLIN( 312)			if (_hx_tmp) {
+HXLINE( 312)				::String key = ((::backend::Mods_obj::currentModDirectory + HX_("/",2f,00,00,00)) + HX_("data/introText.txt",d6,92,cf,a9));
+HXDLIN( 312)				if (::hx::IsNull( key )) {
+HXLINE( 312)					key = HX_("",00,00,00,00);
             				}
-HXDLIN( 344)				::String folder = (HX_("mods/",9e,2f,58,0c) + key);
-HXDLIN( 344)				if (::sys::FileSystem_obj::exists(folder)) {
-HXLINE( 344)					foldersToCheck->push(folder);
+HXDLIN( 312)				::String folder = (HX_("mods/",9e,2f,58,0c) + key);
+HXDLIN( 312)				if (::sys::FileSystem_obj::exists(folder)) {
+HXLINE( 312)					foldersToCheck->push(folder);
             				}
             			}
             		}
-HXDLIN( 344)		::Array< ::String > paths = foldersToCheck;
-HXDLIN( 344)		::String defaultPath = (defaultDirectory + HX_("data/introText.txt",d6,92,cf,a9));
-HXDLIN( 344)		if (paths->contains(defaultPath)) {
-HXLINE( 344)			paths->remove(defaultPath);
-HXDLIN( 344)			paths->insert(0,defaultPath);
+HXDLIN( 312)		::Array< ::String > paths = foldersToCheck;
+HXDLIN( 312)		::String defaultPath = (defaultDirectory + HX_("data/introText.txt",d6,92,cf,a9));
+HXDLIN( 312)		if (paths->contains(defaultPath)) {
+HXLINE( 312)			paths->remove(defaultPath);
+HXDLIN( 312)			paths->insert(0,defaultPath);
             		}
-HXDLIN( 344)		{
-HXLINE( 344)			int _g2 = 0;
-HXDLIN( 344)			while((_g2 < paths->length)){
-HXLINE( 344)				::String file = paths->__get(_g2);
-HXDLIN( 344)				_g2 = (_g2 + 1);
-HXDLIN( 344)				::String path = file;
-HXDLIN( 344)				::String daList = null();
-HXDLIN( 344)				::Array< ::String > formatted = path.split(HX_(":",3a,00,00,00));
-HXDLIN( 344)				path = formatted->__get((formatted->length - 1));
-HXDLIN( 344)				if (::sys::FileSystem_obj::exists(path)) {
-HXLINE( 344)					daList = ::sys::io::File_obj::getContent(path);
+HXDLIN( 312)		{
+HXLINE( 312)			int _g2 = 0;
+HXDLIN( 312)			while((_g2 < paths->length)){
+HXLINE( 312)				::String file = paths->__get(_g2);
+HXDLIN( 312)				_g2 = (_g2 + 1);
+HXDLIN( 312)				::String path = file;
+HXDLIN( 312)				::String daList = null();
+HXDLIN( 312)				::Array< ::String > formatted = path.split(HX_(":",3a,00,00,00));
+HXDLIN( 312)				path = formatted->__get((formatted->length - 1));
+HXDLIN( 312)				if (::sys::FileSystem_obj::exists(path)) {
+HXLINE( 312)					daList = ::sys::io::File_obj::getContent(path);
             				}
-HXDLIN( 344)				::Array< ::String > list;
-HXDLIN( 344)				if (::hx::IsNotNull( daList )) {
-HXLINE( 344)					::Array< ::String > daList1 = ::Array_obj< ::String >::__new(0);
-HXDLIN( 344)					daList1 = ::StringTools_obj::trim(daList).split(HX_("\n",0a,00,00,00));
-HXDLIN( 344)					{
-HXLINE( 344)						int _g = 0;
-HXDLIN( 344)						int _g1 = daList1->length;
-HXDLIN( 344)						while((_g < _g1)){
-HXLINE( 344)							_g = (_g + 1);
-HXDLIN( 344)							int i = (_g - 1);
-HXDLIN( 344)							daList1[i] = ::StringTools_obj::trim(daList1->__get(i));
+HXDLIN( 312)				::Array< ::String > list;
+HXDLIN( 312)				if (::hx::IsNotNull( daList )) {
+HXLINE( 312)					::Array< ::String > daList1 = ::Array_obj< ::String >::__new(0);
+HXDLIN( 312)					daList1 = ::StringTools_obj::trim(daList).split(HX_("\n",0a,00,00,00));
+HXDLIN( 312)					{
+HXLINE( 312)						int _g = 0;
+HXDLIN( 312)						int _g1 = daList1->length;
+HXDLIN( 312)						while((_g < _g1)){
+HXLINE( 312)							_g = (_g + 1);
+HXDLIN( 312)							int i = (_g - 1);
+HXDLIN( 312)							daList1[i] = ::StringTools_obj::trim(daList1->__get(i));
             						}
             					}
-HXDLIN( 344)					list = daList1;
+HXDLIN( 312)					list = daList1;
             				}
             				else {
-HXLINE( 344)					list = ::Array_obj< ::String >::__new(0);
+HXLINE( 312)					list = ::Array_obj< ::String >::__new(0);
             				}
-HXDLIN( 344)				{
-HXLINE( 344)					int _g = 0;
-HXDLIN( 344)					while((_g < list->length)){
-HXLINE( 344)						::String value = list->__get(_g);
-HXDLIN( 344)						_g = (_g + 1);
-HXDLIN( 344)						bool _hx_tmp;
-HXDLIN( 344)						bool _hx_tmp1;
-HXDLIN( 344)						if (!(allowDuplicates)) {
-HXLINE( 344)							_hx_tmp1 = !(mergedList->contains(value));
+HXDLIN( 312)				{
+HXLINE( 312)					int _g = 0;
+HXDLIN( 312)					while((_g < list->length)){
+HXLINE( 312)						::String value = list->__get(_g);
+HXDLIN( 312)						_g = (_g + 1);
+HXDLIN( 312)						bool _hx_tmp;
+HXDLIN( 312)						bool _hx_tmp1;
+HXDLIN( 312)						if (!(allowDuplicates)) {
+HXLINE( 312)							_hx_tmp1 = !(mergedList->contains(value));
             						}
             						else {
-HXLINE( 344)							_hx_tmp1 = true;
+HXLINE( 312)							_hx_tmp1 = true;
             						}
-HXDLIN( 344)						if (_hx_tmp1) {
-HXLINE( 344)							_hx_tmp = (value.length > 0);
+HXDLIN( 312)						if (_hx_tmp1) {
+HXLINE( 312)							_hx_tmp = (value.length > 0);
             						}
             						else {
-HXLINE( 344)							_hx_tmp = false;
+HXLINE( 312)							_hx_tmp = false;
             						}
-HXDLIN( 344)						if (_hx_tmp) {
-HXLINE( 344)							mergedList->push(value);
+HXDLIN( 312)						if (_hx_tmp) {
+HXLINE( 312)							mergedList->push(value);
             						}
             					}
             				}
             			}
             		}
-HXDLIN( 344)		::Array< ::String > firstArray = mergedList;
-HXLINE( 349)		::Array< ::Dynamic> swagGoodArray = ::Array_obj< ::Dynamic>::__new(0);
-HXLINE( 351)		{
-HXLINE( 351)			int _g3 = 0;
-HXDLIN( 351)			while((_g3 < firstArray->length)){
-HXLINE( 351)				::String i = firstArray->__get(_g3);
-HXDLIN( 351)				_g3 = (_g3 + 1);
-HXLINE( 353)				swagGoodArray->push(i.split(HX_("--",60,27,00,00)));
+HXDLIN( 312)		::Array< ::String > firstArray = mergedList;
+HXLINE( 317)		::Array< ::Dynamic> swagGoodArray = ::Array_obj< ::Dynamic>::__new(0);
+HXLINE( 319)		{
+HXLINE( 319)			int _g3 = 0;
+HXDLIN( 319)			while((_g3 < firstArray->length)){
+HXLINE( 319)				::String i = firstArray->__get(_g3);
+HXDLIN( 319)				_g3 = (_g3 + 1);
+HXLINE( 321)				swagGoodArray->push(i.split(HX_("--",60,27,00,00)));
             			}
             		}
-HXLINE( 356)		return swagGoodArray;
+HXLINE( 324)		return swagGoodArray;
             	}
 
 
 HX_DEFINE_DYNAMIC_FUNC0(TitleState_obj,getIntroTextShit,return )
 
 void TitleState_obj::update(Float elapsed){
-            	HX_GC_STACKFRAME(&_hx_pos_f4f54134d4f9e667_366_update)
-HXDLIN( 366)		 ::states::TitleState _gthis = ::hx::ObjectPtr<OBJ_>(this);
-HXLINE( 367)		if (::hx::IsNotNull( ::flixel::FlxG_obj::sound->music )) {
-HXLINE( 368)			::backend::Conductor_obj::songPosition = ::flixel::FlxG_obj::sound->music->_time;
+            	HX_GC_STACKFRAME(&_hx_pos_f4f54134d4f9e667_334_update)
+HXDLIN( 334)		 ::states::TitleState _gthis = ::hx::ObjectPtr<OBJ_>(this);
+HXLINE( 335)		if (::hx::IsNotNull( ::flixel::FlxG_obj::sound->music )) {
+HXLINE( 336)			::backend::Conductor_obj::songPosition = ::flixel::FlxG_obj::sound->music->_time;
             		}
-HXLINE( 371)		bool pressedEnter;
-HXDLIN( 371)		 ::flixel::input::keyboard::FlxKeyList _this = ( ( ::flixel::input::keyboard::FlxKeyList)(::flixel::FlxG_obj::keys->justPressed) );
-HXDLIN( 371)		if (!(_this->keyManager->checkStatusUnsafe(13,_this->status))) {
-HXLINE( 371)			pressedEnter = this->get_controls()->get_ACCEPT();
+HXLINE( 339)		bool pressedEnter;
+HXDLIN( 339)		 ::flixel::input::keyboard::FlxKeyList _this = ( ( ::flixel::input::keyboard::FlxKeyList)(::flixel::FlxG_obj::keys->justPressed) );
+HXDLIN( 339)		if (!(_this->keyManager->checkStatusUnsafe(13,_this->status))) {
+HXLINE( 339)			pressedEnter = this->get_controls()->get_ACCEPT();
             		}
             		else {
-HXLINE( 371)			pressedEnter = true;
+HXLINE( 339)			pressedEnter = true;
             		}
-HXLINE( 383)		 ::flixel::input::gamepad::FlxGamepad gamepad = ::flixel::FlxG_obj::gamepads->lastActive;
-HXLINE( 385)		if (::hx::IsNotNull( gamepad )) {
-HXLINE( 387)			 ::flixel::input::gamepad::lists::FlxGamepadButtonList _this = gamepad->justPressed;
-HXDLIN( 387)			int id = 7;
-HXDLIN( 387)			 ::flixel::input::gamepad::FlxGamepad _this1 = _this->gamepad;
-HXDLIN( 387)			int Status = _this->status;
-HXDLIN( 387)			bool _hx_tmp;
-HXDLIN( 387)			switch((int)(id)){
+HXLINE( 351)		 ::flixel::input::gamepad::FlxGamepad gamepad = ::flixel::FlxG_obj::gamepads->lastActive;
+HXLINE( 353)		if (::hx::IsNotNull( gamepad )) {
+HXLINE( 355)			 ::flixel::input::gamepad::lists::FlxGamepadButtonList _this = gamepad->justPressed;
+HXDLIN( 355)			int id = 7;
+HXDLIN( 355)			 ::flixel::input::gamepad::FlxGamepad _this1 = _this->gamepad;
+HXDLIN( 355)			int Status = _this->status;
+HXDLIN( 355)			bool _hx_tmp;
+HXDLIN( 355)			switch((int)(id)){
             				case (int)-2: {
-HXLINE( 387)					_hx_tmp = _this1->anyButton(Status);
+HXLINE( 355)					_hx_tmp = _this1->anyButton(Status);
             				}
             				break;
             				case (int)-1: {
-HXLINE( 387)					_hx_tmp = !(_this1->anyButton(Status));
+HXLINE( 355)					_hx_tmp = !(_this1->anyButton(Status));
             				}
             				break;
             				default:{
-HXLINE( 387)					int RawID = _this1->mapping->getRawID(id);
-HXDLIN( 387)					 ::flixel::input::gamepad::FlxGamepadButton button = _this1->buttons->__get(RawID).StaticCast<  ::flixel::input::gamepad::FlxGamepadButton >();
-HXDLIN( 387)					if (::hx::IsNotNull( button )) {
-HXLINE( 387)						_hx_tmp = button->hasState(Status);
+HXLINE( 355)					int RawID = _this1->mapping->getRawID(id);
+HXDLIN( 355)					 ::flixel::input::gamepad::FlxGamepadButton button = _this1->buttons->__get(RawID).StaticCast<  ::flixel::input::gamepad::FlxGamepadButton >();
+HXDLIN( 355)					if (::hx::IsNotNull( button )) {
+HXLINE( 355)						_hx_tmp = button->hasState(Status);
             					}
             					else {
-HXLINE( 387)						_hx_tmp = false;
+HXLINE( 355)						_hx_tmp = false;
             					}
             				}
             			}
-HXDLIN( 387)			if (_hx_tmp) {
-HXLINE( 388)				pressedEnter = true;
+HXDLIN( 355)			if (_hx_tmp) {
+HXLINE( 356)				pressedEnter = true;
             			}
             		}
-HXLINE( 396)		if (this->newTitle) {
-HXLINE( 397)			 ::states::TitleState _hx_tmp = ::hx::ObjectPtr<OBJ_>(this);
-HXDLIN( 397)			Float lowerBound;
-HXDLIN( 397)			if ((elapsed < 0)) {
-HXLINE( 397)				lowerBound = ( (Float)(0) );
+HXLINE( 364)		if (this->newTitle) {
+HXLINE( 365)			 ::states::TitleState _hx_tmp = ::hx::ObjectPtr<OBJ_>(this);
+HXDLIN( 365)			Float lowerBound;
+HXDLIN( 365)			if ((elapsed < 0)) {
+HXLINE( 365)				lowerBound = ( (Float)(0) );
             			}
             			else {
-HXLINE( 397)				lowerBound = elapsed;
+HXLINE( 365)				lowerBound = elapsed;
             			}
-HXDLIN( 397)			Float _hx_tmp1;
-HXDLIN( 397)			if ((lowerBound > 1)) {
-HXLINE( 397)				_hx_tmp1 = ( (Float)(1) );
+HXDLIN( 365)			Float _hx_tmp1;
+HXDLIN( 365)			if ((lowerBound > 1)) {
+HXLINE( 365)				_hx_tmp1 = ( (Float)(1) );
             			}
             			else {
-HXLINE( 397)				_hx_tmp1 = lowerBound;
+HXLINE( 365)				_hx_tmp1 = lowerBound;
             			}
-HXDLIN( 397)			_hx_tmp->titleTimer = (_hx_tmp->titleTimer + _hx_tmp1);
-HXLINE( 398)			if ((this->titleTimer > 2)) {
-HXLINE( 398)				 ::states::TitleState _hx_tmp = ::hx::ObjectPtr<OBJ_>(this);
-HXDLIN( 398)				_hx_tmp->titleTimer = (_hx_tmp->titleTimer - ( (Float)(2) ));
+HXDLIN( 365)			_hx_tmp->titleTimer = (_hx_tmp->titleTimer + _hx_tmp1);
+HXLINE( 366)			if ((this->titleTimer > 2)) {
+HXLINE( 366)				 ::states::TitleState _hx_tmp = ::hx::ObjectPtr<OBJ_>(this);
+HXDLIN( 366)				_hx_tmp->titleTimer = (_hx_tmp->titleTimer - ( (Float)(2) ));
             			}
             		}
-HXLINE( 403)		bool _hx_tmp;
-HXDLIN( 403)		bool _hx_tmp1;
-HXDLIN( 403)		if (::states::TitleState_obj::initialized) {
-HXLINE( 403)			_hx_tmp1 = !(this->transitioning);
+HXLINE( 371)		bool _hx_tmp;
+HXDLIN( 371)		bool _hx_tmp1;
+HXDLIN( 371)		if (::states::TitleState_obj::initialized) {
+HXLINE( 371)			_hx_tmp1 = !(this->transitioning);
             		}
             		else {
-HXLINE( 403)			_hx_tmp1 = false;
+HXLINE( 371)			_hx_tmp1 = false;
             		}
-HXDLIN( 403)		if (_hx_tmp1) {
-HXLINE( 403)			_hx_tmp = this->skippedIntro;
+HXDLIN( 371)		if (_hx_tmp1) {
+HXLINE( 371)			_hx_tmp = this->skippedIntro;
             		}
             		else {
-HXLINE( 403)			_hx_tmp = false;
+HXLINE( 371)			_hx_tmp = false;
             		}
-HXDLIN( 403)		if (_hx_tmp) {
-HXLINE( 405)			bool _hx_tmp;
-HXDLIN( 405)			if (this->newTitle) {
-HXLINE( 405)				_hx_tmp = !(pressedEnter);
+HXDLIN( 371)		if (_hx_tmp) {
+HXLINE( 373)			bool _hx_tmp;
+HXDLIN( 373)			if (this->newTitle) {
+HXLINE( 373)				_hx_tmp = !(pressedEnter);
             			}
             			else {
-HXLINE( 405)				_hx_tmp = false;
+HXLINE( 373)				_hx_tmp = false;
             			}
-HXDLIN( 405)			if (_hx_tmp) {
-HXLINE( 407)				Float timer = this->titleTimer;
-HXLINE( 408)				if ((timer >= 1)) {
-HXLINE( 409)					timer = (-(timer) + 2);
+HXDLIN( 373)			if (_hx_tmp) {
+HXLINE( 375)				Float timer = this->titleTimer;
+HXLINE( 376)				if ((timer >= 1)) {
+HXLINE( 377)					timer = (-(timer) + 2);
             				}
-HXLINE( 411)				Float t = timer;
-HXDLIN( 411)				if ((t <= ((Float).5))) {
-HXLINE( 411)					timer = ((t * t) * ( (Float)(2) ));
+HXLINE( 379)				Float t = timer;
+HXDLIN( 379)				if ((t <= ((Float).5))) {
+HXLINE( 379)					timer = ((t * t) * ( (Float)(2) ));
             				}
             				else {
-HXLINE( 411)					t = (t - ( (Float)(1) ));
-HXDLIN( 411)					timer = (( (Float)(1) ) - ((t * t) * ( (Float)(2) )));
+HXLINE( 379)					t = (t - ( (Float)(1) ));
+HXDLIN( 379)					timer = (( (Float)(1) ) - ((t * t) * ( (Float)(2) )));
             				}
-HXLINE( 413)				 ::flixel::FlxSprite _hx_tmp = this->titleText;
-HXDLIN( 413)				int Color1 = this->titleTextColors->__get(0);
-HXDLIN( 413)				int Color2 = this->titleTextColors->__get(1);
-HXDLIN( 413)				int r = ::Std_obj::_hx_int(((( (Float)((((Color2 >> 16) & 255) - ((Color1 >> 16) & 255))) ) * timer) + ((Color1 >> 16) & 255)));
-HXDLIN( 413)				int g = ::Std_obj::_hx_int(((( (Float)((((Color2 >> 8) & 255) - ((Color1 >> 8) & 255))) ) * timer) + ((Color1 >> 8) & 255)));
-HXDLIN( 413)				int b = ::Std_obj::_hx_int(((( (Float)(((Color2 & 255) - (Color1 & 255))) ) * timer) + (Color1 & 255)));
-HXDLIN( 413)				int a = ::Std_obj::_hx_int(((( (Float)((((Color2 >> 24) & 255) - ((Color1 >> 24) & 255))) ) * timer) + ((Color1 >> 24) & 255)));
-HXDLIN( 413)				int color = ::flixel::util::_FlxColor::FlxColor_Impl__obj::_new(null());
-HXDLIN( 413)				{
-HXLINE( 413)					color = (color & -16711681);
-HXDLIN( 413)					int color1;
-HXDLIN( 413)					if ((r > 255)) {
-HXLINE( 413)						color1 = 255;
+HXLINE( 381)				 ::flixel::FlxSprite _hx_tmp = this->titleText;
+HXDLIN( 381)				int Color1 = this->titleTextColors->__get(0);
+HXDLIN( 381)				int Color2 = this->titleTextColors->__get(1);
+HXDLIN( 381)				int r = ::Std_obj::_hx_int(((( (Float)((((Color2 >> 16) & 255) - ((Color1 >> 16) & 255))) ) * timer) + ((Color1 >> 16) & 255)));
+HXDLIN( 381)				int g = ::Std_obj::_hx_int(((( (Float)((((Color2 >> 8) & 255) - ((Color1 >> 8) & 255))) ) * timer) + ((Color1 >> 8) & 255)));
+HXDLIN( 381)				int b = ::Std_obj::_hx_int(((( (Float)(((Color2 & 255) - (Color1 & 255))) ) * timer) + (Color1 & 255)));
+HXDLIN( 381)				int a = ::Std_obj::_hx_int(((( (Float)((((Color2 >> 24) & 255) - ((Color1 >> 24) & 255))) ) * timer) + ((Color1 >> 24) & 255)));
+HXDLIN( 381)				int color = ::flixel::util::_FlxColor::FlxColor_Impl__obj::_new(null());
+HXDLIN( 381)				{
+HXLINE( 381)					color = (color & -16711681);
+HXDLIN( 381)					int color1;
+HXDLIN( 381)					if ((r > 255)) {
+HXLINE( 381)						color1 = 255;
             					}
             					else {
-HXLINE( 413)						if ((r < 0)) {
-HXLINE( 413)							color1 = 0;
+HXLINE( 381)						if ((r < 0)) {
+HXLINE( 381)							color1 = 0;
             						}
             						else {
-HXLINE( 413)							color1 = r;
+HXLINE( 381)							color1 = r;
             						}
             					}
-HXDLIN( 413)					color = (color | (color1 << 16));
+HXDLIN( 381)					color = (color | (color1 << 16));
             				}
-HXDLIN( 413)				{
-HXLINE( 413)					color = (color & -65281);
-HXDLIN( 413)					int color2;
-HXDLIN( 413)					if ((g > 255)) {
-HXLINE( 413)						color2 = 255;
+HXDLIN( 381)				{
+HXLINE( 381)					color = (color & -65281);
+HXDLIN( 381)					int color2;
+HXDLIN( 381)					if ((g > 255)) {
+HXLINE( 381)						color2 = 255;
             					}
             					else {
-HXLINE( 413)						if ((g < 0)) {
-HXLINE( 413)							color2 = 0;
+HXLINE( 381)						if ((g < 0)) {
+HXLINE( 381)							color2 = 0;
             						}
             						else {
-HXLINE( 413)							color2 = g;
+HXLINE( 381)							color2 = g;
             						}
             					}
-HXDLIN( 413)					color = (color | (color2 << 8));
+HXDLIN( 381)					color = (color | (color2 << 8));
             				}
-HXDLIN( 413)				{
-HXLINE( 413)					color = (color & -256);
-HXDLIN( 413)					int color3;
-HXDLIN( 413)					if ((b > 255)) {
-HXLINE( 413)						color3 = 255;
+HXDLIN( 381)				{
+HXLINE( 381)					color = (color & -256);
+HXDLIN( 381)					int color3;
+HXDLIN( 381)					if ((b > 255)) {
+HXLINE( 381)						color3 = 255;
             					}
             					else {
-HXLINE( 413)						if ((b < 0)) {
-HXLINE( 413)							color3 = 0;
+HXLINE( 381)						if ((b < 0)) {
+HXLINE( 381)							color3 = 0;
             						}
             						else {
-HXLINE( 413)							color3 = b;
+HXLINE( 381)							color3 = b;
             						}
             					}
-HXDLIN( 413)					color = (color | color3);
+HXDLIN( 381)					color = (color | color3);
             				}
-HXDLIN( 413)				{
-HXLINE( 413)					color = (color & 16777215);
-HXDLIN( 413)					int color4;
-HXDLIN( 413)					if ((a > 255)) {
-HXLINE( 413)						color4 = 255;
+HXDLIN( 381)				{
+HXLINE( 381)					color = (color & 16777215);
+HXDLIN( 381)					int color4;
+HXDLIN( 381)					if ((a > 255)) {
+HXLINE( 381)						color4 = 255;
             					}
             					else {
-HXLINE( 413)						if ((a < 0)) {
-HXLINE( 413)							color4 = 0;
+HXLINE( 381)						if ((a < 0)) {
+HXLINE( 381)							color4 = 0;
             						}
             						else {
-HXLINE( 413)							color4 = a;
+HXLINE( 381)							color4 = a;
             						}
             					}
-HXDLIN( 413)					color = (color | (color4 << 24));
+HXDLIN( 381)					color = (color | (color4 << 24));
             				}
-HXDLIN( 413)				_hx_tmp->set_color(color);
-HXLINE( 414)				Float a1 = this->titleTextAlphas->__get(0);
-HXDLIN( 414)				this->titleText->set_alpha((a1 + (timer * (this->titleTextAlphas->__get(1) - a1))));
+HXDLIN( 381)				_hx_tmp->set_color(color);
+HXLINE( 382)				Float a1 = this->titleTextAlphas->__get(0);
+HXDLIN( 382)				this->titleText->set_alpha((a1 + (timer * (this->titleTextAlphas->__get(1) - a1))));
             			}
-HXLINE( 417)			if (pressedEnter) {
+HXLINE( 385)			if (pressedEnter) {
             				HX_BEGIN_LOCAL_FUNC_S1(::hx::LocalFunc,_hx_Closure_0, ::states::TitleState,_gthis) HXARGC(1)
             				void _hx_run( ::flixel::util::FlxTimer tmr){
-            					HX_GC_STACKFRAME(&_hx_pos_f4f54134d4f9e667_431_update)
-HXLINE( 432)					if (_gthis->mustUpdate) {
-HXLINE( 433)						::backend::MusicBeatState_obj::switchState( ::states::OutdatedState_obj::__alloc( HX_CTX ,null(),null()));
+            					HX_GC_STACKFRAME(&_hx_pos_f4f54134d4f9e667_399_update)
+HXLINE( 400)					if (_gthis->mustUpdate) {
+HXLINE( 401)						::backend::MusicBeatState_obj::switchState( ::states::OutdatedState_obj::__alloc( HX_CTX ,null(),null()));
             					}
             					else {
-HXLINE( 435)						::backend::MusicBeatState_obj::switchState( ::states::MainMenuState_obj::__alloc( HX_CTX ,null(),null()));
+HXLINE( 403)						::backend::MusicBeatState_obj::switchState( ::states::MainMenuState_obj::__alloc( HX_CTX ,null(),null()));
             					}
-HXLINE( 437)					::states::TitleState_obj::closedState = true;
+HXLINE( 405)					::states::TitleState_obj::closedState = true;
             				}
             				HX_END_LOCAL_FUNC1((void))
 
-HXLINE( 419)				this->titleText->set_color(-1);
-HXLINE( 420)				this->titleText->set_alpha(( (Float)(1) ));
-HXLINE( 422)				if (::hx::IsNotNull( this->titleText )) {
-HXLINE( 422)					this->titleText->animation->play(HX_("press",83,53,88,c8),null(),null(),null());
+HXLINE( 387)				this->titleText->set_color(-1);
+HXLINE( 388)				this->titleText->set_alpha(( (Float)(1) ));
+HXLINE( 390)				if (::hx::IsNotNull( this->titleText )) {
+HXLINE( 390)					this->titleText->animation->play(HX_("press",83,53,88,c8),null(),null(),null());
             				}
-HXLINE( 424)				int _hx_tmp;
-HXDLIN( 424)				if (::backend::ClientPrefs_obj::data->flashing) {
-HXLINE( 424)					_hx_tmp = -1;
+HXLINE( 392)				int _hx_tmp;
+HXDLIN( 392)				if (::backend::ClientPrefs_obj::data->flashing) {
+HXLINE( 392)					_hx_tmp = -1;
             				}
             				else {
-HXLINE( 424)					_hx_tmp = (int)1291845631;
+HXLINE( 392)					_hx_tmp = (int)1291845631;
             				}
-HXDLIN( 424)				::flixel::FlxG_obj::camera->flash(_hx_tmp,1,null(),null());
-HXLINE( 425)				 ::flixel::_hx_system::frontEnds::SoundFrontEnd _hx_tmp1 = ::flixel::FlxG_obj::sound;
-HXDLIN( 425)				_hx_tmp1->play(::backend::Paths_obj::sound(HX_("confirmMenu",bf,8e,fe,3c),null()),((Float)0.7),null(),null(),null(),null());
-HXLINE( 427)				this->transitioning = true;
-HXLINE( 430)				 ::flixel::util::FlxTimer_obj::__alloc( HX_CTX ,null())->start(1, ::Dynamic(new _hx_Closure_0(_gthis)),null());
+HXDLIN( 392)				::flixel::FlxG_obj::camera->flash(_hx_tmp,1,null(),null());
+HXLINE( 393)				 ::flixel::_hx_system::frontEnds::SoundFrontEnd _hx_tmp1 = ::flixel::FlxG_obj::sound;
+HXDLIN( 393)				_hx_tmp1->play(::backend::Paths_obj::sound(HX_("confirmMenu",bf,8e,fe,3c),null()),((Float)0.7),null(),null(),null(),null());
+HXLINE( 395)				this->transitioning = true;
+HXLINE( 398)				 ::flixel::util::FlxTimer_obj::__alloc( HX_CTX ,null())->start(1, ::Dynamic(new _hx_Closure_0(_gthis)),null());
             			}
             		}
-HXLINE( 493)		bool _hx_tmp2;
-HXDLIN( 493)		bool _hx_tmp3;
-HXDLIN( 493)		if (::states::TitleState_obj::initialized) {
-HXLINE( 493)			_hx_tmp3 = pressedEnter;
+HXLINE( 461)		bool _hx_tmp2;
+HXDLIN( 461)		bool _hx_tmp3;
+HXDLIN( 461)		if (::states::TitleState_obj::initialized) {
+HXLINE( 461)			_hx_tmp3 = pressedEnter;
             		}
             		else {
-HXLINE( 493)			_hx_tmp3 = false;
+HXLINE( 461)			_hx_tmp3 = false;
             		}
-HXDLIN( 493)		if (_hx_tmp3) {
-HXLINE( 493)			_hx_tmp2 = !(this->skippedIntro);
+HXDLIN( 461)		if (_hx_tmp3) {
+HXLINE( 461)			_hx_tmp2 = !(this->skippedIntro);
             		}
             		else {
-HXLINE( 493)			_hx_tmp2 = false;
+HXLINE( 461)			_hx_tmp2 = false;
             		}
-HXDLIN( 493)		if (_hx_tmp2) {
-HXLINE( 495)			this->skipIntro();
+HXDLIN( 461)		if (_hx_tmp2) {
+HXLINE( 463)			this->skipIntro();
             		}
-HXLINE( 498)		if (::hx::IsNotNull( this->swagShader )) {
-HXLINE( 500)			if (this->get_controls()->get_UI_LEFT()) {
-HXLINE( 500)				 ::shaders::ColorSwap fh = this->swagShader;
-HXDLIN( 500)				fh->set_hue((fh->hue - (elapsed * ((Float)0.1))));
+HXLINE( 466)		if (::hx::IsNotNull( this->swagShader )) {
+HXLINE( 468)			if (this->get_controls()->get_UI_LEFT()) {
+HXLINE( 468)				 ::shaders::ColorSwap fh = this->swagShader;
+HXDLIN( 468)				fh->set_hue((fh->hue - (elapsed * ((Float)0.1))));
             			}
-HXLINE( 501)			if (this->get_controls()->get_UI_RIGHT()) {
-HXLINE( 501)				 ::shaders::ColorSwap fh = this->swagShader;
-HXDLIN( 501)				fh->set_hue((fh->hue + (elapsed * ((Float)0.1))));
+HXLINE( 469)			if (this->get_controls()->get_UI_RIGHT()) {
+HXLINE( 469)				 ::shaders::ColorSwap fh = this->swagShader;
+HXDLIN( 469)				fh->set_hue((fh->hue + (elapsed * ((Float)0.1))));
             			}
             		}
-HXLINE( 504)		this->super::update(elapsed);
+HXLINE( 472)		this->super::update(elapsed);
             	}
 
 
 void TitleState_obj::createCoolText(::Array< ::String > textArray, ::Dynamic __o_offset){
             		 ::Dynamic offset = __o_offset;
             		if (::hx::IsNull(__o_offset)) offset = 0;
-            	HX_GC_STACKFRAME(&_hx_pos_f4f54134d4f9e667_509_createCoolText)
-HXDLIN( 509)		int _g = 0;
-HXDLIN( 509)		int _g1 = textArray->length;
-HXDLIN( 509)		while((_g < _g1)){
-HXDLIN( 509)			_g = (_g + 1);
-HXDLIN( 509)			int i = (_g - 1);
-HXLINE( 511)			 ::objects::Alphabet money =  ::objects::Alphabet_obj::__alloc( HX_CTX ,( (Float)(0) ),( (Float)(0) ),textArray->__get(i),true);
-HXLINE( 512)			{
-HXLINE( 512)				int axes = 1;
-HXDLIN( 512)				bool _hx_tmp;
-HXDLIN( 512)				if ((axes != 1)) {
-HXLINE( 512)					_hx_tmp = (axes == 17);
+            	HX_GC_STACKFRAME(&_hx_pos_f4f54134d4f9e667_477_createCoolText)
+HXDLIN( 477)		int _g = 0;
+HXDLIN( 477)		int _g1 = textArray->length;
+HXDLIN( 477)		while((_g < _g1)){
+HXDLIN( 477)			_g = (_g + 1);
+HXDLIN( 477)			int i = (_g - 1);
+HXLINE( 479)			 ::objects::Alphabet money =  ::objects::Alphabet_obj::__alloc( HX_CTX ,( (Float)(0) ),( (Float)(0) ),textArray->__get(i),true);
+HXLINE( 480)			{
+HXLINE( 480)				int axes = 1;
+HXDLIN( 480)				bool _hx_tmp;
+HXDLIN( 480)				if ((axes != 1)) {
+HXLINE( 480)					_hx_tmp = (axes == 17);
             				}
             				else {
-HXLINE( 512)					_hx_tmp = true;
+HXLINE( 480)					_hx_tmp = true;
             				}
-HXDLIN( 512)				if (_hx_tmp) {
-HXLINE( 512)					int _hx_tmp = ::flixel::FlxG_obj::width;
-HXDLIN( 512)					money->set_x(((( (Float)(_hx_tmp) ) - money->get_width()) / ( (Float)(2) )));
+HXDLIN( 480)				if (_hx_tmp) {
+HXLINE( 480)					int _hx_tmp = ::flixel::FlxG_obj::width;
+HXDLIN( 480)					money->set_x(((( (Float)(_hx_tmp) ) - money->get_width()) / ( (Float)(2) )));
             				}
-HXDLIN( 512)				bool _hx_tmp1;
-HXDLIN( 512)				if ((axes != 16)) {
-HXLINE( 512)					_hx_tmp1 = (axes == 17);
+HXDLIN( 480)				bool _hx_tmp1;
+HXDLIN( 480)				if ((axes != 16)) {
+HXLINE( 480)					_hx_tmp1 = (axes == 17);
             				}
             				else {
-HXLINE( 512)					_hx_tmp1 = true;
+HXLINE( 480)					_hx_tmp1 = true;
             				}
-HXDLIN( 512)				if (_hx_tmp1) {
-HXLINE( 512)					int _hx_tmp = ::flixel::FlxG_obj::height;
-HXDLIN( 512)					money->set_y(((( (Float)(_hx_tmp) ) - money->get_height()) / ( (Float)(2) )));
+HXDLIN( 480)				if (_hx_tmp1) {
+HXLINE( 480)					int _hx_tmp = ::flixel::FlxG_obj::height;
+HXDLIN( 480)					money->set_y(((( (Float)(_hx_tmp) ) - money->get_height()) / ( (Float)(2) )));
             				}
             			}
-HXLINE( 513)			money->set_y((money->y + (((i * 60) + 200) + offset)));
-HXLINE( 514)			bool _hx_tmp2;
-HXDLIN( 514)			if (::hx::IsNotNull( this->credGroup )) {
-HXLINE( 514)				_hx_tmp2 = ::hx::IsNotNull( this->textGroup );
+HXLINE( 481)			money->set_y((money->y + (((i * 60) + 200) + offset)));
+HXLINE( 482)			bool _hx_tmp2;
+HXDLIN( 482)			if (::hx::IsNotNull( this->credGroup )) {
+HXLINE( 482)				_hx_tmp2 = ::hx::IsNotNull( this->textGroup );
             			}
             			else {
-HXLINE( 514)				_hx_tmp2 = false;
+HXLINE( 482)				_hx_tmp2 = false;
             			}
-HXDLIN( 514)			if (_hx_tmp2) {
-HXLINE( 515)				this->credGroup->add(money).StaticCast<  ::flixel::FlxBasic >();
-HXLINE( 516)				this->textGroup->add(money).StaticCast<  ::flixel::FlxBasic >();
+HXDLIN( 482)			if (_hx_tmp2) {
+HXLINE( 483)				this->credGroup->add(money).StaticCast<  ::flixel::FlxBasic >();
+HXLINE( 484)				this->textGroup->add(money).StaticCast<  ::flixel::FlxBasic >();
             			}
             		}
             	}
@@ -1240,44 +1203,44 @@ HX_DEFINE_DYNAMIC_FUNC2(TitleState_obj,createCoolText,(void))
 void TitleState_obj::addMoreText(::String text, ::Dynamic __o_offset){
             		 ::Dynamic offset = __o_offset;
             		if (::hx::IsNull(__o_offset)) offset = 0;
-            	HX_GC_STACKFRAME(&_hx_pos_f4f54134d4f9e667_523_addMoreText)
-HXDLIN( 523)		bool _hx_tmp;
-HXDLIN( 523)		if (::hx::IsNotNull( this->textGroup )) {
-HXDLIN( 523)			_hx_tmp = ::hx::IsNotNull( this->credGroup );
+            	HX_GC_STACKFRAME(&_hx_pos_f4f54134d4f9e667_491_addMoreText)
+HXDLIN( 491)		bool _hx_tmp;
+HXDLIN( 491)		if (::hx::IsNotNull( this->textGroup )) {
+HXDLIN( 491)			_hx_tmp = ::hx::IsNotNull( this->credGroup );
             		}
             		else {
-HXDLIN( 523)			_hx_tmp = false;
+HXDLIN( 491)			_hx_tmp = false;
             		}
-HXDLIN( 523)		if (_hx_tmp) {
-HXLINE( 524)			 ::objects::Alphabet coolText =  ::objects::Alphabet_obj::__alloc( HX_CTX ,( (Float)(0) ),( (Float)(0) ),text,true);
-HXLINE( 525)			{
-HXLINE( 525)				int axes = 1;
-HXDLIN( 525)				bool _hx_tmp;
-HXDLIN( 525)				if ((axes != 1)) {
-HXLINE( 525)					_hx_tmp = (axes == 17);
+HXDLIN( 491)		if (_hx_tmp) {
+HXLINE( 492)			 ::objects::Alphabet coolText =  ::objects::Alphabet_obj::__alloc( HX_CTX ,( (Float)(0) ),( (Float)(0) ),text,true);
+HXLINE( 493)			{
+HXLINE( 493)				int axes = 1;
+HXDLIN( 493)				bool _hx_tmp;
+HXDLIN( 493)				if ((axes != 1)) {
+HXLINE( 493)					_hx_tmp = (axes == 17);
             				}
             				else {
-HXLINE( 525)					_hx_tmp = true;
+HXLINE( 493)					_hx_tmp = true;
             				}
-HXDLIN( 525)				if (_hx_tmp) {
-HXLINE( 525)					int _hx_tmp = ::flixel::FlxG_obj::width;
-HXDLIN( 525)					coolText->set_x(((( (Float)(_hx_tmp) ) - coolText->get_width()) / ( (Float)(2) )));
+HXDLIN( 493)				if (_hx_tmp) {
+HXLINE( 493)					int _hx_tmp = ::flixel::FlxG_obj::width;
+HXDLIN( 493)					coolText->set_x(((( (Float)(_hx_tmp) ) - coolText->get_width()) / ( (Float)(2) )));
             				}
-HXDLIN( 525)				bool _hx_tmp1;
-HXDLIN( 525)				if ((axes != 16)) {
-HXLINE( 525)					_hx_tmp1 = (axes == 17);
+HXDLIN( 493)				bool _hx_tmp1;
+HXDLIN( 493)				if ((axes != 16)) {
+HXLINE( 493)					_hx_tmp1 = (axes == 17);
             				}
             				else {
-HXLINE( 525)					_hx_tmp1 = true;
+HXLINE( 493)					_hx_tmp1 = true;
             				}
-HXDLIN( 525)				if (_hx_tmp1) {
-HXLINE( 525)					int _hx_tmp = ::flixel::FlxG_obj::height;
-HXDLIN( 525)					coolText->set_y(((( (Float)(_hx_tmp) ) - coolText->get_height()) / ( (Float)(2) )));
+HXDLIN( 493)				if (_hx_tmp1) {
+HXLINE( 493)					int _hx_tmp = ::flixel::FlxG_obj::height;
+HXDLIN( 493)					coolText->set_y(((( (Float)(_hx_tmp) ) - coolText->get_height()) / ( (Float)(2) )));
             				}
             			}
-HXLINE( 526)			coolText->set_y((coolText->y + (((this->textGroup->length * 60) + 200) + offset)));
-HXLINE( 527)			this->credGroup->add(coolText).StaticCast<  ::flixel::FlxBasic >();
-HXLINE( 528)			this->textGroup->add(coolText).StaticCast<  ::flixel::FlxBasic >();
+HXLINE( 494)			coolText->set_y((coolText->y + (((this->textGroup->length * 60) + 200) + offset)));
+HXLINE( 495)			this->credGroup->add(coolText).StaticCast<  ::flixel::FlxBasic >();
+HXLINE( 496)			this->textGroup->add(coolText).StaticCast<  ::flixel::FlxBasic >();
             		}
             	}
 
@@ -1285,10 +1248,10 @@ HXLINE( 528)			this->textGroup->add(coolText).StaticCast<  ::flixel::FlxBasic >(
 HX_DEFINE_DYNAMIC_FUNC2(TitleState_obj,addMoreText,(void))
 
 void TitleState_obj::deleteCoolText(){
-            	HX_STACKFRAME(&_hx_pos_f4f54134d4f9e667_534_deleteCoolText)
-HXDLIN( 534)		while((this->textGroup->members->get_length() > 0)){
-HXLINE( 536)			this->credGroup->remove(Dynamic( this->textGroup->members->__get(0)).StaticCast<  ::flixel::FlxBasic >(),true).StaticCast<  ::flixel::FlxBasic >();
-HXLINE( 537)			this->textGroup->remove(Dynamic( this->textGroup->members->__get(0)).StaticCast<  ::flixel::FlxBasic >(),true).StaticCast<  ::flixel::FlxBasic >();
+            	HX_STACKFRAME(&_hx_pos_f4f54134d4f9e667_502_deleteCoolText)
+HXDLIN( 502)		while((this->textGroup->members->get_length() > 0)){
+HXLINE( 504)			this->credGroup->remove(Dynamic( this->textGroup->members->__get(0)).StaticCast<  ::flixel::FlxBasic >(),true).StaticCast<  ::flixel::FlxBasic >();
+HXLINE( 505)			this->textGroup->remove(Dynamic( this->textGroup->members->__get(0)).StaticCast<  ::flixel::FlxBasic >(),true).StaticCast<  ::flixel::FlxBasic >();
             		}
             	}
 
@@ -1296,95 +1259,60 @@ HXLINE( 537)			this->textGroup->remove(Dynamic( this->textGroup->members->__get(
 HX_DEFINE_DYNAMIC_FUNC0(TitleState_obj,deleteCoolText,(void))
 
 void TitleState_obj::beatHit(){
-            	HX_STACKFRAME(&_hx_pos_f4f54134d4f9e667_544_beatHit)
-HXLINE( 545)		this->super::beatHit();
-HXLINE( 547)		if (::hx::IsNotNull( this->logoBl )) {
-HXLINE( 548)			this->logoBl->animation->play(HX_("bump",f6,0f,20,41),true,null(),null());
+            	HX_STACKFRAME(&_hx_pos_f4f54134d4f9e667_512_beatHit)
+HXLINE( 513)		this->super::beatHit();
+HXLINE( 515)		if (::hx::IsNotNull( this->logoBl )) {
+HXLINE( 516)			this->logoBl->animation->play(HX_("bump",f6,0f,20,41),true,null(),null());
             		}
-HXLINE( 550)		if (::hx::IsNotNull( this->gfDance )) {
-HXLINE( 551)			this->danceLeft = !(this->danceLeft);
-HXLINE( 552)			if (this->danceLeft) {
-HXLINE( 553)				this->gfDance->animation->play(HX_("danceRight",a9,7f,a6,91),null(),null(),null());
+HXLINE( 518)		if (::hx::IsNotNull( this->gfDance )) {
+HXLINE( 519)			this->danceLeft = !(this->danceLeft);
+HXLINE( 520)			if (this->danceLeft) {
+HXLINE( 521)				this->gfDance->animation->play(HX_("danceRight",a9,7f,a6,91),null(),null(),null());
             			}
             			else {
-HXLINE( 555)				this->gfDance->animation->play(HX_("danceLeft",da,cc,f9,df),null(),null(),null());
+HXLINE( 523)				this->gfDance->animation->play(HX_("danceLeft",da,cc,f9,df),null(),null(),null());
             			}
             		}
-HXLINE( 558)		if (!(::states::TitleState_obj::closedState)) {
-HXLINE( 559)			this->sickBeats++;
-HXLINE( 560)			switch((int)(this->sickBeats)){
-            				case (int)1: {
-HXLINE( 564)					 ::flixel::_hx_system::frontEnds::SoundFrontEnd _hx_tmp = ::flixel::FlxG_obj::sound;
-HXDLIN( 564)					::String library = null();
-HXDLIN( 564)					 ::openfl::media::Sound file = ::backend::Paths_obj::returnSound(HX_("music",a5,d0,5a,10),HX_("freakyMenu",15,c9,93,86),library);
-HXDLIN( 564)					_hx_tmp->playMusic(file,0,null(),null());
-HXLINE( 565)					{
-HXLINE( 565)						 ::flixel::sound::FlxSound _this = ::flixel::FlxG_obj::sound->music;
-HXDLIN( 565)						 ::Dynamic onComplete = null();
-HXDLIN( 565)						if (::hx::IsNull( _this->_channel )) {
-HXLINE( 565)							_this->play(null(),null(),null());
+HXLINE( 526)		if (!(::states::TitleState_obj::closedState)) {
+HXLINE( 527)			this->sickBeats++;
+HXLINE( 528)			switch((int)(this->sickBeats)){
+            				case (int)2: {
+HXLINE( 532)					 ::flixel::_hx_system::frontEnds::SoundFrontEnd _hx_tmp = ::flixel::FlxG_obj::sound;
+HXDLIN( 532)					::String library = null();
+HXDLIN( 532)					 ::openfl::media::Sound file = ::backend::Paths_obj::returnSound(HX_("music",a5,d0,5a,10),HX_("freakyMenu",15,c9,93,86),library);
+HXDLIN( 532)					_hx_tmp->playMusic(file,0,null(),null());
+HXLINE( 533)					{
+HXLINE( 533)						 ::flixel::sound::FlxSound _this = ::flixel::FlxG_obj::sound->music;
+HXDLIN( 533)						 ::Dynamic onComplete = null();
+HXDLIN( 533)						if (::hx::IsNull( _this->_channel )) {
+HXLINE( 533)							_this->play(null(),null(),null());
             						}
-HXDLIN( 565)						if (::hx::IsNotNull( _this->fadeTween )) {
-HXLINE( 565)							_this->fadeTween->cancel();
+HXDLIN( 533)						if (::hx::IsNotNull( _this->fadeTween )) {
+HXLINE( 533)							_this->fadeTween->cancel();
             						}
-HXDLIN( 565)						_this->fadeTween = ::flixel::tweens::FlxTween_obj::num(( (Float)(0) ),((Float)0.7),4, ::Dynamic(::hx::Anon_obj::Create(1)
+HXDLIN( 533)						_this->fadeTween = ::flixel::tweens::FlxTween_obj::num(( (Float)(0) ),((Float)0.7),4, ::Dynamic(::hx::Anon_obj::Create(1)
             							->setFixed(0,HX_("onComplete",f8,d4,7e,5d),onComplete)),_this->volumeTween_dyn());
             					}
             				}
             				break;
-            				case (int)2: {
-HXLINE( 568)					this->createCoolText(::Array_obj< ::String >::fromData( _hx_array_data_81c3dd25_26,1),40);
-            				}
-            				break;
             				case (int)4: {
-HXLINE( 575)					this->addMoreText(HX_("Shadow Mario",c4,01,05,71),40);
-HXLINE( 576)					this->addMoreText(HX_("Riveren",55,c6,ba,81),40);
-            				}
-            				break;
-            				case (int)5: {
-HXLINE( 583)					this->deleteCoolText();
+HXLINE( 535)					this->createCoolText(::Array_obj< ::String >::fromData( _hx_array_data_81c3dd25_26,1),null());
             				}
             				break;
             				case (int)6: {
-HXLINE( 589)					this->createCoolText(::Array_obj< ::String >::fromData( _hx_array_data_81c3dd25_27,2),-40);
+HXLINE( 538)					this->addMoreText(HX_("etoile",02,76,35,76),40);
+            				}
+            				break;
+            				case (int)7: {
+HXLINE( 542)					this->deleteCoolText();
             				}
             				break;
             				case (int)8: {
-HXLINE( 594)					this->addMoreText(HX_("newgrounds",ac,0f,a7,f6),-40);
-HXLINE( 595)					this->ngSpr->set_visible(true);
-            				}
-            				break;
-            				case (int)9: {
-HXLINE( 598)					this->deleteCoolText();
-HXLINE( 599)					this->ngSpr->set_visible(false);
+HXLINE( 547)					this->addMoreText(HX_("presents",18,61,d7,66),40);
             				}
             				break;
             				case (int)10: {
-HXLINE( 605)					this->createCoolText(::Array_obj< ::String >::__new(1)->init(0,this->curWacky->__get(0)),null());
-            				}
-            				break;
-            				case (int)12: {
-HXLINE( 608)					this->addMoreText(this->curWacky->__get(1),null());
-            				}
-            				break;
-            				case (int)13: {
-HXLINE( 611)					this->deleteCoolText();
-            				}
-            				break;
-            				case (int)14: {
-HXLINE( 616)					this->addMoreText(HX_("Friday",ff,00,5d,e6),null());
-            				}
-            				break;
-            				case (int)15: {
-HXLINE( 619)					this->addMoreText(HX_("Night",b8,29,f7,2e),null());
-            				}
-            				break;
-            				case (int)16: {
-HXLINE( 622)					this->addMoreText(HX_("Funkin",51,26,e4,a3),null());
-            				}
-            				break;
-            				case (int)17: {
-HXLINE( 625)					this->skipIntro();
+HXLINE( 549)					this->skipIntro();
             				}
             				break;
             			}
@@ -1393,118 +1321,122 @@ HXLINE( 625)					this->skipIntro();
 
 
 void TitleState_obj::skipIntro(){
-            	HX_GC_STACKFRAME(&_hx_pos_f4f54134d4f9e667_633_skipIntro)
-HXDLIN( 633)		 ::states::TitleState _gthis = ::hx::ObjectPtr<OBJ_>(this);
-HXLINE( 634)		if (!(this->skippedIntro)) {
-HXLINE( 636)			if (::states::TitleState_obj::playJingle) {
-HXLINE( 638)				::String easteregg = ( (::String)(::flixel::FlxG_obj::save->data->__Field(HX_("psychDevsEasterEgg",22,2b,1d,02),::hx::paccDynamic)) );
-HXLINE( 639)				if (::hx::IsNull( easteregg )) {
-HXLINE( 639)					easteregg = HX_("",00,00,00,00);
+            	HX_GC_STACKFRAME(&_hx_pos_f4f54134d4f9e667_557_skipIntro)
+HXDLIN( 557)		 ::states::TitleState _gthis = ::hx::ObjectPtr<OBJ_>(this);
+HXLINE( 558)		if (!(this->skippedIntro)) {
+HXLINE( 560)			if (::states::TitleState_obj::playJingle) {
+HXLINE( 562)				::String easteregg = ( (::String)(::flixel::FlxG_obj::save->data->__Field(HX_("psychDevsEasterEgg",22,2b,1d,02),::hx::paccDynamic)) );
+HXLINE( 563)				if (::hx::IsNull( easteregg )) {
+HXLINE( 563)					easteregg = HX_("",00,00,00,00);
             				}
-HXLINE( 640)				easteregg = easteregg.toUpperCase();
-HXLINE( 642)				 ::flixel::sound::FlxSound sound = null();
-HXLINE( 643)				::String _hx_switch_0 = easteregg;
+HXLINE( 564)				easteregg = easteregg.toUpperCase();
+HXLINE( 566)				 ::flixel::sound::FlxSound sound = null();
+HXLINE( 567)				::String _hx_switch_0 = easteregg;
             				if (  (_hx_switch_0==HX_("BBPANZU",78,33,57,57)) ){
-HXLINE( 652)					 ::flixel::_hx_system::frontEnds::SoundFrontEnd sound1 = ::flixel::FlxG_obj::sound;
-HXDLIN( 652)					sound = sound1->play(::backend::Paths_obj::sound(HX_("JingleBB",51,0b,1a,28),null()),null(),null(),null(),null(),null());
-HXDLIN( 652)					goto _hx_goto_28;
+HXLINE( 576)					 ::flixel::_hx_system::frontEnds::SoundFrontEnd sound1 = ::flixel::FlxG_obj::sound;
+HXDLIN( 576)					sound = sound1->play(::backend::Paths_obj::sound(HX_("JingleBB",51,0b,1a,28),null()),null(),null(),null(),null(),null());
+HXDLIN( 576)					goto _hx_goto_27;
             				}
             				if (  (_hx_switch_0==HX_("RIVER",ec,a2,5d,67)) ){
-HXLINE( 646)					 ::flixel::_hx_system::frontEnds::SoundFrontEnd sound1 = ::flixel::FlxG_obj::sound;
-HXDLIN( 646)					sound = sound1->play(::backend::Paths_obj::sound(HX_("JingleRiver",fb,99,93,2f),null()),null(),null(),null(),null(),null());
-HXDLIN( 646)					goto _hx_goto_28;
+HXLINE( 570)					 ::flixel::_hx_system::frontEnds::SoundFrontEnd sound1 = ::flixel::FlxG_obj::sound;
+HXDLIN( 570)					sound = sound1->play(::backend::Paths_obj::sound(HX_("JingleRiver",fb,99,93,2f),null()),null(),null(),null(),null(),null());
+HXDLIN( 570)					goto _hx_goto_27;
             				}
             				if (  (_hx_switch_0==HX_("SHADOW",e0,73,a3,cf)) ){
-HXLINE( 650)					 ::flixel::_hx_system::frontEnds::SoundFrontEnd _hx_tmp = ::flixel::FlxG_obj::sound;
-HXDLIN( 650)					_hx_tmp->play(::backend::Paths_obj::sound(HX_("JingleShadow",11,aa,a5,36),null()),null(),null(),null(),null(),null());
-HXDLIN( 650)					goto _hx_goto_28;
+HXLINE( 574)					 ::flixel::_hx_system::frontEnds::SoundFrontEnd _hx_tmp = ::flixel::FlxG_obj::sound;
+HXDLIN( 574)					_hx_tmp->play(::backend::Paths_obj::sound(HX_("JingleShadow",11,aa,a5,36),null()),null(),null(),null(),null(),null());
+HXDLIN( 574)					goto _hx_goto_27;
             				}
             				if (  (_hx_switch_0==HX_("SHUBS",f1,3b,1a,fa)) ){
-HXLINE( 648)					 ::flixel::_hx_system::frontEnds::SoundFrontEnd sound1 = ::flixel::FlxG_obj::sound;
-HXDLIN( 648)					sound = sound1->play(::backend::Paths_obj::sound(HX_("JingleShubs",00,33,50,c2),null()),null(),null(),null(),null(),null());
-HXDLIN( 648)					goto _hx_goto_28;
+HXLINE( 572)					 ::flixel::_hx_system::frontEnds::SoundFrontEnd sound1 = ::flixel::FlxG_obj::sound;
+HXDLIN( 572)					sound = sound1->play(::backend::Paths_obj::sound(HX_("JingleShubs",00,33,50,c2),null()),null(),null(),null(),null(),null());
+HXDLIN( 572)					goto _hx_goto_27;
             				}
             				/* default */{
-HXLINE( 655)					this->remove(this->ngSpr,null());
-HXLINE( 656)					this->remove(this->credGroup,null());
-HXLINE( 657)					::flixel::FlxG_obj::camera->flash(-1,2,null(),null());
-HXLINE( 658)					this->skippedIntro = true;
-HXLINE( 659)					::states::TitleState_obj::playJingle = false;
-HXLINE( 661)					 ::flixel::_hx_system::frontEnds::SoundFrontEnd _hx_tmp = ::flixel::FlxG_obj::sound;
-HXDLIN( 661)					::String library = null();
-HXDLIN( 661)					 ::openfl::media::Sound file = ::backend::Paths_obj::returnSound(HX_("music",a5,d0,5a,10),HX_("freakyMenu",15,c9,93,86),library);
-HXDLIN( 661)					_hx_tmp->playMusic(file,0,null(),null());
-HXLINE( 662)					{
-HXLINE( 662)						 ::flixel::sound::FlxSound _this = ::flixel::FlxG_obj::sound->music;
-HXDLIN( 662)						 ::Dynamic onComplete = null();
-HXDLIN( 662)						if (::hx::IsNull( _this->_channel )) {
-HXLINE( 662)							_this->play(null(),null(),null());
+HXLINE( 579)					this->remove(this->ngSpr,null());
+HXLINE( 580)					this->remove(this->credGroup,null());
+HXLINE( 581)					::flixel::FlxG_obj::camera->flash(-1,2,null(),null());
+HXLINE( 582)					this->skippedIntro = true;
+HXLINE( 583)					::states::TitleState_obj::playJingle = false;
+HXLINE( 585)					 ::flixel::_hx_system::frontEnds::SoundFrontEnd _hx_tmp = ::flixel::FlxG_obj::sound;
+HXDLIN( 585)					::String library = null();
+HXDLIN( 585)					 ::openfl::media::Sound file = ::backend::Paths_obj::returnSound(HX_("music",a5,d0,5a,10),HX_("freakyMenu",15,c9,93,86),library);
+HXDLIN( 585)					_hx_tmp->playMusic(file,0,null(),null());
+HXLINE( 586)					{
+HXLINE( 586)						 ::flixel::sound::FlxSound _this = ::flixel::FlxG_obj::sound->music;
+HXDLIN( 586)						 ::Dynamic onComplete = null();
+HXDLIN( 586)						if (::hx::IsNull( _this->_channel )) {
+HXLINE( 586)							_this->play(null(),null(),null());
             						}
-HXDLIN( 662)						if (::hx::IsNotNull( _this->fadeTween )) {
-HXLINE( 662)							_this->fadeTween->cancel();
+HXDLIN( 586)						if (::hx::IsNotNull( _this->fadeTween )) {
+HXLINE( 586)							_this->fadeTween->cancel();
             						}
-HXDLIN( 662)						_this->fadeTween = ::flixel::tweens::FlxTween_obj::num(( (Float)(0) ),((Float)0.7),4, ::Dynamic(::hx::Anon_obj::Create(1)
+HXDLIN( 586)						_this->fadeTween = ::flixel::tweens::FlxTween_obj::num(( (Float)(0) ),((Float)0.7),4, ::Dynamic(::hx::Anon_obj::Create(1)
             							->setFixed(0,HX_("onComplete",f8,d4,7e,5d),onComplete)),_this->volumeTween_dyn());
             					}
-HXLINE( 663)					return;
+HXLINE( 587)					return;
             				}
-            				_hx_goto_28:;
-HXLINE( 666)				this->transitioning = true;
-HXLINE( 667)				if ((easteregg == HX_("SHADOW",e0,73,a3,cf))) {
+            				_hx_goto_27:;
+HXLINE( 590)				if ((::flixel::FlxG_obj::random->_hx_float(0,100,null()) < 1)) {
+HXLINE( 591)					 ::flixel::_hx_system::frontEnds::SoundFrontEnd _hx_tmp = ::flixel::FlxG_obj::sound;
+HXDLIN( 591)					_hx_tmp->play(::backend::Paths_obj::sound(HX_("fart-with-reverb",a9,f2,20,9d),null()),null(),null(),null(),null(),null());
+            				}
+HXLINE( 593)				this->transitioning = true;
+HXLINE( 594)				if ((easteregg == HX_("SHADOW",e0,73,a3,cf))) {
             					HX_BEGIN_LOCAL_FUNC_S1(::hx::LocalFunc,_hx_Closure_0, ::states::TitleState,_gthis) HXARGC(1)
             					void _hx_run( ::flixel::util::FlxTimer tmr){
-            						HX_GC_STACKFRAME(&_hx_pos_f4f54134d4f9e667_670_skipIntro)
-HXLINE( 671)						_gthis->remove(_gthis->ngSpr,null()).StaticCast<  ::flixel::FlxBasic >();
-HXLINE( 672)						_gthis->remove(_gthis->credGroup,null()).StaticCast<  ::flixel::FlxBasic >();
-HXLINE( 673)						::flixel::FlxG_obj::camera->flash(-1,((Float)0.6),null(),null());
-HXLINE( 674)						_gthis->transitioning = false;
+            						HX_GC_STACKFRAME(&_hx_pos_f4f54134d4f9e667_597_skipIntro)
+HXLINE( 598)						_gthis->remove(_gthis->ngSpr,null()).StaticCast<  ::flixel::FlxBasic >();
+HXLINE( 599)						_gthis->remove(_gthis->credGroup,null()).StaticCast<  ::flixel::FlxBasic >();
+HXLINE( 600)						::flixel::FlxG_obj::camera->flash(-1,((Float)0.6),null(),null());
+HXLINE( 601)						_gthis->transitioning = false;
             					}
             					HX_END_LOCAL_FUNC1((void))
 
-HXLINE( 669)					 ::flixel::util::FlxTimer_obj::__alloc( HX_CTX ,null())->start(((Float)3.2), ::Dynamic(new _hx_Closure_0(_gthis)),null());
+HXLINE( 596)					 ::flixel::util::FlxTimer_obj::__alloc( HX_CTX ,null())->start(((Float)3.2), ::Dynamic(new _hx_Closure_0(_gthis)),null());
             				}
             				else {
             					HX_BEGIN_LOCAL_FUNC_S1(::hx::LocalFunc,_hx_Closure_1, ::states::TitleState,_gthis) HXARGC(0)
             					void _hx_run(){
-            						HX_GC_STACKFRAME(&_hx_pos_f4f54134d4f9e667_682_skipIntro)
-HXLINE( 683)						 ::flixel::_hx_system::frontEnds::SoundFrontEnd _hx_tmp = ::flixel::FlxG_obj::sound;
-HXDLIN( 683)						::String library = null();
-HXDLIN( 683)						 ::openfl::media::Sound file = ::backend::Paths_obj::returnSound(HX_("music",a5,d0,5a,10),HX_("freakyMenu",15,c9,93,86),library);
-HXDLIN( 683)						_hx_tmp->playMusic(file,0,null(),null());
-HXLINE( 684)						{
-HXLINE( 684)							 ::flixel::sound::FlxSound _this = ::flixel::FlxG_obj::sound->music;
-HXDLIN( 684)							 ::Dynamic onComplete = null();
-HXDLIN( 684)							if (::hx::IsNull( _this->_channel )) {
-HXLINE( 684)								_this->play(null(),null(),null());
+            						HX_GC_STACKFRAME(&_hx_pos_f4f54134d4f9e667_609_skipIntro)
+HXLINE( 610)						 ::flixel::_hx_system::frontEnds::SoundFrontEnd _hx_tmp = ::flixel::FlxG_obj::sound;
+HXDLIN( 610)						::String library = null();
+HXDLIN( 610)						 ::openfl::media::Sound file = ::backend::Paths_obj::returnSound(HX_("music",a5,d0,5a,10),HX_("freakyMenu",15,c9,93,86),library);
+HXDLIN( 610)						_hx_tmp->playMusic(file,0,null(),null());
+HXLINE( 611)						{
+HXLINE( 611)							 ::flixel::sound::FlxSound _this = ::flixel::FlxG_obj::sound->music;
+HXDLIN( 611)							 ::Dynamic onComplete = null();
+HXDLIN( 611)							if (::hx::IsNull( _this->_channel )) {
+HXLINE( 611)								_this->play(null(),null(),null());
             							}
-HXDLIN( 684)							if (::hx::IsNotNull( _this->fadeTween )) {
-HXLINE( 684)								_this->fadeTween->cancel();
+HXDLIN( 611)							if (::hx::IsNotNull( _this->fadeTween )) {
+HXLINE( 611)								_this->fadeTween->cancel();
             							}
-HXDLIN( 684)							_this->fadeTween = ::flixel::tweens::FlxTween_obj::num(( (Float)(0) ),((Float)0.7),4, ::Dynamic(::hx::Anon_obj::Create(1)
+HXDLIN( 611)							_this->fadeTween = ::flixel::tweens::FlxTween_obj::num(( (Float)(0) ),((Float)0.7),4, ::Dynamic(::hx::Anon_obj::Create(1)
             								->setFixed(0,HX_("onComplete",f8,d4,7e,5d),onComplete)),_this->volumeTween_dyn());
             						}
-HXLINE( 685)						_gthis->transitioning = false;
+HXLINE( 612)						_gthis->transitioning = false;
             					}
             					HX_END_LOCAL_FUNC0((void))
 
-HXLINE( 679)					this->remove(this->ngSpr,null());
-HXLINE( 680)					this->remove(this->credGroup,null());
-HXLINE( 681)					::flixel::FlxG_obj::camera->flash(-1,3,null(),null());
-HXLINE( 682)					sound->onComplete =  ::Dynamic(new _hx_Closure_1(_gthis));
+HXLINE( 606)					this->remove(this->ngSpr,null());
+HXLINE( 607)					this->remove(this->credGroup,null());
+HXLINE( 608)					::flixel::FlxG_obj::camera->flash(-1,3,null(),null());
+HXLINE( 609)					sound->onComplete =  ::Dynamic(new _hx_Closure_1(_gthis));
             				}
-HXLINE( 688)				::states::TitleState_obj::playJingle = false;
+HXLINE( 615)				::states::TitleState_obj::playJingle = false;
             			}
             			else {
-HXLINE( 692)				this->remove(this->ngSpr,null());
-HXLINE( 693)				this->remove(this->credGroup,null());
-HXLINE( 694)				::flixel::FlxG_obj::camera->flash(-1,4,null(),null());
-HXLINE( 696)				::String easteregg = ( (::String)(::flixel::FlxG_obj::save->data->__Field(HX_("psychDevsEasterEgg",22,2b,1d,02),::hx::paccDynamic)) );
-HXLINE( 697)				if (::hx::IsNull( easteregg )) {
-HXLINE( 697)					easteregg = HX_("",00,00,00,00);
+HXLINE( 619)				this->remove(this->ngSpr,null());
+HXLINE( 620)				this->remove(this->credGroup,null());
+HXLINE( 621)				::flixel::FlxG_obj::camera->flash(-1,4,null(),null());
+HXLINE( 623)				::String easteregg = ( (::String)(::flixel::FlxG_obj::save->data->__Field(HX_("psychDevsEasterEgg",22,2b,1d,02),::hx::paccDynamic)) );
+HXLINE( 624)				if (::hx::IsNull( easteregg )) {
+HXLINE( 624)					easteregg = HX_("",00,00,00,00);
             				}
-HXLINE( 698)				easteregg = easteregg.toUpperCase();
+HXLINE( 625)				easteregg = easteregg.toUpperCase();
             			}
-HXLINE( 710)			this->skippedIntro = true;
+HXLINE( 637)			this->skippedIntro = true;
             		}
             	}
 
@@ -1926,15 +1858,15 @@ void TitleState_obj::__boot()
 {
 {
             	HX_STACKFRAME(&_hx_pos_f4f54134d4f9e667_44_boot)
-HXDLIN(  44)		muteKeys = ::Array_obj< int >::fromData( _hx_array_data_81c3dd25_33,1);
+HXDLIN(  44)		muteKeys = ::Array_obj< int >::fromData( _hx_array_data_81c3dd25_32,1);
             	}
 {
             	HX_STACKFRAME(&_hx_pos_f4f54134d4f9e667_45_boot)
-HXDLIN(  45)		volumeDownKeys = ::Array_obj< int >::fromData( _hx_array_data_81c3dd25_35,2);
+HXDLIN(  45)		volumeDownKeys = ::Array_obj< int >::fromData( _hx_array_data_81c3dd25_34,2);
             	}
 {
             	HX_STACKFRAME(&_hx_pos_f4f54134d4f9e667_46_boot)
-HXDLIN(  46)		volumeUpKeys = ::Array_obj< int >::fromData( _hx_array_data_81c3dd25_37,2);
+HXDLIN(  46)		volumeUpKeys = ::Array_obj< int >::fromData( _hx_array_data_81c3dd25_36,2);
             	}
 {
             	HX_STACKFRAME(&_hx_pos_f4f54134d4f9e667_48_boot)
@@ -1945,12 +1877,12 @@ HXDLIN(  48)		initialized = false;
 HXDLIN(  75)		updateVersion = HX_("",00,00,00,00);
             	}
 {
-            	HX_STACKFRAME(&_hx_pos_f4f54134d4f9e667_360_boot)
-HXDLIN( 360)		playJingle = false;
+            	HX_STACKFRAME(&_hx_pos_f4f54134d4f9e667_328_boot)
+HXDLIN( 328)		playJingle = false;
             	}
 {
-            	HX_STACKFRAME(&_hx_pos_f4f54134d4f9e667_542_boot)
-HXDLIN( 542)		closedState = false;
+            	HX_STACKFRAME(&_hx_pos_f4f54134d4f9e667_510_boot)
+HXDLIN( 510)		closedState = false;
             	}
 }
 

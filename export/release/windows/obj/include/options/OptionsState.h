@@ -70,6 +70,9 @@ class HXCPP_CLASS_ATTRIBUTES OptionsState_obj : public  ::backend::MusicBeatStat
 		void openSelectedSubstate(::String label);
 		::Dynamic openSelectedSubstate_dyn();
 
+		void flicker();
+		::Dynamic flicker_dyn();
+
 		 ::objects::Alphabet selectorLeft;
 		 ::objects::Alphabet selectorRight;
 		void create();

@@ -1593,6 +1593,9 @@
 #ifndef INCLUDED___ASSET__flixel_sounds_beep_ogg
 #include <__ASSET__flixel_sounds_beep_ogg.h>
 #endif
+#ifndef INCLUDED_Main
+#include <Main.h>
+#endif
 #ifndef INCLUDED_openfl_display_DisplayObject
 #include <openfl/display/DisplayObject.h>
 #endif
@@ -3912,9 +3915,6 @@
 #ifndef INCLUDED_DocumentClass
 #include <DocumentClass.h>
 #endif
-#ifndef INCLUDED_Main
-#include <Main.h>
-#endif
 #ifndef INCLUDED_openfl_display_Sprite
 #include <openfl/display/Sprite.h>
 #endif
@@ -4492,6 +4492,7 @@ __files__boot();
 ::__ASSET__flixel_fonts_nokiafc22_ttf_obj::__register();
 ::__ASSET__flixel_sounds_flixel_ogg_obj::__register();
 ::__ASSET__flixel_sounds_beep_ogg_obj::__register();
+::Main_obj::__register();
 ::openfl::display::DisplayObject_obj::__register();
 ::openfl::_Vector::Vector_Impl__obj::__register();
 ::ApplicationMain_obj::__register();
@@ -5265,7 +5266,6 @@ __files__boot();
 ::DateTools_obj::__register();
 ::Date_obj::__register();
 ::DocumentClass_obj::__register();
-::Main_obj::__register();
 ::openfl::display::Sprite_obj::__register();
 ::openfl::display::DisplayObjectContainer_obj::__register();
 ::openfl::display::InteractiveObject_obj::__register();
@@ -5368,6 +5368,7 @@ __files__boot();
 ::ApplicationMain_obj::__boot();
 ::openfl::_Vector::Vector_Impl__obj::__boot();
 ::openfl::display::DisplayObject_obj::__boot();
+::Main_obj::__boot();
 ::__ASSET__flixel_sounds_beep_ogg_obj::__boot();
 ::__ASSET__flixel_sounds_flixel_ogg_obj::__boot();
 ::__ASSET__flixel_fonts_nokiafc22_ttf_obj::__boot();

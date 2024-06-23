@@ -1,95 +1,37 @@
 {
 	"animations": [
 		{
+			"loop": false,
 			"offsets": [
 				0,
 				0
 			],
-			"loop": true,
-			"fps": 12,
 			"anim": "deathLoop",
-			"indices": [
-				0,
-				1,
-				2,
-				3,
-				4,
-				5,
-				5,
-				5,
-				5,
-				5,
-				5,
-				5,
-				5,
-				5,
-				5,
-				5,
-				5
-			],
-			"name": "ded_loop"
+			"fps": 12,
+			"name": "ded_loop",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				0,
 				0
 			],
-			"loop": false,
-			"fps": 12,
 			"anim": "deathConfirm",
-			"indices": [],
-			"name": "ded_restart"
+			"fps": 12,
+			"name": "ded_restart",
+			"indices": []
 		},
 		{
-			"loop": false,
 			"offsets": [
 				0,
 				0
 			],
-			"anim": "firstDeath",
+			"loop": false,
 			"fps": 12,
-			"name": "ded_start",
-			"indices": [
-				0,
-				1,
-				2,
-				3,
-				4,
-				5,
-				6,
-				7,
-				8,
-				9,
-				9,
-				9,
-				9,
-				9,
-				9,
-				9,
-				9,
-				9,
-				9,
-				9,
-				9,
-				9,
-				9,
-				9,
-				9,
-				9,
-				9,
-				9,
-				9,
-				9,
-				9,
-				9,
-				9,
-				9,
-				9,
-				9,
-				9,
-				9,
-				9
-			]
+			"anim": "firstDeath",
+			"indices": [],
+			"name": "ded_start"
 		}
 	],
 	"no_antialiasing": false,
@@ -102,13 +44,13 @@
 	"healthicon": "Pnastya",
 	"flip_x": false,
 	"healthbar_colors": [
-		195,
-		0,
-		81
+		255,
+		175,
+		175
 	],
 	"camera_position": [
-		50,
-		10
+		80,
+		-40
 	],
 	"sing_duration": 8.1,
 	"scale": 0.75

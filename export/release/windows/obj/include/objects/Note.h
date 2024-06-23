@@ -99,6 +99,7 @@ class HXCPP_CLASS_ATTRIBUTES Note_obj : public  ::flixel::FlxSprite_obj
 		Float earlyHitMult;
 		Float lateHitMult;
 		bool lowPriority;
+		bool splashEveryTime;
 		 ::Dynamic noteSplashData;
 		Float offsetX;
 		Float offsetY;

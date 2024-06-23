@@ -10,6 +10,8 @@
 #endif
 HX_DECLARE_CLASS1(backend,MusicBeatState)
 HX_DECLARE_CLASS1(flixel,FlxBasic)
+HX_DECLARE_CLASS1(flixel,FlxObject)
+HX_DECLARE_CLASS1(flixel,FlxSprite)
 HX_DECLARE_CLASS1(flixel,FlxState)
 HX_DECLARE_CLASS3(flixel,addons,transition,FlxTransitionableState)
 HX_DECLARE_CLASS3(flixel,addons,transition,TransitionData)
@@ -17,6 +19,8 @@ HX_DECLARE_CLASS3(flixel,addons,ui,FlxUIState)
 HX_DECLARE_CLASS4(flixel,addons,ui,interfaces,IEventGetter)
 HX_DECLARE_CLASS4(flixel,addons,ui,interfaces,IFlxUIState)
 HX_DECLARE_CLASS2(flixel,group,FlxTypedGroup)
+HX_DECLARE_CLASS2(flixel,text,FlxText)
+HX_DECLARE_CLASS2(flixel,tweens,FlxTween)
 HX_DECLARE_CLASS2(flixel,util,IFlxDestroyable)
 HX_DECLARE_CLASS1(states,GalamixMenuState)
 
@@ -57,9 +61,15 @@ class HXCPP_CLASS_ATTRIBUTES GalamixMenuState_obj : public  ::backend::MusicBeat
 
 		 ::flixel::group::FlxTypedGroup items;
 		bool oldMouse;
+		 ::flixel::tweens::FlxTween popTween;
+		int curSelectedDiff;
+		 ::flixel::text::FlxText diffText;
 		void create();
 
 		void update(Float elapsed);
+
+		void changeDiff(int num);
+		::Dynamic changeDiff_dyn();
 
 };
 

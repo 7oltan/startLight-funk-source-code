@@ -50,6 +50,8 @@ class Main extends Sprite
 
 	public static var fpsVar:FPS;
 
+	public static var stupidMia:String = 'nastya';
+
 	// You can pretty much ignore everything from here on - your code should go in your states.
 
 	public static function main():Void
@@ -99,6 +101,9 @@ class Main extends Sprite
 		Controls.instance = new Controls();
 		ClientPrefs.loadDefaultKeys();
 		addChild(new FlxGame(game.width, game.height, game.initialState, #if (flixel < "5.0.0") game.zoom, #end game.framerate, game.framerate, game.skipSplash, game.startFullscreen));
+
+		if(FlxG.random.bool(10))
+			stupidMia = 'mia';
 
 		#if !mobile
 		fpsVar = new FPS(10, 3, 0xFFFFFF);

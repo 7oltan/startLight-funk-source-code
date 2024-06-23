@@ -6,6 +6,10 @@ import backend.WeekData;
 class GalamixMenuState extends MusicBeatState{  
     var items:FlxTypedGroup<FlxSprite>; 
     var oldMouse:Bool;
+    var popTween:FlxTween;
+    var curSelectedDiff:Int = 0;
+
+    var diffText:FlxText;
 	override function create(){
         super.create();
 
@@ -22,17 +26,19 @@ class GalamixMenuState extends MusicBeatState{
         items = new FlxTypedGroup<FlxSprite>();
         add(items);
 
-        var amountSkipped:Int = 0;
+        var amount:Int = -1;
+
+        WeekData.weeksList.reverse();
 
 		for (i in 0...WeekData.weeksList.length)
 		{
 			var weekFile:WeekData = WeekData.weeksLoaded.get(WeekData.weeksList[i]);
-			if(!weekFile.galamix){
-                amountSkipped++;
+			if(!weekFile.galamix)
 				continue;// skip
-            }
+            else
+                amount++;
 
-            var character:FlxSprite = new FlxSprite(((i-amountSkipped)*300)+(FlxG.width/2)-300,0).loadGraphic(Paths.image('galamixMenu/'+weekFile.weekCharacter));
+            var character:FlxSprite = new FlxSprite(300+(amount*300),0).loadGraphic(Paths.image('galamixMenu/'+weekFile.weekCharacter));
             character.loadGraphic(Paths.image('galamixMenu/'+weekFile.weekCharacter),true,Std.int(character.width/2),Std.int(character.height));
             character.animation.add('idle',[0],0,false);
             character.animation.add('selected',[1],0,false);
@@ -42,22 +48,33 @@ class GalamixMenuState extends MusicBeatState{
             character.ID = i;
             character.y = FlxG.height-character.height;
             items.add(character);
-            amountSkipped = 0;
         }
+
+        diffText = new FlxText(FlxG.width,50,0,'',60);
+        diffText.setFormat(Paths.font("vcr.ttf"),50,FlxColor.WHITE);
+        add(diffText);
     }
     override function update(elapsed:Float) {
         super.update(elapsed);
 
+        var ovarlapsAny:Bool = false;
         items.forEach(function(item:FlxSprite){
             if(FlxG.mouse.overlaps(item)){
-                item.animation.play('selected');
+                ovarlapsAny = true;
+                if(item.animation.curAnim.name == 'idle'){
+                    item.animation.play('selected');
+                    if(popTween != null)
+                        popTween.cancel();
+                    popTween = FlxTween.tween(item,{y:FlxG.height-item.height},0.1,{ease: FlxEase.expoOut});
+                    FlxG.sound.play(Paths.sound('scrollMenu'));
+                }
+
+                PlayState.storyWeek = item.ID;
+                Difficulty.loadFromWeek();
 
                 if(FlxG.mouse.justPressed){
                     var leWeek:WeekData = WeekData.weeksLoaded.get(WeekData.weeksList[item.ID]);
                     WeekData.setDirectoryFromWeek(leWeek);
-
-		            PlayState.storyWeek = item.ID;
-		            Difficulty.loadFromWeek();
             
                     var songArray:Array<String> = [];
                     var leSongs:Array<Dynamic> = leWeek.songs;
@@ -66,27 +83,57 @@ class GalamixMenuState extends MusicBeatState{
 
                     PlayState.storyPlaylist = songArray;
         
-                    var diffic = Difficulty.getFilePath(0/*difficuilty*/);
+                    var diffic = Difficulty.getFilePath(curSelectedDiff);
                     if(diffic == null) diffic = '';
         
-                    PlayState.storyDifficulty = 0/*difficuilty*/;
+                    PlayState.storyDifficulty = curSelectedDiff;
         
                     PlayState.SONG = Song.loadFromJson(PlayState.storyPlaylist[0].toLowerCase() + diffic, PlayState.storyPlaylist[0].toLowerCase());
                     PlayState.campaignScore = 0;
                     PlayState.campaignMisses = 0;
+                    PlayState.galamix = true;
                     
 				    LoadingState.loadAndSwitchState(new PlayState(), true);
-				    FreeplayState.destroyFreeplayVocals();
                 }
             }
-            else
+            else{
                 item.animation.play('idle');
+                item.y = FlxG.height-item.height+10;
+            }
         });
+
+        diffText.visible = ovarlapsAny;
+        if(ovarlapsAny)
+            changeDiff(0);
+
+        if(controls.UI_LEFT_P){
+            changeDiff(-1);
+            FlxG.sound.play(Paths.sound('scrollMenu'));
+        }
+
+        if(controls.UI_RIGHT_P){
+            changeDiff(1);
+            FlxG.sound.play(Paths.sound('scrollMenu'));
+        }
 
         if(controls.BACK){
             MusicBeatState.switchState(new MainMenuState());
             FlxG.sound.play(Paths.sound('cancelMenu'));
             FlxG.mouse.visible = oldMouse;
         }
+    }
+
+    function changeDiff(num:Int){
+        curSelectedDiff += num;
+
+        if(curSelectedDiff > Difficulty.list.length-1)
+            curSelectedDiff = 0;
+        if(curSelectedDiff < 0)
+            curSelectedDiff = Difficulty.list.length-1;
+
+        var thediff:String = Difficulty.getString(curSelectedDiff);
+        diffText.text =  '< ' + thediff.toUpperCase() + ' >';
+        diffText.x = FlxG.width - 250 - (diffText.width/2);
+        diffText.visible = (Difficulty.list.length > 1);
     }
 }

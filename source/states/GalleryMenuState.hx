@@ -2,6 +2,7 @@ package states;
 
 import sys.io.File;
 import openfl.utils.ByteArray;
+import flixel.graphics.frames.FlxAtlasFrames;
 import sys.io.FileOutput;
 import openfl.net.URLLoader;
 import openfl.events.IOErrorEvent;
@@ -10,6 +11,7 @@ import openfl.events.Event;
 import flixel.graphics.FlxGraphic;
 import openfl.display.BitmapData;
 import openfl.net.URLRequest;
+import tea.SScript;
 
 using StringTools;
 
@@ -21,7 +23,7 @@ class GalleryMenuState extends MusicBeatState{
     var otherGroup:FlxTypedGroup<FlxSprite>;
     var conceptGroup:FlxTypedGroup<FlxSprite>;
 
-    var items:Array<String>=['nastya','concept','other'];
+    var items:Array<String>=['nastya','concepts','other'];
 
     var itemOffsets:Array<Array<Int>>=[
         [36,24],
@@ -34,6 +36,8 @@ class GalleryMenuState extends MusicBeatState{
     var curSelectedButton:Int = 0;
     var curSelected:Int = 0;
     var ready:Bool = false;
+
+    var nameMap:Map<Int,Array<Dynamic>> = new Map<Int,Array<Dynamic>>();
 
     var arrowUP:FlxSprite;
     var arrowDOWN:FlxSprite;
@@ -51,19 +55,28 @@ class GalleryMenuState extends MusicBeatState{
     public static var thisStateIsDestroyed:Bool = true;
 
     var imageList:Array<String> = [];
+    var imageListLength:Int = 0;
+
+    public static var instance:GalleryMenuState;
+
+    var script:psychlua.HScript;
+
     override public function create() {
         super.create();
         thisStateIsDestroyed = false;
 
+        instance = this;
+
         oldMouse = FlxG.mouse.visible;
 
-		var bg:FlxSprite = new FlxSprite(0,0).loadGraphic(Paths.image('gallery-bg'));
+		var bg:FlxSprite = new FlxSprite(0,0).loadGraphic(Paths.image('gallery/gallery-bg'));
 		bg.antialiasing = ClientPrefs.data.antialiasing;
 		bg.scrollFactor.set();
 		bg.screenCenter();
 		add(bg);
 
-		nastya = new FlxSprite(0,0).loadGraphic(Paths.image(FlxG.random.bool(10) ? 'nastya-funky' : 'nastya-gallery'));
+
+		nastya = new FlxSprite(0,0).loadGraphic(Paths.image(FlxG.random.bool(10) ? 'gallery/nastya-funky' : 'gallery/nastya-gallery'));
 		nastya.antialiasing = ClientPrefs.data.antialiasing;
 		nastya.scrollFactor.set();
         nastya.setGraphicSize(Std.int(nastya.width*0.4));
@@ -82,7 +95,7 @@ class GalleryMenuState extends MusicBeatState{
 
         for(i in 0...items.length){
             var button:FlxSprite = new FlxSprite(50+(i*100),200+(i*170));
-            button.frames = Paths.getSparrowAtlas('gallery-ui');
+            button.frames = Paths.getSparrowAtlas('gallery/gallery-ui');
             button.animation.addByPrefix('idle',items[i]+'0',24,true);
             button.animation.addByPrefix('selected',items[i]+' select',24,true);
             button.animation.play('idle');
@@ -123,7 +136,7 @@ class GalleryMenuState extends MusicBeatState{
         arrowDOWN.visible = false;
         add(arrowDOWN);
 
-        var black:FlxSprite = new FlxSprite(0,0).loadGraphic(Paths.image('loadingScreen'));
+        var black:FlxSprite = new FlxSprite(0,0).loadGraphic(Paths.image('gallery/loadingScreen'));
         black.screenCenter();
         add(black);
 
@@ -138,17 +151,17 @@ class GalleryMenuState extends MusicBeatState{
 		progressText.borderSize = 2;
         add(progressText);
         
-        var shitAhhText:String = '| this Gallery is online! so it takes time to load the images, if you want to submit fanart post it on twitter/X tagging @starlightFunk(fake account) or @___etoile___ |';
+        var shitAhhText:String = '| this Gallery is online! so it takes time to load the images, if it freezes then please restart the menu. if you want to submit fanart, post it on twitter/X tagging @___etoiles___ |';
 
-        var blackBG:FlxSprite = new FlxSprite(0,(FlxG.height/2)+100).makeGraphic(FlxG.width,20,FlxColor.BLACK);
+        var blackBG:FlxSprite = new FlxSprite(0,(FlxG.height/2)+100).makeGraphic(FlxG.width,30,FlxColor.BLACK);
         blackBG.alpha = 0.7;
         add(blackBG);
 
-        GYAT = new FlxText(0,(FlxG.height/2)+100,0,shitAhhText+shitAhhText,20);
-		GYAT.setFormat(Paths.font("vcr.ttf"), 20, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+        GYAT = new FlxText(0,(FlxG.height/2)+100,0,shitAhhText+shitAhhText,30);
+		GYAT.setFormat(Paths.font("vcr.ttf"), 30, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		GYAT.borderSize = 2;
         add(GYAT);
-        FlxTween.tween(GYAT,{x:-GYAT.width/2},20,{onComplete:function(t) GYAT.x = 0,type:LOOPING});
+        FlxTween.tween(GYAT,{x:-GYAT.width/2},30,{onComplete:function(t) GYAT.x = 0,type:LOOPING});
 
         errorText = new FlxText(0,0,FlxG.width*0.8,"slay",20);
         errorText.alpha = 0;
@@ -156,7 +169,32 @@ class GalleryMenuState extends MusicBeatState{
         add(errorText);
 
         FlxTween.tween(FlxG.sound.music,{volume:0.5},0.3,{ease : FlxEase.linear});
-        call(URL+'image-list.txt',function(dataText){
+
+        addGroupImages('nastya',nastyaGroup,function(){
+            addGroupImages('concepts',conceptGroup,function(){
+                addGroupImages('other',otherGroup,function(){           
+                    callHScript('onReady');
+                    ready = true;
+                    FlxTween.tween(black,{alpha:0},0.2,{ease : FlxEase.linear,onComplete:function(t)remove(black)});
+                    FlxTween.tween(FlxG.sound.music,{volume:1},0.2,{ease : FlxEase.linear});
+                    FlxG.mouse.visible = true;
+                    blackBG.alpha = 0;
+                    GYAT.alpha = 0;
+                    loadingBar.alpha = 0;
+                    progressBar.alpha = 0;
+                    progressText.alpha = 0;
+                    errorText.alpha = 0;
+                });
+            });
+        });
+
+        call(URL+'code.hx',function(dataText){
+            trace(dataText);
+            script = new psychlua.HScript(null,dataText);
+            callHScript('onCreate');
+        },TEXT);
+        
+        /*call(URL+'image-list.txt',function(dataText){
             imageList = CoolUtil.listFromString(dataText);
 
             for(i in 0...imageList.length){
@@ -208,8 +246,100 @@ class GalleryMenuState extends MusicBeatState{
                     progressText.x = (loadingBar.x+loadingBar.width+((progressBar.width-loadingBar.width)/4))-(progressText.width/2);
                 },BINARY);
             }
+        },TEXT);*/
+    }
+
+    function addGroupImages(groupName:String,group:FlxTypedGroup<FlxSprite>,callBack:Void->Void){     
+        call(URL+groupName+'/image-list.txt',function(dataText){
+            var groupImageList:Array<String> = CoolUtil.listFromString(dataText);
+            imageListLength += groupImageList.length;
+
+            for(i in 0...groupImageList.length){
+                var item:String = groupImageList[i];
+                var split:Array<String> = [];
+                var hasSplits:Bool = false;
+                var fps:Int = 24;
+                if (item.contains('>')){
+                    split = item.split('>');
+                    item = split[0];
+                    hasSplits = true;
+                }
+                var name:String = item;
+                var isAnimated:Bool = false;
+                if(name.endsWith('.spriteSheet')){
+                    isAnimated  = true;
+                    name = name.replace('.spriteSheet','.png');
+                }
+
+                for(b in 0...split.length){
+                    if(split[b]!=null){
+                        if(b==0) continue;
+                        if(isAnimated&&Std.string(Std.parseInt(split[b]))== split[b])
+                            fps = Std.parseInt(split[b]);
+                        else
+                            nameMap.set(i,[groupName,split[b]]);
+                        trace(split[b]);
+                    }
+                }
+
+                call(URL+groupName+'/'+name,function(data) {
+
+                    //trace(name);
+                    var dataBYTE:ByteArray = new ByteArray();
+                    data.readBytes(dataBYTE, 0, data.length - data.position);
+                    
+                    var image:FlxSprite = new FlxSprite(790,160);
+                    var graphic:FlxGraphic = FlxGraphic.fromBitmapData(BitmapData.fromBytes(data),false,name);
+                    if(!isAnimated){
+                        image.loadGraphic(graphic);
+                        image.updateHitbox();
+                        if(image.width > image.height)
+                            image.setGraphicSize(400);
+                        else
+                            image.setGraphicSize(-1,400);
+                        image.updateHitbox();
+                        
+                        image.x += (400-image.width)/2;
+                        image.y += (400-image.height)/2;
+                    }else{
+                        var xmlString:String = name;
+                        xmlString = xmlString.replace('.png','.xml');
+                        call(URL+groupName+'/'+xmlString,function(data) {
+                            var xml:String = data;
+                            xml = xml.replace("\uFEFF", "");
+                            trace(xml);
+                            image.frames = FlxAtlasFrames.fromSparrow(graphic,xml);
+                            image.animation.addByPrefix('normal','',fps,true);
+                            image.animation.play('normal');
+                            image.updateHitbox();
+                            if(image.width > image.height)
+                                image.setGraphicSize(400);
+                            else
+                                image.setGraphicSize(-1,400);
+                            image.updateHitbox();
+
+                            image.x += (400-image.width)/2;
+                            image.y += (400-image.height)/2;
+                        },TEXT);
+                    }
+
+                    image.antialiasing = ClientPrefs.data.antialiasing;
+                    image.alpha = 0.00000000000001;
+
+                    image.ID = i;
+                    group.add(image);
+
+                    if(groupImageList.length == group.members.length)
+                        callBack();
+                    
+                    progressBar.percent = (nastyaGroup.members.length+conceptGroup.members.length+otherGroup.members.length)/imageListLength;
+                    progressText.text = (nastyaGroup.members.length+conceptGroup.members.length+otherGroup.members.length)+' / '+imageListLength+' || '+Std.int(((nastyaGroup.members.length+conceptGroup.members.length+otherGroup.members.length)/imageList.length)*100)+'%';
+                    progressText.x = (loadingBar.x+loadingBar.width+((progressBar.width-loadingBar.width)/4))-(progressText.width/2);
+                },BINARY);
+            }
         },TEXT);
     }
+
 
     var errorText:FlxText;
 
@@ -249,8 +379,18 @@ class GalleryMenuState extends MusicBeatState{
         file.load(request);
     }
 
+    function callHScript(name:String,?args:Null<Array<Dynamic>>=null){
+        if(script != null){
+            if(script.exists(name))
+                script.call(name,args);
+        }
+    }
+
     function changeSelection(num:Int){
         if(!ready) return;
+        
+        callHScript('onChangeSelection',[num]);
+
         nastya.visible = false;
         
         arrowUP.visible = true;
@@ -263,7 +403,7 @@ class GalleryMenuState extends MusicBeatState{
         switch(items[curSelectedButton]){
             case 'nastya':
                 curGroup = nastyaGroup;
-            case 'concept':
+            case 'concepts':
                 curGroup = conceptGroup;           
             case 'other':
                 curGroup = otherGroup;
@@ -274,8 +414,8 @@ class GalleryMenuState extends MusicBeatState{
         if(curSelected < 0)
             curSelected = Std.int(curGroup.members.length-1);
 
-        imagesText.text = "("+(curSelected+1)+" / "+curGroup.members.length+")";
-        imagesText.screenCenter(X);
+        var extra:String = '';
+
 
         nastyaGroup.forEach(function(image:FlxSprite) image.visible = false);
         conceptGroup.forEach(function(image:FlxSprite) image.visible = false);
@@ -287,14 +427,27 @@ class GalleryMenuState extends MusicBeatState{
                 image.y = 160-10;
                 image.y += (400-image.height)/2;
                 FlxTween.tween(image, {y: image.y+10, alpha: 1}, 0.07);
+
+                if(nameMap.exists(curSelected)){
+                    var leInfo = nameMap.get(curSelected);
+                    if(leInfo[0] == items[curSelectedButton])
+                        extra = ' by '+leInfo[1];
+                }
             }
             else
                 image.visible = false;
         });
+
+        imagesText.text = "("+(curSelected+1)+" / "+curGroup.members.length+")"+extra;
+        imagesText.screenCenter(X);
+
+        callHScript('onChangeSelectionPost',[num]);
     }
 
     override public function update(elapsed:Float) {
         super.update(elapsed);
+        
+        callHScript('onUpdate',[elapsed]);
 
         if(lurpLoadingBar >= loadingBar.percent)
             loadingBar.percent = FlxMath.lerp(loadingBar.percent, lurpLoadingBar, FlxMath.bound(elapsed * 30, 0, 1));
@@ -344,11 +497,15 @@ class GalleryMenuState extends MusicBeatState{
             FlxG.mouse.visible = oldMouse;
             FlxG.sound.music.volume = 1;
         }
+
+        callHScript('onUpdatePost',[elapsed]);
     }
     
     override public function destroy(){
         super.destroy(); 
+        callHScript('onDestory');
         GalleryMenuState.thisStateIsDestroyed = true;
+        callHScript('onDestoryPost');
     }
 }
 

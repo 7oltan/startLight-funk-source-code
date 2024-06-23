@@ -50,7 +50,7 @@ class NotesSubState extends MusicBeatSubstate
 
 	public function new() {
 		super();
-		
+
 		var bg:FlxSprite = new FlxSprite().loadGraphic(Paths.image('menuDesat'));
 		bg.color = 0xFFEA71FD;
 		bg.screenCenter();
@@ -661,7 +661,7 @@ class NotesSubState extends MusicBeatSubstate
 			var newAnim:String = curSelectedNote == note.ID ? 'confirm' : 'pressed';
 			note.alpha = (curSelectedNote == note.ID) ? 1 : 0.6;
 			if(note.animation.curAnim == null || note.animation.curAnim.name != newAnim) note.playAnim(newAnim, true);
-			if(instant) note.animation.curAnim.finish();
+			if(instant && note.animation.curAnim != null) note.animation.curAnim.finish();
 		}
 		bigNote.animation.play('note$curSelectedNote', true);
 		updateColors();
@@ -698,7 +698,6 @@ class NotesSubState extends MusicBeatSubstate
 				getShader().b = strumRGB.b = color;
 		}
 	}
-
 	function setShaderColor(value:FlxColor) dataArray[curSelectedNote][curSelectedMode] = value;
 	function getShaderColor() return dataArray[curSelectedNote][curSelectedMode];
 	function getShader() return Note.globalRgbShaders[curSelectedNote];

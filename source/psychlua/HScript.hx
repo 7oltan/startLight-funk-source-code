@@ -5,6 +5,15 @@ import objects.Character;
 import psychlua.FunkinLua;
 import psychlua.CustomSubstate;
 
+import openfl.utils.ByteArray;
+import openfl.net.URLLoader;
+import openfl.events.IOErrorEvent;
+import openfl.events.ProgressEvent;
+import openfl.events.Event;
+import openfl.display.BitmapData;
+import openfl.net.URLRequest;
+import flixel.graphics.FlxGraphic;
+
 #if (HSCRIPT_ALLOWED && SScript >= "3.0.0")
 import tea.SScript;
 class HScript extends SScript
@@ -102,7 +111,33 @@ class HScript extends SScript
 			PlayState.instance.addTextToDebug(text, color);
 		});
 
+		set('loadImageFromUrl', function(sprite:FlxSprite,url:String,?callBack:Void->Void,?name:String = 'waos') {
+			if (name == 'waos')
+				name = name + FlxG.random.int(1,10000);
+
+			var request = new URLRequest(url);
+
+			var file:URLLoader = new URLLoader();
+			file.dataFormat = BINARY;
+			
+			file.addEventListener(Event.COMPLETE, function(e){
+				if(states.GalleryMenuState.thisStateIsDestroyed) return; //ugh took me long enough to get, thanks winn/whatify <3
+				var dataBYTE:ByteArray = new ByteArray();
+				file.data.readBytes(dataBYTE, 0, file.data.length - file.data.position);
+				
+				sprite.loadGraphic(FlxGraphic.fromBitmapData(BitmapData.fromBytes(file.data),false,name));
+				if(callBack != null)
+					callBack();
+			});
+			file.addEventListener(IOErrorEvent.IO_ERROR, function(e){ // error handler is killing me
+				trace(e);  
+			});
+	
+			file.load(request);
+		});
+
 		// For adding your own callbacks
+		//awww thanks whoever you are for inculding me -7oltan <3
 
 		// not very tested but should work
 		set('createGlobalCallback', function(name:String, func:Dynamic)
@@ -146,6 +181,7 @@ class HScript extends SScript
 		set('parentLua', parentLua);
 		set('this', this);
 		set('game', PlayState.instance);
+		set('gallery', states.GalleryMenuState.instance);
 		set('buildTarget', FunkinLua.getBuildTarget());
 		set('customSubstate', CustomSubstate.instance);
 		set('customSubstateName', CustomSubstate.name);

@@ -16,11 +16,11 @@ class ApplicationMain
 	#if !macro
 	public static function main()
 	{
-		lime.system.System.__registerEntryPoint("PsychEngine", create);
+		lime.system.System.__registerEntryPoint("starlight", create);
 
 		#if (js && html5)
 		#if (munit || utest)
-		lime.system.System.embed("PsychEngine", null, 1280, 720);
+		lime.system.System.embed("starlight", null, 1280, 720);
 		#end
 		#else
 		create(null);
@@ -35,10 +35,10 @@ class ApplicationMain
 		ManifestResources.init(config);
 		#end
 
-		app.meta["build"] = "15";
+		app.meta["build"] = "18";
 		app.meta["company"] = "ShadowMario";
-		app.meta["file"] = "PsychEngine";
-		app.meta["name"] = "Friday Night Funkin': Psych Engine";
+		app.meta["file"] = "starlight";
+		app.meta["name"] = "Starlight Funk ft.Nastya";
 		app.meta["packageName"] = "com.shadowmario.psychengine";
 		app.meta["version"] = "0.2.8";
 
@@ -60,7 +60,7 @@ class ApplicationMain
 			minimized: false,
 			parameters: {},
 			resizable: true,
-			title: "Friday Night Funkin': Psych Engine",
+			title: "Starlight Funk ft.Nastya",
 			width: 1280,
 			x: null,
 			y: null,

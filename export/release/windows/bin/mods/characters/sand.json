@@ -1,81 +1,81 @@
 {
 	"animations": [
 		{
-			"loop": false,
 			"offsets": [
 				6,
 				0
 			],
-			"anim": "idle",
+			"loop": false,
 			"fps": 24,
-			"name": "idle",
+			"anim": "idle",
+			"indices": [],
+			"name": "idle"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				113,
+				-112
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "sans down",
 			"indices": []
 		},
 		{
-			"offsets": [
-				113,
-				18
-			],
 			"loop": false,
-			"fps": 24,
-			"anim": "singDOWN",
-			"indices": [],
-			"name": "sans down"
-		},
-		{
 			"offsets": [
-				71,
-				129
+				81,
+				149
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singUP",
-			"indices": [],
-			"name": "sans up"
+			"fps": 24,
+			"name": "sans up",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				0,
 				0
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "cheer",
-			"indices": [],
-			"name": "sans wiggle wiggle"
+			"fps": 24,
+			"name": "sans wiggle wiggle",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
-				79,
+				-21,
 				8
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singRIGHT",
-			"indices": [],
-			"name": "sans right"
+			"fps": 24,
+			"name": "sans right",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				56,
 				0
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "singLEFT",
-			"indices": [],
-			"name": "right daddy sans"
+			"fps": 24,
+			"name": "right daddy sans",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				9,
 				24
 			],
-			"loop": false,
-			"fps": 24,
 			"anim": "power",
-			"indices": [],
-			"name": "sans CREPPY POWER"
+			"fps": 24,
+			"name": "sans CREPPY POWER",
+			"indices": []
 		}
 	],
 	"no_antialiasing": false,
@@ -84,6 +84,7 @@
 		560,
 		250
 	],
+	"health_bar": "default",
 	"healthicon": "nastya",
 	"flip_x": false,
 	"healthbar_colors": [

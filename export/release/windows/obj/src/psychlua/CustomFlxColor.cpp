@@ -14,26 +14,26 @@
 #include <psychlua/CustomFlxColor.h>
 #endif
 
-HX_LOCAL_STACK_FRAME(_hx_pos_dfa518c81f8e41b4_322_fromRGB,"psychlua.CustomFlxColor","fromRGB",0xcd1a0ac8,"psychlua.CustomFlxColor.fromRGB","psychlua/HScript.hx",322,0x619ca0dd)
-HX_LOCAL_STACK_FRAME(_hx_pos_dfa518c81f8e41b4_326_fromRGBFloat,"psychlua.CustomFlxColor","fromRGBFloat",0x936615b4,"psychlua.CustomFlxColor.fromRGBFloat","psychlua/HScript.hx",326,0x619ca0dd)
-HX_LOCAL_STACK_FRAME(_hx_pos_dfa518c81f8e41b4_331_fromHSB,"psychlua.CustomFlxColor","fromHSB",0xcd127eb2,"psychlua.CustomFlxColor.fromHSB","psychlua/HScript.hx",331,0x619ca0dd)
-HX_LOCAL_STACK_FRAME(_hx_pos_dfa518c81f8e41b4_335_fromHSL,"psychlua.CustomFlxColor","fromHSL",0xcd127ebc,"psychlua.CustomFlxColor.fromHSL","psychlua/HScript.hx",335,0x619ca0dd)
-HX_LOCAL_STACK_FRAME(_hx_pos_dfa518c81f8e41b4_339_fromString,"psychlua.CustomFlxColor","fromString",0x6ee8a3f6,"psychlua.CustomFlxColor.fromString","psychlua/HScript.hx",339,0x619ca0dd)
-HX_LOCAL_STACK_FRAME(_hx_pos_dfa518c81f8e41b4_303_boot,"psychlua.CustomFlxColor","boot",0x8f72240d,"psychlua.CustomFlxColor.boot","psychlua/HScript.hx",303,0x619ca0dd)
-HX_LOCAL_STACK_FRAME(_hx_pos_dfa518c81f8e41b4_304_boot,"psychlua.CustomFlxColor","boot",0x8f72240d,"psychlua.CustomFlxColor.boot","psychlua/HScript.hx",304,0x619ca0dd)
-HX_LOCAL_STACK_FRAME(_hx_pos_dfa518c81f8e41b4_305_boot,"psychlua.CustomFlxColor","boot",0x8f72240d,"psychlua.CustomFlxColor.boot","psychlua/HScript.hx",305,0x619ca0dd)
-HX_LOCAL_STACK_FRAME(_hx_pos_dfa518c81f8e41b4_306_boot,"psychlua.CustomFlxColor","boot",0x8f72240d,"psychlua.CustomFlxColor.boot","psychlua/HScript.hx",306,0x619ca0dd)
-HX_LOCAL_STACK_FRAME(_hx_pos_dfa518c81f8e41b4_308_boot,"psychlua.CustomFlxColor","boot",0x8f72240d,"psychlua.CustomFlxColor.boot","psychlua/HScript.hx",308,0x619ca0dd)
-HX_LOCAL_STACK_FRAME(_hx_pos_dfa518c81f8e41b4_309_boot,"psychlua.CustomFlxColor","boot",0x8f72240d,"psychlua.CustomFlxColor.boot","psychlua/HScript.hx",309,0x619ca0dd)
-HX_LOCAL_STACK_FRAME(_hx_pos_dfa518c81f8e41b4_310_boot,"psychlua.CustomFlxColor","boot",0x8f72240d,"psychlua.CustomFlxColor.boot","psychlua/HScript.hx",310,0x619ca0dd)
-HX_LOCAL_STACK_FRAME(_hx_pos_dfa518c81f8e41b4_311_boot,"psychlua.CustomFlxColor","boot",0x8f72240d,"psychlua.CustomFlxColor.boot","psychlua/HScript.hx",311,0x619ca0dd)
-HX_LOCAL_STACK_FRAME(_hx_pos_dfa518c81f8e41b4_312_boot,"psychlua.CustomFlxColor","boot",0x8f72240d,"psychlua.CustomFlxColor.boot","psychlua/HScript.hx",312,0x619ca0dd)
-HX_LOCAL_STACK_FRAME(_hx_pos_dfa518c81f8e41b4_313_boot,"psychlua.CustomFlxColor","boot",0x8f72240d,"psychlua.CustomFlxColor.boot","psychlua/HScript.hx",313,0x619ca0dd)
-HX_LOCAL_STACK_FRAME(_hx_pos_dfa518c81f8e41b4_314_boot,"psychlua.CustomFlxColor","boot",0x8f72240d,"psychlua.CustomFlxColor.boot","psychlua/HScript.hx",314,0x619ca0dd)
-HX_LOCAL_STACK_FRAME(_hx_pos_dfa518c81f8e41b4_315_boot,"psychlua.CustomFlxColor","boot",0x8f72240d,"psychlua.CustomFlxColor.boot","psychlua/HScript.hx",315,0x619ca0dd)
-HX_LOCAL_STACK_FRAME(_hx_pos_dfa518c81f8e41b4_316_boot,"psychlua.CustomFlxColor","boot",0x8f72240d,"psychlua.CustomFlxColor.boot","psychlua/HScript.hx",316,0x619ca0dd)
-HX_LOCAL_STACK_FRAME(_hx_pos_dfa518c81f8e41b4_317_boot,"psychlua.CustomFlxColor","boot",0x8f72240d,"psychlua.CustomFlxColor.boot","psychlua/HScript.hx",317,0x619ca0dd)
-HX_LOCAL_STACK_FRAME(_hx_pos_dfa518c81f8e41b4_318_boot,"psychlua.CustomFlxColor","boot",0x8f72240d,"psychlua.CustomFlxColor.boot","psychlua/HScript.hx",318,0x619ca0dd)
+HX_LOCAL_STACK_FRAME(_hx_pos_dfa518c81f8e41b4_358_fromRGB,"psychlua.CustomFlxColor","fromRGB",0xcd1a0ac8,"psychlua.CustomFlxColor.fromRGB","psychlua/HScript.hx",358,0x619ca0dd)
+HX_LOCAL_STACK_FRAME(_hx_pos_dfa518c81f8e41b4_362_fromRGBFloat,"psychlua.CustomFlxColor","fromRGBFloat",0x936615b4,"psychlua.CustomFlxColor.fromRGBFloat","psychlua/HScript.hx",362,0x619ca0dd)
+HX_LOCAL_STACK_FRAME(_hx_pos_dfa518c81f8e41b4_367_fromHSB,"psychlua.CustomFlxColor","fromHSB",0xcd127eb2,"psychlua.CustomFlxColor.fromHSB","psychlua/HScript.hx",367,0x619ca0dd)
+HX_LOCAL_STACK_FRAME(_hx_pos_dfa518c81f8e41b4_371_fromHSL,"psychlua.CustomFlxColor","fromHSL",0xcd127ebc,"psychlua.CustomFlxColor.fromHSL","psychlua/HScript.hx",371,0x619ca0dd)
+HX_LOCAL_STACK_FRAME(_hx_pos_dfa518c81f8e41b4_375_fromString,"psychlua.CustomFlxColor","fromString",0x6ee8a3f6,"psychlua.CustomFlxColor.fromString","psychlua/HScript.hx",375,0x619ca0dd)
+HX_LOCAL_STACK_FRAME(_hx_pos_dfa518c81f8e41b4_339_boot,"psychlua.CustomFlxColor","boot",0x8f72240d,"psychlua.CustomFlxColor.boot","psychlua/HScript.hx",339,0x619ca0dd)
+HX_LOCAL_STACK_FRAME(_hx_pos_dfa518c81f8e41b4_340_boot,"psychlua.CustomFlxColor","boot",0x8f72240d,"psychlua.CustomFlxColor.boot","psychlua/HScript.hx",340,0x619ca0dd)
+HX_LOCAL_STACK_FRAME(_hx_pos_dfa518c81f8e41b4_341_boot,"psychlua.CustomFlxColor","boot",0x8f72240d,"psychlua.CustomFlxColor.boot","psychlua/HScript.hx",341,0x619ca0dd)
+HX_LOCAL_STACK_FRAME(_hx_pos_dfa518c81f8e41b4_342_boot,"psychlua.CustomFlxColor","boot",0x8f72240d,"psychlua.CustomFlxColor.boot","psychlua/HScript.hx",342,0x619ca0dd)
+HX_LOCAL_STACK_FRAME(_hx_pos_dfa518c81f8e41b4_344_boot,"psychlua.CustomFlxColor","boot",0x8f72240d,"psychlua.CustomFlxColor.boot","psychlua/HScript.hx",344,0x619ca0dd)
+HX_LOCAL_STACK_FRAME(_hx_pos_dfa518c81f8e41b4_345_boot,"psychlua.CustomFlxColor","boot",0x8f72240d,"psychlua.CustomFlxColor.boot","psychlua/HScript.hx",345,0x619ca0dd)
+HX_LOCAL_STACK_FRAME(_hx_pos_dfa518c81f8e41b4_346_boot,"psychlua.CustomFlxColor","boot",0x8f72240d,"psychlua.CustomFlxColor.boot","psychlua/HScript.hx",346,0x619ca0dd)
+HX_LOCAL_STACK_FRAME(_hx_pos_dfa518c81f8e41b4_347_boot,"psychlua.CustomFlxColor","boot",0x8f72240d,"psychlua.CustomFlxColor.boot","psychlua/HScript.hx",347,0x619ca0dd)
+HX_LOCAL_STACK_FRAME(_hx_pos_dfa518c81f8e41b4_348_boot,"psychlua.CustomFlxColor","boot",0x8f72240d,"psychlua.CustomFlxColor.boot","psychlua/HScript.hx",348,0x619ca0dd)
+HX_LOCAL_STACK_FRAME(_hx_pos_dfa518c81f8e41b4_349_boot,"psychlua.CustomFlxColor","boot",0x8f72240d,"psychlua.CustomFlxColor.boot","psychlua/HScript.hx",349,0x619ca0dd)
+HX_LOCAL_STACK_FRAME(_hx_pos_dfa518c81f8e41b4_350_boot,"psychlua.CustomFlxColor","boot",0x8f72240d,"psychlua.CustomFlxColor.boot","psychlua/HScript.hx",350,0x619ca0dd)
+HX_LOCAL_STACK_FRAME(_hx_pos_dfa518c81f8e41b4_351_boot,"psychlua.CustomFlxColor","boot",0x8f72240d,"psychlua.CustomFlxColor.boot","psychlua/HScript.hx",351,0x619ca0dd)
+HX_LOCAL_STACK_FRAME(_hx_pos_dfa518c81f8e41b4_352_boot,"psychlua.CustomFlxColor","boot",0x8f72240d,"psychlua.CustomFlxColor.boot","psychlua/HScript.hx",352,0x619ca0dd)
+HX_LOCAL_STACK_FRAME(_hx_pos_dfa518c81f8e41b4_353_boot,"psychlua.CustomFlxColor","boot",0x8f72240d,"psychlua.CustomFlxColor.boot","psychlua/HScript.hx",353,0x619ca0dd)
+HX_LOCAL_STACK_FRAME(_hx_pos_dfa518c81f8e41b4_354_boot,"psychlua.CustomFlxColor","boot",0x8f72240d,"psychlua.CustomFlxColor.boot","psychlua/HScript.hx",354,0x619ca0dd)
 namespace psychlua{
 
 void CustomFlxColor_obj::__construct() { }
@@ -85,73 +85,73 @@ int CustomFlxColor_obj::CYAN;
 
 int CustomFlxColor_obj::fromRGB(int Red,int Green,int Blue,::hx::Null< int >  __o_Alpha){
             		int Alpha = __o_Alpha.Default(255);
-            	HX_STACKFRAME(&_hx_pos_dfa518c81f8e41b4_322_fromRGB)
-HXDLIN( 322)		int color = ::flixel::util::_FlxColor::FlxColor_Impl__obj::_new(null());
-HXDLIN( 322)		{
-HXDLIN( 322)			color = (color & -16711681);
-HXDLIN( 322)			int color1;
-HXDLIN( 322)			if ((Red > 255)) {
-HXDLIN( 322)				color1 = 255;
+            	HX_STACKFRAME(&_hx_pos_dfa518c81f8e41b4_358_fromRGB)
+HXDLIN( 358)		int color = ::flixel::util::_FlxColor::FlxColor_Impl__obj::_new(null());
+HXDLIN( 358)		{
+HXDLIN( 358)			color = (color & -16711681);
+HXDLIN( 358)			int color1;
+HXDLIN( 358)			if ((Red > 255)) {
+HXDLIN( 358)				color1 = 255;
             			}
             			else {
-HXDLIN( 322)				if ((Red < 0)) {
-HXDLIN( 322)					color1 = 0;
+HXDLIN( 358)				if ((Red < 0)) {
+HXDLIN( 358)					color1 = 0;
             				}
             				else {
-HXDLIN( 322)					color1 = Red;
+HXDLIN( 358)					color1 = Red;
             				}
             			}
-HXDLIN( 322)			color = (color | (color1 << 16));
+HXDLIN( 358)			color = (color | (color1 << 16));
             		}
-HXDLIN( 322)		{
-HXDLIN( 322)			color = (color & -65281);
-HXDLIN( 322)			int color2;
-HXDLIN( 322)			if ((Green > 255)) {
-HXDLIN( 322)				color2 = 255;
+HXDLIN( 358)		{
+HXDLIN( 358)			color = (color & -65281);
+HXDLIN( 358)			int color2;
+HXDLIN( 358)			if ((Green > 255)) {
+HXDLIN( 358)				color2 = 255;
             			}
             			else {
-HXDLIN( 322)				if ((Green < 0)) {
-HXDLIN( 322)					color2 = 0;
+HXDLIN( 358)				if ((Green < 0)) {
+HXDLIN( 358)					color2 = 0;
             				}
             				else {
-HXDLIN( 322)					color2 = Green;
+HXDLIN( 358)					color2 = Green;
             				}
             			}
-HXDLIN( 322)			color = (color | (color2 << 8));
+HXDLIN( 358)			color = (color | (color2 << 8));
             		}
-HXDLIN( 322)		{
-HXDLIN( 322)			color = (color & -256);
-HXDLIN( 322)			int color3;
-HXDLIN( 322)			if ((Blue > 255)) {
-HXDLIN( 322)				color3 = 255;
+HXDLIN( 358)		{
+HXDLIN( 358)			color = (color & -256);
+HXDLIN( 358)			int color3;
+HXDLIN( 358)			if ((Blue > 255)) {
+HXDLIN( 358)				color3 = 255;
             			}
             			else {
-HXDLIN( 322)				if ((Blue < 0)) {
-HXDLIN( 322)					color3 = 0;
+HXDLIN( 358)				if ((Blue < 0)) {
+HXDLIN( 358)					color3 = 0;
             				}
             				else {
-HXDLIN( 322)					color3 = Blue;
+HXDLIN( 358)					color3 = Blue;
             				}
             			}
-HXDLIN( 322)			color = (color | color3);
+HXDLIN( 358)			color = (color | color3);
             		}
-HXDLIN( 322)		{
-HXDLIN( 322)			color = (color & 16777215);
-HXDLIN( 322)			int color4;
-HXDLIN( 322)			if ((Alpha > 255)) {
-HXDLIN( 322)				color4 = 255;
+HXDLIN( 358)		{
+HXDLIN( 358)			color = (color & 16777215);
+HXDLIN( 358)			int color4;
+HXDLIN( 358)			if ((Alpha > 255)) {
+HXDLIN( 358)				color4 = 255;
             			}
             			else {
-HXDLIN( 322)				if ((Alpha < 0)) {
-HXDLIN( 322)					color4 = 0;
+HXDLIN( 358)				if ((Alpha < 0)) {
+HXDLIN( 358)					color4 = 0;
             				}
             				else {
-HXDLIN( 322)					color4 = Alpha;
+HXDLIN( 358)					color4 = Alpha;
             				}
             			}
-HXDLIN( 322)			color = (color | (color4 << 24));
+HXDLIN( 358)			color = (color | (color4 << 24));
             		}
-HXDLIN( 322)		return color;
+HXDLIN( 358)		return color;
             	}
 
 
@@ -159,77 +159,77 @@ STATIC_HX_DEFINE_DYNAMIC_FUNC4(CustomFlxColor_obj,fromRGB,return )
 
 int CustomFlxColor_obj::fromRGBFloat(Float Red,Float Green,Float Blue,::hx::Null< Float >  __o_Alpha){
             		Float Alpha = __o_Alpha.Default(1);
-            	HX_STACKFRAME(&_hx_pos_dfa518c81f8e41b4_326_fromRGBFloat)
-HXDLIN( 326)		int color = ::flixel::util::_FlxColor::FlxColor_Impl__obj::_new(null());
-HXDLIN( 326)		{
-HXDLIN( 326)			int Value = ::Math_obj::round((Red * ( (Float)(255) )));
-HXDLIN( 326)			color = (color & -16711681);
-HXDLIN( 326)			int color1;
-HXDLIN( 326)			if ((Value > 255)) {
-HXDLIN( 326)				color1 = 255;
+            	HX_STACKFRAME(&_hx_pos_dfa518c81f8e41b4_362_fromRGBFloat)
+HXDLIN( 362)		int color = ::flixel::util::_FlxColor::FlxColor_Impl__obj::_new(null());
+HXDLIN( 362)		{
+HXDLIN( 362)			int Value = ::Math_obj::round((Red * ( (Float)(255) )));
+HXDLIN( 362)			color = (color & -16711681);
+HXDLIN( 362)			int color1;
+HXDLIN( 362)			if ((Value > 255)) {
+HXDLIN( 362)				color1 = 255;
             			}
             			else {
-HXDLIN( 326)				if ((Value < 0)) {
-HXDLIN( 326)					color1 = 0;
+HXDLIN( 362)				if ((Value < 0)) {
+HXDLIN( 362)					color1 = 0;
             				}
             				else {
-HXDLIN( 326)					color1 = Value;
+HXDLIN( 362)					color1 = Value;
             				}
             			}
-HXDLIN( 326)			color = (color | (color1 << 16));
+HXDLIN( 362)			color = (color | (color1 << 16));
             		}
-HXDLIN( 326)		{
-HXDLIN( 326)			int Value1 = ::Math_obj::round((Green * ( (Float)(255) )));
-HXDLIN( 326)			color = (color & -65281);
-HXDLIN( 326)			int color2;
-HXDLIN( 326)			if ((Value1 > 255)) {
-HXDLIN( 326)				color2 = 255;
+HXDLIN( 362)		{
+HXDLIN( 362)			int Value1 = ::Math_obj::round((Green * ( (Float)(255) )));
+HXDLIN( 362)			color = (color & -65281);
+HXDLIN( 362)			int color2;
+HXDLIN( 362)			if ((Value1 > 255)) {
+HXDLIN( 362)				color2 = 255;
             			}
             			else {
-HXDLIN( 326)				if ((Value1 < 0)) {
-HXDLIN( 326)					color2 = 0;
+HXDLIN( 362)				if ((Value1 < 0)) {
+HXDLIN( 362)					color2 = 0;
             				}
             				else {
-HXDLIN( 326)					color2 = Value1;
+HXDLIN( 362)					color2 = Value1;
             				}
             			}
-HXDLIN( 326)			color = (color | (color2 << 8));
+HXDLIN( 362)			color = (color | (color2 << 8));
             		}
-HXDLIN( 326)		{
-HXDLIN( 326)			int Value2 = ::Math_obj::round((Blue * ( (Float)(255) )));
-HXDLIN( 326)			color = (color & -256);
-HXDLIN( 326)			int color3;
-HXDLIN( 326)			if ((Value2 > 255)) {
-HXDLIN( 326)				color3 = 255;
+HXDLIN( 362)		{
+HXDLIN( 362)			int Value2 = ::Math_obj::round((Blue * ( (Float)(255) )));
+HXDLIN( 362)			color = (color & -256);
+HXDLIN( 362)			int color3;
+HXDLIN( 362)			if ((Value2 > 255)) {
+HXDLIN( 362)				color3 = 255;
             			}
             			else {
-HXDLIN( 326)				if ((Value2 < 0)) {
-HXDLIN( 326)					color3 = 0;
+HXDLIN( 362)				if ((Value2 < 0)) {
+HXDLIN( 362)					color3 = 0;
             				}
             				else {
-HXDLIN( 326)					color3 = Value2;
+HXDLIN( 362)					color3 = Value2;
             				}
             			}
-HXDLIN( 326)			color = (color | color3);
+HXDLIN( 362)			color = (color | color3);
             		}
-HXDLIN( 326)		{
-HXDLIN( 326)			int Value3 = ::Math_obj::round((Alpha * ( (Float)(255) )));
-HXDLIN( 326)			color = (color & 16777215);
-HXDLIN( 326)			int color4;
-HXDLIN( 326)			if ((Value3 > 255)) {
-HXDLIN( 326)				color4 = 255;
+HXDLIN( 362)		{
+HXDLIN( 362)			int Value3 = ::Math_obj::round((Alpha * ( (Float)(255) )));
+HXDLIN( 362)			color = (color & 16777215);
+HXDLIN( 362)			int color4;
+HXDLIN( 362)			if ((Value3 > 255)) {
+HXDLIN( 362)				color4 = 255;
             			}
             			else {
-HXDLIN( 326)				if ((Value3 < 0)) {
-HXDLIN( 326)					color4 = 0;
+HXDLIN( 362)				if ((Value3 < 0)) {
+HXDLIN( 362)					color4 = 0;
             				}
             				else {
-HXDLIN( 326)					color4 = Value3;
+HXDLIN( 362)					color4 = Value3;
             				}
             			}
-HXDLIN( 326)			color = (color | (color4 << 24));
+HXDLIN( 362)			color = (color | (color4 << 24));
             		}
-HXDLIN( 326)		return color;
+HXDLIN( 362)		return color;
             	}
 
 
@@ -237,8 +237,8 @@ STATIC_HX_DEFINE_DYNAMIC_FUNC4(CustomFlxColor_obj,fromRGBFloat,return )
 
 int CustomFlxColor_obj::fromHSB(Float Hue,Float Sat,Float Brt,::hx::Null< Float >  __o_Alpha){
             		Float Alpha = __o_Alpha.Default(1);
-            	HX_STACKFRAME(&_hx_pos_dfa518c81f8e41b4_331_fromHSB)
-HXDLIN( 331)		return ::flixel::util::_FlxColor::FlxColor_Impl__obj::fromHSB(Hue,Sat,Brt,Alpha);
+            	HX_STACKFRAME(&_hx_pos_dfa518c81f8e41b4_367_fromHSB)
+HXDLIN( 367)		return ::flixel::util::_FlxColor::FlxColor_Impl__obj::fromHSB(Hue,Sat,Brt,Alpha);
             	}
 
 
@@ -246,453 +246,453 @@ STATIC_HX_DEFINE_DYNAMIC_FUNC4(CustomFlxColor_obj,fromHSB,return )
 
 int CustomFlxColor_obj::fromHSL(Float Hue,Float Sat,Float Light,::hx::Null< Float >  __o_Alpha){
             		Float Alpha = __o_Alpha.Default(1);
-            	HX_STACKFRAME(&_hx_pos_dfa518c81f8e41b4_335_fromHSL)
-HXDLIN( 335)		int color = ::flixel::util::_FlxColor::FlxColor_Impl__obj::_new(null());
-HXDLIN( 335)		Float chroma = ((( (Float)(1) ) - ::Math_obj::abs(((( (Float)(2) ) * Light) - ( (Float)(1) )))) * Sat);
-HXDLIN( 335)		Float match = (Light - (chroma / ( (Float)(2) )));
-HXDLIN( 335)		Float Hue1 = Hue;
-HXDLIN( 335)		Float Chroma = chroma;
-HXDLIN( 335)		Hue1 = ::hx::Mod(Hue1,360);
-HXDLIN( 335)		Float hueD = (Hue1 / ( (Float)(60) ));
-HXDLIN( 335)		Float mid = ((Chroma * (( (Float)(1) ) - ::Math_obj::abs((::hx::Mod(hueD,2) - ( (Float)(1) ))))) + match);
-HXDLIN( 335)		Chroma = (Chroma + match);
-HXDLIN( 335)		switch((int)(::Std_obj::_hx_int(hueD))){
+            	HX_STACKFRAME(&_hx_pos_dfa518c81f8e41b4_371_fromHSL)
+HXDLIN( 371)		int color = ::flixel::util::_FlxColor::FlxColor_Impl__obj::_new(null());
+HXDLIN( 371)		Float chroma = ((( (Float)(1) ) - ::Math_obj::abs(((( (Float)(2) ) * Light) - ( (Float)(1) )))) * Sat);
+HXDLIN( 371)		Float match = (Light - (chroma / ( (Float)(2) )));
+HXDLIN( 371)		Float Hue1 = Hue;
+HXDLIN( 371)		Float Chroma = chroma;
+HXDLIN( 371)		Hue1 = ::hx::Mod(Hue1,360);
+HXDLIN( 371)		Float hueD = (Hue1 / ( (Float)(60) ));
+HXDLIN( 371)		Float mid = ((Chroma * (( (Float)(1) ) - ::Math_obj::abs((::hx::Mod(hueD,2) - ( (Float)(1) ))))) + match);
+HXDLIN( 371)		Chroma = (Chroma + match);
+HXDLIN( 371)		switch((int)(::Std_obj::_hx_int(hueD))){
             			case (int)0: {
-HXDLIN( 335)				{
-HXDLIN( 335)					int Value = ::Math_obj::round((Chroma * ( (Float)(255) )));
-HXDLIN( 335)					color = (color & -16711681);
-HXDLIN( 335)					int color1;
-HXDLIN( 335)					if ((Value > 255)) {
-HXDLIN( 335)						color1 = 255;
+HXDLIN( 371)				{
+HXDLIN( 371)					int Value = ::Math_obj::round((Chroma * ( (Float)(255) )));
+HXDLIN( 371)					color = (color & -16711681);
+HXDLIN( 371)					int color1;
+HXDLIN( 371)					if ((Value > 255)) {
+HXDLIN( 371)						color1 = 255;
             					}
             					else {
-HXDLIN( 335)						if ((Value < 0)) {
-HXDLIN( 335)							color1 = 0;
+HXDLIN( 371)						if ((Value < 0)) {
+HXDLIN( 371)							color1 = 0;
             						}
             						else {
-HXDLIN( 335)							color1 = Value;
+HXDLIN( 371)							color1 = Value;
             						}
             					}
-HXDLIN( 335)					color = (color | (color1 << 16));
+HXDLIN( 371)					color = (color | (color1 << 16));
             				}
-HXDLIN( 335)				{
-HXDLIN( 335)					int Value1 = ::Math_obj::round((mid * ( (Float)(255) )));
-HXDLIN( 335)					color = (color & -65281);
-HXDLIN( 335)					int color2;
-HXDLIN( 335)					if ((Value1 > 255)) {
-HXDLIN( 335)						color2 = 255;
+HXDLIN( 371)				{
+HXDLIN( 371)					int Value1 = ::Math_obj::round((mid * ( (Float)(255) )));
+HXDLIN( 371)					color = (color & -65281);
+HXDLIN( 371)					int color2;
+HXDLIN( 371)					if ((Value1 > 255)) {
+HXDLIN( 371)						color2 = 255;
             					}
             					else {
-HXDLIN( 335)						if ((Value1 < 0)) {
-HXDLIN( 335)							color2 = 0;
+HXDLIN( 371)						if ((Value1 < 0)) {
+HXDLIN( 371)							color2 = 0;
             						}
             						else {
-HXDLIN( 335)							color2 = Value1;
+HXDLIN( 371)							color2 = Value1;
             						}
             					}
-HXDLIN( 335)					color = (color | (color2 << 8));
+HXDLIN( 371)					color = (color | (color2 << 8));
             				}
-HXDLIN( 335)				{
-HXDLIN( 335)					int Value2 = ::Math_obj::round((match * ( (Float)(255) )));
-HXDLIN( 335)					color = (color & -256);
-HXDLIN( 335)					int color3;
-HXDLIN( 335)					if ((Value2 > 255)) {
-HXDLIN( 335)						color3 = 255;
+HXDLIN( 371)				{
+HXDLIN( 371)					int Value2 = ::Math_obj::round((match * ( (Float)(255) )));
+HXDLIN( 371)					color = (color & -256);
+HXDLIN( 371)					int color3;
+HXDLIN( 371)					if ((Value2 > 255)) {
+HXDLIN( 371)						color3 = 255;
             					}
             					else {
-HXDLIN( 335)						if ((Value2 < 0)) {
-HXDLIN( 335)							color3 = 0;
+HXDLIN( 371)						if ((Value2 < 0)) {
+HXDLIN( 371)							color3 = 0;
             						}
             						else {
-HXDLIN( 335)							color3 = Value2;
+HXDLIN( 371)							color3 = Value2;
             						}
             					}
-HXDLIN( 335)					color = (color | color3);
+HXDLIN( 371)					color = (color | color3);
             				}
-HXDLIN( 335)				{
-HXDLIN( 335)					int Value3 = ::Math_obj::round((Alpha * ( (Float)(255) )));
-HXDLIN( 335)					color = (color & 16777215);
-HXDLIN( 335)					int color4;
-HXDLIN( 335)					if ((Value3 > 255)) {
-HXDLIN( 335)						color4 = 255;
+HXDLIN( 371)				{
+HXDLIN( 371)					int Value3 = ::Math_obj::round((Alpha * ( (Float)(255) )));
+HXDLIN( 371)					color = (color & 16777215);
+HXDLIN( 371)					int color4;
+HXDLIN( 371)					if ((Value3 > 255)) {
+HXDLIN( 371)						color4 = 255;
             					}
             					else {
-HXDLIN( 335)						if ((Value3 < 0)) {
-HXDLIN( 335)							color4 = 0;
+HXDLIN( 371)						if ((Value3 < 0)) {
+HXDLIN( 371)							color4 = 0;
             						}
             						else {
-HXDLIN( 335)							color4 = Value3;
+HXDLIN( 371)							color4 = Value3;
             						}
             					}
-HXDLIN( 335)					color = (color | (color4 << 24));
+HXDLIN( 371)					color = (color | (color4 << 24));
             				}
             			}
             			break;
             			case (int)1: {
-HXDLIN( 335)				{
-HXDLIN( 335)					int Value = ::Math_obj::round((mid * ( (Float)(255) )));
-HXDLIN( 335)					color = (color & -16711681);
-HXDLIN( 335)					int color1;
-HXDLIN( 335)					if ((Value > 255)) {
-HXDLIN( 335)						color1 = 255;
+HXDLIN( 371)				{
+HXDLIN( 371)					int Value = ::Math_obj::round((mid * ( (Float)(255) )));
+HXDLIN( 371)					color = (color & -16711681);
+HXDLIN( 371)					int color1;
+HXDLIN( 371)					if ((Value > 255)) {
+HXDLIN( 371)						color1 = 255;
             					}
             					else {
-HXDLIN( 335)						if ((Value < 0)) {
-HXDLIN( 335)							color1 = 0;
+HXDLIN( 371)						if ((Value < 0)) {
+HXDLIN( 371)							color1 = 0;
             						}
             						else {
-HXDLIN( 335)							color1 = Value;
+HXDLIN( 371)							color1 = Value;
             						}
             					}
-HXDLIN( 335)					color = (color | (color1 << 16));
+HXDLIN( 371)					color = (color | (color1 << 16));
             				}
-HXDLIN( 335)				{
-HXDLIN( 335)					int Value1 = ::Math_obj::round((Chroma * ( (Float)(255) )));
-HXDLIN( 335)					color = (color & -65281);
-HXDLIN( 335)					int color2;
-HXDLIN( 335)					if ((Value1 > 255)) {
-HXDLIN( 335)						color2 = 255;
+HXDLIN( 371)				{
+HXDLIN( 371)					int Value1 = ::Math_obj::round((Chroma * ( (Float)(255) )));
+HXDLIN( 371)					color = (color & -65281);
+HXDLIN( 371)					int color2;
+HXDLIN( 371)					if ((Value1 > 255)) {
+HXDLIN( 371)						color2 = 255;
             					}
             					else {
-HXDLIN( 335)						if ((Value1 < 0)) {
-HXDLIN( 335)							color2 = 0;
+HXDLIN( 371)						if ((Value1 < 0)) {
+HXDLIN( 371)							color2 = 0;
             						}
             						else {
-HXDLIN( 335)							color2 = Value1;
+HXDLIN( 371)							color2 = Value1;
             						}
             					}
-HXDLIN( 335)					color = (color | (color2 << 8));
+HXDLIN( 371)					color = (color | (color2 << 8));
             				}
-HXDLIN( 335)				{
-HXDLIN( 335)					int Value2 = ::Math_obj::round((match * ( (Float)(255) )));
-HXDLIN( 335)					color = (color & -256);
-HXDLIN( 335)					int color3;
-HXDLIN( 335)					if ((Value2 > 255)) {
-HXDLIN( 335)						color3 = 255;
+HXDLIN( 371)				{
+HXDLIN( 371)					int Value2 = ::Math_obj::round((match * ( (Float)(255) )));
+HXDLIN( 371)					color = (color & -256);
+HXDLIN( 371)					int color3;
+HXDLIN( 371)					if ((Value2 > 255)) {
+HXDLIN( 371)						color3 = 255;
             					}
             					else {
-HXDLIN( 335)						if ((Value2 < 0)) {
-HXDLIN( 335)							color3 = 0;
+HXDLIN( 371)						if ((Value2 < 0)) {
+HXDLIN( 371)							color3 = 0;
             						}
             						else {
-HXDLIN( 335)							color3 = Value2;
+HXDLIN( 371)							color3 = Value2;
             						}
             					}
-HXDLIN( 335)					color = (color | color3);
+HXDLIN( 371)					color = (color | color3);
             				}
-HXDLIN( 335)				{
-HXDLIN( 335)					int Value3 = ::Math_obj::round((Alpha * ( (Float)(255) )));
-HXDLIN( 335)					color = (color & 16777215);
-HXDLIN( 335)					int color4;
-HXDLIN( 335)					if ((Value3 > 255)) {
-HXDLIN( 335)						color4 = 255;
+HXDLIN( 371)				{
+HXDLIN( 371)					int Value3 = ::Math_obj::round((Alpha * ( (Float)(255) )));
+HXDLIN( 371)					color = (color & 16777215);
+HXDLIN( 371)					int color4;
+HXDLIN( 371)					if ((Value3 > 255)) {
+HXDLIN( 371)						color4 = 255;
             					}
             					else {
-HXDLIN( 335)						if ((Value3 < 0)) {
-HXDLIN( 335)							color4 = 0;
+HXDLIN( 371)						if ((Value3 < 0)) {
+HXDLIN( 371)							color4 = 0;
             						}
             						else {
-HXDLIN( 335)							color4 = Value3;
+HXDLIN( 371)							color4 = Value3;
             						}
             					}
-HXDLIN( 335)					color = (color | (color4 << 24));
+HXDLIN( 371)					color = (color | (color4 << 24));
             				}
             			}
             			break;
             			case (int)2: {
-HXDLIN( 335)				{
-HXDLIN( 335)					int Value = ::Math_obj::round((match * ( (Float)(255) )));
-HXDLIN( 335)					color = (color & -16711681);
-HXDLIN( 335)					int color1;
-HXDLIN( 335)					if ((Value > 255)) {
-HXDLIN( 335)						color1 = 255;
+HXDLIN( 371)				{
+HXDLIN( 371)					int Value = ::Math_obj::round((match * ( (Float)(255) )));
+HXDLIN( 371)					color = (color & -16711681);
+HXDLIN( 371)					int color1;
+HXDLIN( 371)					if ((Value > 255)) {
+HXDLIN( 371)						color1 = 255;
             					}
             					else {
-HXDLIN( 335)						if ((Value < 0)) {
-HXDLIN( 335)							color1 = 0;
+HXDLIN( 371)						if ((Value < 0)) {
+HXDLIN( 371)							color1 = 0;
             						}
             						else {
-HXDLIN( 335)							color1 = Value;
+HXDLIN( 371)							color1 = Value;
             						}
             					}
-HXDLIN( 335)					color = (color | (color1 << 16));
+HXDLIN( 371)					color = (color | (color1 << 16));
             				}
-HXDLIN( 335)				{
-HXDLIN( 335)					int Value1 = ::Math_obj::round((Chroma * ( (Float)(255) )));
-HXDLIN( 335)					color = (color & -65281);
-HXDLIN( 335)					int color2;
-HXDLIN( 335)					if ((Value1 > 255)) {
-HXDLIN( 335)						color2 = 255;
+HXDLIN( 371)				{
+HXDLIN( 371)					int Value1 = ::Math_obj::round((Chroma * ( (Float)(255) )));
+HXDLIN( 371)					color = (color & -65281);
+HXDLIN( 371)					int color2;
+HXDLIN( 371)					if ((Value1 > 255)) {
+HXDLIN( 371)						color2 = 255;
             					}
             					else {
-HXDLIN( 335)						if ((Value1 < 0)) {
-HXDLIN( 335)							color2 = 0;
+HXDLIN( 371)						if ((Value1 < 0)) {
+HXDLIN( 371)							color2 = 0;
             						}
             						else {
-HXDLIN( 335)							color2 = Value1;
+HXDLIN( 371)							color2 = Value1;
             						}
             					}
-HXDLIN( 335)					color = (color | (color2 << 8));
+HXDLIN( 371)					color = (color | (color2 << 8));
             				}
-HXDLIN( 335)				{
-HXDLIN( 335)					int Value2 = ::Math_obj::round((mid * ( (Float)(255) )));
-HXDLIN( 335)					color = (color & -256);
-HXDLIN( 335)					int color3;
-HXDLIN( 335)					if ((Value2 > 255)) {
-HXDLIN( 335)						color3 = 255;
+HXDLIN( 371)				{
+HXDLIN( 371)					int Value2 = ::Math_obj::round((mid * ( (Float)(255) )));
+HXDLIN( 371)					color = (color & -256);
+HXDLIN( 371)					int color3;
+HXDLIN( 371)					if ((Value2 > 255)) {
+HXDLIN( 371)						color3 = 255;
             					}
             					else {
-HXDLIN( 335)						if ((Value2 < 0)) {
-HXDLIN( 335)							color3 = 0;
+HXDLIN( 371)						if ((Value2 < 0)) {
+HXDLIN( 371)							color3 = 0;
             						}
             						else {
-HXDLIN( 335)							color3 = Value2;
+HXDLIN( 371)							color3 = Value2;
             						}
             					}
-HXDLIN( 335)					color = (color | color3);
+HXDLIN( 371)					color = (color | color3);
             				}
-HXDLIN( 335)				{
-HXDLIN( 335)					int Value3 = ::Math_obj::round((Alpha * ( (Float)(255) )));
-HXDLIN( 335)					color = (color & 16777215);
-HXDLIN( 335)					int color4;
-HXDLIN( 335)					if ((Value3 > 255)) {
-HXDLIN( 335)						color4 = 255;
+HXDLIN( 371)				{
+HXDLIN( 371)					int Value3 = ::Math_obj::round((Alpha * ( (Float)(255) )));
+HXDLIN( 371)					color = (color & 16777215);
+HXDLIN( 371)					int color4;
+HXDLIN( 371)					if ((Value3 > 255)) {
+HXDLIN( 371)						color4 = 255;
             					}
             					else {
-HXDLIN( 335)						if ((Value3 < 0)) {
-HXDLIN( 335)							color4 = 0;
+HXDLIN( 371)						if ((Value3 < 0)) {
+HXDLIN( 371)							color4 = 0;
             						}
             						else {
-HXDLIN( 335)							color4 = Value3;
+HXDLIN( 371)							color4 = Value3;
             						}
             					}
-HXDLIN( 335)					color = (color | (color4 << 24));
+HXDLIN( 371)					color = (color | (color4 << 24));
             				}
             			}
             			break;
             			case (int)3: {
-HXDLIN( 335)				{
-HXDLIN( 335)					int Value = ::Math_obj::round((match * ( (Float)(255) )));
-HXDLIN( 335)					color = (color & -16711681);
-HXDLIN( 335)					int color1;
-HXDLIN( 335)					if ((Value > 255)) {
-HXDLIN( 335)						color1 = 255;
+HXDLIN( 371)				{
+HXDLIN( 371)					int Value = ::Math_obj::round((match * ( (Float)(255) )));
+HXDLIN( 371)					color = (color & -16711681);
+HXDLIN( 371)					int color1;
+HXDLIN( 371)					if ((Value > 255)) {
+HXDLIN( 371)						color1 = 255;
             					}
             					else {
-HXDLIN( 335)						if ((Value < 0)) {
-HXDLIN( 335)							color1 = 0;
+HXDLIN( 371)						if ((Value < 0)) {
+HXDLIN( 371)							color1 = 0;
             						}
             						else {
-HXDLIN( 335)							color1 = Value;
+HXDLIN( 371)							color1 = Value;
             						}
             					}
-HXDLIN( 335)					color = (color | (color1 << 16));
+HXDLIN( 371)					color = (color | (color1 << 16));
             				}
-HXDLIN( 335)				{
-HXDLIN( 335)					int Value1 = ::Math_obj::round((mid * ( (Float)(255) )));
-HXDLIN( 335)					color = (color & -65281);
-HXDLIN( 335)					int color2;
-HXDLIN( 335)					if ((Value1 > 255)) {
-HXDLIN( 335)						color2 = 255;
+HXDLIN( 371)				{
+HXDLIN( 371)					int Value1 = ::Math_obj::round((mid * ( (Float)(255) )));
+HXDLIN( 371)					color = (color & -65281);
+HXDLIN( 371)					int color2;
+HXDLIN( 371)					if ((Value1 > 255)) {
+HXDLIN( 371)						color2 = 255;
             					}
             					else {
-HXDLIN( 335)						if ((Value1 < 0)) {
-HXDLIN( 335)							color2 = 0;
+HXDLIN( 371)						if ((Value1 < 0)) {
+HXDLIN( 371)							color2 = 0;
             						}
             						else {
-HXDLIN( 335)							color2 = Value1;
+HXDLIN( 371)							color2 = Value1;
             						}
             					}
-HXDLIN( 335)					color = (color | (color2 << 8));
+HXDLIN( 371)					color = (color | (color2 << 8));
             				}
-HXDLIN( 335)				{
-HXDLIN( 335)					int Value2 = ::Math_obj::round((Chroma * ( (Float)(255) )));
-HXDLIN( 335)					color = (color & -256);
-HXDLIN( 335)					int color3;
-HXDLIN( 335)					if ((Value2 > 255)) {
-HXDLIN( 335)						color3 = 255;
+HXDLIN( 371)				{
+HXDLIN( 371)					int Value2 = ::Math_obj::round((Chroma * ( (Float)(255) )));
+HXDLIN( 371)					color = (color & -256);
+HXDLIN( 371)					int color3;
+HXDLIN( 371)					if ((Value2 > 255)) {
+HXDLIN( 371)						color3 = 255;
             					}
             					else {
-HXDLIN( 335)						if ((Value2 < 0)) {
-HXDLIN( 335)							color3 = 0;
+HXDLIN( 371)						if ((Value2 < 0)) {
+HXDLIN( 371)							color3 = 0;
             						}
             						else {
-HXDLIN( 335)							color3 = Value2;
+HXDLIN( 371)							color3 = Value2;
             						}
             					}
-HXDLIN( 335)					color = (color | color3);
+HXDLIN( 371)					color = (color | color3);
             				}
-HXDLIN( 335)				{
-HXDLIN( 335)					int Value3 = ::Math_obj::round((Alpha * ( (Float)(255) )));
-HXDLIN( 335)					color = (color & 16777215);
-HXDLIN( 335)					int color4;
-HXDLIN( 335)					if ((Value3 > 255)) {
-HXDLIN( 335)						color4 = 255;
+HXDLIN( 371)				{
+HXDLIN( 371)					int Value3 = ::Math_obj::round((Alpha * ( (Float)(255) )));
+HXDLIN( 371)					color = (color & 16777215);
+HXDLIN( 371)					int color4;
+HXDLIN( 371)					if ((Value3 > 255)) {
+HXDLIN( 371)						color4 = 255;
             					}
             					else {
-HXDLIN( 335)						if ((Value3 < 0)) {
-HXDLIN( 335)							color4 = 0;
+HXDLIN( 371)						if ((Value3 < 0)) {
+HXDLIN( 371)							color4 = 0;
             						}
             						else {
-HXDLIN( 335)							color4 = Value3;
+HXDLIN( 371)							color4 = Value3;
             						}
             					}
-HXDLIN( 335)					color = (color | (color4 << 24));
+HXDLIN( 371)					color = (color | (color4 << 24));
             				}
             			}
             			break;
             			case (int)4: {
-HXDLIN( 335)				{
-HXDLIN( 335)					int Value = ::Math_obj::round((mid * ( (Float)(255) )));
-HXDLIN( 335)					color = (color & -16711681);
-HXDLIN( 335)					int color1;
-HXDLIN( 335)					if ((Value > 255)) {
-HXDLIN( 335)						color1 = 255;
+HXDLIN( 371)				{
+HXDLIN( 371)					int Value = ::Math_obj::round((mid * ( (Float)(255) )));
+HXDLIN( 371)					color = (color & -16711681);
+HXDLIN( 371)					int color1;
+HXDLIN( 371)					if ((Value > 255)) {
+HXDLIN( 371)						color1 = 255;
             					}
             					else {
-HXDLIN( 335)						if ((Value < 0)) {
-HXDLIN( 335)							color1 = 0;
+HXDLIN( 371)						if ((Value < 0)) {
+HXDLIN( 371)							color1 = 0;
             						}
             						else {
-HXDLIN( 335)							color1 = Value;
+HXDLIN( 371)							color1 = Value;
             						}
             					}
-HXDLIN( 335)					color = (color | (color1 << 16));
+HXDLIN( 371)					color = (color | (color1 << 16));
             				}
-HXDLIN( 335)				{
-HXDLIN( 335)					int Value1 = ::Math_obj::round((match * ( (Float)(255) )));
-HXDLIN( 335)					color = (color & -65281);
-HXDLIN( 335)					int color2;
-HXDLIN( 335)					if ((Value1 > 255)) {
-HXDLIN( 335)						color2 = 255;
+HXDLIN( 371)				{
+HXDLIN( 371)					int Value1 = ::Math_obj::round((match * ( (Float)(255) )));
+HXDLIN( 371)					color = (color & -65281);
+HXDLIN( 371)					int color2;
+HXDLIN( 371)					if ((Value1 > 255)) {
+HXDLIN( 371)						color2 = 255;
             					}
             					else {
-HXDLIN( 335)						if ((Value1 < 0)) {
-HXDLIN( 335)							color2 = 0;
+HXDLIN( 371)						if ((Value1 < 0)) {
+HXDLIN( 371)							color2 = 0;
             						}
             						else {
-HXDLIN( 335)							color2 = Value1;
+HXDLIN( 371)							color2 = Value1;
             						}
             					}
-HXDLIN( 335)					color = (color | (color2 << 8));
+HXDLIN( 371)					color = (color | (color2 << 8));
             				}
-HXDLIN( 335)				{
-HXDLIN( 335)					int Value2 = ::Math_obj::round((Chroma * ( (Float)(255) )));
-HXDLIN( 335)					color = (color & -256);
-HXDLIN( 335)					int color3;
-HXDLIN( 335)					if ((Value2 > 255)) {
-HXDLIN( 335)						color3 = 255;
+HXDLIN( 371)				{
+HXDLIN( 371)					int Value2 = ::Math_obj::round((Chroma * ( (Float)(255) )));
+HXDLIN( 371)					color = (color & -256);
+HXDLIN( 371)					int color3;
+HXDLIN( 371)					if ((Value2 > 255)) {
+HXDLIN( 371)						color3 = 255;
             					}
             					else {
-HXDLIN( 335)						if ((Value2 < 0)) {
-HXDLIN( 335)							color3 = 0;
+HXDLIN( 371)						if ((Value2 < 0)) {
+HXDLIN( 371)							color3 = 0;
             						}
             						else {
-HXDLIN( 335)							color3 = Value2;
+HXDLIN( 371)							color3 = Value2;
             						}
             					}
-HXDLIN( 335)					color = (color | color3);
+HXDLIN( 371)					color = (color | color3);
             				}
-HXDLIN( 335)				{
-HXDLIN( 335)					int Value3 = ::Math_obj::round((Alpha * ( (Float)(255) )));
-HXDLIN( 335)					color = (color & 16777215);
-HXDLIN( 335)					int color4;
-HXDLIN( 335)					if ((Value3 > 255)) {
-HXDLIN( 335)						color4 = 255;
+HXDLIN( 371)				{
+HXDLIN( 371)					int Value3 = ::Math_obj::round((Alpha * ( (Float)(255) )));
+HXDLIN( 371)					color = (color & 16777215);
+HXDLIN( 371)					int color4;
+HXDLIN( 371)					if ((Value3 > 255)) {
+HXDLIN( 371)						color4 = 255;
             					}
             					else {
-HXDLIN( 335)						if ((Value3 < 0)) {
-HXDLIN( 335)							color4 = 0;
+HXDLIN( 371)						if ((Value3 < 0)) {
+HXDLIN( 371)							color4 = 0;
             						}
             						else {
-HXDLIN( 335)							color4 = Value3;
+HXDLIN( 371)							color4 = Value3;
             						}
             					}
-HXDLIN( 335)					color = (color | (color4 << 24));
+HXDLIN( 371)					color = (color | (color4 << 24));
             				}
             			}
             			break;
             			case (int)5: {
-HXDLIN( 335)				{
-HXDLIN( 335)					int Value = ::Math_obj::round((Chroma * ( (Float)(255) )));
-HXDLIN( 335)					color = (color & -16711681);
-HXDLIN( 335)					int color1;
-HXDLIN( 335)					if ((Value > 255)) {
-HXDLIN( 335)						color1 = 255;
+HXDLIN( 371)				{
+HXDLIN( 371)					int Value = ::Math_obj::round((Chroma * ( (Float)(255) )));
+HXDLIN( 371)					color = (color & -16711681);
+HXDLIN( 371)					int color1;
+HXDLIN( 371)					if ((Value > 255)) {
+HXDLIN( 371)						color1 = 255;
             					}
             					else {
-HXDLIN( 335)						if ((Value < 0)) {
-HXDLIN( 335)							color1 = 0;
+HXDLIN( 371)						if ((Value < 0)) {
+HXDLIN( 371)							color1 = 0;
             						}
             						else {
-HXDLIN( 335)							color1 = Value;
+HXDLIN( 371)							color1 = Value;
             						}
             					}
-HXDLIN( 335)					color = (color | (color1 << 16));
+HXDLIN( 371)					color = (color | (color1 << 16));
             				}
-HXDLIN( 335)				{
-HXDLIN( 335)					int Value1 = ::Math_obj::round((match * ( (Float)(255) )));
-HXDLIN( 335)					color = (color & -65281);
-HXDLIN( 335)					int color2;
-HXDLIN( 335)					if ((Value1 > 255)) {
-HXDLIN( 335)						color2 = 255;
+HXDLIN( 371)				{
+HXDLIN( 371)					int Value1 = ::Math_obj::round((match * ( (Float)(255) )));
+HXDLIN( 371)					color = (color & -65281);
+HXDLIN( 371)					int color2;
+HXDLIN( 371)					if ((Value1 > 255)) {
+HXDLIN( 371)						color2 = 255;
             					}
             					else {
-HXDLIN( 335)						if ((Value1 < 0)) {
-HXDLIN( 335)							color2 = 0;
+HXDLIN( 371)						if ((Value1 < 0)) {
+HXDLIN( 371)							color2 = 0;
             						}
             						else {
-HXDLIN( 335)							color2 = Value1;
+HXDLIN( 371)							color2 = Value1;
             						}
             					}
-HXDLIN( 335)					color = (color | (color2 << 8));
+HXDLIN( 371)					color = (color | (color2 << 8));
             				}
-HXDLIN( 335)				{
-HXDLIN( 335)					int Value2 = ::Math_obj::round((mid * ( (Float)(255) )));
-HXDLIN( 335)					color = (color & -256);
-HXDLIN( 335)					int color3;
-HXDLIN( 335)					if ((Value2 > 255)) {
-HXDLIN( 335)						color3 = 255;
+HXDLIN( 371)				{
+HXDLIN( 371)					int Value2 = ::Math_obj::round((mid * ( (Float)(255) )));
+HXDLIN( 371)					color = (color & -256);
+HXDLIN( 371)					int color3;
+HXDLIN( 371)					if ((Value2 > 255)) {
+HXDLIN( 371)						color3 = 255;
             					}
             					else {
-HXDLIN( 335)						if ((Value2 < 0)) {
-HXDLIN( 335)							color3 = 0;
+HXDLIN( 371)						if ((Value2 < 0)) {
+HXDLIN( 371)							color3 = 0;
             						}
             						else {
-HXDLIN( 335)							color3 = Value2;
+HXDLIN( 371)							color3 = Value2;
             						}
             					}
-HXDLIN( 335)					color = (color | color3);
+HXDLIN( 371)					color = (color | color3);
             				}
-HXDLIN( 335)				{
-HXDLIN( 335)					int Value3 = ::Math_obj::round((Alpha * ( (Float)(255) )));
-HXDLIN( 335)					color = (color & 16777215);
-HXDLIN( 335)					int color4;
-HXDLIN( 335)					if ((Value3 > 255)) {
-HXDLIN( 335)						color4 = 255;
+HXDLIN( 371)				{
+HXDLIN( 371)					int Value3 = ::Math_obj::round((Alpha * ( (Float)(255) )));
+HXDLIN( 371)					color = (color & 16777215);
+HXDLIN( 371)					int color4;
+HXDLIN( 371)					if ((Value3 > 255)) {
+HXDLIN( 371)						color4 = 255;
             					}
             					else {
-HXDLIN( 335)						if ((Value3 < 0)) {
-HXDLIN( 335)							color4 = 0;
+HXDLIN( 371)						if ((Value3 < 0)) {
+HXDLIN( 371)							color4 = 0;
             						}
             						else {
-HXDLIN( 335)							color4 = Value3;
+HXDLIN( 371)							color4 = Value3;
             						}
             					}
-HXDLIN( 335)					color = (color | (color4 << 24));
+HXDLIN( 371)					color = (color | (color4 << 24));
             				}
             			}
             			break;
             		}
-HXDLIN( 335)		return color;
+HXDLIN( 371)		return color;
             	}
 
 
 STATIC_HX_DEFINE_DYNAMIC_FUNC4(CustomFlxColor_obj,fromHSL,return )
 
 int CustomFlxColor_obj::fromString(::String str){
-            	HX_STACKFRAME(&_hx_pos_dfa518c81f8e41b4_339_fromString)
-HXDLIN( 339)		return ( (int)(::flixel::util::_FlxColor::FlxColor_Impl__obj::fromString(str)) );
+            	HX_STACKFRAME(&_hx_pos_dfa518c81f8e41b4_375_fromString)
+HXDLIN( 375)		return ( (int)(::flixel::util::_FlxColor::FlxColor_Impl__obj::fromString(str)) );
             	}
 
 
@@ -895,64 +895,64 @@ void CustomFlxColor_obj::__register()
 void CustomFlxColor_obj::__boot()
 {
 {
-            	HX_STACKFRAME(&_hx_pos_dfa518c81f8e41b4_303_boot)
-HXDLIN( 303)		TRANSPARENT = 0;
+            	HX_STACKFRAME(&_hx_pos_dfa518c81f8e41b4_339_boot)
+HXDLIN( 339)		TRANSPARENT = 0;
             	}
 {
-            	HX_STACKFRAME(&_hx_pos_dfa518c81f8e41b4_304_boot)
-HXDLIN( 304)		BLACK = -16777216;
+            	HX_STACKFRAME(&_hx_pos_dfa518c81f8e41b4_340_boot)
+HXDLIN( 340)		BLACK = -16777216;
             	}
 {
-            	HX_STACKFRAME(&_hx_pos_dfa518c81f8e41b4_305_boot)
-HXDLIN( 305)		WHITE = -1;
+            	HX_STACKFRAME(&_hx_pos_dfa518c81f8e41b4_341_boot)
+HXDLIN( 341)		WHITE = -1;
             	}
 {
-            	HX_STACKFRAME(&_hx_pos_dfa518c81f8e41b4_306_boot)
-HXDLIN( 306)		GRAY = -8355712;
+            	HX_STACKFRAME(&_hx_pos_dfa518c81f8e41b4_342_boot)
+HXDLIN( 342)		GRAY = -8355712;
             	}
 {
-            	HX_STACKFRAME(&_hx_pos_dfa518c81f8e41b4_308_boot)
-HXDLIN( 308)		GREEN = -16744448;
+            	HX_STACKFRAME(&_hx_pos_dfa518c81f8e41b4_344_boot)
+HXDLIN( 344)		GREEN = -16744448;
             	}
 {
-            	HX_STACKFRAME(&_hx_pos_dfa518c81f8e41b4_309_boot)
-HXDLIN( 309)		LIME = -16711936;
+            	HX_STACKFRAME(&_hx_pos_dfa518c81f8e41b4_345_boot)
+HXDLIN( 345)		LIME = -16711936;
             	}
 {
-            	HX_STACKFRAME(&_hx_pos_dfa518c81f8e41b4_310_boot)
-HXDLIN( 310)		YELLOW = -256;
+            	HX_STACKFRAME(&_hx_pos_dfa518c81f8e41b4_346_boot)
+HXDLIN( 346)		YELLOW = -256;
             	}
 {
-            	HX_STACKFRAME(&_hx_pos_dfa518c81f8e41b4_311_boot)
-HXDLIN( 311)		ORANGE = -23296;
+            	HX_STACKFRAME(&_hx_pos_dfa518c81f8e41b4_347_boot)
+HXDLIN( 347)		ORANGE = -23296;
             	}
 {
-            	HX_STACKFRAME(&_hx_pos_dfa518c81f8e41b4_312_boot)
-HXDLIN( 312)		RED = -65536;
+            	HX_STACKFRAME(&_hx_pos_dfa518c81f8e41b4_348_boot)
+HXDLIN( 348)		RED = -65536;
             	}
 {
-            	HX_STACKFRAME(&_hx_pos_dfa518c81f8e41b4_313_boot)
-HXDLIN( 313)		PURPLE = -8388480;
+            	HX_STACKFRAME(&_hx_pos_dfa518c81f8e41b4_349_boot)
+HXDLIN( 349)		PURPLE = -8388480;
             	}
 {
-            	HX_STACKFRAME(&_hx_pos_dfa518c81f8e41b4_314_boot)
-HXDLIN( 314)		BLUE = -16776961;
+            	HX_STACKFRAME(&_hx_pos_dfa518c81f8e41b4_350_boot)
+HXDLIN( 350)		BLUE = -16776961;
             	}
 {
-            	HX_STACKFRAME(&_hx_pos_dfa518c81f8e41b4_315_boot)
-HXDLIN( 315)		BROWN = -7650029;
+            	HX_STACKFRAME(&_hx_pos_dfa518c81f8e41b4_351_boot)
+HXDLIN( 351)		BROWN = -7650029;
             	}
 {
-            	HX_STACKFRAME(&_hx_pos_dfa518c81f8e41b4_316_boot)
-HXDLIN( 316)		PINK = -16181;
+            	HX_STACKFRAME(&_hx_pos_dfa518c81f8e41b4_352_boot)
+HXDLIN( 352)		PINK = -16181;
             	}
 {
-            	HX_STACKFRAME(&_hx_pos_dfa518c81f8e41b4_317_boot)
-HXDLIN( 317)		MAGENTA = -65281;
+            	HX_STACKFRAME(&_hx_pos_dfa518c81f8e41b4_353_boot)
+HXDLIN( 353)		MAGENTA = -65281;
             	}
 {
-            	HX_STACKFRAME(&_hx_pos_dfa518c81f8e41b4_318_boot)
-HXDLIN( 318)		CYAN = -16711681;
+            	HX_STACKFRAME(&_hx_pos_dfa518c81f8e41b4_354_boot)
+HXDLIN( 354)		CYAN = -16711681;
             	}
 }
 

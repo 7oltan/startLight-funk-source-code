@@ -59,7 +59,9 @@ class HXCPP_CLASS_ATTRIBUTES Main_obj : public  ::openfl::display::Sprite_obj
 		bool _hx_isInstanceOf(int inClassId);
 		::String __ToString() const { return HX_("Main",59,64,2f,33); }
 
+		static void __boot();
 		static  ::openfl::display::FPS fpsVar;
+		static ::String stupidMia;
 		static void main();
 		static ::Dynamic main_dyn();
 

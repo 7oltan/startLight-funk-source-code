@@ -7,6 +7,9 @@
 #ifndef INCLUDED_Date
 #include <Date.h>
 #endif
+#ifndef INCLUDED_Main
+#include <Main.h>
+#endif
 #ifndef INCLUDED_Std
 #include <Std.h>
 #endif
@@ -82,6 +85,27 @@
 #ifndef INCLUDED_llua_Lua_helper
 #include <llua/Lua_helper.h>
 #endif
+#ifndef INCLUDED_openfl_display_DisplayObject
+#include <openfl/display/DisplayObject.h>
+#endif
+#ifndef INCLUDED_openfl_display_DisplayObjectContainer
+#include <openfl/display/DisplayObjectContainer.h>
+#endif
+#ifndef INCLUDED_openfl_display_IBitmapDrawable
+#include <openfl/display/IBitmapDrawable.h>
+#endif
+#ifndef INCLUDED_openfl_display_InteractiveObject
+#include <openfl/display/InteractiveObject.h>
+#endif
+#ifndef INCLUDED_openfl_display_Sprite
+#include <openfl/display/Sprite.h>
+#endif
+#ifndef INCLUDED_openfl_events_EventDispatcher
+#include <openfl/events/EventDispatcher.h>
+#endif
+#ifndef INCLUDED_openfl_events_IEventDispatcher
+#include <openfl/events/IEventDispatcher.h>
+#endif
 #ifndef INCLUDED_states_MainMenuState
 #include <states/MainMenuState.h>
 #endif
@@ -101,11 +125,11 @@ HX_LOCAL_STACK_FRAME(_hx_pos_eb10ff3c4d95691e_97_onDisconnected,"backend.Discord
 HX_LOCAL_STACK_FRAME(_hx_pos_eb10ff3c4d95691e_105_initialize,"backend.DiscordClient","initialize",0x7f7ebf01,"backend.DiscordClient.initialize","backend/Discord.hx",105,0xbaede60d)
 HX_LOCAL_STACK_FRAME(_hx_pos_eb10ff3c4d95691e_101_initialize,"backend.DiscordClient","initialize",0x7f7ebf01,"backend.DiscordClient.initialize","backend/Discord.hx",101,0xbaede60d)
 HX_LOCAL_STACK_FRAME(_hx_pos_eb10ff3c4d95691e_112_changePresence,"backend.DiscordClient","changePresence",0xda0d49fc,"backend.DiscordClient.changePresence","backend/Discord.hx",112,0xbaede60d)
-HX_LOCAL_STACK_FRAME(_hx_pos_eb10ff3c4d95691e_131_resetClientID,"backend.DiscordClient","resetClientID",0x375fb6c4,"backend.DiscordClient.resetClientID","backend/Discord.hx",131,0xbaede60d)
-HX_LOCAL_STACK_FRAME(_hx_pos_eb10ff3c4d95691e_135_loadModRPC,"backend.DiscordClient","loadModRPC",0x08a749ba,"backend.DiscordClient.loadModRPC","backend/Discord.hx",135,0xbaede60d)
-HX_LOCAL_STACK_FRAME(_hx_pos_eb10ff3c4d95691e_146_addLuaCallbacks,"backend.DiscordClient","addLuaCallbacks",0xeeeb1ea6,"backend.DiscordClient.addLuaCallbacks","backend/Discord.hx",146,0xbaede60d)
-HX_LOCAL_STACK_FRAME(_hx_pos_eb10ff3c4d95691e_148_addLuaCallbacks,"backend.DiscordClient","addLuaCallbacks",0xeeeb1ea6,"backend.DiscordClient.addLuaCallbacks","backend/Discord.hx",148,0xbaede60d)
-HX_LOCAL_STACK_FRAME(_hx_pos_eb10ff3c4d95691e_151_addLuaCallbacks,"backend.DiscordClient","addLuaCallbacks",0xeeeb1ea6,"backend.DiscordClient.addLuaCallbacks","backend/Discord.hx",151,0xbaede60d)
+HX_LOCAL_STACK_FRAME(_hx_pos_eb10ff3c4d95691e_150_resetClientID,"backend.DiscordClient","resetClientID",0x375fb6c4,"backend.DiscordClient.resetClientID","backend/Discord.hx",150,0xbaede60d)
+HX_LOCAL_STACK_FRAME(_hx_pos_eb10ff3c4d95691e_154_loadModRPC,"backend.DiscordClient","loadModRPC",0x08a749ba,"backend.DiscordClient.loadModRPC","backend/Discord.hx",154,0xbaede60d)
+HX_LOCAL_STACK_FRAME(_hx_pos_eb10ff3c4d95691e_165_addLuaCallbacks,"backend.DiscordClient","addLuaCallbacks",0xeeeb1ea6,"backend.DiscordClient.addLuaCallbacks","backend/Discord.hx",165,0xbaede60d)
+HX_LOCAL_STACK_FRAME(_hx_pos_eb10ff3c4d95691e_167_addLuaCallbacks,"backend.DiscordClient","addLuaCallbacks",0xeeeb1ea6,"backend.DiscordClient.addLuaCallbacks","backend/Discord.hx",167,0xbaede60d)
+HX_LOCAL_STACK_FRAME(_hx_pos_eb10ff3c4d95691e_170_addLuaCallbacks,"backend.DiscordClient","addLuaCallbacks",0xeeeb1ea6,"backend.DiscordClient.addLuaCallbacks","backend/Discord.hx",170,0xbaede60d)
 HX_LOCAL_STACK_FRAME(_hx_pos_eb10ff3c4d95691e_9_boot,"backend.DiscordClient","boot",0x4accc723,"backend.DiscordClient.boot","backend/Discord.hx",9,0xbaede60d)
 HX_LOCAL_STACK_FRAME(_hx_pos_eb10ff3c4d95691e_10_boot,"backend.DiscordClient","boot",0x4accc723,"backend.DiscordClient.boot","backend/Discord.hx",10,0xbaede60d)
 HX_LOCAL_STACK_FRAME(_hx_pos_eb10ff3c4d95691e_11_boot,"backend.DiscordClient","boot",0x4accc723,"backend.DiscordClient.boot","backend/Discord.hx",11,0xbaede60d)
@@ -275,44 +299,81 @@ HXLINE( 115)			endTimestamp = (startTimestamp + endTimestamp);
             		}
 HXLINE( 117)		::backend::DiscordClient_obj::_options->__SetField(HX_("details",c2,dc,56,ab),details,::hx::paccDynamic);
 HXLINE( 118)		::backend::DiscordClient_obj::_options->__SetField(HX_("state",11,76,0b,84),state,::hx::paccDynamic);
-HXLINE( 119)		::backend::DiscordClient_obj::_options->__SetField(HX_("largeImageKey",df,8f,e3,ae),HX_("icon",79,e7,b2,45),::hx::paccDynamic);
-HXLINE( 120)		::backend::DiscordClient_obj::_options->__SetField(HX_("largeImageText",6d,3e,2d,5e),(HX_("Engine Version: ",e0,15,79,71) + ::states::MainMenuState_obj::psychEngineVersion),::hx::paccDynamic);
-HXLINE( 121)		::backend::DiscordClient_obj::_options->__SetField(HX_("smallImageKey",eb,38,69,a3),smallImageKey,::hx::paccDynamic);
-HXLINE( 123)		::backend::DiscordClient_obj::_options->__SetField(HX_("startTimestamp",14,a4,09,c5),::Std_obj::_hx_int((startTimestamp / ( (Float)(1000) ))),::hx::paccDynamic);
-HXLINE( 124)		::backend::DiscordClient_obj::_options->__SetField(HX_("endTimestamp",7b,dd,d0,b4),::Std_obj::_hx_int((( (Float)(endTimestamp) ) / ( (Float)(1000) ))),::hx::paccDynamic);
-HXLINE( 125)		::discord_rpc::DiscordRpc_obj::presence(::backend::DiscordClient_obj::_options);
+HXLINE( 119)		if (::hx::IsNotNull( smallImageKey )) {
+HXLINE( 120)			if (::hx::IsNull( smallImageKey )) {
+HXLINE( 134)				::backend::DiscordClient_obj::_options->__SetField(HX_("largeImageKey",df,8f,e3,ae),HX_("icon",79,e7,b2,45),::hx::paccDynamic);
+            			}
+            			else {
+HXLINE( 120)				::String _hx_switch_0 = smallImageKey;
+            				if (  (_hx_switch_0==HX_("Bwhitty",83,b4,6c,74)) ){
+HXLINE( 126)					::backend::DiscordClient_obj::_options->__SetField(HX_("largeImageKey",df,8f,e3,ae),HX_("whittyangy",a0,8f,6e,af),::hx::paccDynamic);
+HXDLIN( 126)					goto _hx_goto_12;
+            				}
+            				if (  (_hx_switch_0==HX_("nastya",5c,ee,7b,21)) ||  (_hx_switch_0==HX_("pnastya",cc,e2,df,52)) ){
+HXLINE( 122)					::backend::DiscordClient_obj::_options->__SetField(HX_("largeImageKey",df,8f,e3,ae),::Main_obj::stupidMia,::hx::paccDynamic);
+HXDLIN( 122)					goto _hx_goto_12;
+            				}
+            				if (  (_hx_switch_0==HX_("purple",3c,f6,89,71)) ){
+HXLINE( 128)					::backend::DiscordClient_obj::_options->__SetField(HX_("largeImageKey",df,8f,e3,ae),HX_("mongos",ff,b9,64,c7),::hx::paccDynamic);
+HXDLIN( 128)					goto _hx_goto_12;
+            				}
+            				if (  (_hx_switch_0==HX_("waffles",50,6e,b5,1b)) ){
+HXLINE( 132)					::backend::DiscordClient_obj::_options->__SetField(HX_("largeImageKey",df,8f,e3,ae),HX_("bbg",a7,b2,4a,00),::hx::paccDynamic);
+HXDLIN( 132)					goto _hx_goto_12;
+            				}
+            				if (  (_hx_switch_0==HX_("whitty",c1,16,e4,bb)) ){
+HXLINE( 124)					::backend::DiscordClient_obj::_options->__SetField(HX_("largeImageKey",df,8f,e3,ae),HX_("whitty",c1,16,e4,bb),::hx::paccDynamic);
+HXDLIN( 124)					goto _hx_goto_12;
+            				}
+            				if (  (_hx_switch_0==HX_("wizard",2b,df,78,5a)) ){
+HXLINE( 130)					::backend::DiscordClient_obj::_options->__SetField(HX_("largeImageKey",df,8f,e3,ae),HX_("wizard",2b,df,78,5a),::hx::paccDynamic);
+HXDLIN( 130)					goto _hx_goto_12;
+            				}
+            				/* default */{
+HXLINE( 134)					::backend::DiscordClient_obj::_options->__SetField(HX_("largeImageKey",df,8f,e3,ae),HX_("icon",79,e7,b2,45),::hx::paccDynamic);
+            				}
+            				_hx_goto_12:;
+            			}
+            		}
+            		else {
+HXLINE( 138)			::backend::DiscordClient_obj::_options->__SetField(HX_("largeImageKey",df,8f,e3,ae),HX_("icon",79,e7,b2,45),::hx::paccDynamic);
+            		}
+HXLINE( 139)		::backend::DiscordClient_obj::_options->__SetField(HX_("largeImageText",6d,3e,2d,5e),(HX_("Engine Version: ",e0,15,79,71) + ::states::MainMenuState_obj::psychEngineVersion),::hx::paccDynamic);
+HXLINE( 142)		::backend::DiscordClient_obj::_options->__SetField(HX_("startTimestamp",14,a4,09,c5),::Std_obj::_hx_int((startTimestamp / ( (Float)(1000) ))),::hx::paccDynamic);
+HXLINE( 143)		::backend::DiscordClient_obj::_options->__SetField(HX_("endTimestamp",7b,dd,d0,b4),::Std_obj::_hx_int((( (Float)(endTimestamp) ) / ( (Float)(1000) ))),::hx::paccDynamic);
+HXLINE( 144)		::discord_rpc::DiscordRpc_obj::presence(::backend::DiscordClient_obj::_options);
             	}
 
 
 STATIC_HX_DEFINE_DYNAMIC_FUNC5(DiscordClient_obj,changePresence,(void))
 
 void DiscordClient_obj::resetClientID(){
-            	HX_STACKFRAME(&_hx_pos_eb10ff3c4d95691e_131_resetClientID)
-HXDLIN( 131)		::backend::DiscordClient_obj::set_clientID(::backend::DiscordClient_obj::_defaultID);
+            	HX_STACKFRAME(&_hx_pos_eb10ff3c4d95691e_150_resetClientID)
+HXDLIN( 150)		::backend::DiscordClient_obj::set_clientID(::backend::DiscordClient_obj::_defaultID);
             	}
 
 
 STATIC_HX_DEFINE_DYNAMIC_FUNC0(DiscordClient_obj,resetClientID,(void))
 
 void DiscordClient_obj::loadModRPC(){
-            	HX_STACKFRAME(&_hx_pos_eb10ff3c4d95691e_135_loadModRPC)
-HXLINE( 136)		 ::Dynamic pack = ::backend::Mods_obj::getPack(null());
-HXLINE( 137)		bool _hx_tmp;
-HXDLIN( 137)		bool _hx_tmp1;
-HXDLIN( 137)		if (::hx::IsNotNull( pack )) {
-HXLINE( 137)			_hx_tmp1 = ::hx::IsNotNull( pack->__Field(HX_("discordRPC",99,18,34,b0),::hx::paccDynamic) );
+            	HX_STACKFRAME(&_hx_pos_eb10ff3c4d95691e_154_loadModRPC)
+HXLINE( 155)		 ::Dynamic pack = ::backend::Mods_obj::getPack(null());
+HXLINE( 156)		bool _hx_tmp;
+HXDLIN( 156)		bool _hx_tmp1;
+HXDLIN( 156)		if (::hx::IsNotNull( pack )) {
+HXLINE( 156)			_hx_tmp1 = ::hx::IsNotNull( pack->__Field(HX_("discordRPC",99,18,34,b0),::hx::paccDynamic) );
             		}
             		else {
-HXLINE( 137)			_hx_tmp1 = false;
+HXLINE( 156)			_hx_tmp1 = false;
             		}
-HXDLIN( 137)		if (_hx_tmp1) {
-HXLINE( 137)			_hx_tmp = ::hx::IsNotEq( pack->__Field(HX_("discordRPC",99,18,34,b0),::hx::paccDynamic),::backend::DiscordClient_obj::clientID );
+HXDLIN( 156)		if (_hx_tmp1) {
+HXLINE( 156)			_hx_tmp = ::hx::IsNotEq( pack->__Field(HX_("discordRPC",99,18,34,b0),::hx::paccDynamic),::backend::DiscordClient_obj::clientID );
             		}
             		else {
-HXLINE( 137)			_hx_tmp = false;
+HXLINE( 156)			_hx_tmp = false;
             		}
-HXDLIN( 137)		if (_hx_tmp) {
-HXLINE( 139)			::backend::DiscordClient_obj::set_clientID(( (::String)(pack->__Field(HX_("discordRPC",99,18,34,b0),::hx::paccDynamic)) ));
+HXDLIN( 156)		if (_hx_tmp) {
+HXLINE( 158)			::backend::DiscordClient_obj::set_clientID(( (::String)(pack->__Field(HX_("discordRPC",99,18,34,b0),::hx::paccDynamic)) ));
             		}
             	}
 
@@ -320,31 +381,31 @@ HXLINE( 139)			::backend::DiscordClient_obj::set_clientID(( (::String)(pack->__F
 STATIC_HX_DEFINE_DYNAMIC_FUNC0(DiscordClient_obj,loadModRPC,(void))
 
 void DiscordClient_obj::addLuaCallbacks( cpp::Reference<lua_State> lua){
-            	HX_STACKFRAME(&_hx_pos_eb10ff3c4d95691e_146_addLuaCallbacks)
-HXLINE( 147)		{
+            	HX_STACKFRAME(&_hx_pos_eb10ff3c4d95691e_165_addLuaCallbacks)
+HXLINE( 166)		{
             			HX_BEGIN_LOCAL_FUNC_S0(::hx::LocalFunc,_hx_Closure_0) HXARGC(5)
             			void _hx_run(::String details,::String state,::String smallImageKey, ::Dynamic hasStartTimestamp, ::Dynamic endTimestamp){
-            				HX_STACKFRAME(&_hx_pos_eb10ff3c4d95691e_148_addLuaCallbacks)
-HXLINE( 148)				::backend::DiscordClient_obj::changePresence(details,state,smallImageKey,hasStartTimestamp,endTimestamp);
+            				HX_STACKFRAME(&_hx_pos_eb10ff3c4d95691e_167_addLuaCallbacks)
+HXLINE( 167)				::backend::DiscordClient_obj::changePresence(details,state,smallImageKey,hasStartTimestamp,endTimestamp);
             			}
             			HX_END_LOCAL_FUNC5((void))
 
-HXLINE( 147)			::llua::Lua_helper_obj::callbacks->set(HX_("changeDiscordPresence",77,e8,07,3c), ::Dynamic(new _hx_Closure_0()));
-HXDLIN( 147)			linc::callbacks::add_callback_function(lua,HX_("changeDiscordPresence",77,e8,07,3c));
+HXLINE( 166)			::llua::Lua_helper_obj::callbacks->set(HX_("changeDiscordPresence",77,e8,07,3c), ::Dynamic(new _hx_Closure_0()));
+HXDLIN( 166)			linc::callbacks::add_callback_function(lua,HX_("changeDiscordPresence",77,e8,07,3c));
             		}
-HXLINE( 151)		{
+HXLINE( 170)		{
             			HX_BEGIN_LOCAL_FUNC_S0(::hx::LocalFunc,_hx_Closure_1) HXARGC(1)
             			void _hx_run(::String newID){
-            				HX_STACKFRAME(&_hx_pos_eb10ff3c4d95691e_151_addLuaCallbacks)
-HXLINE( 152)				if (::hx::IsNull( newID )) {
-HXLINE( 152)					newID = ::backend::DiscordClient_obj::_defaultID;
+            				HX_STACKFRAME(&_hx_pos_eb10ff3c4d95691e_170_addLuaCallbacks)
+HXLINE( 171)				if (::hx::IsNull( newID )) {
+HXLINE( 171)					newID = ::backend::DiscordClient_obj::_defaultID;
             				}
-HXLINE( 153)				::backend::DiscordClient_obj::set_clientID(newID);
+HXLINE( 172)				::backend::DiscordClient_obj::set_clientID(newID);
             			}
             			HX_END_LOCAL_FUNC1((void))
 
-HXLINE( 151)			::llua::Lua_helper_obj::callbacks->set(HX_("changeDiscordClientID",22,09,c0,ea), ::Dynamic(new _hx_Closure_1()));
-HXDLIN( 151)			linc::callbacks::add_callback_function(lua,HX_("changeDiscordClientID",22,09,c0,ea));
+HXLINE( 170)			::llua::Lua_helper_obj::callbacks->set(HX_("changeDiscordClientID",22,09,c0,ea), ::Dynamic(new _hx_Closure_1()));
+HXDLIN( 170)			linc::callbacks::add_callback_function(lua,HX_("changeDiscordClientID",22,09,c0,ea));
             		}
             	}
 

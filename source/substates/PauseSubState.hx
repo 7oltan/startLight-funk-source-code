@@ -61,11 +61,7 @@ class PauseSubState extends MusicBeatSubstate
 
 
 		pauseMusic = new FlxSound();
-		if(songName != null) {
-			pauseMusic.loadEmbedded(Paths.music(songName), true, true);
-		} else if (songName != 'None') {
-			pauseMusic.loadEmbedded(Paths.music(Paths.formatToSongPath(ClientPrefs.data.pauseMusic)), true, true);
-		}
+		pauseMusic.loadEmbedded(Paths.music('breakfast'), true, true);
 		pauseMusic.volume = 0;
 		pauseMusic.play(false, FlxG.random.int(0, Std.int(pauseMusic.length / 2)));
 
@@ -148,7 +144,7 @@ class PauseSubState extends MusicBeatSubstate
 	{
 		cantUnpause -= elapsed;
 		if (pauseMusic.volume < 0.5)
-			pauseMusic.volume += 0.01 * elapsed;
+			pauseMusic.volume += 0.1 * elapsed;
 
 		super.update(elapsed);
 		updateSkipTextStuff();
@@ -294,11 +290,16 @@ class PauseSubState extends MusicBeatSubstate
 					PlayState.seenCutscene = false;
 
 					Mods.loadTopMod();
-					if(PlayState.isStoryMode) {
-						MusicBeatState.switchState(new StoryMenuState());
-					} else {
+					if(PlayState.fromMenu)
+						MusicBeatState.switchState(new states.MainMenuState());
+					else if(PlayState.isStoryMode){
+						if(PlayState.galamix)
+							MusicBeatState.switchState(new states.GalamixMenuState());
+						else
+							MusicBeatState.switchState(new StoryMenuState());
+					}else 
 						MusicBeatState.switchState(new FreeplayState());
-					}
+					
 					PlayState.cancelMusicFadeTween();
 					FlxG.sound.playMusic(Paths.music('freakyMenu'));
 					PlayState.changedDifficulty = false;

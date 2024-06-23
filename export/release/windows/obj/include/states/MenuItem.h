@@ -6,6 +6,8 @@
 #endif
 
 HX_DECLARE_CLASS1(flixel,FlxBasic)
+HX_DECLARE_CLASS1(flixel,FlxObject)
+HX_DECLARE_CLASS1(flixel,FlxSprite)
 HX_DECLARE_CLASS1(flixel,FlxState)
 HX_DECLARE_CLASS2(flixel,group,FlxTypedGroup)
 HX_DECLARE_CLASS2(flixel,util,IFlxDestroyable)
@@ -51,9 +53,13 @@ class HXCPP_CLASS_ATTRIBUTES MenuItem_obj : public ::hx::Object
 		Float x;
 		Float y;
 		bool isLocked;
-		::String lockText;
 		::Array< int > offsetSelected;
 		 ::flixel::FlxState state;
+		 ::flixel::FlxSprite lockSprite;
+		::String lockText;
+		::String set_lockText(::String newText);
+		::Dynamic set_lockText_dyn();
+
 };
 
 } // end namespace states

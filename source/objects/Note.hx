@@ -72,6 +72,8 @@ class Note extends FlxSprite
 	public var lateHitMult:Float = 1;
 	public var lowPriority:Bool = false;
 
+	public var splashEveryTime:Bool = false; // muhuhuhuhuhuhuhuhuhuhuhuhu
+
 	public static var SUSTAIN_SIZE:Int = 44;
 	public static var swagWidth:Float = 160 * 0.7;
 	public static var colArray:Array<String> = ['purple', 'blue', 'green', 'red'];

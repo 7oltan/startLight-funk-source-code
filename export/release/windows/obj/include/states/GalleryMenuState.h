@@ -21,8 +21,12 @@ HX_DECLARE_CLASS4(flixel,addons,ui,interfaces,IFlxUIState)
 HX_DECLARE_CLASS2(flixel,group,FlxTypedGroup)
 HX_DECLARE_CLASS2(flixel,text,FlxText)
 HX_DECLARE_CLASS2(flixel,util,IFlxDestroyable)
+HX_DECLARE_CLASS1(haxe,IMap)
+HX_DECLARE_CLASS2(haxe,ds,IntMap)
+HX_DECLARE_CLASS1(psychlua,HScript)
 HX_DECLARE_CLASS1(states,GalleryBar)
 HX_DECLARE_CLASS1(states,GalleryMenuState)
+HX_DECLARE_CLASS1(tea,SScript)
 
 namespace states{
 
@@ -63,6 +67,7 @@ class HXCPP_CLASS_ATTRIBUTES GalleryMenuState_obj : public  ::backend::MusicBeat
 
 		static void __boot();
 		static bool thisStateIsDestroyed;
+		static  ::states::GalleryMenuState instance;
 		bool oldMouse;
 		 ::flixel::group::FlxTypedGroup itemGroup;
 		 ::flixel::group::FlxTypedGroup nastyaGroup;
@@ -74,6 +79,7 @@ class HXCPP_CLASS_ATTRIBUTES GalleryMenuState_obj : public  ::backend::MusicBeat
 		int curSelectedButton;
 		int curSelected;
 		bool ready;
+		 ::haxe::ds::IntMap nameMap;
 		 ::flixel::FlxSprite arrowUP;
 		 ::flixel::FlxSprite arrowDOWN;
 		 ::flixel::text::FlxText imagesText;
@@ -84,11 +90,19 @@ class HXCPP_CLASS_ATTRIBUTES GalleryMenuState_obj : public  ::backend::MusicBeat
 		 ::flixel::text::FlxText GYAT;
 		Float lurpLoadingBar;
 		::Array< ::String > imageList;
+		int imageListLength;
+		 ::psychlua::HScript script;
 		void create();
+
+		void addGroupImages(::String groupName, ::flixel::group::FlxTypedGroup group, ::Dynamic callBack);
+		::Dynamic addGroupImages_dyn();
 
 		 ::flixel::text::FlxText errorText;
 		void call(::String url, ::Dynamic callBack, ::Dynamic dataFormat);
 		::Dynamic call_dyn();
+
+		void callHScript(::String name,::cpp::VirtualArray args);
+		::Dynamic callHScript_dyn();
 
 		void changeSelection(int num);
 		::Dynamic changeSelection_dyn();
